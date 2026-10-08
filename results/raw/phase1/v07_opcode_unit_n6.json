@@ -1,0 +1,4844 @@
+{
+ "bdf": "0000:41:00.1",
+ "xclbin": "opt_kernel/opt_kernel/quantum_fpga_kernel_complex128.xclbin",
+ "nq": 6,
+ "seed": 1234,
+ "records": [
+  {
+   "gate": "id",
+   "qubits": [
+    0
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 255.758
+  },
+  {
+   "gate": "id",
+   "qubits": [
+    0
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 103.11
+  },
+  {
+   "gate": "id",
+   "qubits": [
+    1
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 209.058
+  },
+  {
+   "gate": "id",
+   "qubits": [
+    1
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999998,
+   "guard_writes": 0,
+   "run_us": 157.688
+  },
+  {
+   "gate": "id",
+   "qubits": [
+    2
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 155.448
+  },
+  {
+   "gate": "id",
+   "qubits": [
+    2
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 177.518
+  },
+  {
+   "gate": "id",
+   "qubits": [
+    3
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 171.439
+  },
+  {
+   "gate": "id",
+   "qubits": [
+    3
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0000000000000002,
+   "guard_writes": 0,
+   "run_us": 118.539
+  },
+  {
+   "gate": "id",
+   "qubits": [
+    4
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 117.479
+  },
+  {
+   "gate": "id",
+   "qubits": [
+    4
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999998,
+   "guard_writes": 0,
+   "run_us": 119.229
+  },
+  {
+   "gate": "id",
+   "qubits": [
+    5
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 117.188
+  },
+  {
+   "gate": "id",
+   "qubits": [
+    5
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 116.309
+  },
+  {
+   "gate": "h",
+   "qubits": [
+    0
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 1.1102230246251565e-16,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 117.759
+  },
+  {
+   "gate": "h",
+   "qubits": [
+    0
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 0.9999999999999998,
+   "infidelity": 2.220446049250313e-16,
+   "max_abs_err": 5.594315114139762e-17,
+   "norm": 1.0000000000000002,
+   "guard_writes": 0,
+   "run_us": 93.229
+  },
+  {
+   "gate": "h",
+   "qubits": [
+    1
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 1.1102230246251565e-16,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 103.999
+  },
+  {
+   "gate": "h",
+   "qubits": [
+    1
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 0.9999999999999998,
+   "infidelity": 2.220446049250313e-16,
+   "max_abs_err": 5.721958498152797e-17,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 127.158
+  },
+  {
+   "gate": "h",
+   "qubits": [
+    2
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 1.1102230246251565e-16,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 126.719
+  },
+  {
+   "gate": "h",
+   "qubits": [
+    2
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 5.551115123125783e-17,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 119.759
+  },
+  {
+   "gate": "h",
+   "qubits": [
+    3
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 1.1102230246251565e-16,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 119.979
+  },
+  {
+   "gate": "h",
+   "qubits": [
+    3
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 6.206335383118183e-17,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 120.399
+  },
+  {
+   "gate": "h",
+   "qubits": [
+    4
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 1.1102230246251565e-16,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 120.899
+  },
+  {
+   "gate": "h",
+   "qubits": [
+    4
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 5.647850449853784e-17,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 98.289
+  },
+  {
+   "gate": "h",
+   "qubits": [
+    5
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 1.1102230246251565e-16,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 92.17
+  },
+  {
+   "gate": "h",
+   "qubits": [
+    5
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 0.9999999999999999,
+   "infidelity": 1.1102230246251565e-16,
+   "max_abs_err": 5.721958498152797e-17,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 135.068
+  },
+  {
+   "gate": "x",
+   "qubits": [
+    0
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 118.059
+  },
+  {
+   "gate": "x",
+   "qubits": [
+    0
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 121.049
+  },
+  {
+   "gate": "x",
+   "qubits": [
+    1
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 118.539
+  },
+  {
+   "gate": "x",
+   "qubits": [
+    1
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 131.299
+  },
+  {
+   "gate": "x",
+   "qubits": [
+    2
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 119.71
+  },
+  {
+   "gate": "x",
+   "qubits": [
+    2
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 93.039
+  },
+  {
+   "gate": "x",
+   "qubits": [
+    3
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 92.819
+  },
+  {
+   "gate": "x",
+   "qubits": [
+    3
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 91.769
+  },
+  {
+   "gate": "x",
+   "qubits": [
+    4
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 123.699
+  },
+  {
+   "gate": "x",
+   "qubits": [
+    4
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 133.718
+  },
+  {
+   "gate": "x",
+   "qubits": [
+    5
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 117.679
+  },
+  {
+   "gate": "x",
+   "qubits": [
+    5
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0000000000000002,
+   "guard_writes": 0,
+   "run_us": 116.929
+  },
+  {
+   "gate": "y",
+   "qubits": [
+    0
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 106.158
+  },
+  {
+   "gate": "y",
+   "qubits": [
+    0
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 118.979
+  },
+  {
+   "gate": "y",
+   "qubits": [
+    1
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 116.618
+  },
+  {
+   "gate": "y",
+   "qubits": [
+    1
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 95.059
+  },
+  {
+   "gate": "y",
+   "qubits": [
+    2
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 91.049
+  },
+  {
+   "gate": "y",
+   "qubits": [
+    2
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 118.509
+  },
+  {
+   "gate": "y",
+   "qubits": [
+    3
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 119.289
+  },
+  {
+   "gate": "y",
+   "qubits": [
+    3
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 132.569
+  },
+  {
+   "gate": "y",
+   "qubits": [
+    4
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 187.018
+  },
+  {
+   "gate": "y",
+   "qubits": [
+    4
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 187.158
+  },
+  {
+   "gate": "y",
+   "qubits": [
+    5
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 182.838
+  },
+  {
+   "gate": "y",
+   "qubits": [
+    5
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 187.828
+  },
+  {
+   "gate": "z",
+   "qubits": [
+    0
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 215.718
+  },
+  {
+   "gate": "z",
+   "qubits": [
+    0
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 184.868
+  },
+  {
+   "gate": "z",
+   "qubits": [
+    1
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 120.769
+  },
+  {
+   "gate": "z",
+   "qubits": [
+    1
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999998,
+   "guard_writes": 0,
+   "run_us": 120.099
+  },
+  {
+   "gate": "z",
+   "qubits": [
+    2
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 120.049
+  },
+  {
+   "gate": "z",
+   "qubits": [
+    2
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 131.949
+  },
+  {
+   "gate": "z",
+   "qubits": [
+    3
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 116.509
+  },
+  {
+   "gate": "z",
+   "qubits": [
+    3
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 116.079
+  },
+  {
+   "gate": "z",
+   "qubits": [
+    4
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 129.119
+  },
+  {
+   "gate": "z",
+   "qubits": [
+    4
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 92.969
+  },
+  {
+   "gate": "z",
+   "qubits": [
+    5
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 91.469
+  },
+  {
+   "gate": "z",
+   "qubits": [
+    5
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 118.879
+  },
+  {
+   "gate": "s",
+   "qubits": [
+    0
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 119.679
+  },
+  {
+   "gate": "s",
+   "qubits": [
+    0
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 120.639
+  },
+  {
+   "gate": "s",
+   "qubits": [
+    1
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 118.619
+  },
+  {
+   "gate": "s",
+   "qubits": [
+    1
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 119.669
+  },
+  {
+   "gate": "s",
+   "qubits": [
+    2
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 117.569
+  },
+  {
+   "gate": "s",
+   "qubits": [
+    2
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 116.689
+  },
+  {
+   "gate": "s",
+   "qubits": [
+    3
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 128.439
+  },
+  {
+   "gate": "s",
+   "qubits": [
+    3
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999998,
+   "guard_writes": 0,
+   "run_us": 92.699
+  },
+  {
+   "gate": "s",
+   "qubits": [
+    4
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 92.119
+  },
+  {
+   "gate": "s",
+   "qubits": [
+    4
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 152.648
+  },
+  {
+   "gate": "s",
+   "qubits": [
+    5
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 170.838
+  },
+  {
+   "gate": "s",
+   "qubits": [
+    5
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 173.858
+  },
+  {
+   "gate": "t",
+   "qubits": [
+    0
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 172.638
+  },
+  {
+   "gate": "t",
+   "qubits": [
+    0
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 5.721958498152797e-17,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 188.198
+  },
+  {
+   "gate": "t",
+   "qubits": [
+    1
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 116.819
+  },
+  {
+   "gate": "t",
+   "qubits": [
+    1
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 5.928593550334434e-17,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 117.798
+  },
+  {
+   "gate": "t",
+   "qubits": [
+    2
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 1.5700924586837752e-16,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 115.459
+  },
+  {
+   "gate": "t",
+   "qubits": [
+    2
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 0.9999999999999998,
+   "infidelity": 2.220446049250313e-16,
+   "max_abs_err": 5.721958498152797e-17,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 117.009
+  },
+  {
+   "gate": "t",
+   "qubits": [
+    3
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 117.019
+  },
+  {
+   "gate": "t",
+   "qubits": [
+    3
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 5.721958498152797e-17,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 117.379
+  },
+  {
+   "gate": "t",
+   "qubits": [
+    4
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 1.5700924586837752e-16,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 92.489
+  },
+  {
+   "gate": "t",
+   "qubits": [
+    4
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 5.551115123125783e-17,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 92.069
+  },
+  {
+   "gate": "t",
+   "qubits": [
+    5
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 118.459
+  },
+  {
+   "gate": "t",
+   "qubits": [
+    5
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 0.9999999999999999,
+   "infidelity": 1.1102230246251565e-16,
+   "max_abs_err": 3.925231146709438e-17,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 132.539
+  },
+  {
+   "gate": "sdg",
+   "qubits": [
+    0
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 119.369
+  },
+  {
+   "gate": "sdg",
+   "qubits": [
+    0
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 119.509
+  },
+  {
+   "gate": "sdg",
+   "qubits": [
+    1
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 117.688
+  },
+  {
+   "gate": "sdg",
+   "qubits": [
+    1
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0000000000000002,
+   "guard_writes": 0,
+   "run_us": 120.069
+  },
+  {
+   "gate": "sdg",
+   "qubits": [
+    2
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 125.699
+  },
+  {
+   "gate": "sdg",
+   "qubits": [
+    2
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0000000000000002,
+   "guard_writes": 0,
+   "run_us": 120.039
+  },
+  {
+   "gate": "sdg",
+   "qubits": [
+    3
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 119.419
+  },
+  {
+   "gate": "sdg",
+   "qubits": [
+    3
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 120.109
+  },
+  {
+   "gate": "sdg",
+   "qubits": [
+    4
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 118.499
+  },
+  {
+   "gate": "sdg",
+   "qubits": [
+    4
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 132.009
+  },
+  {
+   "gate": "sdg",
+   "qubits": [
+    5
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 146.559
+  },
+  {
+   "gate": "sdg",
+   "qubits": [
+    5
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999998,
+   "guard_writes": 0,
+   "run_us": 148.049
+  },
+  {
+   "gate": "tdg",
+   "qubits": [
+    0
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 124.969
+  },
+  {
+   "gate": "tdg",
+   "qubits": [
+    0
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 3.925231146709438e-17,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 151.259
+  },
+  {
+   "gate": "tdg",
+   "qubits": [
+    1
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 1.5700924586837752e-16,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 150.848
+  },
+  {
+   "gate": "tdg",
+   "qubits": [
+    1
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 6.206335383118183e-17,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 163.608
+  },
+  {
+   "gate": "tdg",
+   "qubits": [
+    2
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 120.199
+  },
+  {
+   "gate": "tdg",
+   "qubits": [
+    2
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 3.925231146709438e-17,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 119.839
+  },
+  {
+   "gate": "tdg",
+   "qubits": [
+    3
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 118.159
+  },
+  {
+   "gate": "tdg",
+   "qubits": [
+    3
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 0.9999999999999998,
+   "infidelity": 2.220446049250313e-16,
+   "max_abs_err": 5.721958498152797e-17,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 120.249
+  },
+  {
+   "gate": "tdg",
+   "qubits": [
+    4
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 1.5700924586837752e-16,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 121.419
+  },
+  {
+   "gate": "tdg",
+   "qubits": [
+    4
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 3.925231146709438e-17,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 119.138
+  },
+  {
+   "gate": "tdg",
+   "qubits": [
+    5
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 1.5700924586837752e-16,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 119.819
+  },
+  {
+   "gate": "tdg",
+   "qubits": [
+    5
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 3.1031676915590914e-17,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 118.379
+  },
+  {
+   "gate": "sx",
+   "qubits": [
+    0
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 118.749
+  },
+  {
+   "gate": "sx",
+   "qubits": [
+    0
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 3.1031676915590914e-17,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 131.499
+  },
+  {
+   "gate": "sx",
+   "qubits": [
+    1
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 116.779
+  },
+  {
+   "gate": "sx",
+   "qubits": [
+    1
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 3.925231146709438e-17,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 93.269
+  },
+  {
+   "gate": "sx",
+   "qubits": [
+    2
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 92.25
+  },
+  {
+   "gate": "sx",
+   "qubits": [
+    2
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 3.1031676915590914e-17,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 119.639
+  },
+  {
+   "gate": "sx",
+   "qubits": [
+    3
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 120.399
+  },
+  {
+   "gate": "sx",
+   "qubits": [
+    3
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 5.551115123125783e-17,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 120.249
+  },
+  {
+   "gate": "sx",
+   "qubits": [
+    4
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 120.879
+  },
+  {
+   "gate": "sx",
+   "qubits": [
+    4
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 3.925231146709438e-17,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 119.469
+  },
+  {
+   "gate": "sx",
+   "qubits": [
+    5
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 116.649
+  },
+  {
+   "gate": "sx",
+   "qubits": [
+    5
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 3.469446951953614e-17,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 105.079
+  },
+  {
+   "gate": "sxdg",
+   "qubits": [
+    0
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 92.519
+  },
+  {
+   "gate": "sxdg",
+   "qubits": [
+    0
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 2.7755575615628914e-17,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 121.998
+  },
+  {
+   "gate": "sxdg",
+   "qubits": [
+    1
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 118.608
+  },
+  {
+   "gate": "sxdg",
+   "qubits": [
+    1
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 3.925231146709438e-17,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 119.009
+  },
+  {
+   "gate": "sxdg",
+   "qubits": [
+    2
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 120.889
+  },
+  {
+   "gate": "sxdg",
+   "qubits": [
+    2
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0000000000000004,
+   "infidelity": -4.440892098500626e-16,
+   "max_abs_err": 2.8609792490763984e-17,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 118.938
+  },
+  {
+   "gate": "sxdg",
+   "qubits": [
+    3
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 120.228
+  },
+  {
+   "gate": "sxdg",
+   "qubits": [
+    3
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 2.8609792490763984e-17,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 115.449
+  },
+  {
+   "gate": "sxdg",
+   "qubits": [
+    4
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 117.469
+  },
+  {
+   "gate": "sxdg",
+   "qubits": [
+    4
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 3.1031676915590914e-17,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 130.309
+  },
+  {
+   "gate": "sxdg",
+   "qubits": [
+    5
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 133.758
+  },
+  {
+   "gate": "sxdg",
+   "qubits": [
+    5
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 3.1031676915590914e-17,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 149.889
+  },
+  {
+   "gate": "rx",
+   "qubits": [
+    0
+   ],
+   "params": [
+    0.7
+   ],
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 151.318
+  },
+  {
+   "gate": "rx",
+   "qubits": [
+    0
+   ],
+   "params": [
+    0.7
+   ],
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 150.428
+  },
+  {
+   "gate": "rx",
+   "qubits": [
+    1
+   ],
+   "params": [
+    0.7
+   ],
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 150.169
+  },
+  {
+   "gate": "rx",
+   "qubits": [
+    1
+   ],
+   "params": [
+    0.7
+   ],
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 150.038
+  },
+  {
+   "gate": "rx",
+   "qubits": [
+    2
+   ],
+   "params": [
+    0.7
+   ],
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 163.558
+  },
+  {
+   "gate": "rx",
+   "qubits": [
+    2
+   ],
+   "params": [
+    0.7
+   ],
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 116.599
+  },
+  {
+   "gate": "rx",
+   "qubits": [
+    3
+   ],
+   "params": [
+    0.7
+   ],
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 115.979
+  },
+  {
+   "gate": "rx",
+   "qubits": [
+    3
+   ],
+   "params": [
+    0.7
+   ],
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 118.639
+  },
+  {
+   "gate": "rx",
+   "qubits": [
+    4
+   ],
+   "params": [
+    0.7
+   ],
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 116.519
+  },
+  {
+   "gate": "rx",
+   "qubits": [
+    4
+   ],
+   "params": [
+    0.7
+   ],
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 117.788
+  },
+  {
+   "gate": "rx",
+   "qubits": [
+    5
+   ],
+   "params": [
+    0.7
+   ],
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 123.399
+  },
+  {
+   "gate": "rx",
+   "qubits": [
+    5
+   ],
+   "params": [
+    0.7
+   ],
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 121.069
+  },
+  {
+   "gate": "ry",
+   "qubits": [
+    0
+   ],
+   "params": [
+    1.1
+   ],
+   "state": "basis",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 1.1102230246251565e-16,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 120.498
+  },
+  {
+   "gate": "ry",
+   "qubits": [
+    0
+   ],
+   "params": [
+    1.1
+   ],
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 5.721958498152797e-17,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 118.339
+  },
+  {
+   "gate": "ry",
+   "qubits": [
+    1
+   ],
+   "params": [
+    1.1
+   ],
+   "state": "basis",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 1.1102230246251565e-16,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 131.449
+  },
+  {
+   "gate": "ry",
+   "qubits": [
+    1
+   ],
+   "params": [
+    1.1
+   ],
+   "state": "haar",
+   "fidelity": 0.9999999999999999,
+   "infidelity": 1.1102230246251565e-16,
+   "max_abs_err": 5.721958498152797e-17,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 119.419
+  },
+  {
+   "gate": "ry",
+   "qubits": [
+    2
+   ],
+   "params": [
+    1.1
+   ],
+   "state": "basis",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 1.1102230246251565e-16,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 117.239
+  },
+  {
+   "gate": "ry",
+   "qubits": [
+    2
+   ],
+   "params": [
+    1.1
+   ],
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 3.4170089680666066e-17,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 97.229
+  },
+  {
+   "gate": "ry",
+   "qubits": [
+    3
+   ],
+   "params": [
+    1.1
+   ],
+   "state": "basis",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 1.1102230246251565e-16,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 95.98
+  },
+  {
+   "gate": "ry",
+   "qubits": [
+    3
+   ],
+   "params": [
+    1.1
+   ],
+   "state": "haar",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 3.273069708340169e-17,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 97.709
+  },
+  {
+   "gate": "ry",
+   "qubits": [
+    4
+   ],
+   "params": [
+    1.1
+   ],
+   "state": "basis",
+   "fidelity": 0.9999999999999999,
+   "infidelity": 1.1102230246251565e-16,
+   "max_abs_err": 1.1102230246251565e-16,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 92.879
+  },
+  {
+   "gate": "ry",
+   "qubits": [
+    4
+   ],
+   "params": [
+    1.1
+   ],
+   "state": "haar",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 3.925231146709438e-17,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 90.61
+  },
+  {
+   "gate": "ry",
+   "qubits": [
+    5
+   ],
+   "params": [
+    1.1
+   ],
+   "state": "basis",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 1.1102230246251565e-16,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 95.799
+  },
+  {
+   "gate": "ry",
+   "qubits": [
+    5
+   ],
+   "params": [
+    1.1
+   ],
+   "state": "haar",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 3.469446951953614e-17,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 99.039
+  },
+  {
+   "gate": "rz",
+   "qubits": [
+    0
+   ],
+   "params": [
+    0.4
+   ],
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 1.1102230246251565e-16,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 106.619
+  },
+  {
+   "gate": "rz",
+   "qubits": [
+    0
+   ],
+   "params": [
+    0.4
+   ],
+   "state": "haar",
+   "fidelity": 0.9999999999999998,
+   "infidelity": 2.220446049250313e-16,
+   "max_abs_err": 3.925231146709438e-17,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 94.849
+  },
+  {
+   "gate": "rz",
+   "qubits": [
+    1
+   ],
+   "params": [
+    0.4
+   ],
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 1.1102230246251565e-16,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 92.669
+  },
+  {
+   "gate": "rz",
+   "qubits": [
+    1
+   ],
+   "params": [
+    0.4
+   ],
+   "state": "haar",
+   "fidelity": 0.9999999999999998,
+   "infidelity": 2.220446049250313e-16,
+   "max_abs_err": 6.206335383118183e-17,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 91.779
+  },
+  {
+   "gate": "rz",
+   "qubits": [
+    2
+   ],
+   "params": [
+    0.4
+   ],
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 1.1102230246251565e-16,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 95.828
+  },
+  {
+   "gate": "rz",
+   "qubits": [
+    2
+   ],
+   "params": [
+    0.4
+   ],
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 6.206335383118183e-17,
+   "norm": 0.9999999999999998,
+   "guard_writes": 0,
+   "run_us": 96.309
+  },
+  {
+   "gate": "rz",
+   "qubits": [
+    3
+   ],
+   "params": [
+    0.4
+   ],
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 1.1102230246251565e-16,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 95.459
+  },
+  {
+   "gate": "rz",
+   "qubits": [
+    3
+   ],
+   "params": [
+    0.4
+   ],
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 3.1031676915590914e-17,
+   "norm": 0.9999999999999998,
+   "guard_writes": 0,
+   "run_us": 94.389
+  },
+  {
+   "gate": "rz",
+   "qubits": [
+    4
+   ],
+   "params": [
+    0.4
+   ],
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 1.1102230246251565e-16,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 94.899
+  },
+  {
+   "gate": "rz",
+   "qubits": [
+    4
+   ],
+   "params": [
+    0.4
+   ],
+   "state": "haar",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 3.925231146709438e-17,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 95.459
+  },
+  {
+   "gate": "rz",
+   "qubits": [
+    5
+   ],
+   "params": [
+    0.4
+   ],
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 1.1102230246251565e-16,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 102.609
+  },
+  {
+   "gate": "rz",
+   "qubits": [
+    5
+   ],
+   "params": [
+    0.4
+   ],
+   "state": "haar",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 3.925231146709438e-17,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 92.559
+  },
+  {
+   "gate": "p",
+   "qubits": [
+    0
+   ],
+   "params": [
+    0.9
+   ],
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 94.019
+  },
+  {
+   "gate": "p",
+   "qubits": [
+    0
+   ],
+   "params": [
+    0.9
+   ],
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 8.441528768080324e-17,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 91.319
+  },
+  {
+   "gate": "p",
+   "qubits": [
+    1
+   ],
+   "params": [
+    0.9
+   ],
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 92.12
+  },
+  {
+   "gate": "p",
+   "qubits": [
+    1
+   ],
+   "params": [
+    0.9
+   ],
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 8.326672684688674e-17,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 96.279
+  },
+  {
+   "gate": "p",
+   "qubits": [
+    2
+   ],
+   "params": [
+    0.9
+   ],
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 94.628
+  },
+  {
+   "gate": "p",
+   "qubits": [
+    2
+   ],
+   "params": [
+    0.9
+   ],
+   "state": "haar",
+   "fidelity": 0.9999999999999999,
+   "infidelity": 1.1102230246251565e-16,
+   "max_abs_err": 6.938893903907228e-17,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 95.39
+  },
+  {
+   "gate": "p",
+   "qubits": [
+    3
+   ],
+   "params": [
+    0.9
+   ],
+   "state": "basis",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 2.482534153247273e-16,
+   "norm": 0.9999999999999998,
+   "guard_writes": 0,
+   "run_us": 94.36
+  },
+  {
+   "gate": "p",
+   "qubits": [
+    3
+   ],
+   "params": [
+    0.9
+   ],
+   "state": "haar",
+   "fidelity": 0.9999999999999998,
+   "infidelity": 2.220446049250313e-16,
+   "max_abs_err": 1.1188630228279524e-16,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 95.739
+  },
+  {
+   "gate": "p",
+   "qubits": [
+    4
+   ],
+   "params": [
+    0.9
+   ],
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 106.159
+  },
+  {
+   "gate": "p",
+   "qubits": [
+    4
+   ],
+   "params": [
+    0.9
+   ],
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 6.206335383118183e-17,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 92.159
+  },
+  {
+   "gate": "p",
+   "qubits": [
+    5
+   ],
+   "params": [
+    0.9
+   ],
+   "state": "basis",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 2.482534153247273e-16,
+   "norm": 0.9999999999999998,
+   "guard_writes": 0,
+   "run_us": 90.739
+  },
+  {
+   "gate": "p",
+   "qubits": [
+    5
+   ],
+   "params": [
+    0.9
+   ],
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 6.206335383118183e-17,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 102.729
+  },
+  {
+   "gate": "u2",
+   "qubits": [
+    0
+   ],
+   "params": [
+    0.3,
+    1.2
+   ],
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 96.429
+  },
+  {
+   "gate": "u2",
+   "qubits": [
+    0
+   ],
+   "params": [
+    0.3,
+    1.2
+   ],
+   "state": "haar",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 5.594315114139762e-17,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 94.709
+  },
+  {
+   "gate": "u2",
+   "qubits": [
+    1
+   ],
+   "params": [
+    0.3,
+    1.2
+   ],
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 1.1123893155135927e-16,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 92.399
+  },
+  {
+   "gate": "u2",
+   "qubits": [
+    1
+   ],
+   "params": [
+    0.3,
+    1.2
+   ],
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 3.925231146709438e-17,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 93.069
+  },
+  {
+   "gate": "u2",
+   "qubits": [
+    2
+   ],
+   "params": [
+    0.3,
+    1.2
+   ],
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 97.059
+  },
+  {
+   "gate": "u2",
+   "qubits": [
+    2
+   ],
+   "params": [
+    0.3,
+    1.2
+   ],
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 5.561946577567963e-17,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 96.07
+  },
+  {
+   "gate": "u2",
+   "qubits": [
+    3
+   ],
+   "params": [
+    0.3,
+    1.2
+   ],
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 104.888
+  },
+  {
+   "gate": "u2",
+   "qubits": [
+    3
+   ],
+   "params": [
+    0.3,
+    1.2
+   ],
+   "state": "haar",
+   "fidelity": 0.9999999999999999,
+   "infidelity": 1.1102230246251565e-16,
+   "max_abs_err": 5.003707553108401e-17,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 95.799
+  },
+  {
+   "gate": "u2",
+   "qubits": [
+    4
+   ],
+   "params": [
+    0.3,
+    1.2
+   ],
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 93.809
+  },
+  {
+   "gate": "u2",
+   "qubits": [
+    4
+   ],
+   "params": [
+    0.3,
+    1.2
+   ],
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 5.721958498152797e-17,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 95.599
+  },
+  {
+   "gate": "u2",
+   "qubits": [
+    5
+   ],
+   "params": [
+    0.3,
+    1.2
+   ],
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 93.479
+  },
+  {
+   "gate": "u2",
+   "qubits": [
+    5
+   ],
+   "params": [
+    0.3,
+    1.2
+   ],
+   "state": "haar",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 5.551115123125783e-17,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 97.039
+  },
+  {
+   "gate": "u3",
+   "qubits": [
+    0
+   ],
+   "params": [
+    0.5,
+    0.8,
+    1.4
+   ],
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 3.925231146709438e-17,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 93.139
+  },
+  {
+   "gate": "u3",
+   "qubits": [
+    0
+   ],
+   "params": [
+    0.5,
+    0.8,
+    1.4
+   ],
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 7.850462293418876e-17,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 90.259
+  },
+  {
+   "gate": "u3",
+   "qubits": [
+    1
+   ],
+   "params": [
+    0.5,
+    0.8,
+    1.4
+   ],
+   "state": "basis",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 1.1102230246251565e-16,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 92.779
+  },
+  {
+   "gate": "u3",
+   "qubits": [
+    1
+   ],
+   "params": [
+    0.5,
+    0.8,
+    1.4
+   ],
+   "state": "haar",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 5.594315114139762e-17,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 143.729
+  },
+  {
+   "gate": "u3",
+   "qubits": [
+    2
+   ],
+   "params": [
+    0.5,
+    0.8,
+    1.4
+   ],
+   "state": "basis",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 1.1102230246251565e-16,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 156.028
+  },
+  {
+   "gate": "u3",
+   "qubits": [
+    2
+   ],
+   "params": [
+    0.5,
+    0.8,
+    1.4
+   ],
+   "state": "haar",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 5.553824967135427e-17,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 147.329
+  },
+  {
+   "gate": "u3",
+   "qubits": [
+    3
+   ],
+   "params": [
+    0.5,
+    0.8,
+    1.4
+   ],
+   "state": "basis",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 1.1102230246251565e-16,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 146.479
+  },
+  {
+   "gate": "u3",
+   "qubits": [
+    3
+   ],
+   "params": [
+    0.5,
+    0.8,
+    1.4
+   ],
+   "state": "haar",
+   "fidelity": 0.9999999999999999,
+   "infidelity": 1.1102230246251565e-16,
+   "max_abs_err": 3.925231146709438e-17,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 148.569
+  },
+  {
+   "gate": "u3",
+   "qubits": [
+    4
+   ],
+   "params": [
+    0.5,
+    0.8,
+    1.4
+   ],
+   "state": "basis",
+   "fidelity": 1.0000000000000002,
+   "infidelity": -2.220446049250313e-16,
+   "max_abs_err": 1.1102230246251565e-16,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 125.149
+  },
+  {
+   "gate": "u3",
+   "qubits": [
+    4
+   ],
+   "params": [
+    0.5,
+    0.8,
+    1.4
+   ],
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 5.721958498152797e-17,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 124.829
+  },
+  {
+   "gate": "u3",
+   "qubits": [
+    5
+   ],
+   "params": [
+    0.5,
+    0.8,
+    1.4
+   ],
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 3.925231146709438e-17,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 132.459
+  },
+  {
+   "gate": "u3",
+   "qubits": [
+    5
+   ],
+   "params": [
+    0.5,
+    0.8,
+    1.4
+   ],
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 5.721958498152797e-17,
+   "norm": 0.9999999999999998,
+   "guard_writes": 0,
+   "run_us": 124.429
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    0,
+    1
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 124.569
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    0,
+    1
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 123.629
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    0,
+    2
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 94.829
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    0,
+    2
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 92.999
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    0,
+    3
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 96.139
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    0,
+    3
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 64,
+   "run_us": 93.589
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    0,
+    4
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 102.519
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    0,
+    4
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 64,
+   "run_us": 94.729
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    0,
+    5
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 93.909
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    0,
+    5
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 92.01
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    1,
+    0
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 90.999
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    1,
+    0
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 94.289
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    1,
+    2
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 95.219
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    1,
+    2
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 95.039
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    1,
+    3
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 94.119
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    1,
+    3
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 95.839
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    1,
+    4
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 104.309
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    1,
+    4
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 92.659
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    1,
+    5
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 90.579
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    1,
+    5
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 64,
+   "run_us": 92.049
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    2,
+    0
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 92.589
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    2,
+    0
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 64,
+   "run_us": 195.688
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    2,
+    1
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 149.629
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    2,
+    1
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 175.749
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    2,
+    3
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 156.188
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    2,
+    3
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 148.688
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    2,
+    4
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 159.489
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    2,
+    4
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 104.859
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    2,
+    5
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 94.369
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    2,
+    5
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 93.839
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    3,
+    0
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 97.579
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    3,
+    0
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 95.069
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    3,
+    1
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 94.039
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    3,
+    1
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 104.129
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    3,
+    2
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 93.479
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    3,
+    2
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 95.829
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    3,
+    4
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 95.659
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    3,
+    4
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999998,
+   "guard_writes": 64,
+   "run_us": 91.389
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    3,
+    5
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 95.089
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    3,
+    5
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 106.359
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    4,
+    0
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 98.149
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    4,
+    0
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 95.519
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    4,
+    1
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 94.049
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    4,
+    1
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 90.079
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    4,
+    2
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 97.519
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    4,
+    2
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999998,
+   "guard_writes": 64,
+   "run_us": 95.149
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    4,
+    3
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 96.269
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    4,
+    3
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 95.639
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    4,
+    5
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 148.818
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    4,
+    5
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 148.499
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    5,
+    0
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 155.179
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    5,
+    0
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 148.749
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    5,
+    1
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 146.239
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    5,
+    1
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 147.049
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    5,
+    2
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 152.199
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    5,
+    2
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 96.599
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    5,
+    3
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 103.988
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    5,
+    3
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 64,
+   "run_us": 106.449
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    5,
+    4
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 64,
+   "run_us": 94.689
+  },
+  {
+   "gate": "cx",
+   "qubits": [
+    5,
+    4
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 64,
+   "run_us": 96.149
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    0,
+    1
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 94.669
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    0,
+    1
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 94.879
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    0,
+    2
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 99.429
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    0,
+    2
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 91.139
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    0,
+    3
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 144.118
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    0,
+    3
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 154.609
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    0,
+    4
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 148.628
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    0,
+    4
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 146.559
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    0,
+    5
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 145.979
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    0,
+    5
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 148.908
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    1,
+    0
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 125.919
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    1,
+    0
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 134.668
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    1,
+    2
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 125.289
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    1,
+    2
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 125.928
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    1,
+    3
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 137.868
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    1,
+    3
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 124.149
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    1,
+    4
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 94.05
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    1,
+    4
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 91.26
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    1,
+    5
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 129.449
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    1,
+    5
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 101.399
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    2,
+    0
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 91.439
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    2,
+    0
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 91.959
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    2,
+    1
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 93.749
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    2,
+    1
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 95.719
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    2,
+    3
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 94.519
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    2,
+    3
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 95.85
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    2,
+    4
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 94.839
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    2,
+    4
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 96.06
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    2,
+    5
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 106.939
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    2,
+    5
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 104.629
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    3,
+    0
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 96.339
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    3,
+    0
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 94.959
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    3,
+    1
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 90.749
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    3,
+    1
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 92.989
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    3,
+    2
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 91.559
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    3,
+    2
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 103.169
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    3,
+    4
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 94.99
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    3,
+    4
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 96.15
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    3,
+    5
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 96.999
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    3,
+    5
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 94.53
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    4,
+    0
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 91.49
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    4,
+    0
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 92.429
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    4,
+    1
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 94.129
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    4,
+    1
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0000000000000002,
+   "guard_writes": 0,
+   "run_us": 94.109
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    4,
+    2
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 95.269
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    4,
+    2
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 95.669
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    4,
+    3
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 94.679
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    4,
+    3
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 104.419
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    4,
+    5
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 92.799
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    4,
+    5
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 93.189
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    5,
+    0
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 95.159
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    5,
+    0
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 94.599
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    5,
+    1
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 93.629
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    5,
+    1
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 95.019
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    5,
+    2
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 101.799
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    5,
+    2
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 99.009
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    5,
+    3
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 97.629
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    5,
+    3
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 0.9999999999999999,
+   "guard_writes": 0,
+   "run_us": 149.409
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    5,
+    4
+   ],
+   "params": null,
+   "state": "basis",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 157.498
+  },
+  {
+   "gate": "cz",
+   "qubits": [
+    5,
+    4
+   ],
+   "params": null,
+   "state": "haar",
+   "fidelity": 1.0,
+   "infidelity": 0.0,
+   "max_abs_err": 0.0,
+   "norm": 1.0,
+   "guard_writes": 0,
+   "run_us": 145.939
+  }
+ ]
+}

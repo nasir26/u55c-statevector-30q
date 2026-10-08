@@ -1,0 +1,639 @@
+[
+ {
+  "name": "ID: no-op norm",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 1370.751,
+  "detail": "ID: no-op norm:P(|0>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "H: uniform superposition |+\u27e9",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 715.531,
+  "detail": "H: uniform superposition |+\u27e9:max_dev=0.00000000 (PASS)"
+ },
+ {
+  "name": "X: |0\u27e9\u2192|1\u27e9",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 880.401,
+  "detail": "X: |0\u27e9\u2192|1\u27e9:P(|1>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "X\u2020X: identity",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 934.641,
+  "detail": "X\u2020X: identity:P(|0>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "Y: |0\u27e9\u2192i|1\u27e9",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 894.871,
+  "detail": "Y: |0\u27e9\u2192i|1\u27e9:P(|1>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "Z: |0\u27e9 unchanged (phase only)",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 911.251,
+  "detail": "Z: |0\u27e9 unchanged (phase only):P(|0>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "S\u00b7S\u2020: identity",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 920.011,
+  "detail": "S\u00b7S\u2020: identity:P(|0>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "T\u00b7T\u2020: identity",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 935.871,
+  "detail": "T\u00b7T\u2020: identity:P(|0>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "SX\u00b7SX\u2020: identity",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 910.991,
+  "detail": "SX\u00b7SX\u2020: identity:P(|0>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "SX\u00b2=X: |0\u27e9\u2192|1\u27e9",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 924.291,
+  "detail": "SX\u00b2=X: |0\u27e9\u2192|1\u27e9:P(|1>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "RX(\u03c0): |0\u27e9\u2192|1\u27e9",
+  "passed": true,
+  "norm": 1.0000000000000002,
+  "wall_us": 926.39,
+  "detail": "RX(\u03c0): |0\u27e9\u2192|1\u27e9:P(|1>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "RX(2\u03c0): identity |0\u27e9",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 754.371,
+  "detail": "RX(2\u03c0): identity |0\u27e9:P(|0>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "RY(\u03c0): |0\u27e9\u2192|1\u27e9",
+  "passed": true,
+  "norm": 1.0000000000000002,
+  "wall_us": 530.85,
+  "detail": "RY(\u03c0): |0\u27e9\u2192|1\u27e9:P(|1>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "RZ(\u03c0): |0\u27e9 unchanged (phase)",
+  "passed": true,
+  "norm": 1.0000000000000002,
+  "wall_us": 532.58,
+  "detail": "RZ(\u03c0): |0\u27e9 unchanged (phase):P(|0>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "P(\u03c0): |0\u27e9 unchanged",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 532.231,
+  "detail": "P(\u03c0): |0\u27e9 unchanged:P(|0>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "U2(0,\u03c0): = H, uniform superposition",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 536.871,
+  "detail": "U2(0,\u03c0): = H, uniform superposition:max_dev=0.00000000 (PASS)"
+ },
+ {
+  "name": "U3(\u03c0,0,\u03c0): = X gate, |0\u27e9\u2192|1\u27e9",
+  "passed": true,
+  "norm": 1.0000000000000002,
+  "wall_us": 613.111,
+  "detail": "U3(\u03c0,0,\u03c0): = X gate, |0\u27e9\u2192|1\u27e9:P(|1>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "U3(\u03c0/2,0,\u03c0): = H, uniform superposition",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 565.75,
+  "detail": "U3(\u03c0/2,0,\u03c0): = H, uniform superposition:max_dev=0.00000002 (PASS)"
+ },
+ {
+  "name": "CX: Bell state |\u03a6+\u27e9",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 593.321,
+  "detail": "CX: Bell state |\u03a6+\u27e9:P({0: 0})=0.50000000 (PASS)"
+ },
+ {
+  "name": "CX: |10\u27e9\u2192|11\u27e9",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 508.76,
+  "detail": "CX: |10\u27e9\u2192|11\u27e9:P(|3>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "CX\u00b2: identity |00\u27e9",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 514.34,
+  "detail": "CX\u00b2: identity |00\u27e9:P(|0>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "CZ: |00\u27e9 unchanged",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 493.491,
+  "detail": "CZ: |00\u27e9 unchanged:P(|0>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "CZ: |11\u27e9\u2192-|11\u27e9 (phase, norm=1)",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 538.13,
+  "detail": "CZ: |11\u27e9\u2192-|11\u27e9 (phase, norm=1):P(|3>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "CZ\u00b2: identity",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 557.391,
+  "detail": "CZ\u00b2: identity:P(|3>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "CY: |10\u27e9\u2192i|11\u27e9",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 809.721,
+  "detail": "CY: |10\u27e9\u2192i|11\u27e9:P(|3>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "CH: norm preserved",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 1224.521,
+  "detail": ""
+ },
+ {
+  "name": "SWAP: |10\u27e9\u2192|01\u27e9",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 1138.531,
+  "detail": "SWAP: |10\u27e9\u2192|01\u27e9:P(|2>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "SWAP\u00b2: identity",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 1268.391,
+  "detail": "SWAP\u00b2: identity:P(|0>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "CP(\u03c0): |11\u27e9 phase flip, norm=1",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 1307.942,
+  "detail": "CP(\u03c0): |11\u27e9 phase flip, norm=1:P(|3>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "CP(2\u03c0): identity",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 1344.892,
+  "detail": "CP(2\u03c0): identity:P(|0>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "CRX(\u03c0): |10\u27e9\u2192|11\u27e9",
+  "passed": true,
+  "norm": 0.9999999999999999,
+  "wall_us": 1301.991,
+  "detail": "CRX(\u03c0): |10\u27e9\u2192|11\u27e9:P(|3>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "CRY(\u03c0): |10\u27e9\u2192|11\u27e9",
+  "passed": true,
+  "norm": 1.0000000000000002,
+  "wall_us": 909.691,
+  "detail": "CRY(\u03c0): |10\u27e9\u2192|11\u27e9:P(|3>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "CRZ(\u03c0): norm=1",
+  "passed": true,
+  "norm": 1.0000000000000002,
+  "wall_us": 568.87,
+  "detail": ""
+ },
+ {
+  "name": "CSX: norm=1",
+  "passed": true,
+  "norm": 1.0000000000000002,
+  "wall_us": 593.961,
+  "detail": ""
+ },
+ {
+  "name": "CSX\u00b2=CX: |10\u27e9\u2192|11\u27e9",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 641.37,
+  "detail": "CSX\u00b2=CX: |10\u27e9\u2192|11\u27e9:P(|3>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "DCX: norm=1",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 553.861,
+  "detail": ""
+ },
+ {
+  "name": "ISWAP: norm=1",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 577.35,
+  "detail": ""
+ },
+ {
+  "name": "ISWAP: |10\u27e9\u2192i|01\u27e9",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 576.411,
+  "detail": "ISWAP: |10\u27e9\u2192i|01\u27e9:P(|2>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "ECR: |00\u27e9 norm=1",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 571.17,
+  "detail": ""
+ },
+ {
+  "name": "ECR: |11\u27e9 norm=1",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 618.041,
+  "detail": ""
+ },
+ {
+  "name": "RXX(\u03c0/2): norm=1",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 542.21,
+  "detail": ""
+ },
+ {
+  "name": "RYY(\u03c0/2): norm=1",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 588.611,
+  "detail": ""
+ },
+ {
+  "name": "RZZ(\u03c0/2): norm=1",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 560.44,
+  "detail": ""
+ },
+ {
+  "name": "CCX: |110\u27e9\u2192|111\u27e9",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 639.411,
+  "detail": "CCX: |110\u27e9\u2192|111\u27e9:P(|7>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "CCX: |100\u27e9 unchanged",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 958.201,
+  "detail": "CCX: |100\u27e9 unchanged:P(|1>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "CCX\u00b2: identity",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 1078.411,
+  "detail": "CCX\u00b2: identity:P(|0>)=1.00000000 (PASS)"
+ },
+ {
+  "name": "ECR |00\u27e9 state check",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 830.891,
+  "detail": "P(|1>)=0.5000, P(|3>)=0.5000"
+ },
+ {
+  "name": "ECR |01\u27e9 state check",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 856.121,
+  "detail": "P(|0>)=0.5000, P(|2>)=0.5000"
+ },
+ {
+  "name": "ECR |10\u27e9 state check",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 839.281,
+  "detail": "P(|1>)=0.5000, P(|3>)=0.5000"
+ },
+ {
+  "name": "ECR |11\u27e9 state check",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 858.841,
+  "detail": "P(|0>)=0.5000, P(|2>)=0.5000"
+ },
+ {
+  "name": "QFT  1q: uniform superposition",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 766.611,
+  "detail": ""
+ },
+ {
+  "name": "QFT  2q: uniform superposition",
+  "passed": true,
+  "norm": 1.0000000000000002,
+  "wall_us": 892.41,
+  "detail": ""
+ },
+ {
+  "name": "QFT  3q: uniform superposition",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 1004.511,
+  "detail": ""
+ },
+ {
+  "name": "QFT  4q: uniform superposition",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 1503.041,
+  "detail": ""
+ },
+ {
+  "name": "QFT  5q: uniform superposition",
+  "passed": true,
+  "norm": 0.9999999999999999,
+  "wall_us": 1255.062,
+  "detail": ""
+ },
+ {
+  "name": "QFT  6q: uniform superposition",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 1447.401,
+  "detail": ""
+ },
+ {
+  "name": "QFT  7q: uniform superposition",
+  "passed": true,
+  "norm": 1.0000000000000002,
+  "wall_us": 1755.991,
+  "detail": ""
+ },
+ {
+  "name": "QFT  8q: uniform superposition",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 2430.871,
+  "detail": ""
+ },
+ {
+  "name": "QFT  9q: uniform superposition",
+  "passed": true,
+  "norm": 1.0000000000000004,
+  "wall_us": 5709.365,
+  "detail": ""
+ },
+ {
+  "name": "QFT 10q: uniform superposition",
+  "passed": true,
+  "norm": 0.9999999999999974,
+  "wall_us": 10131.369,
+  "detail": ""
+ },
+ {
+  "name": "QFT 11q: uniform superposition",
+  "passed": true,
+  "norm": 1.0000000000000073,
+  "wall_us": 13982.502,
+  "detail": ""
+ },
+ {
+  "name": "QFT 12q: uniform superposition",
+  "passed": true,
+  "norm": 0.9999999999999969,
+  "wall_us": 27995.505,
+  "detail": ""
+ },
+ {
+  "name": "QFT 13q: uniform superposition",
+  "passed": true,
+  "norm": 1.0000000000000349,
+  "wall_us": 57236.519,
+  "detail": ""
+ },
+ {
+  "name": "QFT 14q: uniform superposition",
+  "passed": true,
+  "norm": 1.0000000000000004,
+  "wall_us": 138356.309,
+  "detail": ""
+ },
+ {
+  "name": "QFT 15q: uniform superposition",
+  "passed": true,
+  "norm": 1.0000000000000004,
+  "wall_us": 274008.086,
+  "detail": ""
+ },
+ {
+  "name": "QFT 16q: uniform superposition",
+  "passed": true,
+  "norm": 0.9999999999999991,
+  "wall_us": 612650.316,
+  "detail": ""
+ },
+ {
+  "name": "QFT 17q: uniform superposition",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 1369596.565,
+  "detail": ""
+ },
+ {
+  "name": "QFT 18q: uniform superposition",
+  "passed": true,
+  "norm": 0.9999999999999938,
+  "wall_us": 3077244.537,
+  "detail": ""
+ },
+ {
+  "name": "QFT 19q: uniform superposition",
+  "passed": true,
+  "norm": 1.0000000000000049,
+  "wall_us": 6825685.529,
+  "detail": ""
+ },
+ {
+  "name": "QFT 20q: uniform superposition",
+  "passed": true,
+  "norm": 0.9999999999999926,
+  "wall_us": 15196157.941,
+  "detail": ""
+ },
+ {
+  "name": "QFT+IQFT  1q: round-trip |0\u27e9",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 11097.199,
+  "detail": "P(|0\u27e9)=1.000000"
+ },
+ {
+  "name": "QFT+IQFT  2q: round-trip |0\u27e9",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 2166.381,
+  "detail": "P(|0\u27e9)=1.000000"
+ },
+ {
+  "name": "QFT+IQFT  4q: round-trip |0\u27e9",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 2430.592,
+  "detail": "P(|0\u27e9)=1.000000"
+ },
+ {
+  "name": "QFT+IQFT  8q: round-trip |0\u27e9",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 7687.187,
+  "detail": "P(|0\u27e9)=1.000000"
+ },
+ {
+  "name": "QFT+IQFT 12q: round-trip |0\u27e9",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 50944.562,
+  "detail": "P(|0\u27e9)=1.000000"
+ },
+ {
+  "name": "Grover  2q (1 iter): P(|1..1\u27e9)\u22650.50",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 606.681,
+  "detail": "P(|1..1\u27e9)=1.0000"
+ },
+ {
+  "name": "Grover  3q (2 iter): P(|1..1\u27e9)\u22650.50",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 1083.08,
+  "detail": "P(|1..1\u27e9)=0.9453"
+ },
+ {
+  "name": "Grover  4q (3 iter): P(|1..1\u27e9)\u22650.50",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 49921.82,
+  "detail": "P(|1..1\u27e9)=0.9613"
+ },
+ {
+  "name": "Grover  5q (4 iter): P(|1..1\u27e9)\u22650.50",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 28739.404,
+  "detail": "P(|1..1\u27e9)=0.9992"
+ },
+ {
+  "name": "Grover  6q (6 iter): P(|1..1\u27e9)\u22650.50",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 106346.997,
+  "detail": "P(|1..1\u27e9)=0.9966"
+ },
+ {
+  "name": "Grover  7q (8 iter): P(|1..1\u27e9)\u22650.05",
+  "passed": true,
+  "norm": 0.9999999999999999,
+  "wall_us": 215146.105,
+  "detail": "P(|1..1\u27e9)=0.9956"
+ },
+ {
+  "name": "Grover  8q (12 iter): P(|1..1\u27e9)\u22650.05",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 337587.664,
+  "detail": "P(|1..1\u27e9)=0.9999"
+ },
+ {
+  "name": "Grover  9q (17 iter): P(|1..1\u27e9)\u22650.05",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 739354.41,
+  "detail": "P(|1..1\u27e9)=0.9994"
+ },
+ {
+  "name": "Grover 10q (16 iter): P(|1..1\u27e9)\u22650.05",
+  "passed": true,
+  "norm": 1.0000000000000002,
+  "wall_us": 1228302.695,
+  "detail": "P(|1..1\u27e9)=0.7362"
+ },
+ {
+  "name": "Grover 11q (15 iter): P(|1..1\u27e9)\u22650.05",
+  "passed": true,
+  "norm": 0.9999999999999997,
+  "wall_us": 2209853.415,
+  "detail": "P(|1..1\u27e9)=0.4003"
+ },
+ {
+  "name": "Grover 12q (13 iter): P(|1..1\u27e9)\u22650.05",
+  "passed": true,
+  "norm": 0.9999999999999999,
+  "wall_us": 3903118.003,
+  "detail": "P(|1..1\u27e9)=0.1677"
+ },
+ {
+  "name": "Meas: 1 qubit -> 2 clbits, 1 unmeasured",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 6054.405,
+  "detail": "keys=[('000', 2017), ('011', 1983)]"
+ },
+ {
+  "name": "Meas: qubit0 -> clbit2 only (deterministic)",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 4699.164,
+  "detail": "keys=[('100', 4000)]"
+ },
+ {
+  "name": "Meas: 2 qubits -> 2 clbits, explicit map",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 5245.784,
+  "detail": "keys=[('10', 1961), ('11', 2039)]"
+ },
+ {
+  "name": "Meas: clbits=None fallback (qubit==clbit)",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 5356.035,
+  "detail": "keys=[('01', 4000)]"
+ },
+ {
+  "name": "Meas: no explicit measure, |0> default",
+  "passed": true,
+  "norm": 1.0,
+  "wall_us": 5265.693,
+  "detail": "keys=[('000', 4000)]"
+ }
+]

@@ -1,0 +1,13 @@
+Verbose: Enabling Verbosity
+Validate Device           : [0000:41:00.1]
+    Platform              : xilinx_u55c_gen3x16_xdma_base_3
+    SC Version            : 7.1.22
+    Platform ID           : 97088961-FEAE-DA91-52A2-1D9DFD63CCEF
+-------------------------------------------------------------------------------
+Test 1 [0000:41:00.1]     : m2m 
+
+    Description           : Run M2M test
+    Details               : M2M is not available
+    Test Status           : [SKIPPED]
+-------------------------------------------------------------------------------
+Validation completed

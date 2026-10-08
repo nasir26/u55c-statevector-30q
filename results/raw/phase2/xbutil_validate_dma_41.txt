@@ -1,0 +1,285 @@
+Verbose: Enabling Verbosity
+Validate Device           : [0000:41:00.1]
+    Platform              : xilinx_u55c_gen3x16_xdma_base_3
+    SC Version            : 7.1.22
+    Platform ID           : 97088961-FEAE-DA91-52A2-1D9DFD63CCEF
+-------------------------------------------------------------------------------
+Test 1 [0000:41:00.1]     : dma 
+    Description           : Run dma test
+[?25l[39m[[38;5;111m                    [39m][38;5;111m[39m: Running Test... < 0s >
+[1A[?25l[39m[[38;5;111m<->                 [39m][38;5;111m[39m: Running Test... < 0s >
+[1A[?25l[39m[[38;5;111m <->                [39m][38;5;111m[39m: Running Test... < 0s >
+[1A[?25l[39m[[38;5;111m  <->               [39m][38;5;111m[39m: Running Test... < 0s >
+[1A[?25l[39m[[38;5;111m   <->              [39m][38;5;111m[39m: Running Test... < 0s >
+[1A[?25l[39m[[38;5;111m    <->             [39m][38;5;111m[39m: Running Test... < 0s >
+[1A[?25l[39m[[38;5;111m     <->            [39m][38;5;111m[39m: Running Test... < 0s >
+[1A[?25l[39m[[38;5;111m      <->           [39m][38;5;111m[39m: Running Test... < 0s >
+[1A[?25l[39m[[38;5;111m       <->          [39m][38;5;111m[39m: Running Test... < 0s >
+[1A[?25l[39m[[38;5;111m        <->         [39m][38;5;111m[39m: Running Test... < 0s >
+[1A[?25l[39m[[38;5;111m         <->        [39m][38;5;111m[39m: Running Test... < 1s >
+[1A[?25l[39m[[38;5;111m          <->       [39m][38;5;111m[39m: Running Test... < 1s >
+[1A[?25l[39m[[38;5;111m           <->      [39m][38;5;111m[39m: Running Test... < 1s >
+[1A[?25l[39m[[38;5;111m            <->     [39m][38;5;111m[39m: Running Test... < 1s >
+[1A[?25l[39m[[38;5;111m             <->    [39m][38;5;111m[39m: Running Test... < 1s >
+[1A[?25l[39m[[38;5;111m              <->   [39m][38;5;111m[39m: Running Test... < 1s >
+[1A[?25l[39m[[38;5;111m               <->  [39m][38;5;111m[39m: Running Test... < 1s >
+[1A[?25l[39m[[38;5;111m                <-> [39m][38;5;111m[39m: Running Test... < 1s >
+[1A[?25l[39m[[38;5;111m                 <->[39m][38;5;111m[39m: Running Test... < 1s >
+[1A[?25l[39m[[38;5;111m                <-> [39m][38;5;111m[39m: Running Test... < 1s >
+[1A[?25l[39m[[38;5;111m               <->  [39m][38;5;111m[39m: Running Test... < 2s >
+[1A[?25l[39m[[38;5;111m              <->   [39m][38;5;111m[39m: Running Test... < 2s >
+[1A[?25l[39m[[38;5;111m             <->    [39m][38;5;111m[39m: Running Test... < 2s >
+[1A[?25l[39m[[38;5;111m            <->     [39m][38;5;111m[39m: Running Test... < 2s >
+[1A[?25l[39m[[38;5;111m           <->      [39m][38;5;111m[39m: Running Test... < 2s >
+[1A[?25l[39m[[38;5;111m          <->       [39m][38;5;111m[39m: Running Test... < 2s >
+[1A[?25l[39m[[38;5;111m         <->        [39m][38;5;111m[39m: Running Test... < 2s >
+[1A[?25l[39m[[38;5;111m        <->         [39m][38;5;111m[39m: Running Test... < 2s >
+[1A[?25l[39m[[38;5;111m       <->          [39m][38;5;111m[39m: Running Test... < 2s >
+[1A[?25l[39m[[38;5;111m      <->           [39m][38;5;111m[39m: Running Test... < 2s >
+[1A[?25l[39m[[38;5;111m     <->            [39m][38;5;111m[39m: Running Test... < 3s >
+[1A[?25l[39m[[38;5;111m    <->             [39m][38;5;111m[39m: Running Test... < 3s >
+[1A[?25l[39m[[38;5;111m   <->              [39m][38;5;111m[39m: Running Test... < 3s >
+[1A[?25l[39m[[38;5;111m  <->               [39m][38;5;111m[39m: Running Test... < 3s >
+[1A[?25l[39m[[38;5;111m <->                [39m][38;5;111m[39m: Running Test... < 3s >
+[1A[?25l[39m[[38;5;111m<->                 [39m][38;5;111m[39m: Running Test... < 3s >
+[1A[?25l[39m[[38;5;111m <->                [39m][38;5;111m[39m: Running Test... < 3s >
+[1A[?25l[39m[[38;5;111m  <->               [39m][38;5;111m[39m: Running Test... < 3s >
+[1A[?25l[39m[[38;5;111m   <->              [39m][38;5;111m[39m: Running Test... < 3s >
+[1A[?25l[39m[[38;5;111m    <->             [39m][38;5;111m[39m: Running Test... < 3s >
+[1A[?25l[39m[[38;5;111m     <->            [39m][38;5;111m[39m: Running Test... < 4s >
+[1A[?25l[39m[[38;5;111m      <->           [39m][38;5;111m[39m: Running Test... < 4s >
+[1A[?25l[39m[[38;5;111m       <->          [39m][38;5;111m[39m: Running Test... < 4s >
+[1A[?25l[39m[[38;5;111m        <->         [39m][38;5;111m[39m: Running Test... < 4s >
+[1A[?25l[39m[[38;5;111m         <->        [39m][38;5;111m[39m: Running Test... < 4s >
+[1A[?25l[39m[[38;5;111m          <->       [39m][38;5;111m[39m: Running Test... < 4s >
+[1A[?25l[39m[[38;5;111m           <->      [39m][38;5;111m[39m: Running Test... < 4s >
+[1A[?25l[39m[[38;5;111m            <->     [39m][38;5;111m[39m: Running Test... < 4s >
+[1A[?25l[39m[[38;5;111m             <->    [39m][38;5;111m[39m: Running Test... < 4s >
+[1A[?25l[39m[[38;5;111m              <->   [39m][38;5;111m[39m: Running Test... < 4s >
+[1A[?25l[39m[[38;5;111m               <->  [39m][38;5;111m[39m: Running Test... < 5s >
+[1A[?25l[39m[[38;5;111m                <-> [39m][38;5;111m[39m: Running Test... < 5s >
+[1A[?25l[39m[[38;5;111m                 <->[39m][38;5;111m[39m: Running Test... < 5s >
+[1A[?25l[39m[[38;5;111m                <-> [39m][38;5;111m[39m: Running Test... < 5s >
+[1A[?25l[39m[[38;5;111m               <->  [39m][38;5;111m[39m: Running Test... < 5s >
+[1A[?25l[39m[[38;5;111m              <->   [39m][38;5;111m[39m: Running Test... < 5s >
+[1A[?25l[39m[[38;5;111m             <->    [39m][38;5;111m[39m: Running Test... < 5s >
+[1A[?25l[39m[[38;5;111m            <->     [39m][38;5;111m[39m: Running Test... < 5s >
+[1A[?25l[39m[[38;5;111m           <->      [39m][38;5;111m[39m: Running Test... < 5s >
+[1A[?25l[39m[[38;5;111m          <->       [39m][38;5;111m[39m: Running Test... < 5s >
+[1A[?25l[39m[[38;5;111m         <->        [39m][38;5;111m[39m: Running Test... < 6s >
+[1A[?25l[39m[[38;5;111m        <->         [39m][38;5;111m[39m: Running Test... < 6s >
+[1A[?25l[39m[[38;5;111m       <->          [39m][38;5;111m[39m: Running Test... < 6s >
+[1A[?25l[39m[[38;5;111m      <->           [39m][38;5;111m[39m: Running Test... < 6s >
+[1A[?25l[39m[[38;5;111m     <->            [39m][38;5;111m[39m: Running Test... < 6s >
+[1A[?25l[39m[[38;5;111m    <->             [39m][38;5;111m[39m: Running Test... < 6s >
+[1A[?25l[39m[[38;5;111m   <->              [39m][38;5;111m[39m: Running Test... < 6s >
+[1A[?25l[39m[[38;5;111m  <->               [39m][38;5;111m[39m: Running Test... < 6s >
+[1A[?25l[39m[[38;5;111m <->                [39m][38;5;111m[39m: Running Test... < 6s >
+[1A[?25l[39m[[38;5;111m<->                 [39m][38;5;111m[39m: Running Test... < 6s >
+[1A[?25l[39m[[38;5;111m <->                [39m][38;5;111m[39m: Running Test... < 7s >
+[1A[?25l[39m[[38;5;111m  <->               [39m][38;5;111m[39m: Running Test... < 7s >
+[1A[?25l[39m[[38;5;111m   <->              [39m][38;5;111m[39m: Running Test... < 7s >
+[1A[?25l[39m[[38;5;111m    <->             [39m][38;5;111m[39m: Running Test... < 7s >
+[1A[?25l[39m[[38;5;111m     <->            [39m][38;5;111m[39m: Running Test... < 7s >
+[1A[?25l[39m[[38;5;111m      <->           [39m][38;5;111m[39m: Running Test... < 7s >
+[1A[?25l[39m[[38;5;111m       <->          [39m][38;5;111m[39m: Running Test... < 7s >
+[1A[?25l[39m[[38;5;111m        <->         [39m][38;5;111m[39m: Running Test... < 7s >
+[1A[?25l[39m[[38;5;111m         <->        [39m][38;5;111m[39m: Running Test... < 7s >
+[1A[?25l[39m[[38;5;111m          <->       [39m][38;5;111m[39m: Running Test... < 7s >
+[1A[?25l[39m[[38;5;111m           <->      [39m][38;5;111m[39m: Running Test... < 8s >
+[1A[?25l[39m[[38;5;111m            <->     [39m][38;5;111m[39m: Running Test... < 8s >
+[1A[?25l[39m[[38;5;111m             <->    [39m][38;5;111m[39m: Running Test... < 8s >
+[1A[?25l[39m[[38;5;111m              <->   [39m][38;5;111m[39m: Running Test... < 8s >
+[1A[?25l[39m[[38;5;111m               <->  [39m][38;5;111m[39m: Running Test... < 8s >
+[1A[?25l[39m[[38;5;111m                <-> [39m][38;5;111m[39m: Running Test... < 8s >
+[1A[?25l[39m[[38;5;111m                 <->[39m][38;5;111m[39m: Running Test... < 8s >
+[1A[?25l[39m[[38;5;111m                <-> [39m][38;5;111m[39m: Running Test... < 8s >
+[1A[?25l[39m[[38;5;111m               <->  [39m][38;5;111m[39m: Running Test... < 8s >
+[1A[?25l[39m[[38;5;111m              <->   [39m][38;5;111m[39m: Running Test... < 8s >
+[1A[?25l[39m[[38;5;111m             <->    [39m][38;5;111m[39m: Running Test... < 9s >
+[1A[?25l[39m[[38;5;111m            <->     [39m][38;5;111m[39m: Running Test... < 9s >
+[1A[?25l[39m[[38;5;111m           <->      [39m][38;5;111m[39m: Running Test... < 9s >
+[1A[?25l[39m[[38;5;111m          <->       [39m][38;5;111m[39m: Running Test... < 9s >
+[1A[?25l[39m[[38;5;111m         <->        [39m][38;5;111m[39m: Running Test... < 9s >
+[1A[?25l[39m[[38;5;111m        <->         [39m][38;5;111m[39m: Running Test... < 9s >
+[1A[?25l[39m[[38;5;111m       <->          [39m][38;5;111m[39m: Running Test... < 9s >
+[1A[?25l[39m[[38;5;111m      <->           [39m][38;5;111m[39m: Running Test... < 9s >
+[1A[?25l[39m[[38;5;111m     <->            [39m][38;5;111m[39m: Running Test... < 9s >
+[1A[?25l[39m[[38;5;111m    <->             [39m][38;5;111m[39m: Running Test... < 9s >
+[1A[?25l[39m[[38;5;111m   <->              [39m][38;5;111m[39m: Running Test... < 10s >
+[1A[?25l[39m[[38;5;111m  <->               [39m][38;5;111m[39m: Running Test... < 10s >
+[1A[?25l[39m[[38;5;111m <->                [39m][38;5;111m[39m: Running Test... < 10s >
+[1A[?25l[39m[[38;5;111m<->                 [39m][38;5;111m[39m: Running Test... < 10s >
+[1A[?25l[39m[[38;5;111m <->                [39m][38;5;111m[39m: Running Test... < 10s >
+[1A[?25l[39m[[38;5;111m  <->               [39m][38;5;111m[39m: Running Test... < 10s >
+[1A[?25l[39m[[38;5;111m   <->              [39m][38;5;111m[39m: Running Test... < 10s >
+[1A[?25l[39m[[38;5;111m    <->             [39m][38;5;111m[39m: Running Test... < 10s >
+[1A[?25l[39m[[38;5;111m     <->            [39m][38;5;111m[39m: Running Test... < 10s >
+[1A[?25l[39m[[38;5;111m      <->           [39m][38;5;111m[39m: Running Test... < 10s >
+[1A[?25l[39m[[38;5;111m       <->          [39m][38;5;111m[39m: Running Test... < 11s >
+[1A[?25l[39m[[38;5;111m        <->         [39m][38;5;111m[39m: Running Test... < 11s >
+[1A[?25l[39m[[38;5;111m         <->        [39m][38;5;111m[39m: Running Test... < 11s >
+[1A[?25l[39m[[38;5;111m          <->       [39m][38;5;111m[39m: Running Test... < 11s >
+[1A[?25l[39m[[38;5;111m           <->      [39m][38;5;111m[39m: Running Test... < 11s >
+[1A[?25l[39m[[38;5;111m            <->     [39m][38;5;111m[39m: Running Test... < 11s >
+[1A[?25l[39m[[38;5;111m             <->    [39m][38;5;111m[39m: Running Test... < 11s >
+[1A[?25l[39m[[38;5;111m              <->   [39m][38;5;111m[39m: Running Test... < 11s >
+[1A[?25l[39m[[38;5;111m               <->  [39m][38;5;111m[39m: Running Test... < 11s >
+[1A[?25l[39m[[38;5;111m                <-> [39m][38;5;111m[39m: Running Test... < 11s >
+[1A[?25l[39m[[38;5;111m                 <->[39m][38;5;111m[39m: Running Test... < 12s >
+[1A[?25l[39m[[38;5;111m                <-> [39m][38;5;111m[39m: Running Test... < 12s >
+[1A[?25l[39m[[38;5;111m               <->  [39m][38;5;111m[39m: Running Test... < 12s >
+[1A[?25l[39m[[38;5;111m              <->   [39m][38;5;111m[39m: Running Test... < 12s >
+[1A[?25l[39m[[38;5;111m             <->    [39m][38;5;111m[39m: Running Test... < 12s >
+[1A[?25l[39m[[38;5;111m            <->     [39m][38;5;111m[39m: Running Test... < 12s >
+[1A[?25l[39m[[38;5;111m           <->      [39m][38;5;111m[39m: Running Test... < 12s >
+[1A[?25l[39m[[38;5;111m          <->       [39m][38;5;111m[39m: Running Test... < 12s >
+[1A[?25l[39m[[38;5;111m         <->        [39m][38;5;111m[39m: Running Test... < 12s >
+[1A[?25l[39m[[38;5;111m        <->         [39m][38;5;111m[39m: Running Test... < 12s >
+[1A[?25l[39m[[38;5;111m       <->          [39m][38;5;111m[39m: Running Test... < 13s >
+[1A[?25l[39m[[38;5;111m      <->           [39m][38;5;111m[39m: Running Test... < 13s >
+[1A[?25l[39m[[38;5;111m     <->            [39m][38;5;111m[39m: Running Test... < 13s >
+[1A[?25l[39m[[38;5;111m    <->             [39m][38;5;111m[39m: Running Test... < 13s >
+[1A[?25l[39m[[38;5;111m   <->              [39m][38;5;111m[39m: Running Test... < 13s >
+[1A[?25l[39m[[38;5;111m  <->               [39m][38;5;111m[39m: Running Test... < 13s >
+[1A[?25l[39m[[38;5;111m <->                [39m][38;5;111m[39m: Running Test... < 13s >
+[1A[?25l[39m[[38;5;111m<->                 [39m][38;5;111m[39m: Running Test... < 13s >
+[1A[?25l[39m[[38;5;111m <->                [39m][38;5;111m[39m: Running Test... < 13s >
+[1A[?25l[39m[[38;5;111m  <->               [39m][38;5;111m[39m: Running Test... < 13s >
+[1A[?25l[39m[[38;5;111m   <->              [39m][38;5;111m[39m: Running Test... < 14s >
+[1A[?25l[39m[[38;5;111m    <->             [39m][38;5;111m[39m: Running Test... < 14s >
+[1A[?25l[39m[[38;5;111m     <->            [39m][38;5;111m[39m: Running Test... < 14s >
+[1A[?25l[39m[[38;5;111m      <->           [39m][38;5;111m[39m: Running Test... < 14s >
+[1A[?25l[39m[[38;5;111m       <->          [39m][38;5;111m[39m: Running Test... < 14s >
+[1A[?25l[39m[[38;5;111m        <->         [39m][38;5;111m[39m: Running Test... < 14s >
+[1A[?25l[39m[[38;5;111m         <->        [39m][38;5;111m[39m: Running Test... < 14s >
+[1A[?25l[39m[[38;5;111m          <->       [39m][38;5;111m[39m: Running Test... < 14s >
+[1A[?25l[39m[[38;5;111m           <->      [39m][38;5;111m[39m: Running Test... < 14s >
+[1A[?25l[39m[[38;5;111m            <->     [39m][38;5;111m[39m: Running Test... < 14s >
+[1A[?25l[39m[[38;5;111m             <->    [39m][38;5;111m[39m: Running Test... < 15s >
+[1A[?25l[39m[[38;5;111m              <->   [39m][38;5;111m[39m: Running Test... < 15s >
+[1A[?25l[39m[[38;5;111m               <->  [39m][38;5;111m[39m: Running Test... < 15s >
+[1A[?25l[39m[[38;5;111m                <-> [39m][38;5;111m[39m: Running Test... < 15s >
+[1A[?25l[39m[[38;5;111m                 <->[39m][38;5;111m[39m: Running Test... < 15s >
+[1A[?25l[39m[[38;5;111m                <-> [39m][38;5;111m[39m: Running Test... < 15s >
+[1A[?25l[39m[[38;5;111m               <->  [39m][38;5;111m[39m: Running Test... < 15s >
+[1A[?25l[39m[[38;5;111m              <->   [39m][38;5;111m[39m: Running Test... < 15s >
+[1A[?25l[39m[[38;5;111m             <->    [39m][38;5;111m[39m: Running Test... < 15s >
+[1A[?25l[39m[[38;5;111m            <->     [39m][38;5;111m[39m: Running Test... < 15s >
+[1A[?25l[39m[[38;5;111m           <->      [39m][38;5;111m[39m: Running Test... < 16s >
+[1A[?25l[39m[[38;5;111m          <->       [39m][38;5;111m[39m: Running Test... < 16s >
+[1A[?25l[39m[[38;5;111m         <->        [39m][38;5;111m[39m: Running Test... < 16s >
+[1A[?25l[39m[[38;5;111m        <->         [39m][38;5;111m[39m: Running Test... < 16s >
+[1A[?25l[39m[[38;5;111m       <->          [39m][38;5;111m[39m: Running Test... < 16s >
+[1A[?25l[39m[[38;5;111m      <->           [39m][38;5;111m[39m: Running Test... < 16s >
+[1A[?25l[39m[[38;5;111m     <->            [39m][38;5;111m[39m: Running Test... < 16s >
+[1A[?25l[39m[[38;5;111m    <->             [39m][38;5;111m[39m: Running Test... < 16s >
+[1A[?25l[39m[[38;5;111m   <->              [39m][38;5;111m[39m: Running Test... < 16s >
+[1A[?25l[39m[[38;5;111m  <->               [39m][38;5;111m[39m: Running Test... < 16s >
+[1A[?25l[39m[[38;5;111m <->                [39m][38;5;111m[39m: Running Test... < 17s >
+[1A[?25l[39m[[38;5;111m<->                 [39m][38;5;111m[39m: Running Test... < 17s >
+[1A[?25l[39m[[38;5;111m <->                [39m][38;5;111m[39m: Running Test... < 17s >
+[1A[?25l[39m[[38;5;111m  <->               [39m][38;5;111m[39m: Running Test... < 17s >
+[1A[?25l[39m[[38;5;111m   <->              [39m][38;5;111m[39m: Running Test... < 17s >
+[1A[?25l[39m[[38;5;111m    <->             [39m][38;5;111m[39m: Running Test... < 17s >
+[1A[?25l[39m[[38;5;111m     <->            [39m][38;5;111m[39m: Running Test... < 17s >
+[1A                                                                                
+[1A[?25h    Details               : Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 9744.0 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 4242.0 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 9434.5 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 4124.4 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 9329.6 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 5805.9 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 9357.9 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 6451.8 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 9674.2 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 5321.2 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 10147.1 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 6388.3 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 9829.7 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 4667.7 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 9569.7 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 6172.7 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 9351.8 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 4432.1 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 10210.6 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 4457.2 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 9140.2 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 4680.0 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 10090.3 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 7431.4 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 10284.4 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 6588.9 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 10071.8 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 6314.5 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 9561.7 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 7046.2 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 8850.6 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 10310.3 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 8469.4 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 7374.7 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 8600.6 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 7315.4 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 8558.7 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 6774.2 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 8692.6 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 6706.1 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 9155.3 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 5381.0 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 9239.9 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 6236.9 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 9542.6 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 4683.5 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 10558.7 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 5751.6 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 9783.3 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 4940.6 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 9351.9 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 4633.0 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 9332.3 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 4238.1 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 9651.1 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 4456.6 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 9617.6 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 4383.1 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 9943.7 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 4643.9 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 9457.7 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 5185.6 MB/s
+                            Buffer size - '16 MB'
+                            Host -> PCIe -> FPGA write bandwidth = 9684.9 MB/s
+                            Host <- PCIe <- FPGA read bandwidth = 3508.3 MB/s
+    Test Status           : [PASSED]
+-------------------------------------------------------------------------------
+Validation completed

@@ -1,0 +1,89 @@
+{
+ "args": {
+  "bdf": "0000:41:00.1",
+  "xclbin": "<WS>/opt_kernel/opt_kernel/quantum_fpga_kernel_complex128.xclbin",
+  "ns": "20,24",
+  "families": "ghz,rqc,vqe",
+  "loop": 30.0,
+  "out": "<WS>/results/raw/phase5/v07_energy.json"
+ },
+ "records": [
+  {
+   "kind": "idle_loaded_xclbin",
+   "board_w": 26.77469692985927,
+   "window_s": 10
+  },
+  {
+   "platform": "fpga_v07",
+   "family": "ghz",
+   "n": 20,
+   "runs": 77,
+   "loop_s": 30.192533999681473,
+   "per_run_s": 0.3921108311646945,
+   "kernel_frac": 0.8798775841829064,
+   "board_w": 27.21667781225187,
+   "energy_per_run_j": 10.671954158503778,
+   "readings": 17
+  },
+  {
+   "platform": "fpga_v07",
+   "family": "ghz",
+   "n": 24,
+   "runs": 5,
+   "loop_s": 36.61118112690747,
+   "per_run_s": 7.322236225381493,
+   "kernel_frac": 0.8921992997104694,
+   "board_w": 26.95784215529171,
+   "energy_per_run_j": 197.3916883875933,
+   "readings": 6
+  },
+  {
+   "platform": "fpga_v07",
+   "family": "rqc",
+   "n": 20,
+   "runs": 9,
+   "loop_s": 32.14236042276025,
+   "per_run_s": 3.571373380306694,
+   "kernel_frac": 0.985224515638747,
+   "board_w": 26.749503999999995,
+   "energy_per_run_j": 95.53246652200741,
+   "readings": 0
+  },
+  {
+   "platform": "fpga_v07",
+   "family": "rqc",
+   "n": 24,
+   "runs": 1,
+   "loop_s": 68.66485163755715,
+   "per_run_s": 68.66485163755715,
+   "kernel_frac": 0.986402911019377,
+   "board_w": 27.116973560370333,
+   "energy_per_run_j": 1861.9829663823887,
+   "readings": 1
+  },
+  {
+   "platform": "fpga_v07",
+   "family": "vqe",
+   "n": 20,
+   "runs": 12,
+   "loop_s": 30.467457996681333,
+   "per_run_s": 2.5389548330567777,
+   "kernel_frac": 0.9799856343201407,
+   "board_w": 26.816426955697032,
+   "energy_per_run_j": 68.08569682448103,
+   "readings": 2
+  },
+  {
+   "platform": "fpga_v07",
+   "family": "vqe",
+   "n": 24,
+   "runs": 1,
+   "loop_s": 48.95521120354533,
+   "per_run_s": 48.95521120354533,
+   "kernel_frac": 0.981018880999577,
+   "board_w": 26.516488000000003,
+   "energy_per_run_j": 1298.1202704162754,
+   "readings": 0
+  }
+ ]
+}

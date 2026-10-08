@@ -1,0 +1,27 @@
+XRT build version: 2.16.204
+Build hash: fa4c0045003fed0acea4593788dce5ef6d0b66ee
+Build date: 2023-10-11 23:46:00
+Git branch: 2023.2
+PID: 1858470
+UID: 1011
+[Tue Oct  6 04:31:24 2026 GMT]
+HOST: fpga-host
+EXE: <WS>/tmp/bo_copy_probe
+[XRT] WARNING: Reverting to host copy of buffers (failed to launch execution buffer: Invalid argument)
+[XRT] WARNING: Reverting to host copy of buffers (failed to launch execution buffer: Invalid argument)
+[XRT] WARNING: Reverting to host copy of buffers (failed to launch execution buffer: Invalid argument)
+[XRT] WARNING: Reverting to host copy of buffers (failed to launch execution buffer: Invalid argument)
+[XRT] WARNING: Reverting to host copy of buffers (failed to launch execution buffer: Invalid argument)
+{"MB": 16, "copy_best_s": 0.005753, "copy_gbps": 2.92, "correct": true}
+[XRT] WARNING: Reverting to host copy of buffers (failed to launch execution buffer: Invalid argument)
+[XRT] WARNING: Reverting to host copy of buffers (failed to launch execution buffer: Invalid argument)
+[XRT] WARNING: Reverting to host copy of buffers (failed to launch execution buffer: Invalid argument)
+[XRT] WARNING: Reverting to host copy of buffers (failed to launch execution buffer: Invalid argument)
+[XRT] WARNING: Reverting to host copy of buffers (failed to launch execution buffer: Invalid argument)
+{"MB": 64, "copy_best_s": 0.021050, "copy_gbps": 3.19, "correct": true}
+[XRT] WARNING: Reverting to host copy of buffers (failed to launch execution buffer: Invalid argument)
+[XRT] WARNING: Reverting to host copy of buffers (failed to launch execution buffer: Invalid argument)
+[XRT] WARNING: Reverting to host copy of buffers (failed to launch execution buffer: Invalid argument)
+[XRT] WARNING: Reverting to host copy of buffers (failed to launch execution buffer: Invalid argument)
+[XRT] WARNING: Reverting to host copy of buffers (failed to launch execution buffer: Invalid argument)
+{"MB": 256, "copy_best_s": 0.072882, "copy_gbps": 3.68, "correct": true}

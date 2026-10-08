@@ -1,0 +1,14 @@
+{
+  "BUILD_VERSION" : "2.16.204",
+  "BUILD_VERSION_DATE" : "Wed, 11 Oct 2023 23:46:00 -0700",
+  "BUILD_BRANCH" : "2023.2",
+  "VERSION_HASH" : "fa4c0045003fed0acea4593788dce5ef6d0b66ee",
+  "VERSION_HASH_DATE" : "Wed, 11 Oct 2023 20:43:32 -0700"
+}
+
+  XSA Name               : xilinx_u55c_gen3x16_xdma_base_3 
+  Logic UUID             : 97088961-FEAE-DA91-52A2-1D9DFD63CCEF 
+  XSA Name               : xilinx_u55c_gen3x16_xdma_base_3 
+  Logic UUID             : 97088961-FEAE-DA91-52A2-1D9DFD63CCEF 
+xilinx_u55c_gen3x16_xdma_3_202210_1
+2023.2

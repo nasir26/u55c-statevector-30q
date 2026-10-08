@@ -1,0 +1,4559 @@
+{
+ "host": "fpga-host",
+ "env": {
+  "OMP_NUM_THREADS": null,
+  "OPENBLAS_NUM_THREADS": null,
+  "MKL_NUM_THREADS": null,
+  "OMP_PROC_BIND": "spread",
+  "OMP_PLACES": "cores"
+ },
+ "args": {
+  "backend": "aer",
+  "families": "ghz,qft,rqc,vqe",
+  "ns": "4,8,12,16,20,22,24",
+  "reps": 9,
+  "threads": 128,
+  "precision": "double",
+  "fusion": 0,
+  "check_max_n": 24,
+  "out": "<WS>/results/raw/phase5/cpu_aer_128t_double_f0_extra_small.json"
+ },
+ "records": [
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 4,
+   "rep": 0,
+   "circuit": "ghz_4",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.0632277149707079,
+   "T_run_s": 0.0013701245188713074,
+   "aer_time_taken_s": 0.000174311,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 4,
+   "rep": 1,
+   "circuit": "ghz_4",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.05779566057026386,
+   "T_run_s": 0.0005129985511302948,
+   "aer_time_taken_s": 6.758e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 4,
+   "rep": 2,
+   "circuit": "ghz_4",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.05655011348426342,
+   "T_run_s": 0.0004197601228952408,
+   "aer_time_taken_s": 5.815e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 4,
+   "rep": 3,
+   "circuit": "ghz_4",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.05710092559456825,
+   "T_run_s": 0.0004530996084213257,
+   "aer_time_taken_s": 5.817e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 4,
+   "rep": 4,
+   "circuit": "ghz_4",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.05709191597998142,
+   "T_run_s": 0.00041195936501026154,
+   "aer_time_taken_s": 5.841e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 4,
+   "rep": 5,
+   "circuit": "ghz_4",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.05723882466554642,
+   "T_run_s": 0.00043963268399238586,
+   "aer_time_taken_s": 5.843e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 4,
+   "rep": 6,
+   "circuit": "ghz_4",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.057640815153717995,
+   "T_run_s": 0.00044780224561691284,
+   "aer_time_taken_s": 5.9351e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 4,
+   "rep": 7,
+   "circuit": "ghz_4",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.0565729346126318,
+   "T_run_s": 0.0004590321332216263,
+   "aer_time_taken_s": 5.811e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 4,
+   "rep": 8,
+   "circuit": "ghz_4",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.05654854513704777,
+   "T_run_s": 0.0004151295870542526,
+   "aer_time_taken_s": 5.93e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 8,
+   "rep": 0,
+   "circuit": "ghz_8",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.05656425282359123,
+   "T_run_s": 0.0005205031484365463,
+   "aer_time_taken_s": 7.945e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 8,
+   "rep": 1,
+   "circuit": "ghz_8",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.05716012604534626,
+   "T_run_s": 0.0005102809518575668,
+   "aer_time_taken_s": 6.8081e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 8,
+   "rep": 2,
+   "circuit": "ghz_8",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.056826744228601456,
+   "T_run_s": 0.00046831928193569183,
+   "aer_time_taken_s": 6.845e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 8,
+   "rep": 3,
+   "circuit": "ghz_8",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.0569738931953907,
+   "T_run_s": 0.0004965029656887054,
+   "aer_time_taken_s": 6.85e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 8,
+   "rep": 4,
+   "circuit": "ghz_8",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.058447420597076416,
+   "T_run_s": 0.000499160960316658,
+   "aer_time_taken_s": 6.791e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 8,
+   "rep": 5,
+   "circuit": "ghz_8",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.057375457137823105,
+   "T_run_s": 0.0005086716264486313,
+   "aer_time_taken_s": 6.849e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 8,
+   "rep": 6,
+   "circuit": "ghz_8",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.056874556466937065,
+   "T_run_s": 0.0005005598068237305,
+   "aer_time_taken_s": 7.085e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 8,
+   "rep": 7,
+   "circuit": "ghz_8",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.05679191276431084,
+   "T_run_s": 0.00047205202281475067,
+   "aer_time_taken_s": 6.726e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 8,
+   "rep": 8,
+   "circuit": "ghz_8",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.0569367241114378,
+   "T_run_s": 0.0004930328577756882,
+   "aer_time_taken_s": 6.79e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 12,
+   "rep": 0,
+   "circuit": "ghz_12",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.05687282420694828,
+   "T_run_s": 0.0007619224488735199,
+   "aer_time_taken_s": 0.000272741,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 12,
+   "rep": 1,
+   "circuit": "ghz_12",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.0568968839943409,
+   "T_run_s": 0.0006981119513511658,
+   "aer_time_taken_s": 0.00023064,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 12,
+   "rep": 2,
+   "circuit": "ghz_12",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.05645206198096275,
+   "T_run_s": 0.0007376745343208313,
+   "aer_time_taken_s": 0.000230021,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 12,
+   "rep": 3,
+   "circuit": "ghz_12",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.05704052560031414,
+   "T_run_s": 0.0007049813866615295,
+   "aer_time_taken_s": 0.000229681,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 12,
+   "rep": 4,
+   "circuit": "ghz_12",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.057245105504989624,
+   "T_run_s": 0.0007153619080781937,
+   "aer_time_taken_s": 0.00022974,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 12,
+   "rep": 5,
+   "circuit": "ghz_12",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.05688725225627422,
+   "T_run_s": 0.0007600933313369751,
+   "aer_time_taken_s": 0.000230101,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 12,
+   "rep": 6,
+   "circuit": "ghz_12",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.05661270208656788,
+   "T_run_s": 0.0007110107690095901,
+   "aer_time_taken_s": 0.000229841,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 12,
+   "rep": 7,
+   "circuit": "ghz_12",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.05637630075216293,
+   "T_run_s": 0.0007101334631443024,
+   "aer_time_taken_s": 0.000229581,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 12,
+   "rep": 8,
+   "circuit": "ghz_12",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.05639784224331379,
+   "T_run_s": 0.0007055606693029404,
+   "aer_time_taken_s": 0.000235071,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 16,
+   "rep": 0,
+   "circuit": "ghz_16",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.05694681592285633,
+   "T_run_s": 0.010414911434054375,
+   "aer_time_taken_s": 0.009832162,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 16,
+   "rep": 1,
+   "circuit": "ghz_16",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.060426484793424606,
+   "T_run_s": 0.002081695944070816,
+   "aer_time_taken_s": 0.001434835,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 16,
+   "rep": 2,
+   "circuit": "ghz_16",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.08031683042645454,
+   "T_run_s": 0.0023743268102407455,
+   "aer_time_taken_s": 0.001661316,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 16,
+   "rep": 3,
+   "circuit": "ghz_16",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.07842965237796307,
+   "T_run_s": 0.002330288290977478,
+   "aer_time_taken_s": 0.001640375,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 16,
+   "rep": 4,
+   "circuit": "ghz_16",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.07662507705390453,
+   "T_run_s": 0.0023232996463775635,
+   "aer_time_taken_s": 0.001639825,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 16,
+   "rep": 5,
+   "circuit": "ghz_16",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.07675461657345295,
+   "T_run_s": 0.0023961495608091354,
+   "aer_time_taken_s": 0.001651256,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 16,
+   "rep": 6,
+   "circuit": "ghz_16",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.07669715955853462,
+   "T_run_s": 0.0033359602093696594,
+   "aer_time_taken_s": 0.002601948,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 16,
+   "rep": 7,
+   "circuit": "ghz_16",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.07711323909461498,
+   "T_run_s": 0.003083379939198494,
+   "aer_time_taken_s": 0.002360618,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 16,
+   "rep": 8,
+   "circuit": "ghz_16",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.07730120047926903,
+   "T_run_s": 0.0023627877235412598,
+   "aer_time_taken_s": 0.001671356,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 20,
+   "rep": 0,
+   "circuit": "ghz_20",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.08015567064285278,
+   "T_run_s": 0.0063170623034238815,
+   "aer_time_taken_s": 0.005485518,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 20,
+   "rep": 1,
+   "circuit": "ghz_20",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.08131856098771095,
+   "T_run_s": 0.006716642528772354,
+   "aer_time_taken_s": 0.005594678,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 20,
+   "rep": 2,
+   "circuit": "ghz_20",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.07849163375794888,
+   "T_run_s": 0.003826480358839035,
+   "aer_time_taken_s": 0.002990279,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 20,
+   "rep": 3,
+   "circuit": "ghz_20",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.0785855334252119,
+   "T_run_s": 0.0037369225174188614,
+   "aer_time_taken_s": 0.002922329,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 20,
+   "rep": 4,
+   "circuit": "ghz_20",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.07841922342777252,
+   "T_run_s": 0.003808222711086273,
+   "aer_time_taken_s": 0.0029672,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 20,
+   "rep": 5,
+   "circuit": "ghz_20",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.07862287200987339,
+   "T_run_s": 0.0037726517766714096,
+   "aer_time_taken_s": 0.00295548,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 20,
+   "rep": 6,
+   "circuit": "ghz_20",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.07834465987980366,
+   "T_run_s": 0.003780154511332512,
+   "aer_time_taken_s": 0.00295444,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 20,
+   "rep": 7,
+   "circuit": "ghz_20",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.07849228382110596,
+   "T_run_s": 0.003758581355214119,
+   "aer_time_taken_s": 0.002927699,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 20,
+   "rep": 8,
+   "circuit": "ghz_20",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.07837391085922718,
+   "T_run_s": 0.0037110522389411926,
+   "aer_time_taken_s": 0.002889049,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 22,
+   "rep": 0,
+   "circuit": "ghz_22",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.07778883911669254,
+   "T_run_s": 0.01627672277390957,
+   "aer_time_taken_s": 0.015378289,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 22,
+   "rep": 1,
+   "circuit": "ghz_22",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.061457905918359756,
+   "T_run_s": 0.013844553381204605,
+   "aer_time_taken_s": 0.013004303,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 22,
+   "rep": 2,
+   "circuit": "ghz_22",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.060249364003539085,
+   "T_run_s": 0.015496799722313881,
+   "aer_time_taken_s": 0.014569507,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 22,
+   "rep": 3,
+   "circuit": "ghz_22",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.060300884768366814,
+   "T_run_s": 0.01383168250322342,
+   "aer_time_taken_s": 0.013038202,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 22,
+   "rep": 4,
+   "circuit": "ghz_22",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.061196139082312584,
+   "T_run_s": 0.01530332863330841,
+   "aer_time_taken_s": 0.014377236,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 22,
+   "rep": 5,
+   "circuit": "ghz_22",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.059834251180291176,
+   "T_run_s": 0.013576371595263481,
+   "aer_time_taken_s": 0.012811481,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 22,
+   "rep": 6,
+   "circuit": "ghz_22",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.059526652097702026,
+   "T_run_s": 0.014835238456726074,
+   "aer_time_taken_s": 0.014074015,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 22,
+   "rep": 7,
+   "circuit": "ghz_22",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.05996636115014553,
+   "T_run_s": 0.013876516371965408,
+   "aer_time_taken_s": 0.013000082,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 22,
+   "rep": 8,
+   "circuit": "ghz_22",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.059555960819125175,
+   "T_run_s": 0.01455705612897873,
+   "aer_time_taken_s": 0.013680253,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 24,
+   "rep": 0,
+   "circuit": "ghz_24",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.05960073880851269,
+   "T_run_s": 0.04941992834210396,
+   "aer_time_taken_s": 0.048410745,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 24,
+   "rep": 1,
+   "circuit": "ghz_24",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.06053830310702324,
+   "T_run_s": 0.04931104741990566,
+   "aer_time_taken_s": 0.048189314,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 24,
+   "rep": 2,
+   "circuit": "ghz_24",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.06052483431994915,
+   "T_run_s": 0.04946807771921158,
+   "aer_time_taken_s": 0.048293705,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 24,
+   "rep": 3,
+   "circuit": "ghz_24",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.06079787574708462,
+   "T_run_s": 0.050466179847717285,
+   "aer_time_taken_s": 0.049208367,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 24,
+   "rep": 4,
+   "circuit": "ghz_24",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.06010383367538452,
+   "T_run_s": 0.04965435899794102,
+   "aer_time_taken_s": 0.048539415,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 24,
+   "rep": 5,
+   "circuit": "ghz_24",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.062246840447187424,
+   "T_run_s": 0.04677540063858032,
+   "aer_time_taken_s": 0.045667466,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 24,
+   "rep": 6,
+   "circuit": "ghz_24",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.06081386283040047,
+   "T_run_s": 0.04954833909869194,
+   "aer_time_taken_s": 0.048416995,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 24,
+   "rep": 7,
+   "circuit": "ghz_24",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.05986659973859787,
+   "T_run_s": 0.049258287996053696,
+   "aer_time_taken_s": 0.048155584,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "ghz",
+   "n": 24,
+   "rep": 8,
+   "circuit": "ghz_24",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.06006269156932831,
+   "T_run_s": 0.05028280057013035,
+   "aer_time_taken_s": 0.049114017,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 4,
+   "rep": 0,
+   "circuit": "qft_4",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999993,
+   "T_compile_s": 0.060585733503103256,
+   "T_run_s": 0.0011975429952144623,
+   "aer_time_taken_s": 0.0001245,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 4,
+   "rep": 1,
+   "circuit": "qft_4",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999993,
+   "T_compile_s": 0.059020187705755234,
+   "T_run_s": 0.0009669847786426544,
+   "aer_time_taken_s": 6.9781e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 4,
+   "rep": 2,
+   "circuit": "qft_4",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999993,
+   "T_compile_s": 0.0572398342192173,
+   "T_run_s": 0.0007869601249694824,
+   "aer_time_taken_s": 6.507e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 4,
+   "rep": 3,
+   "circuit": "qft_4",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999993,
+   "T_compile_s": 0.05651848018169403,
+   "T_run_s": 0.0007988028228282928,
+   "aer_time_taken_s": 6.534e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 4,
+   "rep": 4,
+   "circuit": "qft_4",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999993,
+   "T_compile_s": 0.056276507675647736,
+   "T_run_s": 0.0008271932601928711,
+   "aer_time_taken_s": 6.544e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 4,
+   "rep": 5,
+   "circuit": "qft_4",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999993,
+   "T_compile_s": 0.05605572834610939,
+   "T_run_s": 0.0008073523640632629,
+   "aer_time_taken_s": 6.499e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 4,
+   "rep": 6,
+   "circuit": "qft_4",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999993,
+   "T_compile_s": 0.05730310082435608,
+   "T_run_s": 0.0008029229938983917,
+   "aer_time_taken_s": 6.471e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 4,
+   "rep": 7,
+   "circuit": "qft_4",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999993,
+   "T_compile_s": 0.05780637450516224,
+   "T_run_s": 0.0007906835526227951,
+   "aer_time_taken_s": 6.489e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 4,
+   "rep": 8,
+   "circuit": "qft_4",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999993,
+   "T_compile_s": 0.059603337198495865,
+   "T_run_s": 0.000792384147644043,
+   "aer_time_taken_s": 6.505e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 8,
+   "rep": 0,
+   "circuit": "qft_8",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999996,
+   "T_compile_s": 0.05665967985987663,
+   "T_run_s": 0.002079525962471962,
+   "aer_time_taken_s": 0.000139521,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 8,
+   "rep": 1,
+   "circuit": "qft_8",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999996,
+   "T_compile_s": 0.06322651170194149,
+   "T_run_s": 0.0020306967198848724,
+   "aer_time_taken_s": 0.00014333,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 8,
+   "rep": 2,
+   "circuit": "qft_8",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999996,
+   "T_compile_s": 0.06127926707267761,
+   "T_run_s": 0.001997975632548332,
+   "aer_time_taken_s": 0.000120381,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 8,
+   "rep": 3,
+   "circuit": "qft_8",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999996,
+   "T_compile_s": 0.060065120458602905,
+   "T_run_s": 0.002055928111076355,
+   "aer_time_taken_s": 0.000119941,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 8,
+   "rep": 4,
+   "circuit": "qft_8",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999996,
+   "T_compile_s": 0.05593740753829479,
+   "T_run_s": 0.0020386893302202225,
+   "aer_time_taken_s": 0.00012126,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 8,
+   "rep": 5,
+   "circuit": "qft_8",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999996,
+   "T_compile_s": 0.05623814836144447,
+   "T_run_s": 0.0020148679614067078,
+   "aer_time_taken_s": 0.00012078,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 8,
+   "rep": 6,
+   "circuit": "qft_8",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999996,
+   "T_compile_s": 0.056899579241871834,
+   "T_run_s": 0.002095205709338188,
+   "aer_time_taken_s": 0.00012055,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 8,
+   "rep": 7,
+   "circuit": "qft_8",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999996,
+   "T_compile_s": 0.06018436141312122,
+   "T_run_s": 0.0020296871662139893,
+   "aer_time_taken_s": 0.00011751,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 8,
+   "rep": 8,
+   "circuit": "qft_8",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999996,
+   "T_compile_s": 0.05752997472882271,
+   "T_run_s": 0.0020282957702875137,
+   "aer_time_taken_s": 0.00011813,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 12,
+   "rep": 0,
+   "circuit": "qft_12",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.05625448003411293,
+   "T_run_s": 0.005267327651381493,
+   "aer_time_taken_s": 0.001459024,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 12,
+   "rep": 1,
+   "circuit": "qft_12",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.05808132328093052,
+   "T_run_s": 0.005314648151397705,
+   "aer_time_taken_s": 0.001440685,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 12,
+   "rep": 2,
+   "circuit": "qft_12",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.0597287081182003,
+   "T_run_s": 0.005175875499844551,
+   "aer_time_taken_s": 0.001460624,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 12,
+   "rep": 3,
+   "circuit": "qft_12",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.05994710139930248,
+   "T_run_s": 0.005549697205424309,
+   "aer_time_taken_s": 0.001437225,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 12,
+   "rep": 4,
+   "circuit": "qft_12",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.05671052075922489,
+   "T_run_s": 0.005368387326598167,
+   "aer_time_taken_s": 0.001466644,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 12,
+   "rep": 5,
+   "circuit": "qft_12",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.056690750643610954,
+   "T_run_s": 0.005647378042340279,
+   "aer_time_taken_s": 0.001432685,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 12,
+   "rep": 6,
+   "circuit": "qft_12",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.05661706067621708,
+   "T_run_s": 0.005257684737443924,
+   "aer_time_taken_s": 0.001429185,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 12,
+   "rep": 7,
+   "circuit": "qft_12",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.06162544526159763,
+   "T_run_s": 0.005273595452308655,
+   "aer_time_taken_s": 0.001449974,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 12,
+   "rep": 8,
+   "circuit": "qft_12",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.05656803026795387,
+   "T_run_s": 0.005249368026852608,
+   "aer_time_taken_s": 0.001429924,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 16,
+   "rep": 0,
+   "circuit": "qft_16",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.05709255114197731,
+   "T_run_s": 0.014513028785586357,
+   "aer_time_taken_s": 0.008175636,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 16,
+   "rep": 1,
+   "circuit": "qft_16",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.05828498676419258,
+   "T_run_s": 0.017863404005765915,
+   "aer_time_taken_s": 0.010969354,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 16,
+   "rep": 2,
+   "circuit": "qft_16",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.07674510031938553,
+   "T_run_s": 0.021249348297715187,
+   "aer_time_taken_s": 0.012393009,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 16,
+   "rep": 3,
+   "circuit": "qft_16",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.0790096614509821,
+   "T_run_s": 0.020537976175546646,
+   "aer_time_taken_s": 0.011721877,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 16,
+   "rep": 4,
+   "circuit": "qft_16",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.07683839276432991,
+   "T_run_s": 0.020320776849985123,
+   "aer_time_taken_s": 0.011463557,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 16,
+   "rep": 5,
+   "circuit": "qft_16",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.07658974267542362,
+   "T_run_s": 0.020292844623327255,
+   "aer_time_taken_s": 0.011432857,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 16,
+   "rep": 6,
+   "circuit": "qft_16",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.07736939378082752,
+   "T_run_s": 0.021222155541181564,
+   "aer_time_taken_s": 0.012343399,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 16,
+   "rep": 7,
+   "circuit": "qft_16",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.0771950539201498,
+   "T_run_s": 0.020696744322776794,
+   "aer_time_taken_s": 0.011799907,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 16,
+   "rep": 8,
+   "circuit": "qft_16",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.0772202555090189,
+   "T_run_s": 0.020502304658293724,
+   "aer_time_taken_s": 0.011485956,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 20,
+   "rep": 0,
+   "circuit": "qft_20",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.07779936864972115,
+   "T_run_s": 0.038498079404234886,
+   "aer_time_taken_s": 0.025119179,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 20,
+   "rep": 1,
+   "circuit": "qft_20",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.06301791593432426,
+   "T_run_s": 0.03163005784153938,
+   "aer_time_taken_s": 0.020663035,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 20,
+   "rep": 2,
+   "circuit": "qft_20",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.06379441916942596,
+   "T_run_s": 0.027817774564027786,
+   "aer_time_taken_s": 0.016970293,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 20,
+   "rep": 3,
+   "circuit": "qft_20",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.0673264879733324,
+   "T_run_s": 0.029151849448680878,
+   "aer_time_taken_s": 0.018480797,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 20,
+   "rep": 4,
+   "circuit": "qft_20",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.06313646584749222,
+   "T_run_s": 0.027553515508770943,
+   "aer_time_taken_s": 0.017235753,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 20,
+   "rep": 5,
+   "circuit": "qft_20",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.07024681568145752,
+   "T_run_s": 0.03097824566066265,
+   "aer_time_taken_s": 0.020278293,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 20,
+   "rep": 6,
+   "circuit": "qft_20",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.061979660764336586,
+   "T_run_s": 0.0325414314866066,
+   "aer_time_taken_s": 0.021758378,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 20,
+   "rep": 7,
+   "circuit": "qft_20",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.06182285211980343,
+   "T_run_s": 0.02785729430615902,
+   "aer_time_taken_s": 0.016957023,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 20,
+   "rep": 8,
+   "circuit": "qft_20",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999998,
+   "T_compile_s": 0.06007954850792885,
+   "T_run_s": 0.03203258849680424,
+   "aer_time_taken_s": 0.017883886,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 22,
+   "rep": 0,
+   "circuit": "qft_22",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.06277457252144814,
+   "T_run_s": 0.05307002365589142,
+   "aer_time_taken_s": 0.040896287,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 22,
+   "rep": 1,
+   "circuit": "qft_22",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.060425348579883575,
+   "T_run_s": 0.0499737523496151,
+   "aer_time_taken_s": 0.036885095,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 22,
+   "rep": 2,
+   "circuit": "qft_22",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.05961766466498375,
+   "T_run_s": 0.0540488064289093,
+   "aer_time_taken_s": 0.041073387,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 22,
+   "rep": 3,
+   "circuit": "qft_22",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.060568928718566895,
+   "T_run_s": 0.05285083130002022,
+   "aer_time_taken_s": 0.039652693,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 22,
+   "rep": 4,
+   "circuit": "qft_22",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.06076059862971306,
+   "T_run_s": 0.05803238786756992,
+   "aer_time_taken_s": 0.040504655,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 22,
+   "rep": 5,
+   "circuit": "qft_22",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.062006840482354164,
+   "T_run_s": 0.052942294627428055,
+   "aer_time_taken_s": 0.040377645,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 22,
+   "rep": 6,
+   "circuit": "qft_22",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.06206073984503746,
+   "T_run_s": 0.05007130652666092,
+   "aer_time_taken_s": 0.037032794,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 22,
+   "rep": 7,
+   "circuit": "qft_22",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.06160682812333107,
+   "T_run_s": 0.04768783785402775,
+   "aer_time_taken_s": 0.035189908,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 22,
+   "rep": 8,
+   "circuit": "qft_22",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.05967198312282562,
+   "T_run_s": 0.05013803765177727,
+   "aer_time_taken_s": 0.037301445,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 24,
+   "rep": 0,
+   "circuit": "qft_24",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.06059405766427517,
+   "T_run_s": 0.16048977337777615,
+   "aer_time_taken_s": 0.142268249,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 24,
+   "rep": 1,
+   "circuit": "qft_24",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.06106799654662609,
+   "T_run_s": 0.16248665936291218,
+   "aer_time_taken_s": 0.146697441,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 24,
+   "rep": 2,
+   "circuit": "qft_24",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.060989199206233025,
+   "T_run_s": 0.15839394554495811,
+   "aer_time_taken_s": 0.14295168,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 24,
+   "rep": 3,
+   "circuit": "qft_24",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.059777265414595604,
+   "T_run_s": 0.1638992428779602,
+   "aer_time_taken_s": 0.148502146,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 24,
+   "rep": 4,
+   "circuit": "qft_24",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.06410399824380875,
+   "T_run_s": 0.165737709030509,
+   "aer_time_taken_s": 0.149182419,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 24,
+   "rep": 5,
+   "circuit": "qft_24",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.060163404792547226,
+   "T_run_s": 0.16168164648115635,
+   "aer_time_taken_s": 0.14680807,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 24,
+   "rep": 6,
+   "circuit": "qft_24",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.06066134572029114,
+   "T_run_s": 0.16489154659211636,
+   "aer_time_taken_s": 0.149815689,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 24,
+   "rep": 7,
+   "circuit": "qft_24",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.05973860248923302,
+   "T_run_s": 0.17386490292847157,
+   "aer_time_taken_s": 0.158849027,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "qft",
+   "n": 24,
+   "rep": 8,
+   "circuit": "qft_24",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.05947357229888439,
+   "T_run_s": 0.1683525238186121,
+   "aer_time_taken_s": 0.153178929,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 4,
+   "rep": 0,
+   "circuit": "rqc_4_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.999999999999998,
+   "T_compile_s": 0.059569552540779114,
+   "T_run_s": 0.0016685929149389267,
+   "aer_time_taken_s": 0.000159001,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 4,
+   "rep": 1,
+   "circuit": "rqc_4_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.999999999999998,
+   "T_compile_s": 0.06181962788105011,
+   "T_run_s": 0.0012896638363599777,
+   "aer_time_taken_s": 9.681e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 4,
+   "rep": 2,
+   "circuit": "rqc_4_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.999999999999998,
+   "T_compile_s": 0.05794777534902096,
+   "T_run_s": 0.0012611038982868195,
+   "aer_time_taken_s": 9.6431e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 4,
+   "rep": 3,
+   "circuit": "rqc_4_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.999999999999998,
+   "T_compile_s": 0.05838262848556042,
+   "T_run_s": 0.0012541040778160095,
+   "aer_time_taken_s": 9.366e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 4,
+   "rep": 4,
+   "circuit": "rqc_4_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.999999999999998,
+   "T_compile_s": 0.05594584159553051,
+   "T_run_s": 0.0013017840683460236,
+   "aer_time_taken_s": 9.885e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 4,
+   "rep": 5,
+   "circuit": "rqc_4_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.999999999999998,
+   "T_compile_s": 0.055950410664081573,
+   "T_run_s": 0.0013003833591938019,
+   "aer_time_taken_s": 9.4941e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 4,
+   "rep": 6,
+   "circuit": "rqc_4_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.999999999999998,
+   "T_compile_s": 0.05640178173780441,
+   "T_run_s": 0.0012771449983119965,
+   "aer_time_taken_s": 9.533e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 4,
+   "rep": 7,
+   "circuit": "rqc_4_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.999999999999998,
+   "T_compile_s": 0.056135620921850204,
+   "T_run_s": 0.001277504488825798,
+   "aer_time_taken_s": 9.519e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 4,
+   "rep": 8,
+   "circuit": "rqc_4_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.999999999999998,
+   "T_compile_s": 0.056200290098786354,
+   "T_run_s": 0.001273004338145256,
+   "aer_time_taken_s": 9.52e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 8,
+   "rep": 0,
+   "circuit": "rqc_8_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999956,
+   "T_compile_s": 0.05694577284157276,
+   "T_run_s": 0.0023138169199228287,
+   "aer_time_taken_s": 0.000221901,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 8,
+   "rep": 1,
+   "circuit": "rqc_8_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999956,
+   "T_compile_s": 0.05720674619078636,
+   "T_run_s": 0.002321045845746994,
+   "aer_time_taken_s": 0.000229111,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 8,
+   "rep": 2,
+   "circuit": "rqc_8_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999956,
+   "T_compile_s": 0.06469724699854851,
+   "T_run_s": 0.002263316884636879,
+   "aer_time_taken_s": 0.00021999,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 8,
+   "rep": 3,
+   "circuit": "rqc_8_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999956,
+   "T_compile_s": 0.058764129877090454,
+   "T_run_s": 0.0023645367473363876,
+   "aer_time_taken_s": 0.00021707,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 8,
+   "rep": 4,
+   "circuit": "rqc_8_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999956,
+   "T_compile_s": 0.0563629437237978,
+   "T_run_s": 0.0022610556334257126,
+   "aer_time_taken_s": 0.00021791,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 8,
+   "rep": 5,
+   "circuit": "rqc_8_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999956,
+   "T_compile_s": 0.0604194775223732,
+   "T_run_s": 0.0022355541586875916,
+   "aer_time_taken_s": 0.000217341,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 8,
+   "rep": 6,
+   "circuit": "rqc_8_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999956,
+   "T_compile_s": 0.060737116262316704,
+   "T_run_s": 0.0022680237889289856,
+   "aer_time_taken_s": 0.00022078,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 8,
+   "rep": 7,
+   "circuit": "rqc_8_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999956,
+   "T_compile_s": 0.05640578269958496,
+   "T_run_s": 0.002323247492313385,
+   "aer_time_taken_s": 0.0002282,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 8,
+   "rep": 8,
+   "circuit": "rqc_8_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999956,
+   "T_compile_s": 0.056827833876013756,
+   "T_run_s": 0.0022925864905118942,
+   "aer_time_taken_s": 0.000216771,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 12,
+   "rep": 0,
+   "circuit": "rqc_12_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.999999999999993,
+   "T_compile_s": 0.060912685468792915,
+   "T_run_s": 0.006671050563454628,
+   "aer_time_taken_s": 0.003666431,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 12,
+   "rep": 1,
+   "circuit": "rqc_12_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.999999999999993,
+   "T_compile_s": 0.05982395261526108,
+   "T_run_s": 0.005445834249258041,
+   "aer_time_taken_s": 0.002493288,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 12,
+   "rep": 2,
+   "circuit": "rqc_12_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.999999999999993,
+   "T_compile_s": 0.0565101932734251,
+   "T_run_s": 0.005413984879851341,
+   "aer_time_taken_s": 0.002485998,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 12,
+   "rep": 3,
+   "circuit": "rqc_12_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.999999999999993,
+   "T_compile_s": 0.05911196954548359,
+   "T_run_s": 0.005437267944216728,
+   "aer_time_taken_s": 0.002488388,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 12,
+   "rep": 4,
+   "circuit": "rqc_12_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.999999999999993,
+   "T_compile_s": 0.05643354915082455,
+   "T_run_s": 0.0053530484437942505,
+   "aer_time_taken_s": 0.002490307,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 12,
+   "rep": 5,
+   "circuit": "rqc_12_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.999999999999993,
+   "T_compile_s": 0.056967344135046005,
+   "T_run_s": 0.005412645637989044,
+   "aer_time_taken_s": 0.002491008,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 12,
+   "rep": 6,
+   "circuit": "rqc_12_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.999999999999993,
+   "T_compile_s": 0.056444231420755386,
+   "T_run_s": 0.005397666245698929,
+   "aer_time_taken_s": 0.002488587,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 12,
+   "rep": 7,
+   "circuit": "rqc_12_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.999999999999993,
+   "T_compile_s": 0.06113718822598457,
+   "T_run_s": 0.005447244271636009,
+   "aer_time_taken_s": 0.002497527,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 12,
+   "rep": 8,
+   "circuit": "rqc_12_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.999999999999993,
+   "T_compile_s": 0.05877959914505482,
+   "T_run_s": 0.00533277727663517,
+   "aer_time_taken_s": 0.002491137,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 16,
+   "rep": 0,
+   "circuit": "rqc_16_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999925,
+   "T_compile_s": 0.062454601749777794,
+   "T_run_s": 0.018100515007972717,
+   "aer_time_taken_s": 0.014225193,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 16,
+   "rep": 1,
+   "circuit": "rqc_16_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999925,
+   "T_compile_s": 0.05977948009967804,
+   "T_run_s": 0.019379427656531334,
+   "aer_time_taken_s": 0.015407317,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 16,
+   "rep": 2,
+   "circuit": "rqc_16_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999925,
+   "T_compile_s": 0.06407392397522926,
+   "T_run_s": 0.017598405480384827,
+   "aer_time_taken_s": 0.013719582,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 16,
+   "rep": 3,
+   "circuit": "rqc_16_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999925,
+   "T_compile_s": 0.05861181952059269,
+   "T_run_s": 0.017549172043800354,
+   "aer_time_taken_s": 0.013506522,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 16,
+   "rep": 4,
+   "circuit": "rqc_16_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999925,
+   "T_compile_s": 0.0738844946026802,
+   "T_run_s": 0.01758403331041336,
+   "aer_time_taken_s": 0.013660941,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 16,
+   "rep": 5,
+   "circuit": "rqc_16_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999925,
+   "T_compile_s": 0.0627614501863718,
+   "T_run_s": 0.01815384440124035,
+   "aer_time_taken_s": 0.014116913,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 16,
+   "rep": 6,
+   "circuit": "rqc_16_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999925,
+   "T_compile_s": 0.06204347684979439,
+   "T_run_s": 0.017854303121566772,
+   "aer_time_taken_s": 0.013810872,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 16,
+   "rep": 7,
+   "circuit": "rqc_16_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999925,
+   "T_compile_s": 0.06466781534254551,
+   "T_run_s": 0.01991424150764942,
+   "aer_time_taken_s": 0.01348673,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 16,
+   "rep": 8,
+   "circuit": "rqc_16_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999925,
+   "T_compile_s": 0.06191715970635414,
+   "T_run_s": 0.018190614879131317,
+   "aer_time_taken_s": 0.014161263,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 20,
+   "rep": 0,
+   "circuit": "rqc_20_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999919,
+   "T_compile_s": 0.062300847843289375,
+   "T_run_s": 0.04100199602544308,
+   "aer_time_taken_s": 0.03601048,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 20,
+   "rep": 1,
+   "circuit": "rqc_20_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999919,
+   "T_compile_s": 0.06321006827056408,
+   "T_run_s": 0.05070341192185879,
+   "aer_time_taken_s": 0.044945504,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 20,
+   "rep": 2,
+   "circuit": "rqc_20_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999919,
+   "T_compile_s": 0.0780231524258852,
+   "T_run_s": 0.04697940871119499,
+   "aer_time_taken_s": 0.039890088,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 20,
+   "rep": 3,
+   "circuit": "rqc_20_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999919,
+   "T_compile_s": 0.07766719162464142,
+   "T_run_s": 0.047128211706876755,
+   "aer_time_taken_s": 0.04004044,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 20,
+   "rep": 4,
+   "circuit": "rqc_20_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999919,
+   "T_compile_s": 0.07897593267261982,
+   "T_run_s": 0.049228038638830185,
+   "aer_time_taken_s": 0.042151865,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 20,
+   "rep": 5,
+   "circuit": "rqc_20_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999919,
+   "T_compile_s": 0.07812116108834743,
+   "T_run_s": 0.047708405181765556,
+   "aer_time_taken_s": 0.040628051,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 20,
+   "rep": 6,
+   "circuit": "rqc_20_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999919,
+   "T_compile_s": 0.0783621035516262,
+   "T_run_s": 0.05072987265884876,
+   "aer_time_taken_s": 0.04369,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 20,
+   "rep": 7,
+   "circuit": "rqc_20_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999919,
+   "T_compile_s": 0.07814002223312855,
+   "T_run_s": 0.049031564965844154,
+   "aer_time_taken_s": 0.041947095,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 20,
+   "rep": 8,
+   "circuit": "rqc_20_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999919,
+   "T_compile_s": 0.07846969179809093,
+   "T_run_s": 0.05012744851410389,
+   "aer_time_taken_s": 0.043036718,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 22,
+   "rep": 0,
+   "circuit": "rqc_22_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.07875869423151016,
+   "T_run_s": 0.08294763788580894,
+   "aer_time_taken_s": 0.075169463,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 22,
+   "rep": 1,
+   "circuit": "rqc_22_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.059906378388404846,
+   "T_run_s": 0.07549252361059189,
+   "aer_time_taken_s": 0.069896498,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 22,
+   "rep": 2,
+   "circuit": "rqc_22_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.0603413674980402,
+   "T_run_s": 0.07782816328108311,
+   "aer_time_taken_s": 0.072094894,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 22,
+   "rep": 3,
+   "circuit": "rqc_22_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.06010564789175987,
+   "T_run_s": 0.07442522048950195,
+   "aer_time_taken_s": 0.068634493,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 22,
+   "rep": 4,
+   "circuit": "rqc_22_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.059251636266708374,
+   "T_run_s": 0.07214373536407948,
+   "aer_time_taken_s": 0.066532737,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 22,
+   "rep": 5,
+   "circuit": "rqc_22_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.05894768424332142,
+   "T_run_s": 0.07331088744103909,
+   "aer_time_taken_s": 0.0678351,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 22,
+   "rep": 6,
+   "circuit": "rqc_22_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.058600740507245064,
+   "T_run_s": 0.07468567229807377,
+   "aer_time_taken_s": 0.069180674,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 22,
+   "rep": 7,
+   "circuit": "rqc_22_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.05963633768260479,
+   "T_run_s": 0.07499759085476398,
+   "aer_time_taken_s": 0.069510086,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 22,
+   "rep": 8,
+   "circuit": "rqc_22_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.05909869633615017,
+   "T_run_s": 0.0778148602694273,
+   "aer_time_taken_s": 0.071893442,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 24,
+   "rep": 0,
+   "circuit": "rqc_24_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.060246968641877174,
+   "T_run_s": 0.30680653639137745,
+   "aer_time_taken_s": 0.300027957,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 24,
+   "rep": 1,
+   "circuit": "rqc_24_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.06024710088968277,
+   "T_run_s": 0.332146355882287,
+   "aer_time_taken_s": 0.325606899,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 24,
+   "rep": 2,
+   "circuit": "rqc_24_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.0597635954618454,
+   "T_run_s": 0.3482821565121412,
+   "aer_time_taken_s": 0.341549737,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 24,
+   "rep": 3,
+   "circuit": "rqc_24_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.05965765565633774,
+   "T_run_s": 0.35149565152823925,
+   "aer_time_taken_s": 0.345040943,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 24,
+   "rep": 4,
+   "circuit": "rqc_24_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.06195880100131035,
+   "T_run_s": 0.33840080350637436,
+   "aer_time_taken_s": 0.331848124,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 24,
+   "rep": 5,
+   "circuit": "rqc_24_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.060142235830426216,
+   "T_run_s": 0.348257752135396,
+   "aer_time_taken_s": 0.34144337,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 24,
+   "rep": 6,
+   "circuit": "rqc_24_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.06119859032332897,
+   "T_run_s": 0.34269484132528305,
+   "aer_time_taken_s": 0.335759352,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 24,
+   "rep": 7,
+   "circuit": "rqc_24_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.06008036434650421,
+   "T_run_s": 0.3451605588197708,
+   "aer_time_taken_s": 0.338581568,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "rqc",
+   "n": 24,
+   "rep": 8,
+   "circuit": "rqc_24_d10",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.06108330748975277,
+   "T_run_s": 0.3552201669663191,
+   "aer_time_taken_s": 0.348725096,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 4,
+   "rep": 0,
+   "circuit": "vqe_4_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0,
+   "T_compile_s": 0.05923569202423096,
+   "T_run_s": 0.001284254714846611,
+   "aer_time_taken_s": 0.00013295,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 4,
+   "rep": 1,
+   "circuit": "vqe_4_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0,
+   "T_compile_s": 0.05819970928132534,
+   "T_run_s": 0.0010217037051916122,
+   "aer_time_taken_s": 0.00011573,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 4,
+   "rep": 2,
+   "circuit": "vqe_4_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0,
+   "T_compile_s": 0.05791432037949562,
+   "T_run_s": 0.0008942801505327225,
+   "aer_time_taken_s": 8.0131e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 4,
+   "rep": 3,
+   "circuit": "vqe_4_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0,
+   "T_compile_s": 0.0598169919103384,
+   "T_run_s": 0.0009052827954292297,
+   "aer_time_taken_s": 8.051e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 4,
+   "rep": 4,
+   "circuit": "vqe_4_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0,
+   "T_compile_s": 0.05629880353808403,
+   "T_run_s": 0.0009113531559705734,
+   "aer_time_taken_s": 7.798e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 4,
+   "rep": 5,
+   "circuit": "vqe_4_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0,
+   "T_compile_s": 0.05695396289229393,
+   "T_run_s": 0.0008985642343759537,
+   "aer_time_taken_s": 7.731e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 4,
+   "rep": 6,
+   "circuit": "vqe_4_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0,
+   "T_compile_s": 0.05605539306998253,
+   "T_run_s": 0.0008996035903692245,
+   "aer_time_taken_s": 7.6461e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 4,
+   "rep": 7,
+   "circuit": "vqe_4_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0,
+   "T_compile_s": 0.05637255124747753,
+   "T_run_s": 0.0009605549275875092,
+   "aer_time_taken_s": 7.695e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 4,
+   "rep": 8,
+   "circuit": "vqe_4_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0,
+   "T_compile_s": 0.055947864428162575,
+   "T_run_s": 0.0008988603949546814,
+   "aer_time_taken_s": 7.6951e-05,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 8,
+   "rep": 0,
+   "circuit": "vqe_8_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0000000000000013,
+   "T_compile_s": 0.05762761831283569,
+   "T_run_s": 0.0015139225870370865,
+   "aer_time_taken_s": 0.00014674,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 8,
+   "rep": 1,
+   "circuit": "vqe_8_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0000000000000013,
+   "T_compile_s": 0.05640577711164951,
+   "T_run_s": 0.0015120934695005417,
+   "aer_time_taken_s": 0.000149241,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 8,
+   "rep": 2,
+   "circuit": "vqe_8_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0000000000000013,
+   "T_compile_s": 0.056122543290257454,
+   "T_run_s": 0.0014856234192848206,
+   "aer_time_taken_s": 0.00014329,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 8,
+   "rep": 3,
+   "circuit": "vqe_8_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0000000000000013,
+   "T_compile_s": 0.058015648275613785,
+   "T_run_s": 0.0014917347580194473,
+   "aer_time_taken_s": 0.00014411,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 8,
+   "rep": 4,
+   "circuit": "vqe_8_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0000000000000013,
+   "T_compile_s": 0.05606715567409992,
+   "T_run_s": 0.0014996137470006943,
+   "aer_time_taken_s": 0.00014518,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 8,
+   "rep": 5,
+   "circuit": "vqe_8_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0000000000000013,
+   "T_compile_s": 0.05639917217195034,
+   "T_run_s": 0.0015376638621091843,
+   "aer_time_taken_s": 0.000155841,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 8,
+   "rep": 6,
+   "circuit": "vqe_8_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0000000000000013,
+   "T_compile_s": 0.05672198347747326,
+   "T_run_s": 0.0014522355049848557,
+   "aer_time_taken_s": 0.000144511,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 8,
+   "rep": 7,
+   "circuit": "vqe_8_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0000000000000013,
+   "T_compile_s": 0.058240728452801704,
+   "T_run_s": 0.001468714326620102,
+   "aer_time_taken_s": 0.000143501,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 8,
+   "rep": 8,
+   "circuit": "vqe_8_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0000000000000013,
+   "T_compile_s": 0.059887344017624855,
+   "T_run_s": 0.0014363043010234833,
+   "aer_time_taken_s": 0.00014379,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 12,
+   "rep": 0,
+   "circuit": "vqe_12_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0000000000000004,
+   "T_compile_s": 0.05681048706173897,
+   "T_run_s": 0.0032138079404830933,
+   "aer_time_taken_s": 0.001307304,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 12,
+   "rep": 1,
+   "circuit": "vqe_12_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0000000000000004,
+   "T_compile_s": 0.05978270433843136,
+   "T_run_s": 0.00315706804394722,
+   "aer_time_taken_s": 0.001240003,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 12,
+   "rep": 2,
+   "circuit": "vqe_12_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0000000000000004,
+   "T_compile_s": 0.05807107873260975,
+   "T_run_s": 0.0030840877443552017,
+   "aer_time_taken_s": 0.001255204,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 12,
+   "rep": 3,
+   "circuit": "vqe_12_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0000000000000004,
+   "T_compile_s": 0.06141413934528828,
+   "T_run_s": 0.0031372886151075363,
+   "aer_time_taken_s": 0.001285124,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 12,
+   "rep": 4,
+   "circuit": "vqe_12_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0000000000000004,
+   "T_compile_s": 0.060179393738508224,
+   "T_run_s": 0.0031044501811265945,
+   "aer_time_taken_s": 0.001246673,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 12,
+   "rep": 5,
+   "circuit": "vqe_12_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0000000000000004,
+   "T_compile_s": 0.05689520761370659,
+   "T_run_s": 0.003065807744860649,
+   "aer_time_taken_s": 0.001285094,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 12,
+   "rep": 6,
+   "circuit": "vqe_12_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0000000000000004,
+   "T_compile_s": 0.06210878863930702,
+   "T_run_s": 0.0031677596271038055,
+   "aer_time_taken_s": 0.001238354,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 12,
+   "rep": 7,
+   "circuit": "vqe_12_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0000000000000004,
+   "T_compile_s": 0.05619615316390991,
+   "T_run_s": 0.003099590539932251,
+   "aer_time_taken_s": 0.001236643,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 12,
+   "rep": 8,
+   "circuit": "vqe_12_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0000000000000004,
+   "T_compile_s": 0.05986863188445568,
+   "T_run_s": 0.0030895881354808807,
+   "aer_time_taken_s": 0.001245214,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 16,
+   "rep": 0,
+   "circuit": "vqe_16_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999996,
+   "T_compile_s": 0.05652376264333725,
+   "T_run_s": 0.01059541292488575,
+   "aer_time_taken_s": 0.008179273,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 16,
+   "rep": 1,
+   "circuit": "vqe_16_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999996,
+   "T_compile_s": 0.058145828545093536,
+   "T_run_s": 0.012298675253987312,
+   "aer_time_taken_s": 0.009687598,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 16,
+   "rep": 2,
+   "circuit": "vqe_16_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999996,
+   "T_compile_s": 0.07687404006719589,
+   "T_run_s": 0.014556244015693665,
+   "aer_time_taken_s": 0.011105213,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 16,
+   "rep": 3,
+   "circuit": "vqe_16_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999996,
+   "T_compile_s": 0.0762255284935236,
+   "T_run_s": 0.014492303133010864,
+   "aer_time_taken_s": 0.011061812,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 16,
+   "rep": 4,
+   "circuit": "vqe_16_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999996,
+   "T_compile_s": 0.07636480033397675,
+   "T_run_s": 0.01446647197008133,
+   "aer_time_taken_s": 0.011054651,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 16,
+   "rep": 5,
+   "circuit": "vqe_16_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999996,
+   "T_compile_s": 0.07756713591516018,
+   "T_run_s": 0.014832312241196632,
+   "aer_time_taken_s": 0.011292703,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 16,
+   "rep": 6,
+   "circuit": "vqe_16_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999996,
+   "T_compile_s": 0.07729695551097393,
+   "T_run_s": 0.014571020379662514,
+   "aer_time_taken_s": 0.011098772,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 16,
+   "rep": 7,
+   "circuit": "vqe_16_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999996,
+   "T_compile_s": 0.07757406495511532,
+   "T_run_s": 0.014714879915118217,
+   "aer_time_taken_s": 0.011229002,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 16,
+   "rep": 8,
+   "circuit": "vqe_16_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 0.9999999999999996,
+   "T_compile_s": 0.07742531225085258,
+   "T_run_s": 0.014561440795660019,
+   "aer_time_taken_s": 0.011089942,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 20,
+   "rep": 0,
+   "circuit": "vqe_20_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0,
+   "T_compile_s": 0.07772044278681278,
+   "T_run_s": 0.029252804815769196,
+   "aer_time_taken_s": 0.024989272,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 20,
+   "rep": 1,
+   "circuit": "vqe_20_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0,
+   "T_compile_s": 0.0838314276188612,
+   "T_run_s": 0.042949723079800606,
+   "aer_time_taken_s": 0.03840299,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 20,
+   "rep": 2,
+   "circuit": "vqe_20_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0,
+   "T_compile_s": 0.07792561315000057,
+   "T_run_s": 0.04881170764565468,
+   "aer_time_taken_s": 0.044440367,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 20,
+   "rep": 3,
+   "circuit": "vqe_20_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0,
+   "T_compile_s": 0.07778969220817089,
+   "T_run_s": 0.042425671592354774,
+   "aer_time_taken_s": 0.038155959,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 20,
+   "rep": 4,
+   "circuit": "vqe_20_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0,
+   "T_compile_s": 0.07874013297259808,
+   "T_run_s": 0.031086668372154236,
+   "aer_time_taken_s": 0.026707606,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 20,
+   "rep": 5,
+   "circuit": "vqe_20_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0,
+   "T_compile_s": 0.0807218998670578,
+   "T_run_s": 0.028751011937856674,
+   "aer_time_taken_s": 0.02436377,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 20,
+   "rep": 6,
+   "circuit": "vqe_20_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0,
+   "T_compile_s": 0.07279920764267445,
+   "T_run_s": 0.028220120817422867,
+   "aer_time_taken_s": 0.025126012,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 20,
+   "rep": 7,
+   "circuit": "vqe_20_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0,
+   "T_compile_s": 0.07796029187738895,
+   "T_run_s": 0.028690172359347343,
+   "aer_time_taken_s": 0.024351939,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 20,
+   "rep": 8,
+   "circuit": "vqe_20_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": 1.0,
+   "T_compile_s": 0.07777259312570095,
+   "T_run_s": 0.028760751709342003,
+   "aer_time_taken_s": 0.024406449,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 22,
+   "rep": 0,
+   "circuit": "vqe_22_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.07839897274971008,
+   "T_run_s": 0.05510450899600983,
+   "aer_time_taken_s": 0.050320944,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 22,
+   "rep": 1,
+   "circuit": "vqe_22_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.060510942712426186,
+   "T_run_s": 0.04744986444711685,
+   "aer_time_taken_s": 0.043959165,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 22,
+   "rep": 2,
+   "circuit": "vqe_22_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.06072215177118778,
+   "T_run_s": 0.046753864735364914,
+   "aer_time_taken_s": 0.042889032,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 22,
+   "rep": 3,
+   "circuit": "vqe_22_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.060813942924141884,
+   "T_run_s": 0.04855332709848881,
+   "aer_time_taken_s": 0.044995698,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 22,
+   "rep": 4,
+   "circuit": "vqe_22_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.059855420142412186,
+   "T_run_s": 0.04971696995198727,
+   "aer_time_taken_s": 0.046204731,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 22,
+   "rep": 5,
+   "circuit": "vqe_22_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.0622591357678175,
+   "T_run_s": 0.04620892368257046,
+   "aer_time_taken_s": 0.042600541,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 22,
+   "rep": 6,
+   "circuit": "vqe_22_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.06045328266918659,
+   "T_run_s": 0.04476894810795784,
+   "aer_time_taken_s": 0.041275107,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 22,
+   "rep": 7,
+   "circuit": "vqe_22_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.06035292521119118,
+   "T_run_s": 0.04728899151086807,
+   "aer_time_taken_s": 0.043715774,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 22,
+   "rep": 8,
+   "circuit": "vqe_22_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.06014312990009785,
+   "T_run_s": 0.04676710069179535,
+   "aer_time_taken_s": 0.043251903,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 24,
+   "rep": 0,
+   "circuit": "vqe_24_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.06198577582836151,
+   "T_run_s": 0.1839102040976286,
+   "aer_time_taken_s": 0.17976231,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 24,
+   "rep": 1,
+   "circuit": "vqe_24_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.05994221940636635,
+   "T_run_s": 0.18230550736188889,
+   "aer_time_taken_s": 0.178100563,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 24,
+   "rep": 2,
+   "circuit": "vqe_24_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.060724079608917236,
+   "T_run_s": 0.18743683211505413,
+   "aer_time_taken_s": 0.183382848,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 24,
+   "rep": 3,
+   "circuit": "vqe_24_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.05935585871338844,
+   "T_run_s": 0.1854880452156067,
+   "aer_time_taken_s": 0.181471403,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 24,
+   "rep": 4,
+   "circuit": "vqe_24_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.05990225076675415,
+   "T_run_s": 0.18512371182441711,
+   "aer_time_taken_s": 0.18100921,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 24,
+   "rep": 5,
+   "circuit": "vqe_24_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.059925757348537445,
+   "T_run_s": 0.18860116228461266,
+   "aer_time_taken_s": 0.18438939,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 24,
+   "rep": 6,
+   "circuit": "vqe_24_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.05937652476131916,
+   "T_run_s": 0.18434464000165462,
+   "aer_time_taken_s": 0.179906218,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 24,
+   "rep": 7,
+   "circuit": "vqe_24_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.059248534962534904,
+   "T_run_s": 0.18471791222691536,
+   "aer_time_taken_s": 0.179694176,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  },
+  {
+   "platform": "cpu_aer",
+   "family": "vqe",
+   "n": 24,
+   "rep": 8,
+   "circuit": "vqe_24_L2",
+   "threads": 128,
+   "precision": "double",
+   "fusion": 0,
+   "fidelity_vs_qiskit": null,
+   "T_compile_s": 0.05953085795044899,
+   "T_run_s": 0.19636761024594307,
+   "aer_time_taken_s": 0.19215211,
+   "aer_parallel_state_update": 128,
+   "aer_fusion": {
+    "enabled": false
+   }
+  }
+ ]
+}

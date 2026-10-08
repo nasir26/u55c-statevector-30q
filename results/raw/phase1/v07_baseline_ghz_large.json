@@ -1,0 +1,46 @@
+{
+ "t_setup_s": 0.2589675225317478,
+ "host": "fpga-host",
+ "records": [
+  {
+   "platform": "fpga_v07",
+   "bdf": "0000:41:00.1",
+   "family": "ghz",
+   "n": 26,
+   "rep": 0,
+   "circuit": "ghz_26",
+   "n_gates_in": 26,
+   "n_gates_kernel": null,
+   "T_compile_us": 58.19,
+   "T_init_us": 584404.223,
+   "T_gate_upload_us": 166.64,
+   "T_kernel_us": 28299362.364,
+   "T_d2h_us": 1667687.796,
+   "T_post_us": 1262183.023,
+   "wall_us": 31814103.623,
+   "fidelity": 1.0,
+   "T_h2d_us": 584570.863,
+   "T_e2e_us": 31813862.236
+  },
+  {
+   "platform": "fpga_v07",
+   "bdf": "0000:41:00.1",
+   "family": "ghz",
+   "n": 28,
+   "rep": 0,
+   "circuit": "ghz_28",
+   "n_gates_in": 28,
+   "n_gates_kernel": null,
+   "T_compile_us": 74.239,
+   "T_init_us": 2412623.969,
+   "T_gate_upload_us": 62.95,
+   "T_kernel_us": 122476994.717,
+   "T_d2h_us": 6577559.718,
+   "T_post_us": 4592452.415,
+   "wall_us": 136059997.838,
+   "fidelity": 1.0,
+   "T_h2d_us": 2412686.919,
+   "T_e2e_us": 136059768.008
+  }
+ ]
+}

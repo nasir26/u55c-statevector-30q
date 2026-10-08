@@ -1,0 +1,163 @@
+======================================================================
+  FPGA Quantum Simulator v07 — Comprehensive Test Suite
+  XCLBIN : <WS>/opt_kernel/opt_kernel/quantum_fpga_kernel_complex128.xclbin
+  Clock  : 225.0 MHz  |  HBM banks : 8
+  Started: 2026-10-06 10:10:50
+======================================================================
+
+Initialising FPGA …
+  Ready in 174.1 ms
+
+
+======================================================================
+  Section 1 — Single-Qubit Gates
+======================================================================
+  [PASS] ID: no-op norm                             norm=1.0000000000      1.37 ms  [ID: no-op norm:P(|0>)=1.00000000 (PASS)]
+  [PASS] H: uniform superposition |+⟩               norm=1.0000000000      0.72 ms  [H: uniform superposition |+⟩:max_dev=0.00000000 (PASS)]
+  [PASS] X: |0⟩→|1⟩                                 norm=1.0000000000      0.88 ms  [X: |0⟩→|1⟩:P(|1>)=1.00000000 (PASS)]
+  [PASS] X†X: identity                              norm=1.0000000000      0.93 ms  [X†X: identity:P(|0>)=1.00000000 (PASS)]
+  [PASS] Y: |0⟩→i|1⟩                                norm=1.0000000000      0.89 ms  [Y: |0⟩→i|1⟩:P(|1>)=1.00000000 (PASS)]
+  [PASS] Z: |0⟩ unchanged (phase only)              norm=1.0000000000      0.91 ms  [Z: |0⟩ unchanged (phase only):P(|0>)=1.00000000 (PASS)]
+  [PASS] S·S†: identity                             norm=1.0000000000      0.92 ms  [S·S†: identity:P(|0>)=1.00000000 (PASS)]
+  [PASS] T·T†: identity                             norm=1.0000000000      0.94 ms  [T·T†: identity:P(|0>)=1.00000000 (PASS)]
+  [PASS] SX·SX†: identity                           norm=1.0000000000      0.91 ms  [SX·SX†: identity:P(|0>)=1.00000000 (PASS)]
+  [PASS] SX²=X: |0⟩→|1⟩                             norm=1.0000000000      0.92 ms  [SX²=X: |0⟩→|1⟩:P(|1>)=1.00000000 (PASS)]
+  [PASS] RX(π): |0⟩→|1⟩                             norm=1.0000000000      0.93 ms  [RX(π): |0⟩→|1⟩:P(|1>)=1.00000000 (PASS)]
+  [PASS] RX(2π): identity |0⟩                       norm=1.0000000000      0.75 ms  [RX(2π): identity |0⟩:P(|0>)=1.00000000 (PASS)]
+  [PASS] RY(π): |0⟩→|1⟩                             norm=1.0000000000      0.53 ms  [RY(π): |0⟩→|1⟩:P(|1>)=1.00000000 (PASS)]
+  [PASS] RZ(π): |0⟩ unchanged (phase)               norm=1.0000000000      0.53 ms  [RZ(π): |0⟩ unchanged (phase):P(|0>)=1.00000000 (PASS)]
+  [PASS] P(π): |0⟩ unchanged                        norm=1.0000000000      0.53 ms  [P(π): |0⟩ unchanged:P(|0>)=1.00000000 (PASS)]
+  [PASS] U2(0,π): = H, uniform superposition        norm=1.0000000000      0.54 ms  [U2(0,π): = H, uniform superposition:max_dev=0.00000000 (PASS)]
+  [PASS] U3(π,0,π): = X gate, |0⟩→|1⟩               norm=1.0000000000      0.61 ms  [U3(π,0,π): = X gate, |0⟩→|1⟩:P(|1>)=1.00000000 (PASS)]
+  [PASS] U3(π/2,0,π): = H, uniform superposition    norm=1.0000000000      0.57 ms  [U3(π/2,0,π): = H, uniform superposition:max_dev=0.00000002 (PASS)]
+
+======================================================================
+  Section 2 — Two-Qubit Native Gates (CX, CZ)
+======================================================================
+  [PASS] CX: Bell state |Φ+⟩                        norm=1.0000000000      0.59 ms  [CX: Bell state |Φ+⟩:P({0: 0})=0.50000000 (PASS)]
+  [PASS] CX: |10⟩→|11⟩                              norm=1.0000000000      0.51 ms  [CX: |10⟩→|11⟩:P(|3>)=1.00000000 (PASS)]
+  [PASS] CX²: identity |00⟩                         norm=1.0000000000      0.51 ms  [CX²: identity |00⟩:P(|0>)=1.00000000 (PASS)]
+  [PASS] CZ: |00⟩ unchanged                         norm=1.0000000000      0.49 ms  [CZ: |00⟩ unchanged:P(|0>)=1.00000000 (PASS)]
+  [PASS] CZ: |11⟩→-|11⟩ (phase, norm=1)             norm=1.0000000000      0.54 ms  [CZ: |11⟩→-|11⟩ (phase, norm=1):P(|3>)=1.00000000 (PASS)]
+  [PASS] CZ²: identity                              norm=1.0000000000      0.56 ms  [CZ²: identity:P(|3>)=1.00000000 (PASS)]
+
+======================================================================
+  Section 3 — Decomposed Multi-Qubit Gates
+======================================================================
+  [PASS] CY: |10⟩→i|11⟩                             norm=1.0000000000      0.81 ms  [CY: |10⟩→i|11⟩:P(|3>)=1.00000000 (PASS)]
+  [PASS] CH: norm preserved                         norm=1.0000000000      1.22 ms
+  [PASS] SWAP: |10⟩→|01⟩                            norm=1.0000000000      1.14 ms  [SWAP: |10⟩→|01⟩:P(|2>)=1.00000000 (PASS)]
+  [PASS] SWAP²: identity                            norm=1.0000000000      1.27 ms  [SWAP²: identity:P(|0>)=1.00000000 (PASS)]
+  [PASS] CP(π): |11⟩ phase flip, norm=1             norm=1.0000000000      1.31 ms  [CP(π): |11⟩ phase flip, norm=1:P(|3>)=1.00000000 (PASS)]
+  [PASS] CP(2π): identity                           norm=1.0000000000      1.34 ms  [CP(2π): identity:P(|0>)=1.00000000 (PASS)]
+  [PASS] CRX(π): |10⟩→|11⟩                          norm=1.0000000000      1.30 ms  [CRX(π): |10⟩→|11⟩:P(|3>)=1.00000000 (PASS)]
+  [PASS] CRY(π): |10⟩→|11⟩                          norm=1.0000000000      0.91 ms  [CRY(π): |10⟩→|11⟩:P(|3>)=1.00000000 (PASS)]
+  [PASS] CRZ(π): norm=1                             norm=1.0000000000      0.57 ms
+  [PASS] CSX: norm=1                                norm=1.0000000000      0.59 ms
+  [PASS] CSX²=CX: |10⟩→|11⟩                         norm=1.0000000000      0.64 ms  [CSX²=CX: |10⟩→|11⟩:P(|3>)=1.00000000 (PASS)]
+  [PASS] DCX: norm=1                                norm=1.0000000000      0.55 ms
+  [PASS] ISWAP: norm=1                              norm=1.0000000000      0.58 ms
+  [PASS] ISWAP: |10⟩→i|01⟩                          norm=1.0000000000      0.58 ms  [ISWAP: |10⟩→i|01⟩:P(|2>)=1.00000000 (PASS)]
+  [PASS] ECR: |00⟩ norm=1                           norm=1.0000000000      0.57 ms
+  [PASS] ECR: |11⟩ norm=1                           norm=1.0000000000      0.62 ms
+  [PASS] RXX(π/2): norm=1                           norm=1.0000000000      0.54 ms
+  [PASS] RYY(π/2): norm=1                           norm=1.0000000000      0.59 ms
+  [PASS] RZZ(π/2): norm=1                           norm=1.0000000000      0.56 ms
+  [PASS] CCX: |110⟩→|111⟩                           norm=1.0000000000      0.64 ms  [CCX: |110⟩→|111⟩:P(|7>)=1.00000000 (PASS)]
+  [PASS] CCX: |100⟩ unchanged                       norm=1.0000000000      0.96 ms  [CCX: |100⟩ unchanged:P(|1>)=1.00000000 (PASS)]
+  [PASS] CCX²: identity                             norm=1.0000000000      1.08 ms  [CCX²: identity:P(|0>)=1.00000000 (PASS)]
+
+======================================================================
+  Section 4 — ECR State-Vector Correctness
+======================================================================
+  [PASS] ECR |00⟩ state check                       norm=1.0000000000      0.83 ms  [P(|1>)=0.5000, P(|3>)=0.5000]
+  [PASS] ECR |01⟩ state check                       norm=1.0000000000      0.86 ms  [P(|0>)=0.5000, P(|2>)=0.5000]
+  [PASS] ECR |10⟩ state check                       norm=1.0000000000      0.84 ms  [P(|1>)=0.5000, P(|3>)=0.5000]
+  [PASS] ECR |11⟩ state check                       norm=1.0000000000      0.86 ms  [P(|0>)=0.5000, P(|2>)=0.5000]
+
+======================================================================
+  Section 5 — QFT Scaling (1–20 qubits)
+======================================================================
+  [PASS] QFT  1q: uniform superposition             norm=1.0000000000      0.77 ms
+  [PASS] QFT  2q: uniform superposition             norm=1.0000000000      0.89 ms
+  [PASS] QFT  3q: uniform superposition             norm=1.0000000000      1.00 ms
+  [PASS] QFT  4q: uniform superposition             norm=1.0000000000      1.50 ms
+  [PASS] QFT  5q: uniform superposition             norm=1.0000000000      1.26 ms
+  [PASS] QFT  6q: uniform superposition             norm=1.0000000000      1.45 ms
+<WS>/host/v07/comprehensive_test_v07.py:729: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  fig.tight_layout()
+  [PASS] QFT  7q: uniform superposition             norm=1.0000000000      1.76 ms
+  [PASS] QFT  8q: uniform superposition             norm=1.0000000000      2.43 ms
+  [PASS] QFT  9q: uniform superposition             norm=1.0000000000      5.71 ms
+  [PASS] QFT 10q: uniform superposition             norm=1.0000000000     10.13 ms
+  [PASS] QFT 11q: uniform superposition             norm=1.0000000000     13.98 ms
+  [PASS] QFT 12q: uniform superposition             norm=1.0000000000     28.00 ms
+  [PASS] QFT 13q: uniform superposition             norm=1.0000000000     57.24 ms
+  [PASS] QFT 14q: uniform superposition             norm=1.0000000000    138.36 ms
+  [PASS] QFT 15q: uniform superposition             norm=1.0000000000    274.01 ms
+  [PASS] QFT 16q: uniform superposition             norm=1.0000000000    612.65 ms
+  [PASS] QFT 17q: uniform superposition             norm=1.0000000000   1369.60 ms
+  [PASS] QFT 18q: uniform superposition             norm=1.0000000000   3077.24 ms
+  [PASS] QFT 19q: uniform superposition             norm=1.0000000000   6825.69 ms
+  [PASS] QFT 20q: uniform superposition             norm=1.0000000000  15196.16 ms
+
+  [PASS] QFT+IQFT  1q: round-trip |0⟩               norm=1.0000000000     11.10 ms  [P(|0⟩)=1.000000]
+  [PASS] QFT+IQFT  2q: round-trip |0⟩               norm=1.0000000000      2.17 ms  [P(|0⟩)=1.000000]
+  [PASS] QFT+IQFT  4q: round-trip |0⟩               norm=1.0000000000      2.43 ms  [P(|0⟩)=1.000000]
+  [PASS] QFT+IQFT  8q: round-trip |0⟩               norm=1.0000000000      7.69 ms  [P(|0⟩)=1.000000]
+  [PASS] QFT+IQFT 12q: round-trip |0⟩               norm=1.0000000000     50.94 ms  [P(|0⟩)=1.000000]
+
+======================================================================
+  Section 6 — Grover's Algorithm Scaling (2–12 qubits)
+======================================================================
+  (oracle: native CZ/CCZ for nq≤3, H+MCX+H for nq>3)
+  [PASS] Grover  2q (1 iter): P(|1..1⟩)≥0.50        norm=1.0000000000      0.61 ms  [P(|1..1⟩)=1.0000]
+  [PASS] Grover  3q (2 iter): P(|1..1⟩)≥0.50        norm=1.0000000000      1.08 ms  [P(|1..1⟩)=0.9453]
+  [PASS] Grover  4q (3 iter): P(|1..1⟩)≥0.50        norm=1.0000000000     49.92 ms  [P(|1..1⟩)=0.9613]
+  [PASS] Grover  5q (4 iter): P(|1..1⟩)≥0.50        norm=1.0000000000     28.74 ms  [P(|1..1⟩)=0.9992]
+  [PASS] Grover  6q (6 iter): P(|1..1⟩)≥0.50        norm=1.0000000000    106.35 ms  [P(|1..1⟩)=0.9966]
+  [PASS] Grover  7q (8 iter): P(|1..1⟩)≥0.05        norm=1.0000000000    215.15 ms  [P(|1..1⟩)=0.9956]
+  [PASS] Grover  8q (12 iter): P(|1..1⟩)≥0.05       norm=1.0000000000    337.59 ms  [P(|1..1⟩)=0.9999]
+  [PASS] Grover  9q (17 iter): P(|1..1⟩)≥0.05       norm=1.0000000000    739.35 ms  [P(|1..1⟩)=0.9994]
+  [PASS] Grover 10q (16 iter): P(|1..1⟩)≥0.05       norm=1.0000000000   1228.30 ms  [P(|1..1⟩)=0.7362]
+  [PASS] Grover 11q (15 iter): P(|1..1⟩)≥0.05       norm=1.0000000000   2209.85 ms  [P(|1..1⟩)=0.4003]
+  [PASS] Grover 12q (13 iter): P(|1..1⟩)≥0.05       norm=1.0000000000   3903.12 ms  [P(|1..1⟩)=0.1677]
+
+======================================================================
+  Section 8 — Classical-Bit-Mapped Measurement (v07)
+======================================================================
+  [PASS] Meas: 1 qubit -> 2 clbits, 1 unmeasured    norm=1.0000000000      6.05 ms  [keys=[('000', 2017), ('011', 1983)]]
+  [PASS] Meas: qubit0 -> clbit2 only (deterministic) norm=1.0000000000      4.70 ms  [keys=[('100', 4000)]]
+  [PASS] Meas: 2 qubits -> 2 clbits, explicit map   norm=1.0000000000      5.25 ms  [keys=[('10', 1961), ('11', 2039)]]
+  [PASS] Meas: clbits=None fallback (qubit==clbit)  norm=1.0000000000      5.36 ms  [keys=[('01', 4000)]]
+  [PASS] Meas: no explicit measure, |0> default     norm=1.0000000000      5.27 ms  [keys=[('000', 4000)]]
+
+======================================================================
+  Section 9 — Visualisations
+======================================================================
+  Saved → test_v07_overview.png
+  Saved → test_v07_sq_gates.png
+  Saved → test_v07_mq_gates.png
+  Saved → test_v07_qft_scaling.png
+  Saved → test_v07_grover_scaling.png
+  Saved → test_v07_qft_vs_grover.png
+  Saved → test_v07_measurement_mapping.png
+  Saved → test_v07_all_wall_times.png
+
+======================================================================
+  FINAL RESULT : 91/91 PASSED  (0 failed)
+  Suite time   : 41.1 s
+
+  Graphs saved:
+    test_v07_overview.png
+    test_v07_sq_gates.png
+    test_v07_mq_gates.png
+    test_v07_qft_scaling.png
+    test_v07_grover_scaling.png
+    test_v07_qft_vs_grover.png
+    test_v07_measurement_mapping.png
+    test_v07_all_wall_times.png
+
+  Status : ALL PASS ✓
+======================================================================
+

@@ -1,0 +1,356 @@
+[
+ {
+  "gate": "cy",
+  "qubits": [
+   0,
+   1
+  ],
+  "params": null,
+  "n_lowered": 3,
+  "process_fidelity": 1.0
+ },
+ {
+  "gate": "cy",
+  "qubits": [
+   1,
+   0
+  ],
+  "params": null,
+  "n_lowered": 3,
+  "process_fidelity": 1.0
+ },
+ {
+  "gate": "ch",
+  "qubits": [
+   0,
+   1
+  ],
+  "params": null,
+  "n_lowered": 3,
+  "process_fidelity": 1.0
+ },
+ {
+  "gate": "ch",
+  "qubits": [
+   1,
+   0
+  ],
+  "params": null,
+  "n_lowered": 3,
+  "process_fidelity": 1.0
+ },
+ {
+  "gate": "swap",
+  "qubits": [
+   0,
+   1
+  ],
+  "params": null,
+  "n_lowered": 3,
+  "process_fidelity": 1.0
+ },
+ {
+  "gate": "swap",
+  "qubits": [
+   1,
+   0
+  ],
+  "params": null,
+  "n_lowered": 3,
+  "process_fidelity": 1.0
+ },
+ {
+  "gate": "cp",
+  "qubits": [
+   0,
+   1
+  ],
+  "params": [
+   0.73
+  ],
+  "n_lowered": 5,
+  "process_fidelity": 1.0
+ },
+ {
+  "gate": "cp",
+  "qubits": [
+   1,
+   0
+  ],
+  "params": [
+   0.73
+  ],
+  "n_lowered": 5,
+  "process_fidelity": 1.0
+ },
+ {
+  "gate": "crz",
+  "qubits": [
+   0,
+   1
+  ],
+  "params": [
+   0.73
+  ],
+  "n_lowered": 4,
+  "process_fidelity": 1.0
+ },
+ {
+  "gate": "crz",
+  "qubits": [
+   1,
+   0
+  ],
+  "params": [
+   0.73
+  ],
+  "n_lowered": 4,
+  "process_fidelity": 1.0
+ },
+ {
+  "gate": "crx",
+  "qubits": [
+   0,
+   1
+  ],
+  "params": [
+   0.73
+  ],
+  "n_lowered": 6,
+  "process_fidelity": 0.9999999999999996
+ },
+ {
+  "gate": "crx",
+  "qubits": [
+   1,
+   0
+  ],
+  "params": [
+   0.73
+  ],
+  "n_lowered": 6,
+  "process_fidelity": 0.9999999999999996
+ },
+ {
+  "gate": "cry",
+  "qubits": [
+   0,
+   1
+  ],
+  "params": [
+   0.73
+  ],
+  "n_lowered": 4,
+  "process_fidelity": 1.0
+ },
+ {
+  "gate": "cry",
+  "qubits": [
+   1,
+   0
+  ],
+  "params": [
+   0.73
+  ],
+  "n_lowered": 4,
+  "process_fidelity": 1.0
+ },
+ {
+  "gate": "csx",
+  "qubits": [
+   0,
+   1
+  ],
+  "params": null,
+  "n_lowered": 7,
+  "process_fidelity": 0.9999999999999996
+ },
+ {
+  "gate": "csx",
+  "qubits": [
+   1,
+   0
+  ],
+  "params": null,
+  "n_lowered": 7,
+  "process_fidelity": 0.9999999999999996
+ },
+ {
+  "gate": "dcx",
+  "qubits": [
+   0,
+   1
+  ],
+  "params": null,
+  "n_lowered": 2,
+  "process_fidelity": 1.0
+ },
+ {
+  "gate": "dcx",
+  "qubits": [
+   1,
+   0
+  ],
+  "params": null,
+  "n_lowered": 2,
+  "process_fidelity": 1.0
+ },
+ {
+  "gate": "iswap",
+  "qubits": [
+   0,
+   1
+  ],
+  "params": null,
+  "n_lowered": 6,
+  "process_fidelity": 0.9999999999999996
+ },
+ {
+  "gate": "iswap",
+  "qubits": [
+   1,
+   0
+  ],
+  "params": null,
+  "n_lowered": 6,
+  "process_fidelity": 0.9999999999999996
+ },
+ {
+  "gate": "ecr",
+  "qubits": [
+   0,
+   1
+  ],
+  "params": null,
+  "n_lowered": 11,
+  "process_fidelity": 0.9999999999999996
+ },
+ {
+  "gate": "ecr",
+  "qubits": [
+   1,
+   0
+  ],
+  "params": null,
+  "n_lowered": 11,
+  "process_fidelity": 0.9999999999999996
+ },
+ {
+  "gate": "rxx",
+  "qubits": [
+   0,
+   1
+  ],
+  "params": [
+   0.73
+  ],
+  "n_lowered": 7,
+  "process_fidelity": 0.9999999999999993
+ },
+ {
+  "gate": "rxx",
+  "qubits": [
+   1,
+   0
+  ],
+  "params": [
+   0.73
+  ],
+  "n_lowered": 7,
+  "process_fidelity": 0.9999999999999993
+ },
+ {
+  "gate": "ryy",
+  "qubits": [
+   0,
+   1
+  ],
+  "params": [
+   0.73
+  ],
+  "n_lowered": 11,
+  "process_fidelity": 0.9999999999999993
+ },
+ {
+  "gate": "ryy",
+  "qubits": [
+   1,
+   0
+  ],
+  "params": [
+   0.73
+  ],
+  "n_lowered": 11,
+  "process_fidelity": 0.9999999999999993
+ },
+ {
+  "gate": "rzz",
+  "qubits": [
+   0,
+   1
+  ],
+  "params": [
+   0.73
+  ],
+  "n_lowered": 3,
+  "process_fidelity": 1.0
+ },
+ {
+  "gate": "rzz",
+  "qubits": [
+   1,
+   0
+  ],
+  "params": [
+   0.73
+  ],
+  "n_lowered": 3,
+  "process_fidelity": 1.0
+ },
+ {
+  "gate": "rzz",
+  "qubits": [
+   0,
+   1
+  ],
+  "params": [
+   1.5707963267948966
+  ],
+  "n_lowered": 3,
+  "process_fidelity": 1.0
+ },
+ {
+  "gate": "rzz",
+  "qubits": [
+   1,
+   0
+  ],
+  "params": [
+   1.5707963267948966
+  ],
+  "n_lowered": 3,
+  "process_fidelity": 1.0
+ },
+ {
+  "gate": "ccx",
+  "qubits": [
+   0,
+   1,
+   2
+  ],
+  "params": null,
+  "n_lowered": 15,
+  "process_fidelity": 0.9999999999999991
+ },
+ {
+  "gate": "ccx",
+  "qubits": [
+   2,
+   0,
+   1
+  ],
+  "params": null,
+  "n_lowered": 15,
+  "process_fidelity": 0.9999999999999991
+ }
+]
