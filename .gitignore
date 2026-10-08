@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+envs/
+cache/
+tmp/
+*.xclbin
+*.xo
+*.xsa
+_x/
+.ipcache/
