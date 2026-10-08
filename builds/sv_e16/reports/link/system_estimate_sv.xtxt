@@ -1,0 +1,529 @@
+===============================================================================
+Version:    v++ v2023.2 (64-bit)
+Build:      SW Build 4026344 on 2023-10-11-15:42:10
+Copyright:  Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
+Created:    Tue Oct  6 23:10:56 2026
+===============================================================================
+
+-------------------------------------------------------------------------------
+Design Name:             sv
+Target Device:           xilinx:u55c:gen3x16_xdma_3:202210.1
+Target Clock:            300.000000MHz
+Total number of kernels: 2
+-------------------------------------------------------------------------------
+
+Kernel Summary
+Kernel Name  Type  Target              OpenCL Library  Compute Units
+-----------  ----  ------------------  --------------  -------------
+sv_swap      c     fpga0:OCL_REGION_0  sv              4
+sv_engine    c     fpga0:OCL_REGION_0  sv              16
+
+
+-------------------------------------------------------------------------------
+OpenCL Binary:     sv
+Kernels mapped to: clc_region
+
+Timing Information (MHz)
+Compute Unit  Kernel Name  Module Name                                  Target Frequency  Estimated Frequency
+------------  -----------  -------------------------------------------  ----------------  -------------------
+sv_engine_1   sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  300.300293        411.015198
+sv_engine_1   sv_engine    reader_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_1   sv_engine    reader                                       300.300293        411.015198
+sv_engine_1   sv_engine    compute_Pipeline_PAIRS                       300.300293        380.662354
+sv_engine_1   sv_engine    compute                                      300.300293        380.662354
+sv_engine_1   sv_engine    writer_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_1   sv_engine    writer                                       300.300293        411.015198
+sv_engine_1   sv_engine    run_pass                                     300.300293        338.524048
+sv_engine_1   sv_engine    sv_engine                                    300.300293        338.524048
+sv_engine_2   sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  300.300293        411.015198
+sv_engine_2   sv_engine    reader_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_2   sv_engine    reader                                       300.300293        411.015198
+sv_engine_2   sv_engine    compute_Pipeline_PAIRS                       300.300293        380.662354
+sv_engine_2   sv_engine    compute                                      300.300293        380.662354
+sv_engine_2   sv_engine    writer_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_2   sv_engine    writer                                       300.300293        411.015198
+sv_engine_2   sv_engine    run_pass                                     300.300293        338.524048
+sv_engine_2   sv_engine    sv_engine                                    300.300293        338.524048
+sv_engine_3   sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  300.300293        411.015198
+sv_engine_3   sv_engine    reader_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_3   sv_engine    reader                                       300.300293        411.015198
+sv_engine_3   sv_engine    compute_Pipeline_PAIRS                       300.300293        380.662354
+sv_engine_3   sv_engine    compute                                      300.300293        380.662354
+sv_engine_3   sv_engine    writer_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_3   sv_engine    writer                                       300.300293        411.015198
+sv_engine_3   sv_engine    run_pass                                     300.300293        338.524048
+sv_engine_3   sv_engine    sv_engine                                    300.300293        338.524048
+sv_engine_4   sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  300.300293        411.015198
+sv_engine_4   sv_engine    reader_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_4   sv_engine    reader                                       300.300293        411.015198
+sv_engine_4   sv_engine    compute_Pipeline_PAIRS                       300.300293        380.662354
+sv_engine_4   sv_engine    compute                                      300.300293        380.662354
+sv_engine_4   sv_engine    writer_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_4   sv_engine    writer                                       300.300293        411.015198
+sv_engine_4   sv_engine    run_pass                                     300.300293        338.524048
+sv_engine_4   sv_engine    sv_engine                                    300.300293        338.524048
+sv_engine_5   sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  300.300293        411.015198
+sv_engine_5   sv_engine    reader_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_5   sv_engine    reader                                       300.300293        411.015198
+sv_engine_5   sv_engine    compute_Pipeline_PAIRS                       300.300293        380.662354
+sv_engine_5   sv_engine    compute                                      300.300293        380.662354
+sv_engine_5   sv_engine    writer_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_5   sv_engine    writer                                       300.300293        411.015198
+sv_engine_5   sv_engine    run_pass                                     300.300293        338.524048
+sv_engine_5   sv_engine    sv_engine                                    300.300293        338.524048
+sv_engine_6   sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  300.300293        411.015198
+sv_engine_6   sv_engine    reader_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_6   sv_engine    reader                                       300.300293        411.015198
+sv_engine_6   sv_engine    compute_Pipeline_PAIRS                       300.300293        380.662354
+sv_engine_6   sv_engine    compute                                      300.300293        380.662354
+sv_engine_6   sv_engine    writer_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_6   sv_engine    writer                                       300.300293        411.015198
+sv_engine_6   sv_engine    run_pass                                     300.300293        338.524048
+sv_engine_6   sv_engine    sv_engine                                    300.300293        338.524048
+sv_engine_7   sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  300.300293        411.015198
+sv_engine_7   sv_engine    reader_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_7   sv_engine    reader                                       300.300293        411.015198
+sv_engine_7   sv_engine    compute_Pipeline_PAIRS                       300.300293        380.662354
+sv_engine_7   sv_engine    compute                                      300.300293        380.662354
+sv_engine_7   sv_engine    writer_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_7   sv_engine    writer                                       300.300293        411.015198
+sv_engine_7   sv_engine    run_pass                                     300.300293        338.524048
+sv_engine_7   sv_engine    sv_engine                                    300.300293        338.524048
+sv_engine_8   sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  300.300293        411.015198
+sv_engine_8   sv_engine    reader_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_8   sv_engine    reader                                       300.300293        411.015198
+sv_engine_8   sv_engine    compute_Pipeline_PAIRS                       300.300293        380.662354
+sv_engine_8   sv_engine    compute                                      300.300293        380.662354
+sv_engine_8   sv_engine    writer_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_8   sv_engine    writer                                       300.300293        411.015198
+sv_engine_8   sv_engine    run_pass                                     300.300293        338.524048
+sv_engine_8   sv_engine    sv_engine                                    300.300293        338.524048
+sv_engine_9   sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  300.300293        411.015198
+sv_engine_9   sv_engine    reader_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_9   sv_engine    reader                                       300.300293        411.015198
+sv_engine_9   sv_engine    compute_Pipeline_PAIRS                       300.300293        380.662354
+sv_engine_9   sv_engine    compute                                      300.300293        380.662354
+sv_engine_9   sv_engine    writer_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_9   sv_engine    writer                                       300.300293        411.015198
+sv_engine_9   sv_engine    run_pass                                     300.300293        338.524048
+sv_engine_9   sv_engine    sv_engine                                    300.300293        338.524048
+sv_engine_10  sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  300.300293        411.015198
+sv_engine_10  sv_engine    reader_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_10  sv_engine    reader                                       300.300293        411.015198
+sv_engine_10  sv_engine    compute_Pipeline_PAIRS                       300.300293        380.662354
+sv_engine_10  sv_engine    compute                                      300.300293        380.662354
+sv_engine_10  sv_engine    writer_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_10  sv_engine    writer                                       300.300293        411.015198
+sv_engine_10  sv_engine    run_pass                                     300.300293        338.524048
+sv_engine_10  sv_engine    sv_engine                                    300.300293        338.524048
+sv_engine_11  sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  300.300293        411.015198
+sv_engine_11  sv_engine    reader_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_11  sv_engine    reader                                       300.300293        411.015198
+sv_engine_11  sv_engine    compute_Pipeline_PAIRS                       300.300293        380.662354
+sv_engine_11  sv_engine    compute                                      300.300293        380.662354
+sv_engine_11  sv_engine    writer_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_11  sv_engine    writer                                       300.300293        411.015198
+sv_engine_11  sv_engine    run_pass                                     300.300293        338.524048
+sv_engine_11  sv_engine    sv_engine                                    300.300293        338.524048
+sv_engine_12  sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  300.300293        411.015198
+sv_engine_12  sv_engine    reader_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_12  sv_engine    reader                                       300.300293        411.015198
+sv_engine_12  sv_engine    compute_Pipeline_PAIRS                       300.300293        380.662354
+sv_engine_12  sv_engine    compute                                      300.300293        380.662354
+sv_engine_12  sv_engine    writer_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_12  sv_engine    writer                                       300.300293        411.015198
+sv_engine_12  sv_engine    run_pass                                     300.300293        338.524048
+sv_engine_12  sv_engine    sv_engine                                    300.300293        338.524048
+sv_engine_13  sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  300.300293        411.015198
+sv_engine_13  sv_engine    reader_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_13  sv_engine    reader                                       300.300293        411.015198
+sv_engine_13  sv_engine    compute_Pipeline_PAIRS                       300.300293        380.662354
+sv_engine_13  sv_engine    compute                                      300.300293        380.662354
+sv_engine_13  sv_engine    writer_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_13  sv_engine    writer                                       300.300293        411.015198
+sv_engine_13  sv_engine    run_pass                                     300.300293        338.524048
+sv_engine_13  sv_engine    sv_engine                                    300.300293        338.524048
+sv_engine_14  sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  300.300293        411.015198
+sv_engine_14  sv_engine    reader_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_14  sv_engine    reader                                       300.300293        411.015198
+sv_engine_14  sv_engine    compute_Pipeline_PAIRS                       300.300293        380.662354
+sv_engine_14  sv_engine    compute                                      300.300293        380.662354
+sv_engine_14  sv_engine    writer_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_14  sv_engine    writer                                       300.300293        411.015198
+sv_engine_14  sv_engine    run_pass                                     300.300293        338.524048
+sv_engine_14  sv_engine    sv_engine                                    300.300293        338.524048
+sv_engine_15  sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  300.300293        411.015198
+sv_engine_15  sv_engine    reader_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_15  sv_engine    reader                                       300.300293        411.015198
+sv_engine_15  sv_engine    compute_Pipeline_PAIRS                       300.300293        380.662354
+sv_engine_15  sv_engine    compute                                      300.300293        380.662354
+sv_engine_15  sv_engine    writer_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_15  sv_engine    writer                                       300.300293        411.015198
+sv_engine_15  sv_engine    run_pass                                     300.300293        338.524048
+sv_engine_15  sv_engine    sv_engine                                    300.300293        338.524048
+sv_engine_16  sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  300.300293        411.015198
+sv_engine_16  sv_engine    reader_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_16  sv_engine    reader                                       300.300293        411.015198
+sv_engine_16  sv_engine    compute_Pipeline_PAIRS                       300.300293        380.662354
+sv_engine_16  sv_engine    compute                                      300.300293        380.662354
+sv_engine_16  sv_engine    writer_Pipeline_SUBS_WORDS                   300.300293        411.015198
+sv_engine_16  sv_engine    writer                                       300.300293        411.015198
+sv_engine_16  sv_engine    run_pass                                     300.300293        338.524048
+sv_engine_16  sv_engine    sv_engine                                    300.300293        338.524048
+sv_swap_1     sv_swap      sv_swap_Pipeline_RA                          300.300293        411.015198
+sv_swap_1     sv_swap      sv_swap_Pipeline_RB                          300.300293        411.015198
+sv_swap_1     sv_swap      sv_swap_Pipeline_WA                          300.300293        379.506653
+sv_swap_1     sv_swap      sv_swap_Pipeline_WB                          300.300293        379.506653
+sv_swap_1     sv_swap      sv_swap                                      300.300293        379.506653
+sv_swap_2     sv_swap      sv_swap_Pipeline_RA                          300.300293        411.015198
+sv_swap_2     sv_swap      sv_swap_Pipeline_RB                          300.300293        411.015198
+sv_swap_2     sv_swap      sv_swap_Pipeline_WA                          300.300293        379.506653
+sv_swap_2     sv_swap      sv_swap_Pipeline_WB                          300.300293        379.506653
+sv_swap_2     sv_swap      sv_swap                                      300.300293        379.506653
+sv_swap_3     sv_swap      sv_swap_Pipeline_RA                          300.300293        411.015198
+sv_swap_3     sv_swap      sv_swap_Pipeline_RB                          300.300293        411.015198
+sv_swap_3     sv_swap      sv_swap_Pipeline_WA                          300.300293        379.506653
+sv_swap_3     sv_swap      sv_swap_Pipeline_WB                          300.300293        379.506653
+sv_swap_3     sv_swap      sv_swap                                      300.300293        379.506653
+sv_swap_4     sv_swap      sv_swap_Pipeline_RA                          300.300293        411.015198
+sv_swap_4     sv_swap      sv_swap_Pipeline_RB                          300.300293        411.015198
+sv_swap_4     sv_swap      sv_swap_Pipeline_WA                          300.300293        379.506653
+sv_swap_4     sv_swap      sv_swap_Pipeline_WB                          300.300293        379.506653
+sv_swap_4     sv_swap      sv_swap                                      300.300293        379.506653
+
+Latency Information
+Compute Unit  Kernel Name  Module Name                                  Start Interval  Best (cycles)  Avg (cycles)  Worst (cycles)  Best (absolute)  Avg (absolute)  Worst (absolute)
+------------  -----------  -------------------------------------------  --------------  -------------  ------------  --------------  ---------------  --------------  ----------------
+sv_engine_1   sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  undef           undef          undef         undef           undef            undef           undef
+sv_engine_1   sv_engine    reader_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_1   sv_engine    reader                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_1   sv_engine    compute_Pipeline_PAIRS                       541             541            541           541             1.803 us         1.803 us        1.803 us
+sv_engine_1   sv_engine    compute                                      undef           undef          undef         undef           undef            undef           undef
+sv_engine_1   sv_engine    writer_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_1   sv_engine    writer                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_1   sv_engine    run_pass                                     undef           undef          undef         undef           undef            undef           undef
+sv_engine_1   sv_engine    sv_engine                                    undef           undef          undef         undef           undef            undef           undef
+sv_engine_2   sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  undef           undef          undef         undef           undef            undef           undef
+sv_engine_2   sv_engine    reader_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_2   sv_engine    reader                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_2   sv_engine    compute_Pipeline_PAIRS                       541             541            541           541             1.803 us         1.803 us        1.803 us
+sv_engine_2   sv_engine    compute                                      undef           undef          undef         undef           undef            undef           undef
+sv_engine_2   sv_engine    writer_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_2   sv_engine    writer                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_2   sv_engine    run_pass                                     undef           undef          undef         undef           undef            undef           undef
+sv_engine_2   sv_engine    sv_engine                                    undef           undef          undef         undef           undef            undef           undef
+sv_engine_3   sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  undef           undef          undef         undef           undef            undef           undef
+sv_engine_3   sv_engine    reader_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_3   sv_engine    reader                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_3   sv_engine    compute_Pipeline_PAIRS                       541             541            541           541             1.803 us         1.803 us        1.803 us
+sv_engine_3   sv_engine    compute                                      undef           undef          undef         undef           undef            undef           undef
+sv_engine_3   sv_engine    writer_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_3   sv_engine    writer                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_3   sv_engine    run_pass                                     undef           undef          undef         undef           undef            undef           undef
+sv_engine_3   sv_engine    sv_engine                                    undef           undef          undef         undef           undef            undef           undef
+sv_engine_4   sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  undef           undef          undef         undef           undef            undef           undef
+sv_engine_4   sv_engine    reader_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_4   sv_engine    reader                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_4   sv_engine    compute_Pipeline_PAIRS                       541             541            541           541             1.803 us         1.803 us        1.803 us
+sv_engine_4   sv_engine    compute                                      undef           undef          undef         undef           undef            undef           undef
+sv_engine_4   sv_engine    writer_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_4   sv_engine    writer                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_4   sv_engine    run_pass                                     undef           undef          undef         undef           undef            undef           undef
+sv_engine_4   sv_engine    sv_engine                                    undef           undef          undef         undef           undef            undef           undef
+sv_engine_5   sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  undef           undef          undef         undef           undef            undef           undef
+sv_engine_5   sv_engine    reader_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_5   sv_engine    reader                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_5   sv_engine    compute_Pipeline_PAIRS                       541             541            541           541             1.803 us         1.803 us        1.803 us
+sv_engine_5   sv_engine    compute                                      undef           undef          undef         undef           undef            undef           undef
+sv_engine_5   sv_engine    writer_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_5   sv_engine    writer                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_5   sv_engine    run_pass                                     undef           undef          undef         undef           undef            undef           undef
+sv_engine_5   sv_engine    sv_engine                                    undef           undef          undef         undef           undef            undef           undef
+sv_engine_6   sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  undef           undef          undef         undef           undef            undef           undef
+sv_engine_6   sv_engine    reader_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_6   sv_engine    reader                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_6   sv_engine    compute_Pipeline_PAIRS                       541             541            541           541             1.803 us         1.803 us        1.803 us
+sv_engine_6   sv_engine    compute                                      undef           undef          undef         undef           undef            undef           undef
+sv_engine_6   sv_engine    writer_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_6   sv_engine    writer                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_6   sv_engine    run_pass                                     undef           undef          undef         undef           undef            undef           undef
+sv_engine_6   sv_engine    sv_engine                                    undef           undef          undef         undef           undef            undef           undef
+sv_engine_7   sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  undef           undef          undef         undef           undef            undef           undef
+sv_engine_7   sv_engine    reader_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_7   sv_engine    reader                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_7   sv_engine    compute_Pipeline_PAIRS                       541             541            541           541             1.803 us         1.803 us        1.803 us
+sv_engine_7   sv_engine    compute                                      undef           undef          undef         undef           undef            undef           undef
+sv_engine_7   sv_engine    writer_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_7   sv_engine    writer                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_7   sv_engine    run_pass                                     undef           undef          undef         undef           undef            undef           undef
+sv_engine_7   sv_engine    sv_engine                                    undef           undef          undef         undef           undef            undef           undef
+sv_engine_8   sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  undef           undef          undef         undef           undef            undef           undef
+sv_engine_8   sv_engine    reader_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_8   sv_engine    reader                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_8   sv_engine    compute_Pipeline_PAIRS                       541             541            541           541             1.803 us         1.803 us        1.803 us
+sv_engine_8   sv_engine    compute                                      undef           undef          undef         undef           undef            undef           undef
+sv_engine_8   sv_engine    writer_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_8   sv_engine    writer                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_8   sv_engine    run_pass                                     undef           undef          undef         undef           undef            undef           undef
+sv_engine_8   sv_engine    sv_engine                                    undef           undef          undef         undef           undef            undef           undef
+sv_engine_9   sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  undef           undef          undef         undef           undef            undef           undef
+sv_engine_9   sv_engine    reader_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_9   sv_engine    reader                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_9   sv_engine    compute_Pipeline_PAIRS                       541             541            541           541             1.803 us         1.803 us        1.803 us
+sv_engine_9   sv_engine    compute                                      undef           undef          undef         undef           undef            undef           undef
+sv_engine_9   sv_engine    writer_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_9   sv_engine    writer                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_9   sv_engine    run_pass                                     undef           undef          undef         undef           undef            undef           undef
+sv_engine_9   sv_engine    sv_engine                                    undef           undef          undef         undef           undef            undef           undef
+sv_engine_10  sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  undef           undef          undef         undef           undef            undef           undef
+sv_engine_10  sv_engine    reader_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_10  sv_engine    reader                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_10  sv_engine    compute_Pipeline_PAIRS                       541             541            541           541             1.803 us         1.803 us        1.803 us
+sv_engine_10  sv_engine    compute                                      undef           undef          undef         undef           undef            undef           undef
+sv_engine_10  sv_engine    writer_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_10  sv_engine    writer                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_10  sv_engine    run_pass                                     undef           undef          undef         undef           undef            undef           undef
+sv_engine_10  sv_engine    sv_engine                                    undef           undef          undef         undef           undef            undef           undef
+sv_engine_11  sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  undef           undef          undef         undef           undef            undef           undef
+sv_engine_11  sv_engine    reader_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_11  sv_engine    reader                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_11  sv_engine    compute_Pipeline_PAIRS                       541             541            541           541             1.803 us         1.803 us        1.803 us
+sv_engine_11  sv_engine    compute                                      undef           undef          undef         undef           undef            undef           undef
+sv_engine_11  sv_engine    writer_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_11  sv_engine    writer                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_11  sv_engine    run_pass                                     undef           undef          undef         undef           undef            undef           undef
+sv_engine_11  sv_engine    sv_engine                                    undef           undef          undef         undef           undef            undef           undef
+sv_engine_12  sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  undef           undef          undef         undef           undef            undef           undef
+sv_engine_12  sv_engine    reader_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_12  sv_engine    reader                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_12  sv_engine    compute_Pipeline_PAIRS                       541             541            541           541             1.803 us         1.803 us        1.803 us
+sv_engine_12  sv_engine    compute                                      undef           undef          undef         undef           undef            undef           undef
+sv_engine_12  sv_engine    writer_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_12  sv_engine    writer                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_12  sv_engine    run_pass                                     undef           undef          undef         undef           undef            undef           undef
+sv_engine_12  sv_engine    sv_engine                                    undef           undef          undef         undef           undef            undef           undef
+sv_engine_13  sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  undef           undef          undef         undef           undef            undef           undef
+sv_engine_13  sv_engine    reader_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_13  sv_engine    reader                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_13  sv_engine    compute_Pipeline_PAIRS                       541             541            541           541             1.803 us         1.803 us        1.803 us
+sv_engine_13  sv_engine    compute                                      undef           undef          undef         undef           undef            undef           undef
+sv_engine_13  sv_engine    writer_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_13  sv_engine    writer                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_13  sv_engine    run_pass                                     undef           undef          undef         undef           undef            undef           undef
+sv_engine_13  sv_engine    sv_engine                                    undef           undef          undef         undef           undef            undef           undef
+sv_engine_14  sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  undef           undef          undef         undef           undef            undef           undef
+sv_engine_14  sv_engine    reader_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_14  sv_engine    reader                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_14  sv_engine    compute_Pipeline_PAIRS                       541             541            541           541             1.803 us         1.803 us        1.803 us
+sv_engine_14  sv_engine    compute                                      undef           undef          undef         undef           undef            undef           undef
+sv_engine_14  sv_engine    writer_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_14  sv_engine    writer                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_14  sv_engine    run_pass                                     undef           undef          undef         undef           undef            undef           undef
+sv_engine_14  sv_engine    sv_engine                                    undef           undef          undef         undef           undef            undef           undef
+sv_engine_15  sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  undef           undef          undef         undef           undef            undef           undef
+sv_engine_15  sv_engine    reader_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_15  sv_engine    reader                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_15  sv_engine    compute_Pipeline_PAIRS                       541             541            541           541             1.803 us         1.803 us        1.803 us
+sv_engine_15  sv_engine    compute                                      undef           undef          undef         undef           undef            undef           undef
+sv_engine_15  sv_engine    writer_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_15  sv_engine    writer                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_15  sv_engine    run_pass                                     undef           undef          undef         undef           undef            undef           undef
+sv_engine_15  sv_engine    sv_engine                                    undef           undef          undef         undef           undef            undef           undef
+sv_engine_16  sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  undef           undef          undef         undef           undef            undef           undef
+sv_engine_16  sv_engine    reader_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_16  sv_engine    reader                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_16  sv_engine    compute_Pipeline_PAIRS                       541             541            541           541             1.803 us         1.803 us        1.803 us
+sv_engine_16  sv_engine    compute                                      undef           undef          undef         undef           undef            undef           undef
+sv_engine_16  sv_engine    writer_Pipeline_SUBS_WORDS                   undef           undef          undef         undef           undef            undef           undef
+sv_engine_16  sv_engine    writer                                       undef           undef          undef         undef           undef            undef           undef
+sv_engine_16  sv_engine    run_pass                                     undef           undef          undef         undef           undef            undef           undef
+sv_engine_16  sv_engine    sv_engine                                    undef           undef          undef         undef           undef            undef           undef
+sv_swap_1     sv_swap      sv_swap_Pipeline_RA                          4 ~ ?           4              undef         undef           13.332 ns        undef           undef
+sv_swap_1     sv_swap      sv_swap_Pipeline_RB                          4 ~ 2050        4              undef         2050            13.332 ns        undef           6.833 us
+sv_swap_1     sv_swap      sv_swap_Pipeline_WA                          4 ~ 2050        4              undef         2050            13.332 ns        undef           6.833 us
+sv_swap_1     sv_swap      sv_swap_Pipeline_WB                          4 ~ 2050        4              undef         2050            13.332 ns        undef           6.833 us
+sv_swap_1     sv_swap      sv_swap                                      undef           undef          undef         undef           undef            undef           undef
+sv_swap_2     sv_swap      sv_swap_Pipeline_RA                          4 ~ ?           4              undef         undef           13.332 ns        undef           undef
+sv_swap_2     sv_swap      sv_swap_Pipeline_RB                          4 ~ 2050        4              undef         2050            13.332 ns        undef           6.833 us
+sv_swap_2     sv_swap      sv_swap_Pipeline_WA                          4 ~ 2050        4              undef         2050            13.332 ns        undef           6.833 us
+sv_swap_2     sv_swap      sv_swap_Pipeline_WB                          4 ~ 2050        4              undef         2050            13.332 ns        undef           6.833 us
+sv_swap_2     sv_swap      sv_swap                                      undef           undef          undef         undef           undef            undef           undef
+sv_swap_3     sv_swap      sv_swap_Pipeline_RA                          4 ~ ?           4              undef         undef           13.332 ns        undef           undef
+sv_swap_3     sv_swap      sv_swap_Pipeline_RB                          4 ~ 2050        4              undef         2050            13.332 ns        undef           6.833 us
+sv_swap_3     sv_swap      sv_swap_Pipeline_WA                          4 ~ 2050        4              undef         2050            13.332 ns        undef           6.833 us
+sv_swap_3     sv_swap      sv_swap_Pipeline_WB                          4 ~ 2050        4              undef         2050            13.332 ns        undef           6.833 us
+sv_swap_3     sv_swap      sv_swap                                      undef           undef          undef         undef           undef            undef           undef
+sv_swap_4     sv_swap      sv_swap_Pipeline_RA                          4 ~ ?           4              undef         undef           13.332 ns        undef           undef
+sv_swap_4     sv_swap      sv_swap_Pipeline_RB                          4 ~ 2050        4              undef         2050            13.332 ns        undef           6.833 us
+sv_swap_4     sv_swap      sv_swap_Pipeline_WA                          4 ~ 2050        4              undef         2050            13.332 ns        undef           6.833 us
+sv_swap_4     sv_swap      sv_swap_Pipeline_WB                          4 ~ 2050        4              undef         2050            13.332 ns        undef           6.833 us
+sv_swap_4     sv_swap      sv_swap                                      undef           undef          undef         undef           undef            undef           undef
+
+Area Information
+Compute Unit  Kernel Name  Module Name                                  FF     LUT    DSP  BRAM  URAM
+------------  -----------  -------------------------------------------  -----  -----  ---  ----  ----
+sv_engine_1   sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  1704   3960   0    0     0
+sv_engine_1   sv_engine    reader_Pipeline_SUBS_WORDS                   1043   1208   0    0     0
+sv_engine_1   sv_engine    reader                                       1734   7613   0    0     0
+sv_engine_1   sv_engine    compute_Pipeline_PAIRS                       31004  19634  0    0     0
+sv_engine_1   sv_engine    compute                                      31972  20784  0    16    0
+sv_engine_1   sv_engine    writer_Pipeline_SUBS_WORDS                   937    1992   0    0     0
+sv_engine_1   sv_engine    writer                                       1959   8397   0    0     0
+sv_engine_1   sv_engine    run_pass                                     35823  37024  0    76    0
+sv_engine_1   sv_engine    sv_engine                                    42333  49984  0    92    0
+sv_engine_2   sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  1704   3960   0    0     0
+sv_engine_2   sv_engine    reader_Pipeline_SUBS_WORDS                   1043   1208   0    0     0
+sv_engine_2   sv_engine    reader                                       1734   7613   0    0     0
+sv_engine_2   sv_engine    compute_Pipeline_PAIRS                       31004  19634  0    0     0
+sv_engine_2   sv_engine    compute                                      31972  20784  0    16    0
+sv_engine_2   sv_engine    writer_Pipeline_SUBS_WORDS                   937    1992   0    0     0
+sv_engine_2   sv_engine    writer                                       1959   8397   0    0     0
+sv_engine_2   sv_engine    run_pass                                     35823  37024  0    76    0
+sv_engine_2   sv_engine    sv_engine                                    42333  49984  0    92    0
+sv_engine_3   sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  1704   3960   0    0     0
+sv_engine_3   sv_engine    reader_Pipeline_SUBS_WORDS                   1043   1208   0    0     0
+sv_engine_3   sv_engine    reader                                       1734   7613   0    0     0
+sv_engine_3   sv_engine    compute_Pipeline_PAIRS                       31004  19634  0    0     0
+sv_engine_3   sv_engine    compute                                      31972  20784  0    16    0
+sv_engine_3   sv_engine    writer_Pipeline_SUBS_WORDS                   937    1992   0    0     0
+sv_engine_3   sv_engine    writer                                       1959   8397   0    0     0
+sv_engine_3   sv_engine    run_pass                                     35823  37024  0    76    0
+sv_engine_3   sv_engine    sv_engine                                    42333  49984  0    92    0
+sv_engine_4   sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  1704   3960   0    0     0
+sv_engine_4   sv_engine    reader_Pipeline_SUBS_WORDS                   1043   1208   0    0     0
+sv_engine_4   sv_engine    reader                                       1734   7613   0    0     0
+sv_engine_4   sv_engine    compute_Pipeline_PAIRS                       31004  19634  0    0     0
+sv_engine_4   sv_engine    compute                                      31972  20784  0    16    0
+sv_engine_4   sv_engine    writer_Pipeline_SUBS_WORDS                   937    1992   0    0     0
+sv_engine_4   sv_engine    writer                                       1959   8397   0    0     0
+sv_engine_4   sv_engine    run_pass                                     35823  37024  0    76    0
+sv_engine_4   sv_engine    sv_engine                                    42333  49984  0    92    0
+sv_engine_5   sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  1704   3960   0    0     0
+sv_engine_5   sv_engine    reader_Pipeline_SUBS_WORDS                   1043   1208   0    0     0
+sv_engine_5   sv_engine    reader                                       1734   7613   0    0     0
+sv_engine_5   sv_engine    compute_Pipeline_PAIRS                       31004  19634  0    0     0
+sv_engine_5   sv_engine    compute                                      31972  20784  0    16    0
+sv_engine_5   sv_engine    writer_Pipeline_SUBS_WORDS                   937    1992   0    0     0
+sv_engine_5   sv_engine    writer                                       1959   8397   0    0     0
+sv_engine_5   sv_engine    run_pass                                     35823  37024  0    76    0
+sv_engine_5   sv_engine    sv_engine                                    42333  49984  0    92    0
+sv_engine_6   sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  1704   3960   0    0     0
+sv_engine_6   sv_engine    reader_Pipeline_SUBS_WORDS                   1043   1208   0    0     0
+sv_engine_6   sv_engine    reader                                       1734   7613   0    0     0
+sv_engine_6   sv_engine    compute_Pipeline_PAIRS                       31004  19634  0    0     0
+sv_engine_6   sv_engine    compute                                      31972  20784  0    16    0
+sv_engine_6   sv_engine    writer_Pipeline_SUBS_WORDS                   937    1992   0    0     0
+sv_engine_6   sv_engine    writer                                       1959   8397   0    0     0
+sv_engine_6   sv_engine    run_pass                                     35823  37024  0    76    0
+sv_engine_6   sv_engine    sv_engine                                    42333  49984  0    92    0
+sv_engine_7   sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  1704   3960   0    0     0
+sv_engine_7   sv_engine    reader_Pipeline_SUBS_WORDS                   1043   1208   0    0     0
+sv_engine_7   sv_engine    reader                                       1734   7613   0    0     0
+sv_engine_7   sv_engine    compute_Pipeline_PAIRS                       31004  19634  0    0     0
+sv_engine_7   sv_engine    compute                                      31972  20784  0    16    0
+sv_engine_7   sv_engine    writer_Pipeline_SUBS_WORDS                   937    1992   0    0     0
+sv_engine_7   sv_engine    writer                                       1959   8397   0    0     0
+sv_engine_7   sv_engine    run_pass                                     35823  37024  0    76    0
+sv_engine_7   sv_engine    sv_engine                                    42333  49984  0    92    0
+sv_engine_8   sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  1704   3960   0    0     0
+sv_engine_8   sv_engine    reader_Pipeline_SUBS_WORDS                   1043   1208   0    0     0
+sv_engine_8   sv_engine    reader                                       1734   7613   0    0     0
+sv_engine_8   sv_engine    compute_Pipeline_PAIRS                       31004  19634  0    0     0
+sv_engine_8   sv_engine    compute                                      31972  20784  0    16    0
+sv_engine_8   sv_engine    writer_Pipeline_SUBS_WORDS                   937    1992   0    0     0
+sv_engine_8   sv_engine    writer                                       1959   8397   0    0     0
+sv_engine_8   sv_engine    run_pass                                     35823  37024  0    76    0
+sv_engine_8   sv_engine    sv_engine                                    42333  49984  0    92    0
+sv_engine_9   sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  1704   3960   0    0     0
+sv_engine_9   sv_engine    reader_Pipeline_SUBS_WORDS                   1043   1208   0    0     0
+sv_engine_9   sv_engine    reader                                       1734   7613   0    0     0
+sv_engine_9   sv_engine    compute_Pipeline_PAIRS                       31004  19634  0    0     0
+sv_engine_9   sv_engine    compute                                      31972  20784  0    16    0
+sv_engine_9   sv_engine    writer_Pipeline_SUBS_WORDS                   937    1992   0    0     0
+sv_engine_9   sv_engine    writer                                       1959   8397   0    0     0
+sv_engine_9   sv_engine    run_pass                                     35823  37024  0    76    0
+sv_engine_9   sv_engine    sv_engine                                    42333  49984  0    92    0
+sv_engine_10  sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  1704   3960   0    0     0
+sv_engine_10  sv_engine    reader_Pipeline_SUBS_WORDS                   1043   1208   0    0     0
+sv_engine_10  sv_engine    reader                                       1734   7613   0    0     0
+sv_engine_10  sv_engine    compute_Pipeline_PAIRS                       31004  19634  0    0     0
+sv_engine_10  sv_engine    compute                                      31972  20784  0    16    0
+sv_engine_10  sv_engine    writer_Pipeline_SUBS_WORDS                   937    1992   0    0     0
+sv_engine_10  sv_engine    writer                                       1959   8397   0    0     0
+sv_engine_10  sv_engine    run_pass                                     35823  37024  0    76    0
+sv_engine_10  sv_engine    sv_engine                                    42333  49984  0    92    0
+sv_engine_11  sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  1704   3960   0    0     0
+sv_engine_11  sv_engine    reader_Pipeline_SUBS_WORDS                   1043   1208   0    0     0
+sv_engine_11  sv_engine    reader                                       1734   7613   0    0     0
+sv_engine_11  sv_engine    compute_Pipeline_PAIRS                       31004  19634  0    0     0
+sv_engine_11  sv_engine    compute                                      31972  20784  0    16    0
+sv_engine_11  sv_engine    writer_Pipeline_SUBS_WORDS                   937    1992   0    0     0
+sv_engine_11  sv_engine    writer                                       1959   8397   0    0     0
+sv_engine_11  sv_engine    run_pass                                     35823  37024  0    76    0
+sv_engine_11  sv_engine    sv_engine                                    42333  49984  0    92    0
+sv_engine_12  sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  1704   3960   0    0     0
+sv_engine_12  sv_engine    reader_Pipeline_SUBS_WORDS                   1043   1208   0    0     0
+sv_engine_12  sv_engine    reader                                       1734   7613   0    0     0
+sv_engine_12  sv_engine    compute_Pipeline_PAIRS                       31004  19634  0    0     0
+sv_engine_12  sv_engine    compute                                      31972  20784  0    16    0
+sv_engine_12  sv_engine    writer_Pipeline_SUBS_WORDS                   937    1992   0    0     0
+sv_engine_12  sv_engine    writer                                       1959   8397   0    0     0
+sv_engine_12  sv_engine    run_pass                                     35823  37024  0    76    0
+sv_engine_12  sv_engine    sv_engine                                    42333  49984  0    92    0
+sv_engine_13  sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  1704   3960   0    0     0
+sv_engine_13  sv_engine    reader_Pipeline_SUBS_WORDS                   1043   1208   0    0     0
+sv_engine_13  sv_engine    reader                                       1734   7613   0    0     0
+sv_engine_13  sv_engine    compute_Pipeline_PAIRS                       31004  19634  0    0     0
+sv_engine_13  sv_engine    compute                                      31972  20784  0    16    0
+sv_engine_13  sv_engine    writer_Pipeline_SUBS_WORDS                   937    1992   0    0     0
+sv_engine_13  sv_engine    writer                                       1959   8397   0    0     0
+sv_engine_13  sv_engine    run_pass                                     35823  37024  0    76    0
+sv_engine_13  sv_engine    sv_engine                                    42333  49984  0    92    0
+sv_engine_14  sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  1704   3960   0    0     0
+sv_engine_14  sv_engine    reader_Pipeline_SUBS_WORDS                   1043   1208   0    0     0
+sv_engine_14  sv_engine    reader                                       1734   7613   0    0     0
+sv_engine_14  sv_engine    compute_Pipeline_PAIRS                       31004  19634  0    0     0
+sv_engine_14  sv_engine    compute                                      31972  20784  0    16    0
+sv_engine_14  sv_engine    writer_Pipeline_SUBS_WORDS                   937    1992   0    0     0
+sv_engine_14  sv_engine    writer                                       1959   8397   0    0     0
+sv_engine_14  sv_engine    run_pass                                     35823  37024  0    76    0
+sv_engine_14  sv_engine    sv_engine                                    42333  49984  0    92    0
+sv_engine_15  sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  1704   3960   0    0     0
+sv_engine_15  sv_engine    reader_Pipeline_SUBS_WORDS                   1043   1208   0    0     0
+sv_engine_15  sv_engine    reader                                       1734   7613   0    0     0
+sv_engine_15  sv_engine    compute_Pipeline_PAIRS                       31004  19634  0    0     0
+sv_engine_15  sv_engine    compute                                      31972  20784  0    16    0
+sv_engine_15  sv_engine    writer_Pipeline_SUBS_WORDS                   937    1992   0    0     0
+sv_engine_15  sv_engine    writer                                       1959   8397   0    0     0
+sv_engine_15  sv_engine    run_pass                                     35823  37024  0    76    0
+sv_engine_15  sv_engine    sv_engine                                    42333  49984  0    92    0
+sv_engine_16  sv_engine    sv_engine_Pipeline_LOADOPS_VITIS_LOOP_280_1  1704   3960   0    0     0
+sv_engine_16  sv_engine    reader_Pipeline_SUBS_WORDS                   1043   1208   0    0     0
+sv_engine_16  sv_engine    reader                                       1734   7613   0    0     0
+sv_engine_16  sv_engine    compute_Pipeline_PAIRS                       31004  19634  0    0     0
+sv_engine_16  sv_engine    compute                                      31972  20784  0    16    0
+sv_engine_16  sv_engine    writer_Pipeline_SUBS_WORDS                   937    1992   0    0     0
+sv_engine_16  sv_engine    writer                                       1959   8397   0    0     0
+sv_engine_16  sv_engine    run_pass                                     35823  37024  0    76    0
+sv_engine_16  sv_engine    sv_engine                                    42333  49984  0    92    0
+sv_swap_1     sv_swap      sv_swap_Pipeline_RA                          550    105    0    0     0
+sv_swap_1     sv_swap      sv_swap_Pipeline_RB                          550    105    0    0     0
+sv_swap_1     sv_swap      sv_swap_Pipeline_WA                          528    105    0    0     0
+sv_swap_1     sv_swap      sv_swap_Pipeline_WB                          528    105    0    0     0
+sv_swap_1     sv_swap      sv_swap                                      10550  8582   0    60    16
+sv_swap_2     sv_swap      sv_swap_Pipeline_RA                          550    105    0    0     0
+sv_swap_2     sv_swap      sv_swap_Pipeline_RB                          550    105    0    0     0
+sv_swap_2     sv_swap      sv_swap_Pipeline_WA                          528    105    0    0     0
+sv_swap_2     sv_swap      sv_swap_Pipeline_WB                          528    105    0    0     0
+sv_swap_2     sv_swap      sv_swap                                      10550  8582   0    60    16
+sv_swap_3     sv_swap      sv_swap_Pipeline_RA                          550    105    0    0     0
+sv_swap_3     sv_swap      sv_swap_Pipeline_RB                          550    105    0    0     0
+sv_swap_3     sv_swap      sv_swap_Pipeline_WA                          528    105    0    0     0
+sv_swap_3     sv_swap      sv_swap_Pipeline_WB                          528    105    0    0     0
+sv_swap_3     sv_swap      sv_swap                                      10550  8582   0    60    16
+sv_swap_4     sv_swap      sv_swap_Pipeline_RA                          550    105    0    0     0
+sv_swap_4     sv_swap      sv_swap_Pipeline_RB                          550    105    0    0     0
+sv_swap_4     sv_swap      sv_swap_Pipeline_WA                          528    105    0    0     0
+sv_swap_4     sv_swap      sv_swap_Pipeline_WB                          528    105    0    0     0
+sv_swap_4     sv_swap      sv_swap                                      10550  8582   0    60    16
+-------------------------------------------------------------------------------

@@ -1,0 +1,160 @@
+WARNING: [v++ 60-1600] The option 'jobs' was used directly on the command line, where its usage is deprecated. To ensure input line works for supported operating systems or shells, v++ supports specification for some options in a configuration file. As an alternative, please use options 'hls.jobs', 'vivado.synth.jobs' in a configuration file. 
+Option Map File Used: '/tools/Xilinx/Vitis/2023.2/data/vitis/vpp/optMap.xml'
+
+****** v++ v2023.2 (64-bit)
+  **** SW Build 4026344 on 2023-10-11-15:42:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+INFO: [v++ 60-1306] Additional information associated with this v++ link can be found at:
+	Reports: <WS>/builds/portlimit_check/reports/link
+	Log files: <WS>/builds/portlimit_check/logs/link
+Running Dispatch Server on port: 43235
+INFO: [v++ 60-1548] Creating build summary session with primary output <WS>/builds/portlimit_check/sv.xclbin.link_summary, at Wed Oct  7 10:04:00 2026
+INFO: [v++ 60-1315] Creating rulecheck session with output '<WS>/builds/portlimit_check/reports/link/v++_link_sv_guidance.html', at Wed Oct  7 10:04:00 2026
+INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u55c_gen3x16_xdma_3_202210_1/xilinx_u55c_gen3x16_xdma_3_202210_1.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u55c_gen3x16_xdma_3_202210_1/hw/hw.xsa'
+INFO: [v++ 74-78] Compiler Version string: 2023.2
+INFO: [v++ 60-629] Linking for hardware target
+INFO: [v++ 60-423]   Target device: xilinx_u55c_gen3x16_xdma_3_202210_1
+WARNING: [v++ 60-889] User-specified kernel frequency for ID 0 is the same as the default frequency 300 MHz, so it will be ignored
+INFO: [v++ 60-1332] Run 'run_link' status: Not started
+INFO: [v++ 60-1443] [10:04:04] Run run_link: Step system_link: Started
+INFO: [v++ 60-1453] Command Line: system_link --xo <WS>/builds/sv_xo/sv_engine.xo --xo <WS>/builds/sv_xo/sv_swap.xo --config <WS>/builds/portlimit_check/_x/link/int/syslinkConfig.ini --xpfm /opt/xilinx/platforms/xilinx_u55c_gen3x16_xdma_3_202210_1/xilinx_u55c_gen3x16_xdma_3_202210_1.xpfm --target hw --output_dir <WS>/builds/portlimit_check/_x/link/int --temp_dir <WS>/builds/portlimit_check/_x/link/sys_link
+INFO: [v++ 60-1454] Run Directory: <WS>/builds/portlimit_check/_x/link/run_link
+INFO: [SYSTEM_LINK 82-70] Extracting xo v3 file <WS>/builds/sv_xo/sv_engine.xo
+INFO: [SYSTEM_LINK 82-70] Extracting xo v3 file <WS>/builds/sv_xo/sv_swap.xo
+INFO: [SYSTEM_LINK 82-53] Creating IP database <WS>/builds/portlimit_check/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-38] [10:04:06] build_xd_ip_db started: /tools/Xilinx/Vitis/2023.2/bin/build_xd_ip_db -ip_search 0  -sds-pf <WS>/builds/portlimit_check/_x/link/sys_link/hw.hpfm -clkid 0 -ip <WS>/builds/portlimit_check/_x/link/sys_link/iprepo/xilinx_com_hls_sv_engine_1_0,sv_engine -ip <WS>/builds/portlimit_check/_x/link/sys_link/iprepo/xilinx_com_hls_sv_swap_1_0,sv_swap -o <WS>/builds/portlimit_check/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-37] [10:04:10] build_xd_ip_db finished successfully
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 458.445 ; gain = 0.000 ; free physical = 437687 ; free virtual = 979800
+INFO: [SYSTEM_LINK 82-51] Create system connectivity graph
+INFO: [SYSTEM_LINK 82-102] Applying explicit connections to the system connectivity graph: <WS>/builds/portlimit_check/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [SYSTEM_LINK 82-38] [10:04:10] cfgen started: /tools/Xilinx/Vitis/2023.2/bin/cfgen  -nk sv_engine:32 -nk sv_swap:1 -slr sv_engine_1:SLR0 -slr sv_engine_2:SLR0 -slr sv_engine_3:SLR0 -slr sv_engine_4:SLR0 -slr sv_engine_5:SLR0 -slr sv_engine_6:SLR0 -slr sv_engine_7:SLR0 -slr sv_engine_8:SLR0 -slr sv_engine_9:SLR0 -slr sv_engine_10:SLR0 -slr sv_engine_11:SLR0 -slr sv_engine_12:SLR1 -slr sv_engine_13:SLR1 -slr sv_engine_14:SLR1 -slr sv_engine_15:SLR1 -slr sv_engine_16:SLR1 -slr sv_engine_17:SLR1 -slr sv_engine_18:SLR1 -slr sv_engine_19:SLR1 -slr sv_engine_20:SLR1 -slr sv_engine_21:SLR1 -slr sv_engine_22:SLR1 -slr sv_engine_23:SLR2 -slr sv_engine_24:SLR2 -slr sv_engine_25:SLR2 -slr sv_engine_26:SLR2 -slr sv_engine_27:SLR2 -slr sv_engine_28:SLR2 -slr sv_engine_29:SLR2 -slr sv_engine_30:SLR2 -slr sv_engine_31:SLR2 -slr sv_engine_32:SLR2 -slr sv_swap_1:SLR0 -sp sv_engine_1.st:HBM[0] -sp sv_engine_2.st:HBM[1] -sp sv_engine_3.st:HBM[2] -sp sv_engine_4.st:HBM[3] -sp sv_engine_5.st:HBM[4] -sp sv_engine_6.st:HBM[5] -sp sv_engine_7.st:HBM[6] -sp sv_engine_8.st:HBM[7] -sp sv_engine_9.st:HBM[8] -sp sv_engine_10.st:HBM[9] -sp sv_engine_11.st:HBM[10] -sp sv_engine_12.st:HBM[11] -sp sv_engine_13.st:HBM[12] -sp sv_engine_14.st:HBM[13] -sp sv_engine_15.st:HBM[14] -sp sv_engine_16.st:HBM[15] -sp sv_engine_17.st:HBM[16] -sp sv_engine_18.st:HBM[17] -sp sv_engine_19.st:HBM[18] -sp sv_engine_20.st:HBM[19] -sp sv_engine_21.st:HBM[20] -sp sv_engine_22.st:HBM[21] -sp sv_engine_23.st:HBM[22] -sp sv_engine_24.st:HBM[23] -sp sv_engine_25.st:HBM[24] -sp sv_engine_26.st:HBM[25] -sp sv_engine_27.st:HBM[26] -sp sv_engine_28.st:HBM[27] -sp sv_engine_29.st:HBM[28] -sp sv_engine_30.st:HBM[29] -sp sv_engine_31.st:HBM[30] -sp sv_engine_32.st:HBM[31] -sp sv_swap_1.a:HBM[0:31] -sp sv_swap_1.b:HBM[0:31] -dpa_mem_offload false -dmclkid 0 -r <WS>/builds/portlimit_check/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o <WS>/builds/portlimit_check/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [CFGEN 83-0] Kernel Specs: 
+INFO: [CFGEN 83-0]   kernel: sv_engine, num: 32  {sv_engine_1 sv_engine_2 sv_engine_3 sv_engine_4 sv_engine_5 sv_engine_6 sv_engine_7 sv_engine_8 sv_engine_9 sv_engine_10 sv_engine_11 sv_engine_12 sv_engine_13 sv_engine_14 sv_engine_15 sv_engine_16 sv_engine_17 sv_engine_18 sv_engine_19 sv_engine_20 sv_engine_21 sv_engine_22 sv_engine_23 sv_engine_24 sv_engine_25 sv_engine_26 sv_engine_27 sv_engine_28 sv_engine_29 sv_engine_30 sv_engine_31 sv_engine_32}
+INFO: [CFGEN 83-0]   kernel: sv_swap, num: 1  {sv_swap_1}
+INFO: [CFGEN 83-0] Port Specs: 
+INFO: [CFGEN 83-0]   kernel: sv_engine_1, k_port: st, sptag: HBM[0]
+INFO: [CFGEN 83-0]   kernel: sv_engine_2, k_port: st, sptag: HBM[1]
+INFO: [CFGEN 83-0]   kernel: sv_engine_3, k_port: st, sptag: HBM[2]
+INFO: [CFGEN 83-0]   kernel: sv_engine_4, k_port: st, sptag: HBM[3]
+INFO: [CFGEN 83-0]   kernel: sv_engine_5, k_port: st, sptag: HBM[4]
+INFO: [CFGEN 83-0]   kernel: sv_engine_6, k_port: st, sptag: HBM[5]
+INFO: [CFGEN 83-0]   kernel: sv_engine_7, k_port: st, sptag: HBM[6]
+INFO: [CFGEN 83-0]   kernel: sv_engine_8, k_port: st, sptag: HBM[7]
+INFO: [CFGEN 83-0]   kernel: sv_engine_9, k_port: st, sptag: HBM[8]
+INFO: [CFGEN 83-0]   kernel: sv_engine_10, k_port: st, sptag: HBM[9]
+INFO: [CFGEN 83-0]   kernel: sv_engine_11, k_port: st, sptag: HBM[10]
+INFO: [CFGEN 83-0]   kernel: sv_engine_12, k_port: st, sptag: HBM[11]
+INFO: [CFGEN 83-0]   kernel: sv_engine_13, k_port: st, sptag: HBM[12]
+INFO: [CFGEN 83-0]   kernel: sv_engine_14, k_port: st, sptag: HBM[13]
+INFO: [CFGEN 83-0]   kernel: sv_engine_15, k_port: st, sptag: HBM[14]
+INFO: [CFGEN 83-0]   kernel: sv_engine_16, k_port: st, sptag: HBM[15]
+INFO: [CFGEN 83-0]   kernel: sv_engine_17, k_port: st, sptag: HBM[16]
+INFO: [CFGEN 83-0]   kernel: sv_engine_18, k_port: st, sptag: HBM[17]
+INFO: [CFGEN 83-0]   kernel: sv_engine_19, k_port: st, sptag: HBM[18]
+INFO: [CFGEN 83-0]   kernel: sv_engine_20, k_port: st, sptag: HBM[19]
+INFO: [CFGEN 83-0]   kernel: sv_engine_21, k_port: st, sptag: HBM[20]
+INFO: [CFGEN 83-0]   kernel: sv_engine_22, k_port: st, sptag: HBM[21]
+INFO: [CFGEN 83-0]   kernel: sv_engine_23, k_port: st, sptag: HBM[22]
+INFO: [CFGEN 83-0]   kernel: sv_engine_24, k_port: st, sptag: HBM[23]
+INFO: [CFGEN 83-0]   kernel: sv_engine_25, k_port: st, sptag: HBM[24]
+INFO: [CFGEN 83-0]   kernel: sv_engine_26, k_port: st, sptag: HBM[25]
+INFO: [CFGEN 83-0]   kernel: sv_engine_27, k_port: st, sptag: HBM[26]
+INFO: [CFGEN 83-0]   kernel: sv_engine_28, k_port: st, sptag: HBM[27]
+INFO: [CFGEN 83-0]   kernel: sv_engine_29, k_port: st, sptag: HBM[28]
+INFO: [CFGEN 83-0]   kernel: sv_engine_30, k_port: st, sptag: HBM[29]
+INFO: [CFGEN 83-0]   kernel: sv_engine_31, k_port: st, sptag: HBM[30]
+INFO: [CFGEN 83-0]   kernel: sv_engine_32, k_port: st, sptag: HBM[31]
+INFO: [CFGEN 83-0]   kernel: sv_swap_1, k_port: a, sptag: HBM[0:31]
+INFO: [CFGEN 83-0]   kernel: sv_swap_1, k_port: b, sptag: HBM[0:31]
+INFO: [CFGEN 83-0] SLR Specs: 
+INFO: [CFGEN 83-0]   instance: sv_engine_1, SLR: SLR0
+INFO: [CFGEN 83-0]   instance: sv_engine_10, SLR: SLR0
+INFO: [CFGEN 83-0]   instance: sv_engine_11, SLR: SLR0
+INFO: [CFGEN 83-0]   instance: sv_engine_12, SLR: SLR1
+INFO: [CFGEN 83-0]   instance: sv_engine_13, SLR: SLR1
+INFO: [CFGEN 83-0]   instance: sv_engine_14, SLR: SLR1
+INFO: [CFGEN 83-0]   instance: sv_engine_15, SLR: SLR1
+INFO: [CFGEN 83-0]   instance: sv_engine_16, SLR: SLR1
+INFO: [CFGEN 83-0]   instance: sv_engine_17, SLR: SLR1
+INFO: [CFGEN 83-0]   instance: sv_engine_18, SLR: SLR1
+INFO: [CFGEN 83-0]   instance: sv_engine_19, SLR: SLR1
+INFO: [CFGEN 83-0]   instance: sv_engine_2, SLR: SLR0
+INFO: [CFGEN 83-0]   instance: sv_engine_20, SLR: SLR1
+INFO: [CFGEN 83-0]   instance: sv_engine_21, SLR: SLR1
+INFO: [CFGEN 83-0]   instance: sv_engine_22, SLR: SLR1
+INFO: [CFGEN 83-0]   instance: sv_engine_23, SLR: SLR2
+INFO: [CFGEN 83-0]   instance: sv_engine_24, SLR: SLR2
+INFO: [CFGEN 83-0]   instance: sv_engine_25, SLR: SLR2
+INFO: [CFGEN 83-0]   instance: sv_engine_26, SLR: SLR2
+INFO: [CFGEN 83-0]   instance: sv_engine_27, SLR: SLR2
+INFO: [CFGEN 83-0]   instance: sv_engine_28, SLR: SLR2
+INFO: [CFGEN 83-0]   instance: sv_engine_29, SLR: SLR2
+INFO: [CFGEN 83-0]   instance: sv_engine_3, SLR: SLR0
+INFO: [CFGEN 83-0]   instance: sv_engine_30, SLR: SLR2
+INFO: [CFGEN 83-0]   instance: sv_engine_31, SLR: SLR2
+INFO: [CFGEN 83-0]   instance: sv_engine_32, SLR: SLR2
+INFO: [CFGEN 83-0]   instance: sv_engine_4, SLR: SLR0
+INFO: [CFGEN 83-0]   instance: sv_engine_5, SLR: SLR0
+INFO: [CFGEN 83-0]   instance: sv_engine_6, SLR: SLR0
+INFO: [CFGEN 83-0]   instance: sv_engine_7, SLR: SLR0
+INFO: [CFGEN 83-0]   instance: sv_engine_8, SLR: SLR0
+INFO: [CFGEN 83-0]   instance: sv_engine_9, SLR: SLR0
+INFO: [CFGEN 83-0]   instance: sv_swap_1, SLR: SLR0
+INFO: [SYSTEM_LINK 82-37] [10:04:19] cfgen finished successfully
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 458.445 ; gain = 0.000 ; free physical = 442572 ; free virtual = 984695
+INFO: [SYSTEM_LINK 82-52] Create top-level block diagram
+INFO: [SYSTEM_LINK 82-38] [10:04:19] cf2bd started: /tools/Xilinx/Vitis/2023.2/bin/cf2bd  --linux --trace_buffer 1024 --input_file <WS>/builds/portlimit_check/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml --ip_db <WS>/builds/portlimit_check/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml --cf_name dr --working_dir <WS>/builds/portlimit_check/_x/link/sys_link/_sysl/.xsd --temp_dir <WS>/builds/portlimit_check/_x/link/sys_link --output_dir <WS>/builds/portlimit_check/_x/link/int --target_bd ulp.bd
+INFO: [CF2BD 82-31] Launching cf2xd: cf2xd -linux -trace-buffer 1024 -i <WS>/builds/portlimit_check/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml -r <WS>/builds/portlimit_check/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o dr.xml
+INFO: [CF2BD 82-28] cf2xd finished successfully
+INFO: [CF2BD 82-31] Launching cf_xsd: cf_xsd -disable-address-gen -bd ulp.bd -dn dr -dp <WS>/builds/portlimit_check/_x/link/sys_link/_sysl/.xsd
+INFO: [CF2BD 82-28] cf_xsd finished successfully
+INFO: [SYSTEM_LINK 82-37] [10:04:38] cf2bd finished successfully
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 458.445 ; gain = 0.000 ; free physical = 445057 ; free virtual = 987166
+INFO: [v++ 60-1441] [10:04:38] Run run_link: Step system_link: Completed
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 489.508 ; gain = 0.000 ; free physical = 445102 ; free virtual = 987190
+INFO: [v++ 60-1443] [10:04:38] Run run_link: Step cf2sw: Started
+INFO: [v++ 60-1453] Command Line: cf2sw -sdsl <WS>/builds/portlimit_check/_x/link/int/sdsl.dat -rtd <WS>/builds/portlimit_check/_x/link/int/cf2sw.rtd -nofilter <WS>/builds/portlimit_check/_x/link/int/cf2sw_full.rtd -xclbin <WS>/builds/portlimit_check/_x/link/int/xclbin_orig.xml -o <WS>/builds/portlimit_check/_x/link/int/xclbin_orig.1.xml
+INFO: [v++ 60-1454] Run Directory: <WS>/builds/portlimit_check/_x/link/run_link
+INFO: [v++ 60-1441] [10:04:59] Run run_link: Step cf2sw: Completed
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 489.508 ; gain = 0.000 ; free physical = 443205 ; free virtual = 985298
+INFO: [v++ 60-1443] [10:04:59] Run run_link: Step rtd2_system_diagram: Started
+INFO: [v++ 60-1453] Command Line: rtd2SystemDiagram
+INFO: [v++ 60-1454] Run Directory: <WS>/builds/portlimit_check/_x/link/run_link
+INFO: [v++ 60-1441] [10:04:59] Run run_link: Step rtd2_system_diagram: Completed
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.27 . Memory (MB): peak = 489.508 ; gain = 0.000 ; free physical = 445507 ; free virtual = 987599
+INFO: [v++ 60-1443] [10:04:59] Run run_link: Step vpl: Started
+INFO: [v++ 60-1453] Command Line: vpl -t hw -f xilinx_u55c_gen3x16_xdma_3_202210_1 --kernel_frequency 300 --remote_ip_cache <WS>/builds/portlimit_check/.ipcache --output_dir <WS>/builds/portlimit_check/_x/link/int --log_dir <WS>/builds/portlimit_check/logs/link --report_dir <WS>/builds/portlimit_check/reports/link --config <WS>/builds/portlimit_check/_x/link/int/vplConfig.ini -k <WS>/builds/portlimit_check/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir <WS>/builds/portlimit_check/_x/link --no-info --iprepo <WS>/builds/portlimit_check/_x/link/int/xo/ip_repo/xilinx_com_hls_sv_swap_1_0 --iprepo <WS>/builds/portlimit_check/_x/link/int/xo/ip_repo/xilinx_com_hls_sv_engine_1_0 --messageDb <WS>/builds/portlimit_check/_x/link/run_link/vpl.pb <WS>/builds/portlimit_check/_x/link/int/dr.bd.tcl
+INFO: [v++ 60-1454] Run Directory: <WS>/builds/portlimit_check/_x/link/run_link
+
+****** vpl v2023.2 (64-bit)
+  **** SW Build 4026344 on 2023-10-11-15:42:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+INFO: [VPL 60-839] Read in kernel information from file '<WS>/builds/portlimit_check/_x/link/int/kernel_info.dat'.
+INFO: [VPL 74-78] Compiler Version string: 2023.2
+INFO: [VPL 60-423]   Target device: xilinx_u55c_gen3x16_xdma_3_202210_1
+WARNING: [VPL 60-889] User-specified kernel frequency for ID 0 is the same as the default frequency 300 MHz, so it will be ignored
+INFO: [VPL 60-1032] Extracting hardware platform to <WS>/builds/portlimit_check/_x/link/vivado/vpl/.local/hw_platform
+[10:05:11] Run vpl: Step create_project: Started
+Creating Vivado project.
+[10:05:19] Run vpl: Step create_project: Completed
+[10:05:19] Run vpl: Step create_bd: Started
+[10:06:16] Run vpl: Step create_bd: Failed
+[10:06:16] Run vpl: FINISHED. Run Status: create_bd ERROR
+
+===>The following messages were generated while  creating FPGA bitstream. Log file: <WS>/builds/portlimit_check/_x/link/vivado/vpl/runme.log :
+ERROR: [VPL-1] You have run out of port connections on /hmss_0. All 33 connections are used (0 ports prohibited)...
+ERROR: [VPL 60-704] Integration error, Failed to update block diagram in project required for hardware synthesis.The project is 'prj'. The block diagram update script is '.local/dr.bd.tcl'. The block diagram update script was generated by system linker. An error stack with function names and arguments may be available in the 'vivado.log'.
+ERROR: [VPL 60-1328] Vpl run 'vpl' failed
+WARNING: [VPL 60-1142] Unable to read data from '<WS>/builds/portlimit_check/_x/link/vivado/vpl/output/generated_reports.log', generated reports will not be copied.
+ERROR: [VPL 60-806] Failed to finish platform linker
+INFO: [v++ 60-1442] [10:06:16] Run run_link: Step vpl: Failed
+Time (s): cpu = 00:00:06 ; elapsed = 00:01:17 . Memory (MB): peak = 489.508 ; gain = 0.000 ; free physical = 442829 ; free virtual = 985069
+ERROR: [v++ 60-661] v++ link run 'run_link' failed
+ERROR: [v++ 60-626] Kernel link failed to complete
+ERROR: [v++ 60-703] Failed to finish linking
+INFO: [v++ 60-1653] Closing dispatch client.

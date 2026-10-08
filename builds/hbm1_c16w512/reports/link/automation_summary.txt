@@ -1,0 +1,792 @@
+====================================================================
+Version:    xcd v2023.2 (64-bit)
+Copyright:  Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
+Created:    Tue Oct  6 19:14:40 2026
+====================================================================
+
+1. Kernel and compute unit information
+======================================
+
+Compute Unit: hbm1_1
+Kernel: hbm1
+Base Address: 0x800000
+Clock Pin: ap_clk
+Reset Pin: ap_rst_n
+
+Compute Unit: hbm1_2
+Kernel: hbm1
+Base Address: 0x810000
+Clock Pin: ap_clk
+Reset Pin: ap_rst_n
+
+Compute Unit: hbm1_3
+Kernel: hbm1
+Base Address: 0x820000
+Clock Pin: ap_clk
+Reset Pin: ap_rst_n
+
+Compute Unit: hbm1_4
+Kernel: hbm1
+Base Address: 0x830000
+Clock Pin: ap_clk
+Reset Pin: ap_rst_n
+
+Compute Unit: hbm1_5
+Kernel: hbm1
+Base Address: 0x840000
+Clock Pin: ap_clk
+Reset Pin: ap_rst_n
+
+Compute Unit: hbm1_6
+Kernel: hbm1
+Base Address: 0x850000
+Clock Pin: ap_clk
+Reset Pin: ap_rst_n
+
+Compute Unit: hbm1_7
+Kernel: hbm1
+Base Address: 0xc20000
+Clock Pin: ap_clk
+Reset Pin: ap_rst_n
+
+Compute Unit: hbm1_8
+Kernel: hbm1
+Base Address: 0xc30000
+Clock Pin: ap_clk
+Reset Pin: ap_rst_n
+
+Compute Unit: hbm1_9
+Kernel: hbm1
+Base Address: 0xc40000
+Clock Pin: ap_clk
+Reset Pin: ap_rst_n
+
+Compute Unit: hbm1_10
+Kernel: hbm1
+Base Address: 0xc00000
+Clock Pin: ap_clk
+Reset Pin: ap_rst_n
+
+Compute Unit: hbm1_11
+Kernel: hbm1
+Base Address: 0xc10000
+Clock Pin: ap_clk
+Reset Pin: ap_rst_n
+
+Compute Unit: hbm1_12
+Kernel: hbm1
+Base Address: 0x1000000
+Clock Pin: ap_clk
+Reset Pin: ap_rst_n
+
+Compute Unit: hbm1_13
+Kernel: hbm1
+Base Address: 0x1010000
+Clock Pin: ap_clk
+Reset Pin: ap_rst_n
+
+Compute Unit: hbm1_14
+Kernel: hbm1
+Base Address: 0x1020000
+Clock Pin: ap_clk
+Reset Pin: ap_rst_n
+
+Compute Unit: hbm1_15
+Kernel: hbm1
+Base Address: 0x1030000
+Clock Pin: ap_clk
+Reset Pin: ap_rst_n
+
+Compute Unit: hbm1_16
+Kernel: hbm1
+Base Address: 0x1040000
+Clock Pin: ap_clk
+Reset Pin: ap_rst_n
+
+2. Interface Connections
+========================
+
+IP to Compute Unit
+------------------
+Source Pin: SLR0/M01_AXI
+Destination Pin: hbm1_1/s_axi_control
+
+Source Pin: SLR1/M04_AXI
+Destination Pin: hbm1_10/s_axi_control
+
+Source Pin: SLR1/M05_AXI
+Destination Pin: hbm1_11/s_axi_control
+
+Source Pin: SLR2/M01_AXI
+Destination Pin: hbm1_12/s_axi_control
+
+Source Pin: SLR2/M02_AXI
+Destination Pin: hbm1_13/s_axi_control
+
+Source Pin: SLR2/M03_AXI
+Destination Pin: hbm1_14/s_axi_control
+
+Source Pin: SLR2/M04_AXI
+Destination Pin: hbm1_15/s_axi_control
+
+Source Pin: SLR2/M05_AXI
+Destination Pin: hbm1_16/s_axi_control
+
+Source Pin: SLR0/M02_AXI
+Destination Pin: hbm1_2/s_axi_control
+
+Source Pin: SLR0/M03_AXI
+Destination Pin: hbm1_3/s_axi_control
+
+Source Pin: SLR0/M04_AXI
+Destination Pin: hbm1_4/s_axi_control
+
+Source Pin: SLR0/M05_AXI
+Destination Pin: hbm1_5/s_axi_control
+
+Source Pin: SLR0/M06_AXI
+Destination Pin: hbm1_6/s_axi_control
+
+Source Pin: SLR1/M01_AXI
+Destination Pin: hbm1_7/s_axi_control
+
+Source Pin: SLR1/M02_AXI
+Destination Pin: hbm1_8/s_axi_control
+
+Source Pin: SLR1/M03_AXI
+Destination Pin: hbm1_9/s_axi_control
+
+Compute Unit to IP
+------------------
+Source Pin: hbm1_1/m_axi_gp
+Destination Pin: hmss_0/S01_AXI
+
+Source Pin: hbm1_10/m_axi_gp
+Destination Pin: hmss_0/S10_AXI
+
+Source Pin: hbm1_11/m_axi_gp
+Destination Pin: hmss_0/S11_AXI
+
+Source Pin: hbm1_12/m_axi_gp
+Destination Pin: hmss_0/S12_AXI
+
+Source Pin: hbm1_13/m_axi_gp
+Destination Pin: hmss_0/S13_AXI
+
+Source Pin: hbm1_14/m_axi_gp
+Destination Pin: hmss_0/S14_AXI
+
+Source Pin: hbm1_15/m_axi_gp
+Destination Pin: hmss_0/S15_AXI
+
+Source Pin: hbm1_16/m_axi_gp
+Destination Pin: hmss_0/S16_AXI
+
+Source Pin: hbm1_2/m_axi_gp
+Destination Pin: hmss_0/S02_AXI
+
+Source Pin: hbm1_3/m_axi_gp
+Destination Pin: hmss_0/S03_AXI
+
+Source Pin: hbm1_4/m_axi_gp
+Destination Pin: hmss_0/S04_AXI
+
+Source Pin: hbm1_5/m_axi_gp
+Destination Pin: hmss_0/S05_AXI
+
+Source Pin: hbm1_6/m_axi_gp
+Destination Pin: hmss_0/S06_AXI
+
+Source Pin: hbm1_7/m_axi_gp
+Destination Pin: hmss_0/S07_AXI
+
+Source Pin: hbm1_8/m_axi_gp
+Destination Pin: hmss_0/S08_AXI
+
+Source Pin: hbm1_9/m_axi_gp
+Destination Pin: hmss_0/S09_AXI
+
+3. Clock Connections
+====================
+
+Compute Unit: hbm1_1
+Clock ID: 0
+Platform Clock Frequency: 300.00 MHz
+Requested Kernel Clock Frequency: 300.00 MHz
+Achieved Kernel Clock Frequency: 300.00 MHz
+Source Pin: ulp_ucs/aclk_kernel_00
+Destination Pin: hbm1_1/ap_clk
+
+Compute Unit: hbm1_10
+Clock ID: 0
+Platform Clock Frequency: 300.00 MHz
+Requested Kernel Clock Frequency: 300.00 MHz
+Achieved Kernel Clock Frequency: 300.00 MHz
+Source Pin: ulp_ucs/aclk_kernel_00
+Destination Pin: hbm1_10/ap_clk
+
+Compute Unit: hbm1_11
+Clock ID: 0
+Platform Clock Frequency: 300.00 MHz
+Requested Kernel Clock Frequency: 300.00 MHz
+Achieved Kernel Clock Frequency: 300.00 MHz
+Source Pin: ulp_ucs/aclk_kernel_00
+Destination Pin: hbm1_11/ap_clk
+
+Compute Unit: hbm1_12
+Clock ID: 0
+Platform Clock Frequency: 300.00 MHz
+Requested Kernel Clock Frequency: 300.00 MHz
+Achieved Kernel Clock Frequency: 300.00 MHz
+Source Pin: ulp_ucs/aclk_kernel_00
+Destination Pin: hbm1_12/ap_clk
+
+Compute Unit: hbm1_13
+Clock ID: 0
+Platform Clock Frequency: 300.00 MHz
+Requested Kernel Clock Frequency: 300.00 MHz
+Achieved Kernel Clock Frequency: 300.00 MHz
+Source Pin: ulp_ucs/aclk_kernel_00
+Destination Pin: hbm1_13/ap_clk
+
+Compute Unit: hbm1_14
+Clock ID: 0
+Platform Clock Frequency: 300.00 MHz
+Requested Kernel Clock Frequency: 300.00 MHz
+Achieved Kernel Clock Frequency: 300.00 MHz
+Source Pin: ulp_ucs/aclk_kernel_00
+Destination Pin: hbm1_14/ap_clk
+
+Compute Unit: hbm1_15
+Clock ID: 0
+Platform Clock Frequency: 300.00 MHz
+Requested Kernel Clock Frequency: 300.00 MHz
+Achieved Kernel Clock Frequency: 300.00 MHz
+Source Pin: ulp_ucs/aclk_kernel_00
+Destination Pin: hbm1_15/ap_clk
+
+Compute Unit: hbm1_16
+Clock ID: 0
+Platform Clock Frequency: 300.00 MHz
+Requested Kernel Clock Frequency: 300.00 MHz
+Achieved Kernel Clock Frequency: 300.00 MHz
+Source Pin: ulp_ucs/aclk_kernel_00
+Destination Pin: hbm1_16/ap_clk
+
+Compute Unit: hbm1_2
+Clock ID: 0
+Platform Clock Frequency: 300.00 MHz
+Requested Kernel Clock Frequency: 300.00 MHz
+Achieved Kernel Clock Frequency: 300.00 MHz
+Source Pin: ulp_ucs/aclk_kernel_00
+Destination Pin: hbm1_2/ap_clk
+
+Compute Unit: hbm1_3
+Clock ID: 0
+Platform Clock Frequency: 300.00 MHz
+Requested Kernel Clock Frequency: 300.00 MHz
+Achieved Kernel Clock Frequency: 300.00 MHz
+Source Pin: ulp_ucs/aclk_kernel_00
+Destination Pin: hbm1_3/ap_clk
+
+Compute Unit: hbm1_4
+Clock ID: 0
+Platform Clock Frequency: 300.00 MHz
+Requested Kernel Clock Frequency: 300.00 MHz
+Achieved Kernel Clock Frequency: 300.00 MHz
+Source Pin: ulp_ucs/aclk_kernel_00
+Destination Pin: hbm1_4/ap_clk
+
+Compute Unit: hbm1_5
+Clock ID: 0
+Platform Clock Frequency: 300.00 MHz
+Requested Kernel Clock Frequency: 300.00 MHz
+Achieved Kernel Clock Frequency: 300.00 MHz
+Source Pin: ulp_ucs/aclk_kernel_00
+Destination Pin: hbm1_5/ap_clk
+
+Compute Unit: hbm1_6
+Clock ID: 0
+Platform Clock Frequency: 300.00 MHz
+Requested Kernel Clock Frequency: 300.00 MHz
+Achieved Kernel Clock Frequency: 300.00 MHz
+Source Pin: ulp_ucs/aclk_kernel_00
+Destination Pin: hbm1_6/ap_clk
+
+Compute Unit: hbm1_7
+Clock ID: 0
+Platform Clock Frequency: 300.00 MHz
+Requested Kernel Clock Frequency: 300.00 MHz
+Achieved Kernel Clock Frequency: 300.00 MHz
+Source Pin: ulp_ucs/aclk_kernel_00
+Destination Pin: hbm1_7/ap_clk
+
+Compute Unit: hbm1_8
+Clock ID: 0
+Platform Clock Frequency: 300.00 MHz
+Requested Kernel Clock Frequency: 300.00 MHz
+Achieved Kernel Clock Frequency: 300.00 MHz
+Source Pin: ulp_ucs/aclk_kernel_00
+Destination Pin: hbm1_8/ap_clk
+
+Compute Unit: hbm1_9
+Clock ID: 0
+Platform Clock Frequency: 300.00 MHz
+Requested Kernel Clock Frequency: 300.00 MHz
+Achieved Kernel Clock Frequency: 300.00 MHz
+Source Pin: ulp_ucs/aclk_kernel_00
+Destination Pin: hbm1_9/ap_clk
+
+Clock Instance: ulp_ucs
+Source Pin: ii_level0_wire/ulp_m_aclk_ctrl_00
+Destination Pin: ulp_ucs/aclk_ctrl
+
+Clock Instance: ulp_ucs
+Source Pin: ii_level0_wire/ulp_m_aclk_freerun_ref_00
+Destination Pin: ulp_ucs/aclk_freerun
+
+Clock Instance: ulp_ucs
+Source Pin: ii_level0_wire/ulp_m_aclk_freerun_ref_00
+Destination Pin: ulp_ucs/aclk_hbm_refclk
+
+Clock Instance: ulp_ucs
+Source Pin: ii_level0_wire/ulp_m_aclk_pcie_00
+Destination Pin: ulp_ucs/aclk_pcie
+
+4. Reset Connections
+====================
+
+Compute Unit: hbm1_1
+Source Pin: proc_sys_reset_kernel_slr0/peripheral_aresetn
+Destination Pin: hbm1_1/ap_rst_n
+Associated Clock Pin: hbm1_1/ap_clk
+
+Compute Unit: hbm1_10
+Source Pin: proc_sys_reset_kernel_slr1/peripheral_aresetn
+Destination Pin: hbm1_10/ap_rst_n
+Associated Clock Pin: hbm1_10/ap_clk
+
+Compute Unit: hbm1_11
+Source Pin: proc_sys_reset_kernel_slr1/peripheral_aresetn
+Destination Pin: hbm1_11/ap_rst_n
+Associated Clock Pin: hbm1_11/ap_clk
+
+Compute Unit: hbm1_12
+Source Pin: proc_sys_reset_kernel_slr2/peripheral_aresetn
+Destination Pin: hbm1_12/ap_rst_n
+Associated Clock Pin: hbm1_12/ap_clk
+
+Compute Unit: hbm1_13
+Source Pin: proc_sys_reset_kernel_slr2/peripheral_aresetn
+Destination Pin: hbm1_13/ap_rst_n
+Associated Clock Pin: hbm1_13/ap_clk
+
+Compute Unit: hbm1_14
+Source Pin: proc_sys_reset_kernel_slr2/peripheral_aresetn
+Destination Pin: hbm1_14/ap_rst_n
+Associated Clock Pin: hbm1_14/ap_clk
+
+Compute Unit: hbm1_15
+Source Pin: proc_sys_reset_kernel_slr2/peripheral_aresetn
+Destination Pin: hbm1_15/ap_rst_n
+Associated Clock Pin: hbm1_15/ap_clk
+
+Compute Unit: hbm1_16
+Source Pin: proc_sys_reset_kernel_slr2/peripheral_aresetn
+Destination Pin: hbm1_16/ap_rst_n
+Associated Clock Pin: hbm1_16/ap_clk
+
+Compute Unit: hbm1_2
+Source Pin: proc_sys_reset_kernel_slr0/peripheral_aresetn
+Destination Pin: hbm1_2/ap_rst_n
+Associated Clock Pin: hbm1_2/ap_clk
+
+Compute Unit: hbm1_3
+Source Pin: proc_sys_reset_kernel_slr0/peripheral_aresetn
+Destination Pin: hbm1_3/ap_rst_n
+Associated Clock Pin: hbm1_3/ap_clk
+
+Compute Unit: hbm1_4
+Source Pin: proc_sys_reset_kernel_slr0/peripheral_aresetn
+Destination Pin: hbm1_4/ap_rst_n
+Associated Clock Pin: hbm1_4/ap_clk
+
+Compute Unit: hbm1_5
+Source Pin: proc_sys_reset_kernel_slr0/peripheral_aresetn
+Destination Pin: hbm1_5/ap_rst_n
+Associated Clock Pin: hbm1_5/ap_clk
+
+Compute Unit: hbm1_6
+Source Pin: proc_sys_reset_kernel_slr0/peripheral_aresetn
+Destination Pin: hbm1_6/ap_rst_n
+Associated Clock Pin: hbm1_6/ap_clk
+
+Compute Unit: hbm1_7
+Source Pin: proc_sys_reset_kernel_slr1/peripheral_aresetn
+Destination Pin: hbm1_7/ap_rst_n
+Associated Clock Pin: hbm1_7/ap_clk
+
+Compute Unit: hbm1_8
+Source Pin: proc_sys_reset_kernel_slr1/peripheral_aresetn
+Destination Pin: hbm1_8/ap_rst_n
+Associated Clock Pin: hbm1_8/ap_clk
+
+Compute Unit: hbm1_9
+Source Pin: proc_sys_reset_kernel_slr1/peripheral_aresetn
+Destination Pin: hbm1_9/ap_rst_n
+Associated Clock Pin: hbm1_9/ap_clk
+
+5. Clock Summary
+================
+
+PL
++----------+--------+------------+---------------+------------+
+| Instance | Kernel | Clock Port | Compile (MHz) | Link (MHz) |
++----------+--------+------------+---------------+------------+
+| hbm1_1   | hbm1   | ap_clk     | 300.03        | 300.00     |
+| hbm1_2   | hbm1   | ap_clk     | 300.03        | 300.00     |
+| hbm1_3   | hbm1   | ap_clk     | 300.03        | 300.00     |
+| hbm1_4   | hbm1   | ap_clk     | 300.03        | 300.00     |
+| hbm1_5   | hbm1   | ap_clk     | 300.03        | 300.00     |
+| hbm1_6   | hbm1   | ap_clk     | 300.03        | 300.00     |
+| hbm1_7   | hbm1   | ap_clk     | 300.03        | 300.00     |
+| hbm1_8   | hbm1   | ap_clk     | 300.03        | 300.00     |
+| hbm1_9   | hbm1   | ap_clk     | 300.03        | 300.00     |
+| hbm1_10  | hbm1   | ap_clk     | 300.03        | 300.00     |
+| hbm1_11  | hbm1   | ap_clk     | 300.03        | 300.00     |
+| hbm1_12  | hbm1   | ap_clk     | 300.03        | 300.00     |
+| hbm1_13  | hbm1   | ap_clk     | 300.03        | 300.00     |
+| hbm1_14  | hbm1   | ap_clk     | 300.03        | 300.00     |
+| hbm1_15  | hbm1   | ap_clk     | 300.03        | 300.00     |
+| hbm1_16  | hbm1   | ap_clk     | 300.03        | 300.00     |
++----------+--------+------------+---------------+------------+
+
+6. SLR Utilization per Compute Unit
+===================================
+
+Compute Unit: hbm1_1
++------------+------+------+------+--------+--------+--------+
+| Site Type  | SLR0 | SLR1 | SLR2 | SLR0 % | SLR1 % | SLR2 % |
++------------+------+------+------+--------+--------+--------+
+| LUT        | 5880 |    0 |    0 |   1.34 |   0.00 |   0.00 |
+| LUTAsLogic | 4189 |    0 |    0 |   0.95 |   0.00 |   0.00 |
+| LUTAsMem   | 1691 |    0 |    0 |   0.82 |   0.00 |   0.00 |
+| REG        | 7823 |    0 |    0 |   0.89 |   0.00 |   0.00 |
+| CARRY8     |  239 |    0 |    0 |   0.43 |   0.00 |   0.00 |
+| F7MUX      |  737 |    0 |    0 |   0.34 |   0.00 |   0.00 |
+| F8MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| F9MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| BRAM       |   30 |    0 |    0 |   4.46 |   0.00 |   0.00 |
+| URAM       |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| DSPs       |   24 |    0 |    0 |   0.83 |   0.00 |   0.00 |
++------------+------+------+------+--------+--------+--------+
+
+Compute Unit: hbm1_2
++------------+------+------+------+--------+--------+--------+
+| Site Type  | SLR0 | SLR1 | SLR2 | SLR0 % | SLR1 % | SLR2 % |
++------------+------+------+------+--------+--------+--------+
+| LUT        | 5870 |    0 |    0 |   1.34 |   0.00 |   0.00 |
+| LUTAsLogic | 4179 |    0 |    0 |   0.95 |   0.00 |   0.00 |
+| LUTAsMem   | 1691 |    0 |    0 |   0.82 |   0.00 |   0.00 |
+| REG        | 7829 |    0 |    0 |   0.89 |   0.00 |   0.00 |
+| CARRY8     |  239 |    0 |    0 |   0.43 |   0.00 |   0.00 |
+| F7MUX      |  737 |    0 |    0 |   0.34 |   0.00 |   0.00 |
+| F8MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| F9MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| BRAM       |   30 |    0 |    0 |   4.46 |   0.00 |   0.00 |
+| URAM       |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| DSPs       |   24 |    0 |    0 |   0.83 |   0.00 |   0.00 |
++------------+------+------+------+--------+--------+--------+
+
+Compute Unit: hbm1_3
++------------+------+------+------+--------+--------+--------+
+| Site Type  | SLR0 | SLR1 | SLR2 | SLR0 % | SLR1 % | SLR2 % |
++------------+------+------+------+--------+--------+--------+
+| LUT        | 5867 |    0 |    0 |   1.33 |   0.00 |   0.00 |
+| LUTAsLogic | 4176 |    0 |    0 |   0.95 |   0.00 |   0.00 |
+| LUTAsMem   | 1691 |    0 |    0 |   0.82 |   0.00 |   0.00 |
+| REG        | 7824 |    0 |    0 |   0.89 |   0.00 |   0.00 |
+| CARRY8     |  239 |    0 |    0 |   0.43 |   0.00 |   0.00 |
+| F7MUX      |  737 |    0 |    0 |   0.34 |   0.00 |   0.00 |
+| F8MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| F9MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| BRAM       |   30 |    0 |    0 |   4.46 |   0.00 |   0.00 |
+| URAM       |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| DSPs       |   24 |    0 |    0 |   0.83 |   0.00 |   0.00 |
++------------+------+------+------+--------+--------+--------+
+
+Compute Unit: hbm1_4
++------------+------+------+------+--------+--------+--------+
+| Site Type  | SLR0 | SLR1 | SLR2 | SLR0 % | SLR1 % | SLR2 % |
++------------+------+------+------+--------+--------+--------+
+| LUT        | 5873 |    0 |    0 |   1.34 |   0.00 |   0.00 |
+| LUTAsLogic | 4182 |    0 |    0 |   0.95 |   0.00 |   0.00 |
+| LUTAsMem   | 1691 |    0 |    0 |   0.82 |   0.00 |   0.00 |
+| REG        | 7822 |    0 |    0 |   0.89 |   0.00 |   0.00 |
+| CARRY8     |  239 |    0 |    0 |   0.43 |   0.00 |   0.00 |
+| F7MUX      |  737 |    0 |    0 |   0.34 |   0.00 |   0.00 |
+| F8MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| F9MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| BRAM       |   30 |    0 |    0 |   4.46 |   0.00 |   0.00 |
+| URAM       |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| DSPs       |   24 |    0 |    0 |   0.83 |   0.00 |   0.00 |
++------------+------+------+------+--------+--------+--------+
+
+Compute Unit: hbm1_5
++------------+------+------+------+--------+--------+--------+
+| Site Type  | SLR0 | SLR1 | SLR2 | SLR0 % | SLR1 % | SLR2 % |
++------------+------+------+------+--------+--------+--------+
+| LUT        | 5864 |    0 |    0 |   1.33 |   0.00 |   0.00 |
+| LUTAsLogic | 4173 |    0 |    0 |   0.95 |   0.00 |   0.00 |
+| LUTAsMem   | 1691 |    0 |    0 |   0.82 |   0.00 |   0.00 |
+| REG        | 7821 |    0 |    0 |   0.89 |   0.00 |   0.00 |
+| CARRY8     |  239 |    0 |    0 |   0.43 |   0.00 |   0.00 |
+| F7MUX      |  737 |    0 |    0 |   0.34 |   0.00 |   0.00 |
+| F8MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| F9MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| BRAM       |   30 |    0 |    0 |   4.46 |   0.00 |   0.00 |
+| URAM       |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| DSPs       |   24 |    0 |    0 |   0.83 |   0.00 |   0.00 |
++------------+------+------+------+--------+--------+--------+
+
+Compute Unit: hbm1_6
++------------+------+------+------+--------+--------+--------+
+| Site Type  | SLR0 | SLR1 | SLR2 | SLR0 % | SLR1 % | SLR2 % |
++------------+------+------+------+--------+--------+--------+
+| LUT        | 5875 |    0 |    0 |   1.34 |   0.00 |   0.00 |
+| LUTAsLogic | 4184 |    0 |    0 |   0.95 |   0.00 |   0.00 |
+| LUTAsMem   | 1691 |    0 |    0 |   0.82 |   0.00 |   0.00 |
+| REG        | 7822 |    0 |    0 |   0.89 |   0.00 |   0.00 |
+| CARRY8     |  239 |    0 |    0 |   0.43 |   0.00 |   0.00 |
+| F7MUX      |  737 |    0 |    0 |   0.34 |   0.00 |   0.00 |
+| F8MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| F9MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| BRAM       |   30 |    0 |    0 |   4.46 |   0.00 |   0.00 |
+| URAM       |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| DSPs       |   24 |    0 |    0 |   0.83 |   0.00 |   0.00 |
++------------+------+------+------+--------+--------+--------+
+
+Compute Unit: hbm1_7
++------------+------+------+------+--------+--------+--------+
+| Site Type  | SLR0 | SLR1 | SLR2 | SLR0 % | SLR1 % | SLR2 % |
++------------+------+------+------+--------+--------+--------+
+| LUT        |    0 | 5867 |    0 |   0.00 |   1.36 |   0.00 |
+| LUTAsLogic |    0 | 4176 |    0 |   0.00 |   0.97 |   0.00 |
+| LUTAsMem   |    0 | 1691 |    0 |   0.00 |   0.86 |   0.00 |
+| REG        |    0 | 7822 |    0 |   0.00 |   0.91 |   0.00 |
+| CARRY8     |    0 |  239 |    0 |   0.00 |   0.44 |   0.00 |
+| F7MUX      |    0 |  737 |    0 |   0.00 |   0.34 |   0.00 |
+| F8MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| F9MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| BRAM       |    0 |   30 |    0 |   0.00 |   4.46 |   0.00 |
+| URAM       |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| DSPs       |    0 |   24 |    0 |   0.00 |   0.78 |   0.00 |
++------------+------+------+------+--------+--------+--------+
+
+Compute Unit: hbm1_8
++------------+------+------+------+--------+--------+--------+
+| Site Type  | SLR0 | SLR1 | SLR2 | SLR0 % | SLR1 % | SLR2 % |
++------------+------+------+------+--------+--------+--------+
+| LUT        |    0 | 5868 |    0 |   0.00 |   1.36 |   0.00 |
+| LUTAsLogic |    0 | 4177 |    0 |   0.00 |   0.97 |   0.00 |
+| LUTAsMem   |    0 | 1691 |    0 |   0.00 |   0.86 |   0.00 |
+| REG        |    0 | 7820 |    0 |   0.00 |   0.91 |   0.00 |
+| CARRY8     |    0 |  239 |    0 |   0.00 |   0.44 |   0.00 |
+| F7MUX      |    0 |  737 |    0 |   0.00 |   0.34 |   0.00 |
+| F8MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| F9MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| BRAM       |    0 |   30 |    0 |   0.00 |   4.46 |   0.00 |
+| URAM       |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| DSPs       |    0 |   24 |    0 |   0.00 |   0.78 |   0.00 |
++------------+------+------+------+--------+--------+--------+
+
+Compute Unit: hbm1_9
++------------+------+------+------+--------+--------+--------+
+| Site Type  | SLR0 | SLR1 | SLR2 | SLR0 % | SLR1 % | SLR2 % |
++------------+------+------+------+--------+--------+--------+
+| LUT        |    0 | 5868 |    0 |   0.00 |   1.36 |   0.00 |
+| LUTAsLogic |    0 | 4177 |    0 |   0.00 |   0.97 |   0.00 |
+| LUTAsMem   |    0 | 1691 |    0 |   0.00 |   0.86 |   0.00 |
+| REG        |    0 | 7823 |    0 |   0.00 |   0.91 |   0.00 |
+| CARRY8     |    0 |  239 |    0 |   0.00 |   0.44 |   0.00 |
+| F7MUX      |    0 |  737 |    0 |   0.00 |   0.34 |   0.00 |
+| F8MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| F9MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| BRAM       |    0 |   30 |    0 |   0.00 |   4.46 |   0.00 |
+| URAM       |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| DSPs       |    0 |   24 |    0 |   0.00 |   0.78 |   0.00 |
++------------+------+------+------+--------+--------+--------+
+
+Compute Unit: hbm1_10
++------------+------+------+------+--------+--------+--------+
+| Site Type  | SLR0 | SLR1 | SLR2 | SLR0 % | SLR1 % | SLR2 % |
++------------+------+------+------+--------+--------+--------+
+| LUT        |    0 | 5864 |    0 |   0.00 |   1.36 |   0.00 |
+| LUTAsLogic |    0 | 4173 |    0 |   0.00 |   0.97 |   0.00 |
+| LUTAsMem   |    0 | 1691 |    0 |   0.00 |   0.86 |   0.00 |
+| REG        |    0 | 7826 |    0 |   0.00 |   0.91 |   0.00 |
+| CARRY8     |    0 |  239 |    0 |   0.00 |   0.44 |   0.00 |
+| F7MUX      |    0 |  737 |    0 |   0.00 |   0.34 |   0.00 |
+| F8MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| F9MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| BRAM       |    0 |   30 |    0 |   0.00 |   4.46 |   0.00 |
+| URAM       |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| DSPs       |    0 |   24 |    0 |   0.00 |   0.78 |   0.00 |
++------------+------+------+------+--------+--------+--------+
+
+Compute Unit: hbm1_11
++------------+------+------+------+--------+--------+--------+
+| Site Type  | SLR0 | SLR1 | SLR2 | SLR0 % | SLR1 % | SLR2 % |
++------------+------+------+------+--------+--------+--------+
+| LUT        |    0 | 5870 |    0 |   0.00 |   1.36 |   0.00 |
+| LUTAsLogic |    0 | 4179 |    0 |   0.00 |   0.97 |   0.00 |
+| LUTAsMem   |    0 | 1691 |    0 |   0.00 |   0.86 |   0.00 |
+| REG        |    0 | 7819 |    0 |   0.00 |   0.90 |   0.00 |
+| CARRY8     |    0 |  239 |    0 |   0.00 |   0.44 |   0.00 |
+| F7MUX      |    0 |  737 |    0 |   0.00 |   0.34 |   0.00 |
+| F8MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| F9MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| BRAM       |    0 |   30 |    0 |   0.00 |   4.46 |   0.00 |
+| URAM       |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| DSPs       |    0 |   24 |    0 |   0.00 |   0.78 |   0.00 |
++------------+------+------+------+--------+--------+--------+
+
+Compute Unit: hbm1_12
++------------+------+------+------+--------+--------+--------+
+| Site Type  | SLR0 | SLR1 | SLR2 | SLR0 % | SLR1 % | SLR2 % |
++------------+------+------+------+--------+--------+--------+
+| LUT        |    0 |    0 | 5872 |   0.00 |   0.00 |   1.36 |
+| LUTAsLogic |    0 |    0 | 4181 |   0.00 |   0.00 |   0.97 |
+| LUTAsMem   |    0 |    0 | 1691 |   0.00 |   0.00 |   0.86 |
+| REG        |    0 |    0 | 7815 |   0.00 |   0.00 |   0.90 |
+| CARRY8     |    0 |    0 |  239 |   0.00 |   0.00 |   0.44 |
+| F7MUX      |    0 |    0 |  737 |   0.00 |   0.00 |   0.34 |
+| F8MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| F9MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| BRAM       |    0 |    0 |   30 |   0.00 |   0.00 |   4.46 |
+| URAM       |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| DSPs       |    0 |    0 |   24 |   0.00 |   0.00 |   0.78 |
++------------+------+------+------+--------+--------+--------+
+
+Compute Unit: hbm1_13
++------------+------+------+------+--------+--------+--------+
+| Site Type  | SLR0 | SLR1 | SLR2 | SLR0 % | SLR1 % | SLR2 % |
++------------+------+------+------+--------+--------+--------+
+| LUT        |    0 |    0 | 5871 |   0.00 |   0.00 |   1.36 |
+| LUTAsLogic |    0 |    0 | 4180 |   0.00 |   0.00 |   0.97 |
+| LUTAsMem   |    0 |    0 | 1691 |   0.00 |   0.00 |   0.86 |
+| REG        |    0 |    0 | 7819 |   0.00 |   0.00 |   0.90 |
+| CARRY8     |    0 |    0 |  239 |   0.00 |   0.00 |   0.44 |
+| F7MUX      |    0 |    0 |  737 |   0.00 |   0.00 |   0.34 |
+| F8MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| F9MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| BRAM       |    0 |    0 |   30 |   0.00 |   0.00 |   4.46 |
+| URAM       |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| DSPs       |    0 |    0 |   24 |   0.00 |   0.00 |   0.78 |
++------------+------+------+------+--------+--------+--------+
+
+Compute Unit: hbm1_14
++------------+------+------+------+--------+--------+--------+
+| Site Type  | SLR0 | SLR1 | SLR2 | SLR0 % | SLR1 % | SLR2 % |
++------------+------+------+------+--------+--------+--------+
+| LUT        |    0 |    0 | 5866 |   0.00 |   0.00 |   1.36 |
+| LUTAsLogic |    0 |    0 | 4175 |   0.00 |   0.00 |   0.97 |
+| LUTAsMem   |    0 |    0 | 1691 |   0.00 |   0.00 |   0.86 |
+| REG        |    0 |    0 | 7819 |   0.00 |   0.00 |   0.90 |
+| CARRY8     |    0 |    0 |  239 |   0.00 |   0.00 |   0.44 |
+| F7MUX      |    0 |    0 |  737 |   0.00 |   0.00 |   0.34 |
+| F8MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| F9MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| BRAM       |    0 |    0 |   30 |   0.00 |   0.00 |   4.46 |
+| URAM       |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| DSPs       |    0 |    0 |   24 |   0.00 |   0.00 |   0.78 |
++------------+------+------+------+--------+--------+--------+
+
+Compute Unit: hbm1_15
++------------+------+------+------+--------+--------+--------+
+| Site Type  | SLR0 | SLR1 | SLR2 | SLR0 % | SLR1 % | SLR2 % |
++------------+------+------+------+--------+--------+--------+
+| LUT        |    0 |    0 | 5874 |   0.00 |   0.00 |   1.36 |
+| LUTAsLogic |    0 |    0 | 4183 |   0.00 |   0.00 |   0.97 |
+| LUTAsMem   |    0 |    0 | 1691 |   0.00 |   0.00 |   0.86 |
+| REG        |    0 |    0 | 7826 |   0.00 |   0.00 |   0.91 |
+| CARRY8     |    0 |    0 |  239 |   0.00 |   0.00 |   0.44 |
+| F7MUX      |    0 |    0 |  737 |   0.00 |   0.00 |   0.34 |
+| F8MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| F9MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| BRAM       |    0 |    0 |   30 |   0.00 |   0.00 |   4.46 |
+| URAM       |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| DSPs       |    0 |    0 |   24 |   0.00 |   0.00 |   0.78 |
++------------+------+------+------+--------+--------+--------+
+
+Compute Unit: hbm1_16
++------------+------+------+------+--------+--------+--------+
+| Site Type  | SLR0 | SLR1 | SLR2 | SLR0 % | SLR1 % | SLR2 % |
++------------+------+------+------+--------+--------+--------+
+| LUT        |    0 |    0 | 5869 |   0.00 |   0.00 |   1.36 |
+| LUTAsLogic |    0 |    0 | 4178 |   0.00 |   0.00 |   0.97 |
+| LUTAsMem   |    0 |    0 | 1691 |   0.00 |   0.00 |   0.86 |
+| REG        |    0 |    0 | 7816 |   0.00 |   0.00 |   0.90 |
+| CARRY8     |    0 |    0 |  239 |   0.00 |   0.00 |   0.44 |
+| F7MUX      |    0 |    0 |  737 |   0.00 |   0.00 |   0.34 |
+| F8MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| F9MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| BRAM       |    0 |    0 |   30 |   0.00 |   0.00 |   4.46 |
+| URAM       |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| DSPs       |    0 |    0 |   24 |   0.00 |   0.00 |   0.78 |
++------------+------+------+------+--------+--------+--------+
+
+7. Compute Unit Utilization per SLR
+===================================
+
+SLR0
++------------+--------+--------+--------+--------+--------+--------+--------+--------+--------+---------+---------+---------+---------+---------+---------+---------+-----------+
+| Site Type  | hbm1_1 | hbm1_2 | hbm1_3 | hbm1_4 | hbm1_5 | hbm1_6 | hbm1_7 | hbm1_8 | hbm1_9 | hbm1_10 | hbm1_11 | hbm1_12 | hbm1_13 | hbm1_14 | hbm1_15 | hbm1_16 | Available |
++------------+--------+--------+--------+--------+--------+--------+--------+--------+--------+---------+---------+---------+---------+---------+---------+---------+-----------+
+| LUT        |   5880 |   5870 |   5867 |   5873 |   5864 |   5875 |      0 |      0 |      0 |       0 |       0 |       0 |       0 |       0 |       0 |       0 |    439680 |
+| LUTAsLogic |   4189 |   4179 |   4176 |   4182 |   4173 |   4184 |      0 |      0 |      0 |       0 |       0 |       0 |       0 |       0 |       0 |       0 |    439680 |
+| LUTAsMem   |   1691 |   1691 |   1691 |   1691 |   1691 |   1691 |      0 |      0 |      0 |       0 |       0 |       0 |       0 |       0 |       0 |       0 |    205440 |
+| REG        |   7823 |   7829 |   7824 |   7822 |   7821 |   7822 |      0 |      0 |      0 |       0 |       0 |       0 |       0 |       0 |       0 |       0 |    879360 |
+| CARRY8     |    239 |    239 |    239 |    239 |    239 |    239 |      0 |      0 |      0 |       0 |       0 |       0 |       0 |       0 |       0 |       0 |     54960 |
+| F7MUX      |    737 |    737 |    737 |    737 |    737 |    737 |      0 |      0 |      0 |       0 |       0 |       0 |       0 |       0 |       0 |       0 |    219840 |
+| F8MUX      |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |       0 |       0 |       0 |       0 |       0 |       0 |       0 |    109920 |
+| F9MUX      |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |       0 |       0 |       0 |       0 |       0 |       0 |       0 |     54960 |
+| BRAM       |     30 |     30 |     30 |     30 |     30 |     30 |      0 |      0 |      0 |       0 |       0 |       0 |       0 |       0 |       0 |       0 |       672 |
+| URAM       |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |       0 |       0 |       0 |       0 |       0 |       0 |       0 |       320 |
+| DSPs       |     24 |     24 |     24 |     24 |     24 |     24 |      0 |      0 |      0 |       0 |       0 |       0 |       0 |       0 |       0 |       0 |      2880 |
++------------+--------+--------+--------+--------+--------+--------+--------+--------+--------+---------+---------+---------+---------+---------+---------+---------+-----------+
+
+SLR1
++------------+--------+--------+--------+--------+--------+--------+--------+--------+--------+---------+---------+---------+---------+---------+---------+---------+-----------+
+| Site Type  | hbm1_1 | hbm1_2 | hbm1_3 | hbm1_4 | hbm1_5 | hbm1_6 | hbm1_7 | hbm1_8 | hbm1_9 | hbm1_10 | hbm1_11 | hbm1_12 | hbm1_13 | hbm1_14 | hbm1_15 | hbm1_16 | Available |
++------------+--------+--------+--------+--------+--------+--------+--------+--------+--------+---------+---------+---------+---------+---------+---------+---------+-----------+
+| LUT        |      0 |      0 |      0 |      0 |      0 |      0 |   5867 |   5868 |   5868 |    5864 |    5870 |       0 |       0 |       0 |       0 |       0 |    439680 |
+| LUTAsLogic |      0 |      0 |      0 |      0 |      0 |      0 |   4176 |   4177 |   4177 |    4173 |    4179 |       0 |       0 |       0 |       0 |       0 |    439680 |
+| LUTAsMem   |      0 |      0 |      0 |      0 |      0 |      0 |   1691 |   1691 |   1691 |    1691 |    1691 |       0 |       0 |       0 |       0 |       0 |    205440 |
+| REG        |      0 |      0 |      0 |      0 |      0 |      0 |   7822 |   7820 |   7823 |    7826 |    7819 |       0 |       0 |       0 |       0 |       0 |    879360 |
+| CARRY8     |      0 |      0 |      0 |      0 |      0 |      0 |    239 |    239 |    239 |     239 |     239 |       0 |       0 |       0 |       0 |       0 |     54960 |
+| F7MUX      |      0 |      0 |      0 |      0 |      0 |      0 |    737 |    737 |    737 |     737 |     737 |       0 |       0 |       0 |       0 |       0 |    219840 |
+| F8MUX      |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |       0 |       0 |       0 |       0 |       0 |       0 |       0 |    109920 |
+| F9MUX      |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |       0 |       0 |       0 |       0 |       0 |       0 |       0 |     54960 |
+| BRAM       |      0 |      0 |      0 |      0 |      0 |      0 |     30 |     30 |     30 |      30 |      30 |       0 |       0 |       0 |       0 |       0 |       672 |
+| URAM       |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |       0 |       0 |       0 |       0 |       0 |       0 |       0 |       320 |
+| DSPs       |      0 |      0 |      0 |      0 |      0 |      0 |     24 |     24 |     24 |      24 |      24 |       0 |       0 |       0 |       0 |       0 |      2880 |
++------------+--------+--------+--------+--------+--------+--------+--------+--------+--------+---------+---------+---------+---------+---------+---------+---------+-----------+
+
+SLR2
++------------+--------+--------+--------+--------+--------+--------+--------+--------+--------+---------+---------+---------+---------+---------+---------+---------+-----------+
+| Site Type  | hbm1_1 | hbm1_2 | hbm1_3 | hbm1_4 | hbm1_5 | hbm1_6 | hbm1_7 | hbm1_8 | hbm1_9 | hbm1_10 | hbm1_11 | hbm1_12 | hbm1_13 | hbm1_14 | hbm1_15 | hbm1_16 | Available |
++------------+--------+--------+--------+--------+--------+--------+--------+--------+--------+---------+---------+---------+---------+---------+---------+---------+-----------+
+| LUT        |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |       0 |       0 |    5872 |    5871 |    5866 |    5874 |    5869 |    439680 |
+| LUTAsLogic |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |       0 |       0 |    4181 |    4180 |    4175 |    4183 |    4178 |    439680 |
+| LUTAsMem   |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |       0 |       0 |    1691 |    1691 |    1691 |    1691 |    1691 |    205440 |
+| REG        |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |       0 |       0 |    7815 |    7819 |    7819 |    7826 |    7816 |    879360 |
+| CARRY8     |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |       0 |       0 |     239 |     239 |     239 |     239 |     239 |     54960 |
+| F7MUX      |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |       0 |       0 |     737 |     737 |     737 |     737 |     737 |    219840 |
+| F8MUX      |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |       0 |       0 |       0 |       0 |       0 |       0 |       0 |    109920 |
+| F9MUX      |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |       0 |       0 |       0 |       0 |       0 |       0 |       0 |     54960 |
+| BRAM       |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |       0 |       0 |      30 |      30 |      30 |      30 |      30 |       672 |
+| URAM       |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |       0 |       0 |       0 |       0 |       0 |       0 |       0 |       320 |
+| DSPs       |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |       0 |       0 |      24 |      24 |      24 |      24 |      24 |      2880 |
++------------+--------+--------+--------+--------+--------+--------+--------+--------+--------+---------+---------+---------+---------+---------+---------+---------+-----------+
+

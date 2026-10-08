@@ -1,0 +1,632 @@
+====================================================================
+Version:    xcd v2023.2 (64-bit)
+Copyright:  Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
+Created:    Tue Oct  6 20:11:42 2026
+====================================================================
+
+1. Kernel and compute unit information
+======================================
+
+Compute Unit: sv_engine_1
+Kernel: sv_engine
+Base Address: 0x800000
+Clock Pin: ap_clk
+Reset Pin: ap_rst_n
+
+Compute Unit: sv_engine_2
+Kernel: sv_engine
+Base Address: 0x810000
+Clock Pin: ap_clk
+Reset Pin: ap_rst_n
+
+Compute Unit: sv_engine_3
+Kernel: sv_engine
+Base Address: 0x820000
+Clock Pin: ap_clk
+Reset Pin: ap_rst_n
+
+Compute Unit: sv_engine_4
+Kernel: sv_engine
+Base Address: 0xc00000
+Clock Pin: ap_clk
+Reset Pin: ap_rst_n
+
+Compute Unit: sv_engine_5
+Kernel: sv_engine
+Base Address: 0xc10000
+Clock Pin: ap_clk
+Reset Pin: ap_rst_n
+
+Compute Unit: sv_engine_6
+Kernel: sv_engine
+Base Address: 0xc20000
+Clock Pin: ap_clk
+Reset Pin: ap_rst_n
+
+Compute Unit: sv_engine_7
+Kernel: sv_engine
+Base Address: 0x1000000
+Clock Pin: ap_clk
+Reset Pin: ap_rst_n
+
+Compute Unit: sv_engine_8
+Kernel: sv_engine
+Base Address: 0x1010000
+Clock Pin: ap_clk
+Reset Pin: ap_rst_n
+
+Compute Unit: sv_swap_1
+Kernel: sv_swap
+Base Address: 0x830000
+Clock Pin: ap_clk
+Reset Pin: ap_rst_n
+
+Compute Unit: sv_swap_2
+Kernel: sv_swap
+Base Address: 0x840000
+Clock Pin: ap_clk
+Reset Pin: ap_rst_n
+
+Compute Unit: sv_swap_3
+Kernel: sv_swap
+Base Address: 0x850000
+Clock Pin: ap_clk
+Reset Pin: ap_rst_n
+
+Compute Unit: sv_swap_4
+Kernel: sv_swap
+Base Address: 0x860000
+Clock Pin: ap_clk
+Reset Pin: ap_rst_n
+
+2. Interface Connections
+========================
+
+IP to Compute Unit
+------------------
+Source Pin: SLR0/M01_AXI
+Destination Pin: sv_engine_1/s_axi_control
+
+Source Pin: SLR0/M02_AXI
+Destination Pin: sv_engine_2/s_axi_control
+
+Source Pin: SLR0/M03_AXI
+Destination Pin: sv_engine_3/s_axi_control
+
+Source Pin: SLR1/M01_AXI
+Destination Pin: sv_engine_4/s_axi_control
+
+Source Pin: SLR1/M02_AXI
+Destination Pin: sv_engine_5/s_axi_control
+
+Source Pin: SLR1/M03_AXI
+Destination Pin: sv_engine_6/s_axi_control
+
+Source Pin: SLR2/M01_AXI
+Destination Pin: sv_engine_7/s_axi_control
+
+Source Pin: SLR2/M02_AXI
+Destination Pin: sv_engine_8/s_axi_control
+
+Source Pin: SLR0/M04_AXI
+Destination Pin: sv_swap_1/s_axi_control
+
+Source Pin: SLR0/M05_AXI
+Destination Pin: sv_swap_2/s_axi_control
+
+Source Pin: SLR0/M06_AXI
+Destination Pin: sv_swap_3/s_axi_control
+
+Source Pin: SLR0/M07_AXI
+Destination Pin: sv_swap_4/s_axi_control
+
+Compute Unit to IP
+------------------
+Source Pin: sv_engine_1/m_axi_gst
+Destination Pin: hmss_0/S01_AXI
+
+Source Pin: sv_engine_2/m_axi_gst
+Destination Pin: hmss_0/S02_AXI
+
+Source Pin: sv_engine_3/m_axi_gst
+Destination Pin: hmss_0/S03_AXI
+
+Source Pin: sv_engine_4/m_axi_gst
+Destination Pin: hmss_0/S04_AXI
+
+Source Pin: sv_engine_5/m_axi_gst
+Destination Pin: hmss_0/S05_AXI
+
+Source Pin: sv_engine_6/m_axi_gst
+Destination Pin: hmss_0/S06_AXI
+
+Source Pin: sv_engine_7/m_axi_gst
+Destination Pin: hmss_0/S07_AXI
+
+Source Pin: sv_engine_8/m_axi_gst
+Destination Pin: hmss_0/S08_AXI
+
+Source Pin: sv_swap_1/m_axi_ga
+Destination Pin: hmss_0/S09_AXI
+
+Source Pin: sv_swap_1/m_axi_gb
+Destination Pin: hmss_0/S10_AXI
+
+Source Pin: sv_swap_2/m_axi_ga
+Destination Pin: hmss_0/S11_AXI
+
+Source Pin: sv_swap_2/m_axi_gb
+Destination Pin: hmss_0/S12_AXI
+
+Source Pin: sv_swap_3/m_axi_ga
+Destination Pin: hmss_0/S13_AXI
+
+Source Pin: sv_swap_3/m_axi_gb
+Destination Pin: hmss_0/S14_AXI
+
+Source Pin: sv_swap_4/m_axi_ga
+Destination Pin: hmss_0/S15_AXI
+
+Source Pin: sv_swap_4/m_axi_gb
+Destination Pin: hmss_0/S16_AXI
+
+3. Clock Connections
+====================
+
+Compute Unit: sv_engine_1
+Clock ID: 0
+Platform Clock Frequency: 300.00 MHz
+Requested Kernel Clock Frequency: 300.00 MHz
+Achieved Kernel Clock Frequency: 300.00 MHz
+Source Pin: ulp_ucs/aclk_kernel_00
+Destination Pin: sv_engine_1/ap_clk
+
+Compute Unit: sv_engine_2
+Clock ID: 0
+Platform Clock Frequency: 300.00 MHz
+Requested Kernel Clock Frequency: 300.00 MHz
+Achieved Kernel Clock Frequency: 300.00 MHz
+Source Pin: ulp_ucs/aclk_kernel_00
+Destination Pin: sv_engine_2/ap_clk
+
+Compute Unit: sv_engine_3
+Clock ID: 0
+Platform Clock Frequency: 300.00 MHz
+Requested Kernel Clock Frequency: 300.00 MHz
+Achieved Kernel Clock Frequency: 300.00 MHz
+Source Pin: ulp_ucs/aclk_kernel_00
+Destination Pin: sv_engine_3/ap_clk
+
+Compute Unit: sv_engine_4
+Clock ID: 0
+Platform Clock Frequency: 300.00 MHz
+Requested Kernel Clock Frequency: 300.00 MHz
+Achieved Kernel Clock Frequency: 300.00 MHz
+Source Pin: ulp_ucs/aclk_kernel_00
+Destination Pin: sv_engine_4/ap_clk
+
+Compute Unit: sv_engine_5
+Clock ID: 0
+Platform Clock Frequency: 300.00 MHz
+Requested Kernel Clock Frequency: 300.00 MHz
+Achieved Kernel Clock Frequency: 300.00 MHz
+Source Pin: ulp_ucs/aclk_kernel_00
+Destination Pin: sv_engine_5/ap_clk
+
+Compute Unit: sv_engine_6
+Clock ID: 0
+Platform Clock Frequency: 300.00 MHz
+Requested Kernel Clock Frequency: 300.00 MHz
+Achieved Kernel Clock Frequency: 300.00 MHz
+Source Pin: ulp_ucs/aclk_kernel_00
+Destination Pin: sv_engine_6/ap_clk
+
+Compute Unit: sv_engine_7
+Clock ID: 0
+Platform Clock Frequency: 300.00 MHz
+Requested Kernel Clock Frequency: 300.00 MHz
+Achieved Kernel Clock Frequency: 300.00 MHz
+Source Pin: ulp_ucs/aclk_kernel_00
+Destination Pin: sv_engine_7/ap_clk
+
+Compute Unit: sv_engine_8
+Clock ID: 0
+Platform Clock Frequency: 300.00 MHz
+Requested Kernel Clock Frequency: 300.00 MHz
+Achieved Kernel Clock Frequency: 300.00 MHz
+Source Pin: ulp_ucs/aclk_kernel_00
+Destination Pin: sv_engine_8/ap_clk
+
+Compute Unit: sv_swap_1
+Clock ID: 0
+Platform Clock Frequency: 300.00 MHz
+Requested Kernel Clock Frequency: 300.00 MHz
+Achieved Kernel Clock Frequency: 300.00 MHz
+Source Pin: ulp_ucs/aclk_kernel_00
+Destination Pin: sv_swap_1/ap_clk
+
+Compute Unit: sv_swap_2
+Clock ID: 0
+Platform Clock Frequency: 300.00 MHz
+Requested Kernel Clock Frequency: 300.00 MHz
+Achieved Kernel Clock Frequency: 300.00 MHz
+Source Pin: ulp_ucs/aclk_kernel_00
+Destination Pin: sv_swap_2/ap_clk
+
+Compute Unit: sv_swap_3
+Clock ID: 0
+Platform Clock Frequency: 300.00 MHz
+Requested Kernel Clock Frequency: 300.00 MHz
+Achieved Kernel Clock Frequency: 300.00 MHz
+Source Pin: ulp_ucs/aclk_kernel_00
+Destination Pin: sv_swap_3/ap_clk
+
+Compute Unit: sv_swap_4
+Clock ID: 0
+Platform Clock Frequency: 300.00 MHz
+Requested Kernel Clock Frequency: 300.00 MHz
+Achieved Kernel Clock Frequency: 300.00 MHz
+Source Pin: ulp_ucs/aclk_kernel_00
+Destination Pin: sv_swap_4/ap_clk
+
+Clock Instance: ulp_ucs
+Source Pin: ii_level0_wire/ulp_m_aclk_ctrl_00
+Destination Pin: ulp_ucs/aclk_ctrl
+
+Clock Instance: ulp_ucs
+Source Pin: ii_level0_wire/ulp_m_aclk_freerun_ref_00
+Destination Pin: ulp_ucs/aclk_freerun
+
+Clock Instance: ulp_ucs
+Source Pin: ii_level0_wire/ulp_m_aclk_freerun_ref_00
+Destination Pin: ulp_ucs/aclk_hbm_refclk
+
+Clock Instance: ulp_ucs
+Source Pin: ii_level0_wire/ulp_m_aclk_pcie_00
+Destination Pin: ulp_ucs/aclk_pcie
+
+4. Reset Connections
+====================
+
+Compute Unit: sv_engine_1
+Source Pin: proc_sys_reset_kernel_slr0/peripheral_aresetn
+Destination Pin: sv_engine_1/ap_rst_n
+Associated Clock Pin: sv_engine_1/ap_clk
+
+Compute Unit: sv_engine_2
+Source Pin: proc_sys_reset_kernel_slr0/peripheral_aresetn
+Destination Pin: sv_engine_2/ap_rst_n
+Associated Clock Pin: sv_engine_2/ap_clk
+
+Compute Unit: sv_engine_3
+Source Pin: proc_sys_reset_kernel_slr0/peripheral_aresetn
+Destination Pin: sv_engine_3/ap_rst_n
+Associated Clock Pin: sv_engine_3/ap_clk
+
+Compute Unit: sv_engine_4
+Source Pin: proc_sys_reset_kernel_slr1/peripheral_aresetn
+Destination Pin: sv_engine_4/ap_rst_n
+Associated Clock Pin: sv_engine_4/ap_clk
+
+Compute Unit: sv_engine_5
+Source Pin: proc_sys_reset_kernel_slr1/peripheral_aresetn
+Destination Pin: sv_engine_5/ap_rst_n
+Associated Clock Pin: sv_engine_5/ap_clk
+
+Compute Unit: sv_engine_6
+Source Pin: proc_sys_reset_kernel_slr1/peripheral_aresetn
+Destination Pin: sv_engine_6/ap_rst_n
+Associated Clock Pin: sv_engine_6/ap_clk
+
+Compute Unit: sv_engine_7
+Source Pin: proc_sys_reset_kernel_slr2/peripheral_aresetn
+Destination Pin: sv_engine_7/ap_rst_n
+Associated Clock Pin: sv_engine_7/ap_clk
+
+Compute Unit: sv_engine_8
+Source Pin: proc_sys_reset_kernel_slr2/peripheral_aresetn
+Destination Pin: sv_engine_8/ap_rst_n
+Associated Clock Pin: sv_engine_8/ap_clk
+
+Compute Unit: sv_swap_1
+Source Pin: proc_sys_reset_kernel_slr0/peripheral_aresetn
+Destination Pin: sv_swap_1/ap_rst_n
+Associated Clock Pin: sv_swap_1/ap_clk
+
+Compute Unit: sv_swap_2
+Source Pin: proc_sys_reset_kernel_slr0/peripheral_aresetn
+Destination Pin: sv_swap_2/ap_rst_n
+Associated Clock Pin: sv_swap_2/ap_clk
+
+Compute Unit: sv_swap_3
+Source Pin: proc_sys_reset_kernel_slr0/peripheral_aresetn
+Destination Pin: sv_swap_3/ap_rst_n
+Associated Clock Pin: sv_swap_3/ap_clk
+
+Compute Unit: sv_swap_4
+Source Pin: proc_sys_reset_kernel_slr0/peripheral_aresetn
+Destination Pin: sv_swap_4/ap_rst_n
+Associated Clock Pin: sv_swap_4/ap_clk
+
+5. Clock Summary
+================
+
+PL
++-------------+-----------+------------+---------------+------------+
+| Instance    | Kernel    | Clock Port | Compile (MHz) | Link (MHz) |
++-------------+-----------+------------+---------------+------------+
+| sv_engine_1 | sv_engine | ap_clk     | 300.03        | 300.00     |
+| sv_engine_2 | sv_engine | ap_clk     | 300.03        | 300.00     |
+| sv_engine_3 | sv_engine | ap_clk     | 300.03        | 300.00     |
+| sv_engine_4 | sv_engine | ap_clk     | 300.03        | 300.00     |
+| sv_engine_5 | sv_engine | ap_clk     | 300.03        | 300.00     |
+| sv_engine_6 | sv_engine | ap_clk     | 300.03        | 300.00     |
+| sv_engine_7 | sv_engine | ap_clk     | 300.03        | 300.00     |
+| sv_engine_8 | sv_engine | ap_clk     | 300.03        | 300.00     |
+| sv_swap_1   | sv_swap   | ap_clk     | 300.03        | 300.00     |
+| sv_swap_2   | sv_swap   | ap_clk     | 300.03        | 300.00     |
+| sv_swap_3   | sv_swap   | ap_clk     | 300.03        | 300.00     |
+| sv_swap_4   | sv_swap   | ap_clk     | 300.03        | 300.00     |
++-------------+-----------+------------+---------------+------------+
+
+6. SLR Utilization per Compute Unit
+===================================
+
+Compute Unit: sv_engine_1
++------------+-------+------+------+--------+--------+--------+
+| Site Type  |  SLR0 | SLR1 | SLR2 | SLR0 % | SLR1 % | SLR2 % |
++------------+-------+------+------+--------+--------+--------+
+| LUT        | 24461 |    0 |    0 |   5.56 |   0.00 |   0.00 |
+| LUTAsLogic | 22672 |    0 |    0 |   5.16 |   0.00 |   0.00 |
+| LUTAsMem   |  1789 |    0 |    0 |   0.87 |   0.00 |   0.00 |
+| REG        | 32644 |    0 |    0 |   3.71 |   0.00 |   0.00 |
+| CARRY8     |  1310 |    0 |    0 |   2.38 |   0.00 |   0.00 |
+| F7MUX      |   382 |    0 |    0 |   0.17 |   0.00 |   0.00 |
+| F8MUX      |     0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| F9MUX      |     0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| BRAM       |    46 |    0 |    0 |   6.85 |   0.00 |   0.00 |
+| URAM       |     0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| DSPs       |   296 |    0 |    0 |  10.28 |   0.00 |   0.00 |
++------------+-------+------+------+--------+--------+--------+
+
+Compute Unit: sv_engine_2
++------------+-------+------+------+--------+--------+--------+
+| Site Type  |  SLR0 | SLR1 | SLR2 | SLR0 % | SLR1 % | SLR2 % |
++------------+-------+------+------+--------+--------+--------+
+| LUT        | 24461 |    0 |    0 |   5.56 |   0.00 |   0.00 |
+| LUTAsLogic | 22672 |    0 |    0 |   5.16 |   0.00 |   0.00 |
+| LUTAsMem   |  1789 |    0 |    0 |   0.87 |   0.00 |   0.00 |
+| REG        | 32682 |    0 |    0 |   3.72 |   0.00 |   0.00 |
+| CARRY8     |  1310 |    0 |    0 |   2.38 |   0.00 |   0.00 |
+| F7MUX      |   382 |    0 |    0 |   0.17 |   0.00 |   0.00 |
+| F8MUX      |     0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| F9MUX      |     0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| BRAM       |    46 |    0 |    0 |   6.85 |   0.00 |   0.00 |
+| URAM       |     0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| DSPs       |   296 |    0 |    0 |  10.28 |   0.00 |   0.00 |
++------------+-------+------+------+--------+--------+--------+
+
+Compute Unit: sv_engine_3
++------------+-------+------+------+--------+--------+--------+
+| Site Type  |  SLR0 | SLR1 | SLR2 | SLR0 % | SLR1 % | SLR2 % |
++------------+-------+------+------+--------+--------+--------+
+| LUT        | 24803 |    0 |    0 |   5.64 |   0.00 |   0.00 |
+| LUTAsLogic | 23014 |    0 |    0 |   5.23 |   0.00 |   0.00 |
+| LUTAsMem   |  1789 |    0 |    0 |   0.87 |   0.00 |   0.00 |
+| REG        | 32295 |    0 |    0 |   3.67 |   0.00 |   0.00 |
+| CARRY8     |  1310 |    0 |    0 |   2.38 |   0.00 |   0.00 |
+| F7MUX      |   382 |    0 |    0 |   0.17 |   0.00 |   0.00 |
+| F8MUX      |     0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| F9MUX      |     0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| BRAM       |    46 |    0 |    0 |   6.85 |   0.00 |   0.00 |
+| URAM       |     0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| DSPs       |   296 |    0 |    0 |  10.28 |   0.00 |   0.00 |
++------------+-------+------+------+--------+--------+--------+
+
+Compute Unit: sv_engine_4
++------------+------+-------+------+--------+--------+--------+
+| Site Type  | SLR0 |  SLR1 | SLR2 | SLR0 % | SLR1 % | SLR2 % |
++------------+------+-------+------+--------+--------+--------+
+| LUT        |    0 | 24270 |    0 |   0.00 |   5.62 |   0.00 |
+| LUTAsLogic |    0 | 22481 |    0 |   0.00 |   5.20 |   0.00 |
+| LUTAsMem   |    0 |  1789 |    0 |   0.00 |   0.90 |   0.00 |
+| REG        |    0 | 33761 |    0 |   0.00 |   3.91 |   0.00 |
+| CARRY8     |    0 |  1310 |    0 |   0.00 |   2.43 |   0.00 |
+| F7MUX      |    0 |   382 |    0 |   0.00 |   0.18 |   0.00 |
+| F8MUX      |    0 |     0 |    0 |   0.00 |   0.00 |   0.00 |
+| F9MUX      |    0 |     0 |    0 |   0.00 |   0.00 |   0.00 |
+| BRAM       |    0 |    46 |    0 |   0.00 |   6.85 |   0.00 |
+| URAM       |    0 |     0 |    0 |   0.00 |   0.00 |   0.00 |
+| DSPs       |    0 |   296 |    0 |   0.00 |   9.64 |   0.00 |
++------------+------+-------+------+--------+--------+--------+
+
+Compute Unit: sv_engine_5
++------------+------+-------+------+--------+--------+--------+
+| Site Type  | SLR0 |  SLR1 | SLR2 | SLR0 % | SLR1 % | SLR2 % |
++------------+------+-------+------+--------+--------+--------+
+| LUT        |    0 | 24262 |    0 |   0.00 |   5.62 |   0.00 |
+| LUTAsLogic |    0 | 22473 |    0 |   0.00 |   5.20 |   0.00 |
+| LUTAsMem   |    0 |  1789 |    0 |   0.00 |   0.90 |   0.00 |
+| REG        |    0 | 33739 |    0 |   0.00 |   3.90 |   0.00 |
+| CARRY8     |    0 |  1310 |    0 |   0.00 |   2.43 |   0.00 |
+| F7MUX      |    0 |   382 |    0 |   0.00 |   0.18 |   0.00 |
+| F8MUX      |    0 |     0 |    0 |   0.00 |   0.00 |   0.00 |
+| F9MUX      |    0 |     0 |    0 |   0.00 |   0.00 |   0.00 |
+| BRAM       |    0 |    46 |    0 |   0.00 |   6.85 |   0.00 |
+| URAM       |    0 |     0 |    0 |   0.00 |   0.00 |   0.00 |
+| DSPs       |    0 |   296 |    0 |   0.00 |   9.64 |   0.00 |
++------------+------+-------+------+--------+--------+--------+
+
+Compute Unit: sv_engine_6
++------------+------+-------+------+--------+--------+--------+
+| Site Type  | SLR0 |  SLR1 | SLR2 | SLR0 % | SLR1 % | SLR2 % |
++------------+------+-------+------+--------+--------+--------+
+| LUT        |    0 | 24279 |    0 |   0.00 |   5.62 |   0.00 |
+| LUTAsLogic |    0 | 22490 |    0 |   0.00 |   5.21 |   0.00 |
+| LUTAsMem   |    0 |  1789 |    0 |   0.00 |   0.90 |   0.00 |
+| REG        |    0 | 33764 |    0 |   0.00 |   3.91 |   0.00 |
+| CARRY8     |    0 |  1310 |    0 |   0.00 |   2.43 |   0.00 |
+| F7MUX      |    0 |   382 |    0 |   0.00 |   0.18 |   0.00 |
+| F8MUX      |    0 |     0 |    0 |   0.00 |   0.00 |   0.00 |
+| F9MUX      |    0 |     0 |    0 |   0.00 |   0.00 |   0.00 |
+| BRAM       |    0 |    46 |    0 |   0.00 |   6.85 |   0.00 |
+| URAM       |    0 |     0 |    0 |   0.00 |   0.00 |   0.00 |
+| DSPs       |    0 |   296 |    0 |   0.00 |   9.64 |   0.00 |
++------------+------+-------+------+--------+--------+--------+
+
+Compute Unit: sv_engine_7
++------------+------+------+-------+--------+--------+--------+
+| Site Type  | SLR0 | SLR1 |  SLR2 | SLR0 % | SLR1 % | SLR2 % |
++------------+------+------+-------+--------+--------+--------+
+| LUT        |    0 |    0 | 24285 |   0.00 |   0.00 |   5.62 |
+| LUTAsLogic |    0 |    0 | 22496 |   0.00 |   0.00 |   5.21 |
+| LUTAsMem   |    0 |    0 |  1789 |   0.00 |   0.00 |   0.90 |
+| REG        |    0 |    0 | 33730 |   0.00 |   0.00 |   3.90 |
+| CARRY8     |    0 |    0 |  1310 |   0.00 |   0.00 |   2.43 |
+| F7MUX      |    0 |    0 |   382 |   0.00 |   0.00 |   0.18 |
+| F8MUX      |    0 |    0 |     0 |   0.00 |   0.00 |   0.00 |
+| F9MUX      |    0 |    0 |     0 |   0.00 |   0.00 |   0.00 |
+| BRAM       |    0 |    0 |    46 |   0.00 |   0.00 |   6.85 |
+| URAM       |    0 |    0 |     0 |   0.00 |   0.00 |   0.00 |
+| DSPs       |    0 |    0 |   296 |   0.00 |   0.00 |   9.64 |
++------------+------+------+-------+--------+--------+--------+
+
+Compute Unit: sv_engine_8
++------------+------+------+-------+--------+--------+--------+
+| Site Type  | SLR0 | SLR1 |  SLR2 | SLR0 % | SLR1 % | SLR2 % |
++------------+------+------+-------+--------+--------+--------+
+| LUT        |    0 |    0 | 24279 |   0.00 |   0.00 |   5.62 |
+| LUTAsLogic |    0 |    0 | 22490 |   0.00 |   0.00 |   5.21 |
+| LUTAsMem   |    0 |    0 |  1789 |   0.00 |   0.00 |   0.90 |
+| REG        |    0 |    0 | 33824 |   0.00 |   0.00 |   3.91 |
+| CARRY8     |    0 |    0 |  1310 |   0.00 |   0.00 |   2.43 |
+| F7MUX      |    0 |    0 |   382 |   0.00 |   0.00 |   0.18 |
+| F8MUX      |    0 |    0 |     0 |   0.00 |   0.00 |   0.00 |
+| F9MUX      |    0 |    0 |     0 |   0.00 |   0.00 |   0.00 |
+| BRAM       |    0 |    0 |    46 |   0.00 |   0.00 |   6.85 |
+| URAM       |    0 |    0 |     0 |   0.00 |   0.00 |   0.00 |
+| DSPs       |    0 |    0 |   296 |   0.00 |   0.00 |   9.64 |
++------------+------+------+-------+--------+--------+--------+
+
+Compute Unit: sv_swap_1
++------------+------+------+------+--------+--------+--------+
+| Site Type  | SLR0 | SLR1 | SLR2 | SLR0 % | SLR1 % | SLR2 % |
++------------+------+------+------+--------+--------+--------+
+| LUT        | 7394 |    0 |    0 |   1.68 |   0.00 |   0.00 |
+| LUTAsLogic | 4060 |    0 |    0 |   0.92 |   0.00 |   0.00 |
+| LUTAsMem   | 3334 |    0 |    0 |   1.62 |   0.00 |   0.00 |
+| REG        | 7370 |    0 |    0 |   0.84 |   0.00 |   0.00 |
+| CARRY8     |  151 |    0 |    0 |   0.27 |   0.00 |   0.00 |
+| F7MUX      | 1470 |    0 |    0 |   0.67 |   0.00 |   0.00 |
+| F8MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| F9MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| BRAM       |   45 |    0 |    0 |   6.70 |   0.00 |   0.00 |
+| URAM       |   16 |    0 |    0 |   5.00 |   0.00 |   0.00 |
+| DSPs       |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
++------------+------+------+------+--------+--------+--------+
+
+Compute Unit: sv_swap_2
++------------+------+------+------+--------+--------+--------+
+| Site Type  | SLR0 | SLR1 | SLR2 | SLR0 % | SLR1 % | SLR2 % |
++------------+------+------+------+--------+--------+--------+
+| LUT        | 7396 |    0 |    0 |   1.68 |   0.00 |   0.00 |
+| LUTAsLogic | 4062 |    0 |    0 |   0.92 |   0.00 |   0.00 |
+| LUTAsMem   | 3334 |    0 |    0 |   1.62 |   0.00 |   0.00 |
+| REG        | 7383 |    0 |    0 |   0.84 |   0.00 |   0.00 |
+| CARRY8     |  151 |    0 |    0 |   0.27 |   0.00 |   0.00 |
+| F7MUX      | 1470 |    0 |    0 |   0.67 |   0.00 |   0.00 |
+| F8MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| F9MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| BRAM       |   45 |    0 |    0 |   6.70 |   0.00 |   0.00 |
+| URAM       |   16 |    0 |    0 |   5.00 |   0.00 |   0.00 |
+| DSPs       |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
++------------+------+------+------+--------+--------+--------+
+
+Compute Unit: sv_swap_3
++------------+------+------+------+--------+--------+--------+
+| Site Type  | SLR0 | SLR1 | SLR2 | SLR0 % | SLR1 % | SLR2 % |
++------------+------+------+------+--------+--------+--------+
+| LUT        | 7388 |    0 |    0 |   1.68 |   0.00 |   0.00 |
+| LUTAsLogic | 4054 |    0 |    0 |   0.92 |   0.00 |   0.00 |
+| LUTAsMem   | 3334 |    0 |    0 |   1.62 |   0.00 |   0.00 |
+| REG        | 7356 |    0 |    0 |   0.84 |   0.00 |   0.00 |
+| CARRY8     |  151 |    0 |    0 |   0.27 |   0.00 |   0.00 |
+| F7MUX      | 1470 |    0 |    0 |   0.67 |   0.00 |   0.00 |
+| F8MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| F9MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| BRAM       |   45 |    0 |    0 |   6.70 |   0.00 |   0.00 |
+| URAM       |   16 |    0 |    0 |   5.00 |   0.00 |   0.00 |
+| DSPs       |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
++------------+------+------+------+--------+--------+--------+
+
+Compute Unit: sv_swap_4
++------------+------+------+------+--------+--------+--------+
+| Site Type  | SLR0 | SLR1 | SLR2 | SLR0 % | SLR1 % | SLR2 % |
++------------+------+------+------+--------+--------+--------+
+| LUT        | 7391 |    0 |    0 |   1.68 |   0.00 |   0.00 |
+| LUTAsLogic | 4057 |    0 |    0 |   0.92 |   0.00 |   0.00 |
+| LUTAsMem   | 3334 |    0 |    0 |   1.62 |   0.00 |   0.00 |
+| REG        | 7350 |    0 |    0 |   0.84 |   0.00 |   0.00 |
+| CARRY8     |  151 |    0 |    0 |   0.27 |   0.00 |   0.00 |
+| F7MUX      | 1470 |    0 |    0 |   0.67 |   0.00 |   0.00 |
+| F8MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| F9MUX      |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
+| BRAM       |   45 |    0 |    0 |   6.70 |   0.00 |   0.00 |
+| URAM       |   16 |    0 |    0 |   5.00 |   0.00 |   0.00 |
+| DSPs       |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |
++------------+------+------+------+--------+--------+--------+
+
+7. Compute Unit Utilization per SLR
+===================================
+
+SLR0
++------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-----------+-----------+-----------+-----------+-----------+
+| Site Type  | sv_engine_1 | sv_engine_2 | sv_engine_3 | sv_engine_4 | sv_engine_5 | sv_engine_6 | sv_engine_7 | sv_engine_8 | sv_swap_1 | sv_swap_2 | sv_swap_3 | sv_swap_4 | Available |
++------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-----------+-----------+-----------+-----------+-----------+
+| LUT        |       24461 |       24461 |       24803 |           0 |           0 |           0 |           0 |           0 |      7394 |      7396 |      7388 |      7391 |    439680 |
+| LUTAsLogic |       22672 |       22672 |       23014 |           0 |           0 |           0 |           0 |           0 |      4060 |      4062 |      4054 |      4057 |    439680 |
+| LUTAsMem   |        1789 |        1789 |        1789 |           0 |           0 |           0 |           0 |           0 |      3334 |      3334 |      3334 |      3334 |    205440 |
+| REG        |       32644 |       32682 |       32295 |           0 |           0 |           0 |           0 |           0 |      7370 |      7383 |      7356 |      7350 |    879360 |
+| CARRY8     |        1310 |        1310 |        1310 |           0 |           0 |           0 |           0 |           0 |       151 |       151 |       151 |       151 |     54960 |
+| F7MUX      |         382 |         382 |         382 |           0 |           0 |           0 |           0 |           0 |      1470 |      1470 |      1470 |      1470 |    219840 |
+| F8MUX      |           0 |           0 |           0 |           0 |           0 |           0 |           0 |           0 |         0 |         0 |         0 |         0 |    109920 |
+| F9MUX      |           0 |           0 |           0 |           0 |           0 |           0 |           0 |           0 |         0 |         0 |         0 |         0 |     54960 |
+| BRAM       |          46 |          46 |          46 |           0 |           0 |           0 |           0 |           0 |        45 |        45 |        45 |        45 |       672 |
+| URAM       |           0 |           0 |           0 |           0 |           0 |           0 |           0 |           0 |        16 |        16 |        16 |        16 |       320 |
+| DSPs       |         296 |         296 |         296 |           0 |           0 |           0 |           0 |           0 |         0 |         0 |         0 |         0 |      2880 |
++------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-----------+-----------+-----------+-----------+-----------+
+
+SLR1
++------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-----------+-----------+-----------+-----------+-----------+
+| Site Type  | sv_engine_1 | sv_engine_2 | sv_engine_3 | sv_engine_4 | sv_engine_5 | sv_engine_6 | sv_engine_7 | sv_engine_8 | sv_swap_1 | sv_swap_2 | sv_swap_3 | sv_swap_4 | Available |
++------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-----------+-----------+-----------+-----------+-----------+
+| LUT        |           0 |           0 |           0 |       24270 |       24262 |       24279 |           0 |           0 |         0 |         0 |         0 |         0 |    439680 |
+| LUTAsLogic |           0 |           0 |           0 |       22481 |       22473 |       22490 |           0 |           0 |         0 |         0 |         0 |         0 |    439680 |
+| LUTAsMem   |           0 |           0 |           0 |        1789 |        1789 |        1789 |           0 |           0 |         0 |         0 |         0 |         0 |    205440 |
+| REG        |           0 |           0 |           0 |       33761 |       33739 |       33764 |           0 |           0 |         0 |         0 |         0 |         0 |    879360 |
+| CARRY8     |           0 |           0 |           0 |        1310 |        1310 |        1310 |           0 |           0 |         0 |         0 |         0 |         0 |     54960 |
+| F7MUX      |           0 |           0 |           0 |         382 |         382 |         382 |           0 |           0 |         0 |         0 |         0 |         0 |    219840 |
+| F8MUX      |           0 |           0 |           0 |           0 |           0 |           0 |           0 |           0 |         0 |         0 |         0 |         0 |    109920 |
+| F9MUX      |           0 |           0 |           0 |           0 |           0 |           0 |           0 |           0 |         0 |         0 |         0 |         0 |     54960 |
+| BRAM       |           0 |           0 |           0 |          46 |          46 |          46 |           0 |           0 |         0 |         0 |         0 |         0 |       672 |
+| URAM       |           0 |           0 |           0 |           0 |           0 |           0 |           0 |           0 |         0 |         0 |         0 |         0 |       320 |
+| DSPs       |           0 |           0 |           0 |         296 |         296 |         296 |           0 |           0 |         0 |         0 |         0 |         0 |      2880 |
++------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-----------+-----------+-----------+-----------+-----------+
+
+SLR2
++------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-----------+-----------+-----------+-----------+-----------+
+| Site Type  | sv_engine_1 | sv_engine_2 | sv_engine_3 | sv_engine_4 | sv_engine_5 | sv_engine_6 | sv_engine_7 | sv_engine_8 | sv_swap_1 | sv_swap_2 | sv_swap_3 | sv_swap_4 | Available |
++------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-----------+-----------+-----------+-----------+-----------+
+| LUT        |           0 |           0 |           0 |           0 |           0 |           0 |       24285 |       24279 |         0 |         0 |         0 |         0 |    439680 |
+| LUTAsLogic |           0 |           0 |           0 |           0 |           0 |           0 |       22496 |       22490 |         0 |         0 |         0 |         0 |    439680 |
+| LUTAsMem   |           0 |           0 |           0 |           0 |           0 |           0 |        1789 |        1789 |         0 |         0 |         0 |         0 |    205440 |
+| REG        |           0 |           0 |           0 |           0 |           0 |           0 |       33730 |       33824 |         0 |         0 |         0 |         0 |    879360 |
+| CARRY8     |           0 |           0 |           0 |           0 |           0 |           0 |        1310 |        1310 |         0 |         0 |         0 |         0 |     54960 |
+| F7MUX      |           0 |           0 |           0 |           0 |           0 |           0 |         382 |         382 |         0 |         0 |         0 |         0 |    219840 |
+| F8MUX      |           0 |           0 |           0 |           0 |           0 |           0 |           0 |           0 |         0 |         0 |         0 |         0 |    109920 |
+| F9MUX      |           0 |           0 |           0 |           0 |           0 |           0 |           0 |           0 |         0 |         0 |         0 |         0 |     54960 |
+| BRAM       |           0 |           0 |           0 |           0 |           0 |           0 |          46 |          46 |         0 |         0 |         0 |         0 |       672 |
+| URAM       |           0 |           0 |           0 |           0 |           0 |           0 |           0 |           0 |         0 |         0 |         0 |         0 |       320 |
+| DSPs       |           0 |           0 |           0 |           0 |           0 |           0 |         296 |         296 |         0 |         0 |         0 |         0 |      2880 |
++------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-----------+-----------+-----------+-----------+-----------+
+

@@ -1,0 +1,804 @@
+===============================================================================
+Version:    v++ v2023.2 (64-bit)
+Build:      SW Build 4026344 on 2023-10-11-15:42:10
+Copyright:  Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
+Created:    Tue Oct  6 21:21:29 2026
+===============================================================================
+
+-------------------------------------------------------------------------------
+Design Name:             hbm1
+Target Device:           xilinx:u55c:gen3x16_xdma_3:202210.1
+Target Clock:            300.000000MHz
+Total number of kernels: 1
+-------------------------------------------------------------------------------
+
+Kernel Summary
+Kernel Name  Type  Target              OpenCL Library  Compute Units
+-----------  ----  ------------------  --------------  -------------
+hbm1         c     fpga0:OCL_REGION_0  hbm1            32
+
+
+-------------------------------------------------------------------------------
+OpenCL Binary:     hbm1
+Kernels mapped to: clc_region
+
+Timing Information (MHz)
+Compute Unit  Kernel Name  Module Name                                  Target Frequency  Estimated Frequency
+------------  -----------  -------------------------------------------  ----------------  -------------------
+hbm1_1        hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_1        hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_1        hbm1         rd                                           300.300293        411.015198
+hbm1_1        hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_1        hbm1         wr                                           300.300293        411.015198
+hbm1_1        hbm1         copy_df                                      300.300293        411.015198
+hbm1_1        hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_1        hbm1         hbm1                                         300.300293        411.015198
+hbm1_2        hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_2        hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_2        hbm1         rd                                           300.300293        411.015198
+hbm1_2        hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_2        hbm1         wr                                           300.300293        411.015198
+hbm1_2        hbm1         copy_df                                      300.300293        411.015198
+hbm1_2        hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_2        hbm1         hbm1                                         300.300293        411.015198
+hbm1_3        hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_3        hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_3        hbm1         rd                                           300.300293        411.015198
+hbm1_3        hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_3        hbm1         wr                                           300.300293        411.015198
+hbm1_3        hbm1         copy_df                                      300.300293        411.015198
+hbm1_3        hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_3        hbm1         hbm1                                         300.300293        411.015198
+hbm1_4        hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_4        hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_4        hbm1         rd                                           300.300293        411.015198
+hbm1_4        hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_4        hbm1         wr                                           300.300293        411.015198
+hbm1_4        hbm1         copy_df                                      300.300293        411.015198
+hbm1_4        hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_4        hbm1         hbm1                                         300.300293        411.015198
+hbm1_5        hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_5        hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_5        hbm1         rd                                           300.300293        411.015198
+hbm1_5        hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_5        hbm1         wr                                           300.300293        411.015198
+hbm1_5        hbm1         copy_df                                      300.300293        411.015198
+hbm1_5        hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_5        hbm1         hbm1                                         300.300293        411.015198
+hbm1_6        hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_6        hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_6        hbm1         rd                                           300.300293        411.015198
+hbm1_6        hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_6        hbm1         wr                                           300.300293        411.015198
+hbm1_6        hbm1         copy_df                                      300.300293        411.015198
+hbm1_6        hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_6        hbm1         hbm1                                         300.300293        411.015198
+hbm1_7        hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_7        hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_7        hbm1         rd                                           300.300293        411.015198
+hbm1_7        hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_7        hbm1         wr                                           300.300293        411.015198
+hbm1_7        hbm1         copy_df                                      300.300293        411.015198
+hbm1_7        hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_7        hbm1         hbm1                                         300.300293        411.015198
+hbm1_8        hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_8        hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_8        hbm1         rd                                           300.300293        411.015198
+hbm1_8        hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_8        hbm1         wr                                           300.300293        411.015198
+hbm1_8        hbm1         copy_df                                      300.300293        411.015198
+hbm1_8        hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_8        hbm1         hbm1                                         300.300293        411.015198
+hbm1_9        hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_9        hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_9        hbm1         rd                                           300.300293        411.015198
+hbm1_9        hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_9        hbm1         wr                                           300.300293        411.015198
+hbm1_9        hbm1         copy_df                                      300.300293        411.015198
+hbm1_9        hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_9        hbm1         hbm1                                         300.300293        411.015198
+hbm1_10       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_10       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_10       hbm1         rd                                           300.300293        411.015198
+hbm1_10       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_10       hbm1         wr                                           300.300293        411.015198
+hbm1_10       hbm1         copy_df                                      300.300293        411.015198
+hbm1_10       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_10       hbm1         hbm1                                         300.300293        411.015198
+hbm1_11       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_11       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_11       hbm1         rd                                           300.300293        411.015198
+hbm1_11       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_11       hbm1         wr                                           300.300293        411.015198
+hbm1_11       hbm1         copy_df                                      300.300293        411.015198
+hbm1_11       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_11       hbm1         hbm1                                         300.300293        411.015198
+hbm1_12       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_12       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_12       hbm1         rd                                           300.300293        411.015198
+hbm1_12       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_12       hbm1         wr                                           300.300293        411.015198
+hbm1_12       hbm1         copy_df                                      300.300293        411.015198
+hbm1_12       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_12       hbm1         hbm1                                         300.300293        411.015198
+hbm1_13       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_13       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_13       hbm1         rd                                           300.300293        411.015198
+hbm1_13       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_13       hbm1         wr                                           300.300293        411.015198
+hbm1_13       hbm1         copy_df                                      300.300293        411.015198
+hbm1_13       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_13       hbm1         hbm1                                         300.300293        411.015198
+hbm1_14       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_14       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_14       hbm1         rd                                           300.300293        411.015198
+hbm1_14       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_14       hbm1         wr                                           300.300293        411.015198
+hbm1_14       hbm1         copy_df                                      300.300293        411.015198
+hbm1_14       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_14       hbm1         hbm1                                         300.300293        411.015198
+hbm1_15       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_15       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_15       hbm1         rd                                           300.300293        411.015198
+hbm1_15       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_15       hbm1         wr                                           300.300293        411.015198
+hbm1_15       hbm1         copy_df                                      300.300293        411.015198
+hbm1_15       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_15       hbm1         hbm1                                         300.300293        411.015198
+hbm1_16       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_16       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_16       hbm1         rd                                           300.300293        411.015198
+hbm1_16       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_16       hbm1         wr                                           300.300293        411.015198
+hbm1_16       hbm1         copy_df                                      300.300293        411.015198
+hbm1_16       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_16       hbm1         hbm1                                         300.300293        411.015198
+hbm1_17       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_17       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_17       hbm1         rd                                           300.300293        411.015198
+hbm1_17       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_17       hbm1         wr                                           300.300293        411.015198
+hbm1_17       hbm1         copy_df                                      300.300293        411.015198
+hbm1_17       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_17       hbm1         hbm1                                         300.300293        411.015198
+hbm1_18       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_18       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_18       hbm1         rd                                           300.300293        411.015198
+hbm1_18       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_18       hbm1         wr                                           300.300293        411.015198
+hbm1_18       hbm1         copy_df                                      300.300293        411.015198
+hbm1_18       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_18       hbm1         hbm1                                         300.300293        411.015198
+hbm1_19       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_19       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_19       hbm1         rd                                           300.300293        411.015198
+hbm1_19       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_19       hbm1         wr                                           300.300293        411.015198
+hbm1_19       hbm1         copy_df                                      300.300293        411.015198
+hbm1_19       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_19       hbm1         hbm1                                         300.300293        411.015198
+hbm1_20       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_20       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_20       hbm1         rd                                           300.300293        411.015198
+hbm1_20       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_20       hbm1         wr                                           300.300293        411.015198
+hbm1_20       hbm1         copy_df                                      300.300293        411.015198
+hbm1_20       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_20       hbm1         hbm1                                         300.300293        411.015198
+hbm1_21       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_21       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_21       hbm1         rd                                           300.300293        411.015198
+hbm1_21       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_21       hbm1         wr                                           300.300293        411.015198
+hbm1_21       hbm1         copy_df                                      300.300293        411.015198
+hbm1_21       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_21       hbm1         hbm1                                         300.300293        411.015198
+hbm1_22       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_22       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_22       hbm1         rd                                           300.300293        411.015198
+hbm1_22       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_22       hbm1         wr                                           300.300293        411.015198
+hbm1_22       hbm1         copy_df                                      300.300293        411.015198
+hbm1_22       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_22       hbm1         hbm1                                         300.300293        411.015198
+hbm1_23       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_23       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_23       hbm1         rd                                           300.300293        411.015198
+hbm1_23       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_23       hbm1         wr                                           300.300293        411.015198
+hbm1_23       hbm1         copy_df                                      300.300293        411.015198
+hbm1_23       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_23       hbm1         hbm1                                         300.300293        411.015198
+hbm1_24       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_24       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_24       hbm1         rd                                           300.300293        411.015198
+hbm1_24       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_24       hbm1         wr                                           300.300293        411.015198
+hbm1_24       hbm1         copy_df                                      300.300293        411.015198
+hbm1_24       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_24       hbm1         hbm1                                         300.300293        411.015198
+hbm1_25       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_25       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_25       hbm1         rd                                           300.300293        411.015198
+hbm1_25       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_25       hbm1         wr                                           300.300293        411.015198
+hbm1_25       hbm1         copy_df                                      300.300293        411.015198
+hbm1_25       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_25       hbm1         hbm1                                         300.300293        411.015198
+hbm1_26       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_26       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_26       hbm1         rd                                           300.300293        411.015198
+hbm1_26       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_26       hbm1         wr                                           300.300293        411.015198
+hbm1_26       hbm1         copy_df                                      300.300293        411.015198
+hbm1_26       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_26       hbm1         hbm1                                         300.300293        411.015198
+hbm1_27       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_27       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_27       hbm1         rd                                           300.300293        411.015198
+hbm1_27       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_27       hbm1         wr                                           300.300293        411.015198
+hbm1_27       hbm1         copy_df                                      300.300293        411.015198
+hbm1_27       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_27       hbm1         hbm1                                         300.300293        411.015198
+hbm1_28       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_28       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_28       hbm1         rd                                           300.300293        411.015198
+hbm1_28       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_28       hbm1         wr                                           300.300293        411.015198
+hbm1_28       hbm1         copy_df                                      300.300293        411.015198
+hbm1_28       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_28       hbm1         hbm1                                         300.300293        411.015198
+hbm1_29       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_29       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_29       hbm1         rd                                           300.300293        411.015198
+hbm1_29       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_29       hbm1         wr                                           300.300293        411.015198
+hbm1_29       hbm1         copy_df                                      300.300293        411.015198
+hbm1_29       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_29       hbm1         hbm1                                         300.300293        411.015198
+hbm1_30       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_30       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_30       hbm1         rd                                           300.300293        411.015198
+hbm1_30       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_30       hbm1         wr                                           300.300293        411.015198
+hbm1_30       hbm1         copy_df                                      300.300293        411.015198
+hbm1_30       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_30       hbm1         hbm1                                         300.300293        411.015198
+hbm1_31       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_31       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_31       hbm1         rd                                           300.300293        411.015198
+hbm1_31       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_31       hbm1         wr                                           300.300293        411.015198
+hbm1_31       hbm1         copy_df                                      300.300293        411.015198
+hbm1_31       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_31       hbm1         hbm1                                         300.300293        411.015198
+hbm1_32       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_32       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_32       hbm1         rd                                           300.300293        411.015198
+hbm1_32       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_32       hbm1         wr                                           300.300293        411.015198
+hbm1_32       hbm1         copy_df                                      300.300293        411.015198
+hbm1_32       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_32       hbm1         hbm1                                         300.300293        411.015198
+
+Latency Information
+Compute Unit  Kernel Name  Module Name                                  Start Interval  Best (cycles)  Avg (cycles)  Worst (cycles)  Best (absolute)  Avg (absolute)  Worst (absolute)
+------------  -----------  -------------------------------------------  --------------  -------------  ------------  --------------  ---------------  --------------  ----------------
+hbm1_1        hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_1        hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_1        hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_1        hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_1        hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_1        hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_1        hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_1        hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_2        hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_2        hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_2        hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_2        hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_2        hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_2        hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_2        hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_2        hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_3        hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_3        hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_3        hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_3        hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_3        hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_3        hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_3        hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_3        hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_4        hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_4        hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_4        hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_4        hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_4        hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_4        hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_4        hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_4        hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_5        hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_5        hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_5        hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_5        hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_5        hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_5        hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_5        hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_5        hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_6        hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_6        hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_6        hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_6        hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_6        hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_6        hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_6        hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_6        hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_7        hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_7        hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_7        hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_7        hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_7        hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_7        hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_7        hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_7        hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_8        hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_8        hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_8        hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_8        hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_8        hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_8        hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_8        hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_8        hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_9        hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_9        hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_9        hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_9        hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_9        hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_9        hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_9        hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_9        hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_10       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_10       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_10       hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_10       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_10       hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_10       hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_10       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_10       hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_11       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_11       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_11       hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_11       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_11       hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_11       hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_11       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_11       hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_12       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_12       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_12       hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_12       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_12       hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_12       hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_12       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_12       hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_13       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_13       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_13       hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_13       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_13       hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_13       hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_13       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_13       hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_14       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_14       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_14       hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_14       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_14       hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_14       hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_14       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_14       hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_15       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_15       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_15       hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_15       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_15       hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_15       hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_15       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_15       hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_16       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_16       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_16       hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_16       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_16       hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_16       hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_16       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_16       hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_17       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_17       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_17       hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_17       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_17       hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_17       hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_17       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_17       hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_18       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_18       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_18       hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_18       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_18       hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_18       hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_18       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_18       hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_19       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_19       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_19       hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_19       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_19       hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_19       hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_19       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_19       hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_20       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_20       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_20       hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_20       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_20       hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_20       hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_20       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_20       hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_21       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_21       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_21       hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_21       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_21       hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_21       hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_21       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_21       hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_22       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_22       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_22       hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_22       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_22       hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_22       hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_22       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_22       hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_23       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_23       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_23       hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_23       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_23       hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_23       hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_23       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_23       hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_24       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_24       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_24       hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_24       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_24       hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_24       hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_24       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_24       hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_25       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_25       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_25       hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_25       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_25       hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_25       hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_25       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_25       hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_26       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_26       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_26       hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_26       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_26       hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_26       hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_26       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_26       hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_27       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_27       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_27       hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_27       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_27       hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_27       hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_27       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_27       hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_28       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_28       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_28       hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_28       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_28       hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_28       hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_28       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_28       hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_29       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_29       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_29       hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_29       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_29       hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_29       hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_29       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_29       hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_30       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_30       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_30       hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_30       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_30       hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_30       hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_30       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_30       hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_31       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_31       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_31       hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_31       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_31       hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_31       hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_31       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_31       hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+hbm1_32       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_32       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_32       hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_32       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_32       hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_32       hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_32       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_32       hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+
+Area Information
+Compute Unit  Kernel Name  Module Name                                  FF    LUT   DSP  BRAM  URAM
+------------  -----------  -------------------------------------------  ----  ----  ---  ----  ----
+hbm1_1        hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_1        hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_1        hbm1         rd                                           1364  1011  0    0     0
+hbm1_1        hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_1        hbm1         wr                                           1517  1164  0    0     0
+hbm1_1        hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_1        hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_1        hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_2        hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_2        hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_2        hbm1         rd                                           1364  1011  0    0     0
+hbm1_2        hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_2        hbm1         wr                                           1517  1164  0    0     0
+hbm1_2        hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_2        hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_2        hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_3        hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_3        hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_3        hbm1         rd                                           1364  1011  0    0     0
+hbm1_3        hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_3        hbm1         wr                                           1517  1164  0    0     0
+hbm1_3        hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_3        hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_3        hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_4        hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_4        hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_4        hbm1         rd                                           1364  1011  0    0     0
+hbm1_4        hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_4        hbm1         wr                                           1517  1164  0    0     0
+hbm1_4        hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_4        hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_4        hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_5        hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_5        hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_5        hbm1         rd                                           1364  1011  0    0     0
+hbm1_5        hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_5        hbm1         wr                                           1517  1164  0    0     0
+hbm1_5        hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_5        hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_5        hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_6        hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_6        hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_6        hbm1         rd                                           1364  1011  0    0     0
+hbm1_6        hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_6        hbm1         wr                                           1517  1164  0    0     0
+hbm1_6        hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_6        hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_6        hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_7        hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_7        hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_7        hbm1         rd                                           1364  1011  0    0     0
+hbm1_7        hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_7        hbm1         wr                                           1517  1164  0    0     0
+hbm1_7        hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_7        hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_7        hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_8        hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_8        hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_8        hbm1         rd                                           1364  1011  0    0     0
+hbm1_8        hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_8        hbm1         wr                                           1517  1164  0    0     0
+hbm1_8        hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_8        hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_8        hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_9        hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_9        hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_9        hbm1         rd                                           1364  1011  0    0     0
+hbm1_9        hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_9        hbm1         wr                                           1517  1164  0    0     0
+hbm1_9        hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_9        hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_9        hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_10       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_10       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_10       hbm1         rd                                           1364  1011  0    0     0
+hbm1_10       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_10       hbm1         wr                                           1517  1164  0    0     0
+hbm1_10       hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_10       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_10       hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_11       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_11       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_11       hbm1         rd                                           1364  1011  0    0     0
+hbm1_11       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_11       hbm1         wr                                           1517  1164  0    0     0
+hbm1_11       hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_11       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_11       hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_12       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_12       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_12       hbm1         rd                                           1364  1011  0    0     0
+hbm1_12       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_12       hbm1         wr                                           1517  1164  0    0     0
+hbm1_12       hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_12       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_12       hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_13       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_13       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_13       hbm1         rd                                           1364  1011  0    0     0
+hbm1_13       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_13       hbm1         wr                                           1517  1164  0    0     0
+hbm1_13       hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_13       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_13       hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_14       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_14       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_14       hbm1         rd                                           1364  1011  0    0     0
+hbm1_14       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_14       hbm1         wr                                           1517  1164  0    0     0
+hbm1_14       hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_14       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_14       hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_15       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_15       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_15       hbm1         rd                                           1364  1011  0    0     0
+hbm1_15       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_15       hbm1         wr                                           1517  1164  0    0     0
+hbm1_15       hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_15       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_15       hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_16       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_16       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_16       hbm1         rd                                           1364  1011  0    0     0
+hbm1_16       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_16       hbm1         wr                                           1517  1164  0    0     0
+hbm1_16       hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_16       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_16       hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_17       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_17       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_17       hbm1         rd                                           1364  1011  0    0     0
+hbm1_17       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_17       hbm1         wr                                           1517  1164  0    0     0
+hbm1_17       hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_17       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_17       hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_18       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_18       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_18       hbm1         rd                                           1364  1011  0    0     0
+hbm1_18       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_18       hbm1         wr                                           1517  1164  0    0     0
+hbm1_18       hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_18       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_18       hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_19       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_19       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_19       hbm1         rd                                           1364  1011  0    0     0
+hbm1_19       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_19       hbm1         wr                                           1517  1164  0    0     0
+hbm1_19       hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_19       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_19       hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_20       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_20       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_20       hbm1         rd                                           1364  1011  0    0     0
+hbm1_20       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_20       hbm1         wr                                           1517  1164  0    0     0
+hbm1_20       hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_20       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_20       hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_21       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_21       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_21       hbm1         rd                                           1364  1011  0    0     0
+hbm1_21       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_21       hbm1         wr                                           1517  1164  0    0     0
+hbm1_21       hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_21       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_21       hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_22       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_22       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_22       hbm1         rd                                           1364  1011  0    0     0
+hbm1_22       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_22       hbm1         wr                                           1517  1164  0    0     0
+hbm1_22       hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_22       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_22       hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_23       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_23       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_23       hbm1         rd                                           1364  1011  0    0     0
+hbm1_23       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_23       hbm1         wr                                           1517  1164  0    0     0
+hbm1_23       hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_23       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_23       hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_24       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_24       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_24       hbm1         rd                                           1364  1011  0    0     0
+hbm1_24       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_24       hbm1         wr                                           1517  1164  0    0     0
+hbm1_24       hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_24       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_24       hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_25       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_25       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_25       hbm1         rd                                           1364  1011  0    0     0
+hbm1_25       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_25       hbm1         wr                                           1517  1164  0    0     0
+hbm1_25       hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_25       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_25       hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_26       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_26       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_26       hbm1         rd                                           1364  1011  0    0     0
+hbm1_26       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_26       hbm1         wr                                           1517  1164  0    0     0
+hbm1_26       hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_26       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_26       hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_27       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_27       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_27       hbm1         rd                                           1364  1011  0    0     0
+hbm1_27       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_27       hbm1         wr                                           1517  1164  0    0     0
+hbm1_27       hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_27       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_27       hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_28       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_28       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_28       hbm1         rd                                           1364  1011  0    0     0
+hbm1_28       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_28       hbm1         wr                                           1517  1164  0    0     0
+hbm1_28       hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_28       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_28       hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_29       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_29       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_29       hbm1         rd                                           1364  1011  0    0     0
+hbm1_29       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_29       hbm1         wr                                           1517  1164  0    0     0
+hbm1_29       hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_29       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_29       hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_30       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_30       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_30       hbm1         rd                                           1364  1011  0    0     0
+hbm1_30       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_30       hbm1         wr                                           1517  1164  0    0     0
+hbm1_30       hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_30       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_30       hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_31       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_31       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_31       hbm1         rd                                           1364  1011  0    0     0
+hbm1_31       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_31       hbm1         wr                                           1517  1164  0    0     0
+hbm1_31       hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_31       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_31       hbm1         hbm1                                         8450  7487  0    24    0
+hbm1_32       hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             951   802   0    0     0
+hbm1_32       hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  695   548   0    0     0
+hbm1_32       hbm1         rd                                           1364  1011  0    0     0
+hbm1_32       hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  752   624   0    0     0
+hbm1_32       hbm1         wr                                           1517  1164  0    0     0
+hbm1_32       hbm1         copy_df                                      3749  2651  0    8     0
+hbm1_32       hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655   826   0    0     0
+hbm1_32       hbm1         hbm1                                         8450  7487  0    24    0
+-------------------------------------------------------------------------------

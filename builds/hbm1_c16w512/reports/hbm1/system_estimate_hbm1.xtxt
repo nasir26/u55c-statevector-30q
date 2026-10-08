@@ -1,0 +1,60 @@
+===============================================================================
+Version:    v++ v2023.2 (64-bit)
+Build:      SW Build 4026344 on 2023-10-11-15:42:10
+Copyright:  Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
+Created:    Tue Oct  6 16:10:16 2026
+===============================================================================
+
+-------------------------------------------------------------------------------
+Design Name:             hbm1
+Target Device:           xilinx:u55c:gen3x16_xdma_3:202210.1
+Target Clock:            300.000000MHz
+Total number of kernels: 1
+-------------------------------------------------------------------------------
+
+Kernel Summary
+Kernel Name  Type  Target              OpenCL Library  Compute Units
+-----------  ----  ------------------  --------------  -------------
+hbm1         c     fpga0:OCL_REGION_0  hbm1            1
+
+
+-------------------------------------------------------------------------------
+OpenCL Binary:     hbm1
+Kernels mapped to: clc_region
+
+Timing Information (MHz)
+Compute Unit  Kernel Name  Module Name                                  Target Frequency  Estimated Frequency
+------------  -----------  -------------------------------------------  ----------------  -------------------
+hbm1_1        hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             300.300293        411.015198
+hbm1_1        hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  300.300293        411.015198
+hbm1_1        hbm1         rd                                           300.300293        411.015198
+hbm1_1        hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  300.300293        411.015198
+hbm1_1        hbm1         wr                                           300.300293        411.015198
+hbm1_1        hbm1         copy_df                                      300.300293        411.015198
+hbm1_1        hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             300.300293        411.015198
+hbm1_1        hbm1         hbm1                                         300.300293        411.015198
+
+Latency Information
+Compute Unit  Kernel Name  Module Name                                  Start Interval  Best (cycles)  Avg (cycles)  Worst (cycles)  Best (absolute)  Avg (absolute)  Worst (absolute)
+------------  -----------  -------------------------------------------  --------------  -------------  ------------  --------------  ---------------  --------------  ----------------
+hbm1_1        hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             undef           undef          undef         undef           undef            undef           undef
+hbm1_1        hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_1        hbm1         rd                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_1        hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  undef           undef          undef         undef           undef            undef           undef
+hbm1_1        hbm1         wr                                           undef           undef          undef         undef           undef            undef           undef
+hbm1_1        hbm1         copy_df                                      undef           undef          undef         undef           undef            undef           undef
+hbm1_1        hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             undef           undef          undef         undef           undef            undef           undef
+hbm1_1        hbm1         hbm1                                         undef           undef          undef         undef           undef            undef           undef
+
+Area Information
+Compute Unit  Kernel Name  Module Name                                  FF     LUT   DSP  BRAM  URAM
+------------  -----------  -------------------------------------------  -----  ----  ---  ----  ----
+hbm1_1        hbm1         hbm1_Pipeline_RD_VITIS_LOOP_46_1             1463   1057  0    0     0
+hbm1_1        hbm1         rd_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2  951    548   0    0     0
+hbm1_1        hbm1         rd                                           1619   1011  0    0     0
+hbm1_1        hbm1         wr_Pipeline_VITIS_LOOP_24_1_VITIS_LOOP_25_2  1008   624   0    0     0
+hbm1_1        hbm1         wr                                           1772   1164  0    0     0
+hbm1_1        hbm1         copy_df                                      4771   2906  0    15    0
+hbm1_1        hbm1         hbm1_Pipeline_WR_VITIS_LOOP_54_2             655    826   0    0     0
+hbm1_1        hbm1         hbm1                                         11542  9044  0    45    0
+-------------------------------------------------------------------------------
