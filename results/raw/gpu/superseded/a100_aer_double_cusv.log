@@ -1,0 +1,5 @@
+srun: job 32933 queued and waiting for resources
+srun: job 32933 has been allocated resources
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 32933.0 ON gpu-node CANCELLED AT 2026-10-06T12:25:28 ***
+srun: error: gpu-node: task 0: Terminated

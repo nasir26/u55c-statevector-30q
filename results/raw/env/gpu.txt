@@ -1,0 +1,2 @@
+ENV gpu-node NVIDIA A100-SXM4-80GB, 615.71.09, 81920 MiB 1.2.4 0.15.1 CUDA-Q Version 0.12.0 (https://github.com/NVIDIA/cuda-quantum 6adf92bcda4df7465e4fe82f1c8f782ae69d8bd2)
+ENV gpu-node NVIDIA A100-SXM4-80GB, 615.71.09, 81920 MiB cudaq==0.12.0 cupy-cuda12x==13.4.1 cuquantum-cu12==26.9.0 qiskit==1.2.4 qiskit-aer-gpu==0.15.1

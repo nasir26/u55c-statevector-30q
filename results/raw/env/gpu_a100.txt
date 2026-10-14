@@ -1,0 +1,22 @@
+# A100 host environment. Lines starting with ENV: captured inside the GPU job on 2026-10-06 (results/raw/env/gpu.txt).
+# NODE lines: read-only 'scontrol show node gpu-node' on 2026-10-14T03:50Z (no job submitted).
+ENV gpu-node NVIDIA A100-SXM4-80GB, 615.71.09, 81920 MiB 1.2.4 0.15.1 CUDA-Q Version 0.12.0 (https://github.com/NVIDIA/cuda-quantum 6adf92bcda4df7465e4fe82f1c8f782ae69d8bd2)
+ENV gpu-node NVIDIA A100-SXM4-80GB, 615.71.09, 81920 MiB cudaq==0.12.0 cupy-cuda12x==13.4.1 cuquantum-cu12==26.9.0 qiskit==1.2.4 qiskit-aer-gpu==0.15.1
+NODE NodeName=gpu-node Arch=x86_64 CoresPerSocket=32 
+NODE CPUAlloc=0 CPUEfctv=128 CPUTot=128 CPULoad=7.87
+NODE AvailableFeatures=(null)
+NODE ActiveFeatures=(null)
+NODE Gres=gpu:a100:1
+NODE NodeAddr=gpu-node NodeHostName=gpu-node Version=23.11.10
+NODE OS=Linux 5.14.0-737.el9.x86_64 #1 SMP PREEMPT_DYNAMIC Thu Aug 13 09:32:10 UTC 2026 
+NODE RealMemory=1031184 AllocMem=0 FreeMem=469511 Sockets=2 Boards=1
+NODE State=IDLE ThreadsPerCore=2 TmpDisk=0 Weight=1 Owner=N/A MCS_label=N/A
+NODE Partitions=cpu,gpu 
+NODE BootTime=2026-09-24T11:12:42 SlurmdStartTime=2026-10-06T17:30:11
+NODE LastBusyTime=2026-10-13T18:07:59 ResumeAfterTime=None
+NODE CfgTRES=cpu=128,mem=1031184M,billing=128
+NODE AllocTRES=
+NODE CapWatts=n/a
+NODE CurrentWatts=0 AveWatts=0
+NODE ExtSensorsJoules=n/a ExtSensorsWatts=0 ExtSensorsTemp=n/a
+NODE 
