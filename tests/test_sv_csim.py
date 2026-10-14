@@ -2,7 +2,7 @@
 Each PC slice is run through the C model separately (as each CU does on hardware)."""
 import os, sys, subprocess, itertools
 import numpy as np
-WS = os.environ["WS"]
+WS = os.environ.get("WS", os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")))
 sys.path[:0] = [f"{WS}/host/sv", f"{WS}/circuits", f"{WS}/tests"]
 from qiskit.quantum_info import Statevector
 from compiler import compile_circuit

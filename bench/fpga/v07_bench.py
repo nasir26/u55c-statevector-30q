@@ -14,7 +14,7 @@ import numpy as np
 from qiskit_aer import AerSimulator
 from qiskit import transpile
 
-WS = os.environ["WS"]
+WS = os.environ.get("WS", os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")))
 sys.path.insert(0, f"{WS}/host/v07"); sys.path.insert(0, f"{WS}/circuits")
 import fpga_simulator_v07 as v07  # noqa: E402
 from generators import make, to_tuples, export_qasm  # noqa: E402

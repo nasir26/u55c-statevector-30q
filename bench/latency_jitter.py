@@ -8,7 +8,7 @@ import uuid  # noqa: F401  (before any XRT device init)
 import argparse, json, os, sys, time
 import numpy as np
 
-WS = os.environ["WS"]
+WS = os.environ.get("WS", os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")))
 sys.path[:0] = [f"{WS}/host/sv", f"{WS}/host/v07", f"{WS}/circuits", f"{WS}/bench/cpu"]
 from generators import make, to_tuples  # noqa: E402
 

@@ -1,0 +1,4 @@
+# Hardware free tests (compiler and golden model against Qiskit, mocked XRT runtime); versions of the measurement host
+qiskit==1.2.4
+numpy<2
+scipy

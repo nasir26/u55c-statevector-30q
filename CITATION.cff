@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "FPGA statevector simulator: 30 qubits on one Alveo U55C"
+type: software
+authors:
+  - family-names: Ali
+    given-names: Nasir
+    email: nasirali2607@gmail.com
+    affiliation: "Centre for Development of Advanced Computing (C-DAC), Noida, India"
+repository-code: "https://github.com/nasir26/u55c-statevector-30q"
+license: MIT
+keywords: [FPGA, quantum circuit simulation, statevector, HBM, Alveo U55C, high level synthesis]
+preferred-citation:
+  type: article
+  title: "FPGA Based Quantum Circuit Simulator: Processing 30 Qubit Systems"
+  authors:
+    - family-names: Tiwari
+      given-names: Abhishek
+    - family-names: Ali
+      given-names: Nasir
+    - family-names: Khan
+      given-names: Nadeem
+    - family-names: Mazhar
+      given-names: Imam
+    - family-names: Islur
+      given-names: Karan
+    - family-names: Gupta
+      given-names: Himanshu
+    - family-names: Kumar
+      given-names: Sachin
+    - family-names: Tyagi
+      given-names: Pankaj
+  year: 2026
+  doi: 10.21203/rs.3.rs-8581344/v1
+  notes: "Research Square preprint; under major revision, The Journal of Supercomputing"

@@ -2,7 +2,7 @@
 with its own cycle and HBM-traffic estimates from _profile_gates) against measured board power (XMC, 1 Hz) for the
 same v07 runs. Output: results/processed/power_model_check.csv + printed table."""
 import json, os, sys, csv
-WS = os.environ["WS"]; sys.path[:0] = [f"{WS}/host/v07", f"{WS}/circuits"]
+WS = os.environ.get("WS", os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))); sys.path[:0] = [f"{WS}/host/v07", f"{WS}/circuits"]
 import fpga_simulator_v07 as v07
 from generators import make, to_tuples
 d = json.load(open(f"{WS}/results/raw/phase5/v07_energy.json"))

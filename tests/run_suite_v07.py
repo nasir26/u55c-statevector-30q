@@ -1,7 +1,7 @@
 """Run the fidelity suite on the v07 baseline (complex128 kernel, host lowering)."""
 import uuid  # noqa: F401
 import os, sys
-WS = os.environ["WS"]; sys.path[:0] = [f"{WS}/host/v07", f"{WS}/tests", f"{WS}/circuits"]
+WS = os.environ.get("WS", os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))); sys.path[:0] = [f"{WS}/host/v07", f"{WS}/tests", f"{WS}/circuits"]
 import fpga_simulator_v07 as v07
 from functional_suite import run_suite
 from generators import to_tuples

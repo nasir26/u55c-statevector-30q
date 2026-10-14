@@ -1,7 +1,7 @@
 """Host orchestration test on the mock pyxrt: SVRuntime (1 card, device and host swaps, layouts) and
 MultiSVRuntime (2 and 4 cards) vs Qiskit."""
 import os, sys
-WS = os.environ["WS"]; sys.path[:0] = [f"{WS}/tests", f"{WS}/host/sv", f"{WS}/circuits"]
+WS = os.environ.get("WS", os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))); sys.path[:0] = [f"{WS}/tests", f"{WS}/host/sv", f"{WS}/circuits"]
 import mock_pyxrt; mock_pyxrt.install()
 import numpy as np
 from qiskit.quantum_info import Statevector
@@ -56,3 +56,4 @@ for qc in [make(f, 15) for f in ("qft", "rqc")]:
     r = m.run(qc, shots=8); inf = 1 - abs(np.vdot(Statevector(qc).data, r["state"])) ** 2
     vfail += inf > 1e-5; print("multi virtual", qc.name, "P", r["P"], "1-F %.1e" % inf)
 print(f"virtual total fails={vfail}")
+sys.exit(1 if fails or vfail else 0)

@@ -2,7 +2,7 @@
 with small L/k so that remaps, high-qubit passes and multi-PC slices are all exercised."""
 import os, sys, itertools
 import numpy as np
-WS = os.environ["WS"]
+WS = os.environ.get("WS", os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")))
 sys.path[:0] = [f"{WS}/host/sv", f"{WS}/circuits"]
 from qiskit import QuantumCircuit
 from qiskit.circuit.random import random_circuit
@@ -32,3 +32,4 @@ for n in (5, 7, 9):
                     fails += 1
                     if fails < 6: print("FAIL", qc.name, n, P, k, fuse, tiling, init is not None, inf, st)
 print(f"cases={cases} fails={fails} worst_infidelity={worst:.2e}")
+sys.exit(1 if fails else 0)

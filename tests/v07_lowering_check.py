@@ -3,7 +3,7 @@ unitary for the gate, both qubit orders, using Qiskit Operator (no hardware). Gl
 (process fidelity |Tr(U^dag V)|/d)."""
 import os, sys, math, json
 import numpy as np
-WS = os.environ["WS"]; sys.path.insert(0, f"{WS}/host/v07")
+WS = os.environ.get("WS", os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))); sys.path.insert(0, f"{WS}/host/v07")
 import fpga_simulator_v07 as v07
 from qiskit import QuantumCircuit
 from qiskit.quantum_info import Operator

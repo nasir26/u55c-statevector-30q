@@ -1,5 +1,7 @@
 # FPGA Statevector Simulator: 30 Qubits on one Alveo U55C
 
+[![tests](https://github.com/nasir26/u55c-statevector-30q/actions/workflows/tests.yml/badge.svg)](https://github.com/nasir26/u55c-statevector-30q/actions/workflows/tests.yml)
+
 A statevector quantum-circuit simulator for the AMD/Xilinx Alveo U55C (HBM2) FPGA, up to 30 qubits on one card,
 together with the CPU and GPU baselines, raw measurements and analysis scripts used to evaluate it.
 
@@ -53,7 +55,15 @@ Exact versions used for the published measurements are in `results/raw/env/`.
 
 ## Quick start
 
-All scripts expect to be run from the repository root after `source env.sh`, which keeps environments and caches
+Without an FPGA, the tests run with any Python 3.11 (they also run on every push, see the badge above):
+
+```
+pip install -r requirements-tests.txt
+python tests/test_compiler_model.py      # compiler and golden model against Qiskit Statevector
+python tests/test_runtime_mock.py        # host runtime on a mocked XRT, one, two and four cards
+```
+
+On the measurement host, all scripts expect to be run from the repository root after `source env.sh`, which keeps environments and caches
 inside the repository (`envs/`, `cache/`, `tmp/`).
 
 ```

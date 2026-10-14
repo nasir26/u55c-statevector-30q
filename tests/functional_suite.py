@@ -14,7 +14,7 @@ Pass: 1 - F <= thr (thr = 1e-5 for complex64 platforms, recorded in output).
 """
 import os, sys, math, json, time
 import numpy as np
-WS = os.environ["WS"]
+WS = os.environ.get("WS", os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")))
 sys.path[:0] = [f"{WS}/circuits"]
 from qiskit import QuantumCircuit
 from qiskit.quantum_info import Statevector

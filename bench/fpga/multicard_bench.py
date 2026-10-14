@@ -7,7 +7,7 @@ import uuid  # noqa: F401
 import argparse, json, os, sys, time, platform
 import numpy as np
 
-WS = os.environ["WS"]
+WS = os.environ.get("WS", os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")))
 sys.path[:0] = [f"{WS}/host/sv", f"{WS}/circuits", f"{WS}/bench/power"]
 from multicard import MultiSVRuntime  # noqa: E402
 from generators import make  # noqa: E402

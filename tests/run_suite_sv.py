@@ -1,7 +1,7 @@
 """Run the fidelity suite on an SV kernel build. usage: run_suite_sv.py <bdf> <xclbin> <engines> <swaps> <out.json> [large_ns]"""
 import uuid  # noqa: F401
 import os, sys
-WS = os.environ["WS"]; sys.path[:0] = [f"{WS}/host/sv", f"{WS}/tests", f"{WS}/circuits"]
+WS = os.environ.get("WS", os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))); sys.path[:0] = [f"{WS}/host/sv", f"{WS}/tests", f"{WS}/circuits"]
 from runtime import SVRuntime
 from functional_suite import run_suite
 bdf, xcl, ne, ns, out = sys.argv[1], sys.argv[2], int(sys.argv[3]), int(sys.argv[4]), sys.argv[5]

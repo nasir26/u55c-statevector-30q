@@ -13,7 +13,7 @@ construction/transpile (T_compile). Every record keeps the backend's own timer t
 import argparse, json, math, os, platform, sys, time
 import numpy as np
 
-WS = os.environ["WS"]
+WS = os.environ.get("WS", os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")))
 sys.path.insert(0, f"{WS}/circuits")
 from generators import make, to_tuples  # noqa: E402
 

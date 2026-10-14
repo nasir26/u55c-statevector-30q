@@ -2,7 +2,7 @@
 with the XMC sampler running (1 Hz sensors), also record idle power before the loops."""
 import uuid  # noqa: F401
 import argparse, json, os, sys, time
-WS = os.environ["WS"]; sys.path[:0] = [f"{WS}/host/v07", f"{WS}/circuits", f"{WS}/bench/power"]
+WS = os.environ.get("WS", os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))); sys.path[:0] = [f"{WS}/host/v07", f"{WS}/circuits", f"{WS}/bench/power"]
 import fpga_simulator_v07 as v07
 from generators import make, to_tuples
 from fpga_power import Sampler

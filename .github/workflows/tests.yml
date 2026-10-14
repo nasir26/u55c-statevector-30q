@@ -1,0 +1,27 @@
+name: tests
+
+# Hardware free tests on the CPU: the compiler and the NumPy golden model against Qiskit Statevector over circuit
+# families and a gate zoo, and the host runtime on a mocked XRT (one card with device and host swaps, two and four
+# cards). The C simulation and the hardware suite need Vitis and the cards and are not run here.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements-tests.txt
+      - name: Compiler and golden model against Qiskit
+        run: python tests/test_compiler_model.py
+      - name: Runtime on a mocked XRT
+        run: python tests/test_runtime_mock.py
