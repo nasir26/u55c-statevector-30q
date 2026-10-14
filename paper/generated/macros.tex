@@ -55,6 +55,33 @@
 \newcommand{\NumFlagVqeThirtyExch}{2.6}
 \newcommand{\NumFlagVqeThirtyKernel}{4.7}
 \newcommand{\NumFlagVqeThirtySweepBw}{80}
+\newcommand{\NumGpuAerDoubleMaxN}{30}
+\newcommand{\NumGpuAerDoubleTGhzThirty}{8.09}
+\newcommand{\NumGpuAerDoubleTQftThirty}{8.04}
+\newcommand{\NumGpuAerDoubleTRqcThirty}{7.99}
+\newcommand{\NumGpuAerDoubleTVqeThirty}{7.99}
+\newcommand{\NumGpuAerTimeThirtyMax}{4.1}
+\newcommand{\NumGpuAerTimeThirtyMin}{4.0}
+\newcommand{\NumGpuCudaqDoubleMaxN}{32}
+\newcommand{\NumGpuCudaqDoubleTGhzThirty}{8.83}
+\newcommand{\NumGpuCudaqDoubleTQftThirty}{9.20}
+\newcommand{\NumGpuCudaqSingleMaxN}{33}
+\newcommand{\NumGpuCudaqSingleTGhzThirty}{4.30}
+\newcommand{\NumGpuCudaqSingleTQftThirty}{14.31}
+\newcommand{\NumGpuCusvGainGhzThirty}{1.04}
+\newcommand{\NumGpuCusvGainQftThirty}{1.10}
+\newcommand{\NumGpuEnergyGhzThirty}{469}
+\newcommand{\NumGpuEnergyQftThirty}{641}
+\newcommand{\NumGpuEnergyRqcThirty}{585}
+\newcommand{\NumGpuEnergyVqeThirty}{491}
+\newcommand{\NumGpuMaxN}{32}
+\newcommand{\NumGpuPowerGhzThirty}{66}
+\newcommand{\NumGpuPowerMax}{88}
+\newcommand{\NumGpuPowerMin}{66}
+\newcommand{\NumGpuPowerQftThirty}{88}
+\newcommand{\NumGpuPowerReadingsMin}{71}
+\newcommand{\NumGpuPowerRqcThirty}{81}
+\newcommand{\NumGpuPowerVqeThirty}{67}
 \newcommand{\NumHbmCeilingPct}{87}
 \newcommand{\NumHbmCongestion}{7}
 \newcommand{\NumHbmFirstBramPct}{121.5}
@@ -90,6 +117,12 @@
 \newcommand{\NumJitterSvSpreadMin}{7}
 \newcommand{\NumJitterVsevenSpreadMax}{114}
 \newcommand{\NumJitterVsevenSpreadMin}{2}
+\newcommand{\NumMaxwFamilies}{4}
+\newcommand{\NumMaxwN}{30}
+\newcommand{\NumMaxwStateGiB}{8}
+\newcommand{\NumMaxwWorstAbs}{5.8\times 10^{-9}}
+\newcommand{\NumMaxwWorstInf}{3.7\times 10^{-13}}
+\newcommand{\NumMaxwWorstInfThirty}{3.7\times 10^{-13}}
 \newcommand{\NumModelEnergyErrMax}{579}
 \newcommand{\NumModelEnergyErrMin}{358}
 \newcommand{\NumModelPowerErrMax}{58}
@@ -154,11 +187,53 @@
 \newcommand{\NumXplatBestCpuVqeThirty}{Aer fp64}
 \newcommand{\NumXplatBestCpuVqeTwentyEight}{Aer fp64}
 \newcommand{\NumXplatBestCpuVqeTwentyFour}{qsim fp32}
+\newcommand{\NumXplatBestGpuNameGhzThirty}{CUDA-Q fp32}
+\newcommand{\NumXplatBestGpuNameQftThirty}{Aer fp32}
+\newcommand{\NumXplatBestGpuNameRqcThirty}{Aer fp32}
+\newcommand{\NumXplatBestGpuNameVqeThirty}{Aer fp32}
+\newcommand{\NumXplatBestGpuRatioGhzThirty}{0.95}
+\newcommand{\NumXplatBestGpuRatioQftThirty}{3.36}
+\newcommand{\NumXplatBestGpuRatioRqcThirty}{2.86}
+\newcommand{\NumXplatBestGpuRatioVqeThirty}{1.23}
+\newcommand{\NumXplatBestGpuTGhzThirty}{4.30}
+\newcommand{\NumXplatBestGpuTQftThirty}{7.29}
+\newcommand{\NumXplatBestGpuTRqcThirty}{7.24}
+\newcommand{\NumXplatBestGpuTVqeThirty}{7.28}
 \newcommand{\NumXplatCpuFasterOtherThirtyMax}{1.34}
 \newcommand{\NumXplatCpuFasterOtherThirtyMin}{1.19}
 \newcommand{\NumXplatCpuSmallUs}{54}
+\newcommand{\NumXplatFpgaBeatsBestGpu}{GHZ}
 \newcommand{\NumXplatFpgaSmallMs}{3.3}
 \newcommand{\NumXplatGhzCrossN}{26}
+\newcommand{\NumXplatGpuCols}{3}
+\newcommand{\NumXplatGpuOverCpuThirtyMax}{2.5}
+\newcommand{\NumXplatGpuOverCpuThirtyMin}{0.7}
+\newcommand{\NumXplatGpuRatioGhzThirty}{0.57}
+\newcommand{\NumXplatGpuRatioGhzTwentyEight}{0.56}
+\newcommand{\NumXplatGpuRatioGhzTwentyFour}{0.55}
+\newcommand{\NumXplatGpuRatioQftThirty}{3.36}
+\newcommand{\NumXplatGpuRatioQftTwentyEight}{2.79}
+\newcommand{\NumXplatGpuRatioQftTwentyFour}{1.92}
+\newcommand{\NumXplatGpuRatioRqcThirty}{2.86}
+\newcommand{\NumXplatGpuRatioRqcTwentyEight}{2.59}
+\newcommand{\NumXplatGpuRatioRqcTwentyFour}{1.61}
+\newcommand{\NumXplatGpuRatioThirtyMax}{3.36}
+\newcommand{\NumXplatGpuRatioThirtyMin}{0.57}
+\newcommand{\NumXplatGpuRatioVqeThirty}{1.23}
+\newcommand{\NumXplatGpuRatioVqeTwentyEight}{1.19}
+\newcommand{\NumXplatGpuRatioVqeTwentyFour}{1.21}
+\newcommand{\NumXplatGpuTGhzThirty}{7.16}
+\newcommand{\NumXplatGpuTGhzTwentyEight}{1.85}
+\newcommand{\NumXplatGpuTGhzTwentyFour}{0.18}
+\newcommand{\NumXplatGpuTQftThirty}{7.29}
+\newcommand{\NumXplatGpuTQftTwentyEight}{1.93}
+\newcommand{\NumXplatGpuTQftTwentyFour}{0.24}
+\newcommand{\NumXplatGpuTRqcThirty}{7.24}
+\newcommand{\NumXplatGpuTRqcTwentyEight}{1.90}
+\newcommand{\NumXplatGpuTRqcTwentyFour}{0.26}
+\newcommand{\NumXplatGpuTVqeThirty}{7.28}
+\newcommand{\NumXplatGpuTVqeTwentyEight}{1.89}
+\newcommand{\NumXplatGpuTVqeTwentyFour}{0.21}
 \newcommand{\NumXplatOtherWinsN}{0}
 \newcommand{\NumXplatRatioGhzThirty}{1.21}
 \newcommand{\NumXplatRatioGhzTwentyEight}{1.21}

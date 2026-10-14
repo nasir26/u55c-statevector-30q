@@ -33,7 +33,7 @@ def write(name, body):
 
 def sigfig(x, n=3):
     if x is None or (isinstance(x, float) and np.isnan(x)):
-        return "--"
+        return "n/a"
     return f"{x:.{n}g}"
 
 
@@ -61,11 +61,11 @@ def suite():
     v07 = ld("v07_functional.json")
     sv = ld("sv_functional_sv_e16w512.json") or ld("sv_functional_sv_e16w.json") or ld("sv_functional_sv_e8.json")
     names = {"S1": "single-qubit gates (17 gates $\\times$ 5 positions)", "S2": "two-qubit gates (21 gates $\\times$ 12 ordered pairs)",
-             "S3": "three- and more-qubit gates", "S4": "circuit families, $n=2$--20", "S5": "analytic large-$n$ checks"}
+             "S3": "three- and more-qubit gates", "S4": "circuit families, $n=2$ to 20", "S5": "analytic large-$n$ checks"}
     rows = []
     for s in ("S1", "S2", "S3", "S4", "S5"):
-        a = v07["summary"]["by_section"][s] if v07 else ["--", "--"]
-        b = sv["summary"]["by_section"][s] if sv else ["--", "--"]
+        a = v07["summary"]["by_section"][s] if v07 else ["n/a", "n/a"]
+        b = sv["summary"]["by_section"][s] if sv else ["n/a", "n/a"]
         rows.append(f"{names[s]} & {a[0]}/{a[1]} & {b[0]}/{b[1]} \\\\")
     rows.append("\\midrule")
     rows.append(f"Total & {v07['summary']['passed']}/{v07['summary']['total']} & {sv['summary']['passed']}/{sv['summary']['total']} \\\\")
@@ -109,9 +109,9 @@ def gate_support(gs):
         ("(a) native in the kernel", f"{len(v07_opcodes)} opcodes: " + fmt(v07_opcodes),
          "one primitive, MUX2 (multiplexed $2\\times2$ on one target, optional controls)"),
         ("(b) native and verified by test", fmt([g for g in v07_native if g in gs["v07_ok"]]),
-         "all gates of (c) below, executed as 1--3 MUX2 records; " + str(len(gs["sv_ok"])) + " gate types verified"),
+         "all gates of (c) below, executed as 1 to 3 MUX2 records; " + str(len(gs["sv_ok"])) + " gate types verified"),
         ("(c) supported via host lowering", fmt(v07_lowered) + " (exact lowerings to 1q+CX+CZ)",
-         "none lowered to other gates; 2q non-controlled gates use the exact cosine--sine form (3 MUX2); SWAP is a relabel; gates wider than the tile window are decomposed by Qiskit"),
+         "none lowered to other gates; 2q non-controlled gates use the exact cosine-sine form (3 MUX2); SWAP is a relabel; gates wider than the tile window are decomposed by Qiskit"),
         ("(d) not supported / failing", fmt(gs["v07_bad"]), fmt(gs["sv_bad"])),
     ]
     write("tab_gate_support.tex", "\n".join(f"{a} & {b} & {c} \\\\" for a, b, c in rows) + "\n")
@@ -344,7 +344,9 @@ CPU_LABEL = {"aer 128t single fusion=1": "Aer fp32", "aer 128t single fusion=0":
 FAMS = ("ghz", "qft", "rqc", "vqe")
 FNAME = {"ghz": "Ghz", "qft": "Qft", "rqc": "Rqc", "vqe": "Vqe"}
 NWORD = {4: "Four", 20: "Twenty", 24: "TwentyFour", 26: "TwentySix", 28: "TwentyEight", 30: "Thirty"}
-GPU_HOST = os.environ.get("GPU_HOST_TAG", "a4000")
+GPU_HOST = os.environ.get("GPU_HOST_TAG", "a100")
+GPU_ALL = ("aer_gpu single cusv=1", "aer_gpu double cusv=1", "cudaq single", "cudaq double")
+GPU_COLS = ("aer_gpu single cusv=1", "aer_gpu double cusv=1", "cudaq single")   # columns of Table xplat
 
 
 def _xplat_frames():
@@ -357,7 +359,7 @@ def _xplat_frames():
 
 
 def sig3(x):
-    return "--" if x is None or (isinstance(x, float) and np.isnan(x)) else f"{x:#.3g}".rstrip(".")
+    return "n/a" if x is None or (isinstance(x, float) and np.isnan(x)) else f"{x:#.3g}".rstrip(".")
 
 
 def xplat():
@@ -410,7 +412,8 @@ def xplat():
     macro("XplatCpuSmallUs", float(np.median([float(best[(best.family == f) & (best.n == 4)].T_e2e.iloc[0]) for f in FAMS])) * 1e6, "{:.0f}")
     # table: n = 24, 28, 30; FPGA kernel and e2e, CPU configurations (e2e), GPU (e2e) when measured
     cols = ["aer 128t single fusion=1", "aer 128t double fusion=1", "qsim 128t", "qulacs 128t"]
-    gcfg = [c for c in ("aer_gpu single cusv=1", "cudaq single") if not gpu.empty and gpu.config.str.startswith(c).any()]
+    gcfg = [c for c in GPU_ALL if not gpu.empty and gpu.config.str.startswith(c).any()]
+    macro("XplatGpuCols", len(GPU_COLS))
     rows = []
     for fam in FAMS:
         for n in (24, 28, 30):
@@ -418,12 +421,79 @@ def xplat():
             for c in cols:
                 cells.append(sig3(get(cpu[cpu.config == c], fam, n)))
             bt = best[(best.family == fam) & (best.n == n)].T_e2e
-            cells.append(f"{float(bt.iloc[0]) / get(fl, fam, n):.2f}" if len(bt) and get(fl, fam, n) else "--")
-            for c in ("aer_gpu single cusv=1", "cudaq single"):
-                cells.append(sig3(get(gpu[gpu.config.str.startswith(c)], fam, n)) if c in gcfg else "--")
+            cells.append(f"{float(bt.iloc[0]) / get(fl, fam, n):.2f}" if len(bt) and get(fl, fam, n) else "n/a")
+            for c in GPU_COLS:                      # GPU configurations that completed on the A100
+                cells.append(sig3(get(gpu[gpu.config.str.startswith(c)], fam, n)))
             rows.append(f"{FAM_T[fam] if n == 24 else ''} & {n} & " + " & ".join(cells) + " \\\\")
         rows.append("\\addlinespace")
     write("tab_xplat.tex", "\n".join(rows[:-1]) + "\n")
+    # GPU (A100, Aer fp32 with cuStateVec, measured on a different host): ratios to the FPGA, widest size, power, energy
+    g1 = gpu[gpu.config.str.startswith("aer_gpu single cusv=1")] if not gpu.empty else gpu
+    if not g1.empty:
+        macro("GpuMaxN", int(g1.n.max()))
+        gr = []
+        for fam in FAMS:
+            for n in (24, 28, 30):
+                gt, f = get(g1, fam, n), get(fl, fam, n)
+                if gt and f:
+                    macro(f"XplatGpuRatio{FNAME[fam]}{NWORD[n]}", f / gt, "{:.2f}")    # > 1: GPU faster
+                    macro(f"XplatGpuT{FNAME[fam]}{NWORD[n]}", gt, "{:.2f}")
+                    if n == 30:
+                        gr.append(f / gt)
+        if gr:
+            macro("XplatGpuRatioThirtyMin", min(gr), "{:.2f}"); macro("XplatGpuRatioThirtyMax", max(gr), "{:.2f}")
+        # GPU against the best CPU configuration at n = 30
+        gc = [float(best[(best.family == f) & (best.n == 30)].T_e2e.iloc[0]) / get(g1, f, 30) for f in FAMS if get(g1, f, 30)]
+        if gc:
+            macro("XplatGpuOverCpuThirtyMin", min(gc), "{:.1f}"); macro("XplatGpuOverCpuThirtyMax", max(gc), "{:.1f}")
+        g0 = gpu[gpu.config.str.startswith("aer_gpu single cusv=0")]
+        for fam in ("ghz", "qft"):
+            a1, a0 = get(g1, fam, 30), get(g0, fam, 30)
+            if a1 and a0:
+                macro(f"GpuCusvGain{FNAME[fam]}Thirty", a0 / a1, "{:.2f}")
+        # board power and energy per run from the nvidia-smi samples of each run window (>= 50 samples at n = 30)
+        raw = [json.loads(l) for l in open(f"{RAW}/gpu/{GPU_HOST}_aer_single_cusv.jsonl")]
+        raw = [r for r in raw if not r.get("error") and not r["warmup"] and r.get("power")]
+        pw, ej, nr = [], {}, []
+        for fam in FAMS:
+            rr = [r for r in raw if r["family"] == fam and r["n"] == 30]
+            if rr:
+                P = float(np.median([r["power"]["mean_w"] for r in rr])); J = float(np.median([r["power"]["mean_w"] * r["wall_s"] for r in rr]))
+                pw.append(P); ej[fam] = J; nr += [r["power"]["n"] for r in rr]
+                macro(f"GpuEnergy{FNAME[fam]}Thirty", J, "{:.0f}"); macro(f"GpuPower{FNAME[fam]}Thirty", P, "{:.0f}")
+        # other GPU configurations: largest width with a result and the time at n = 30 per family
+        for c, key in (("aer_gpu double cusv=1", "AerDouble"), ("cudaq single", "CudaqSingle"), ("cudaq double", "CudaqDouble")):
+            gc_ = gpu[gpu.config.str.startswith(c)]
+            if gc_.empty:
+                continue
+            macro(f"Gpu{key}MaxN", int(gc_.n.max()))
+            for fam in FAMS:
+                t = get(gc_, fam, 30)
+                if t:
+                    macro(f"Gpu{key}T{FNAME[fam]}Thirty", t, "{:.2f}")
+        # fastest GPU configuration per family at n = 30 (any precision and simulator that completed) against the card
+        GN = {"aer_gpu single cusv=1": "Aer fp32", "aer_gpu double cusv=1": "Aer fp64", "cudaq single": "CUDA-Q fp32",
+              "cudaq double": "CUDA-Q fp64", "aer_gpu single cusv=0": "Aer fp32 without cuStateVec"}
+        fpga_wins = []
+        for fam in FAMS:
+            opts = [(get(gpu[gpu.config.str.startswith(c)], fam, 30), c) for c in GN]
+            opts = [o for o in opts if o[0]]
+            f = get(fl, fam, 30)
+            if opts and f:
+                t, c = min(opts)
+                macro(f"XplatBestGpuT{FNAME[fam]}Thirty", t, "{:.2f}")
+                macro(f"XplatBestGpuName{FNAME[fam]}Thirty", GN[c])
+                macro(f"XplatBestGpuRatio{FNAME[fam]}Thirty", f / t, "{:.2f}")     # > 1: GPU faster
+                if f < t:
+                    fpga_wins.append(FAM_T[fam])
+        macro("XplatFpgaBeatsBestGpu", ", ".join(fpga_wins) if fpga_wins else "none")
+        # Aer's own simulation time (result.time_taken) at n = 30; the rest of T_run returns the state to host memory
+        at = [float(np.median([r["aer_time_taken_s"] for r in raw if r["family"] == f and r["n"] == 30])) for f in FAMS
+              if any(r["family"] == f and r["n"] == 30 for r in raw)]
+        if at:
+            macro("GpuAerTimeThirtyMin", min(at), "{:.1f}"); macro("GpuAerTimeThirtyMax", max(at), "{:.1f}")
+        if pw:
+            macro("GpuPowerMin", min(pw), "{:.0f}"); macro("GpuPowerMax", max(pw), "{:.0f}"); macro("GpuPowerReadingsMin", min(nr))
 
 
 FAM_T = {"ghz": "GHZ", "qft": "QFT", "rqc": "RQC", "vqe": "VQE"}
@@ -450,7 +520,7 @@ def energy():
                 macro(f"FlagEnergy{FNAME[fam]}Thirty", j, "{:.0f}")
                 macro(f"FlagPower{FNAME[fam]}Thirty", r["board_w"], "{:.0f}")
             rows.append(f"{FAM_T[fam] if r['n'] == 20 else ''} & {r['n']} & {num(r['per_run_s'])} & {r['board_w']:.1f} & {num(j)} & "
-                        f"{num(j * r['per_run_s'])} & " + (f"{num(vj)} & {vj / j:.0f}" if vj else "-- & --") + " \\\\")
+                        f"{num(j * r['per_run_s'])} & " + (f"{num(vj)} & {vj / j:.0f}" if vj else "n/a & n/a") + " \\\\")
         rows.append("\\addlinespace")
     if rat:
         macro("EnergyVsevenRatioMin", min(rat), "{:.0f}"); macro("EnergyVsevenRatioMax", max(rat), "{:.0f}")
@@ -497,7 +567,7 @@ def hwconfig():
     E = f"{RAW}/env"
     rd = lambda f: open(f"{E}/{f}").read() if os.path.exists(f"{E}/{f}") else ""
     host, fpga = rd("host.txt"), rd("fpga.txt")
-    def g(pat, txt, d="--"):
+    def g(pat, txt, d="n/a"):
         m = re.search(pat, txt, re.M)
         return m.group(1).strip() if m else d
     pf, pc = rd("python_fpga.txt"), rd("python_cpu.txt")
@@ -511,9 +581,20 @@ def hwconfig():
             ("CPU simulators", f"Qiskit Aer {pyv(pc, 'qiskit_aer')} (Qiskit {pyv(pc, 'qiskit')}), qsimcirq {pyv(pc, 'qsimcirq')}, "
                                f"Qulacs {pyv(pc, 'qulacs')}, Python {pyv(pc, 'python')}")]
     gp = rd(f"gpu_{GPU_HOST}.txt")
-    if gp:
+    if gp and "ENV " in gp:
+        # A100 node of the Slurm cluster: GPU line captured in the job, host from the Slurm node record
+        m = re.search(r"^ENV \S+ ([^,]+), ([^,]+), (\d+) MiB", gp, re.M)
+        gname, drv, gmib = (m.group(1).strip(), m.group(2).strip(), int(m.group(3))) if m else ("n/a", "n/a", 0)
+        pkg = lambda k: g(r"\b" + re.escape(k) + r"==(\S+)", gp)
+        so, cps, tpc = g(r"Sockets=(\d+)", gp), g(r"CoresPerSocket=(\d+)", gp), g(r"ThreadsPerCore=(\d+)", gp)
+        hmem = int(g(r"RealMemory=(\d+)", gp, "0")) // 1024
+        hos = g(r"OS=(Linux \S+)", gp)
+        rows += [("GPU host", f"Slurm cluster node, {so} sockets x {cps} cores ({tpc} threads per core), {hmem} GiB, {hos}"),
+                 ("GPU", f"{gname}, {gmib // 1024} GiB, driver {drv}"),
+                 ("GPU simulators", f"Qiskit Aer GPU {pkg('qiskit-aer-gpu')} with cuStateVec (cuQuantum {pkg('cuquantum-cu12')}), CUDA-Q {pkg('cudaq')} (nvidia target), Qiskit {pkg('qiskit')}")]
+    elif gp:
         gl = [l for l in gp.splitlines() if l.count(",") >= 4 and "name" not in l.lower()]
-        gname, drv = (gl[0].split(",")[0].strip(), gl[0].split(",")[1].strip()) if gl else ("--", "--")
+        gname, drv = (gl[0].split(",")[0].strip(), gl[0].split(",")[1].strip()) if gl else ("n/a", "n/a")
         pkg = lambda k: g(r"^" + re.escape(k) + r"==(\S+)", gp)
         ghost, gmem, cuda = g(r"Model name:\s*(.+)", gp), g(r"^Mem:\s+(\d+)", gp), g(r"CUDA Version\s*:\s*(\S+)", gp)
         rows += [("GPU host", f"{ghost}, {gmem} GiB"), ("GPU", f"{gname}, driver {drv}, CUDA {cuda}"),
@@ -549,6 +630,33 @@ def builds_sweep():
             macro(f"Build{nm}MaxN", max(r["n"] for r in json.load(open(p))["records"]))
 
 
+def maxwidth():
+    """Largest-width verification on one card (sv_maxwidth*.json): every family at n = 24..30 against a complex128
+    Qiskit Aer reference (R5.7e). Rows only for records that carry the reference metrics."""
+    p = f"{RAW}/phase5/sv_maxwidth_sv_e16w_m4.json"
+    if not os.path.exists(p):
+        return
+    rs = [r for r in json.load(open(p))["records"] if not r["warmup"] and "one_minus_f" in r]
+    if not rs:
+        return
+    e = lambda x: "0" if x == 0 else f"{x:.1e}".replace("e-0", "e-").replace("e-", r"\times 10^{-") + "}"
+    rows = []
+    for fam in FAMS:
+        for r in sorted([r for r in rs if r["family"] == fam], key=lambda r: r["n"]):
+            rows.append(f"{FAM_T[fam] if r is min([x for x in rs if x['family'] == fam], key=lambda x: x['n']) else ''} & {r['n']} & "
+                        f"{r['P']} & {r['stats']['n_passes']} & {r['stats']['n_remaps']} & {sig3(r['T_e2e'])} & "
+                        f"${e(max(r['one_minus_f'], 0.0))}$ & ${e(r['max_abs_err'])}$ \\\\")
+        rows.append("\\addlinespace")
+    write("tab_maxwidth.tex", "\n".join(rows[:-1]) + "\n")
+    top = [r for r in rs if r["n"] == max(x["n"] for x in rs)]
+    macro("MaxwN", max(r["n"] for r in rs))
+    macro("MaxwFamilies", len({r["family"] for r in top}))
+    macro("MaxwWorstInf", e(max(max(r["one_minus_f"], 0.0) for r in rs)))
+    macro("MaxwWorstAbs", e(max(r["max_abs_err"] for r in rs)))
+    macro("MaxwWorstInfThirty", e(max(max(r["one_minus_f"], 0.0) for r in top)))
+    macro("MaxwStateGiB", (2 ** max(r["n"] for r in rs)) * 8 / 2 ** 30, "{:.0f}")
+
+
 def write_macros():
     body = "\n".join(f"\\newcommand{{\\Num{k}}}{{{v}}}" for k, v in sorted(MACROS.items())) + "\n"
     write("macros.tex", body)
@@ -570,4 +678,5 @@ if __name__ == "__main__":
     jitter()
     hwconfig()
     builds_sweep()
+    maxwidth()
     write_macros()

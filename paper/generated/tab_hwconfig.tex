@@ -5,6 +5,8 @@ FPGA/CPU host & 2 $\times$ AMD EPYC 7742 64-Core Processor (64 cores each), 503 
 FPGA & AMD Alveo U55C, shell xilinx\_u55c\_gen3x16\_xdma\_base\_3, XRT 2.16.204, Vitis 2023.2 \\
 FPGA host software & Python 3.8.20, NumPy 1.24.4, Qiskit 1.2.4 \\
 CPU simulators & Qiskit Aer 0.17.2 (Qiskit 2.5.2), qsimcirq 0.22.1, Qulacs 0.6.14, Python 3.11.16 \\
-GPU host and GPU & \PENDING{RTX A4000 host, from results/raw/env/gpu\_a4000.txt} \\
+GPU host & Slurm cluster node, 2 sockets $\times$ 32 cores (2 threads per core), 1007 GiB, Linux 5.14.0-737.el9.x86\_64 \\
+GPU & NVIDIA A100-SXM4-80GB, 80 GiB, driver 615.71.09 \\
+GPU simulators & Qiskit Aer GPU 0.15.1 with cuStateVec (cuQuantum 26.9.0), CUDA-Q 0.12.0 (nvidia target), Qiskit 1.2.4 \\
 \bottomrule
 \end{tabular}

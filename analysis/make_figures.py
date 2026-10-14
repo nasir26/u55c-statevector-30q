@@ -161,7 +161,7 @@ def fig_roofline(summ=None):
 
 
 # ------------------------------------------------------------------ cross-platform T_e2e (series chosen by source file)
-GPU_HOST = os.environ.get("GPU_HOST_TAG", "a4000")
+GPU_HOST = os.environ.get("GPU_HOST_TAG", "a100")
 
 
 def fig_xplat(summ=None, field="T_e2e"):
@@ -174,7 +174,7 @@ def fig_xplat(summ=None, field="T_e2e"):
         ("cpu", (df.platform == "cpu_aer") & (df.config == "aer 128t single fusion=1"), "CPU, Qiskit Aer fp32, 128 cores"),
         ("cpu_alt", (df.platform == "cpu_qsim"), "CPU, qsim fp32, 128 cores"),
         ("gpu", (df.platform == "gpu_aer_gpu") & df.config.str.contains(f"single cusv=1 [{GPU_HOST}]", regex=False),
-         "GPU, Aer fp32 + cuStateVec (RTX A4000)"),
+         "GPU, Aer fp32 + cuStateVec (A100)"),
         ("fpga_v07", df.platform == "fpga_v07", "FPGA, v07 baseline (fp64)"),
     ]
     fig, axs = plt.subplots(2, 2, figsize=(7.0, 5.2), sharex=True)
@@ -268,7 +268,39 @@ def fig_builds(summ=None):
 FLOP, BYTES = 28, 32
 
 
-FIGS = {"xplat": fig_xplat, "jitter": fig_jitter, "builds": fig_builds, "breakdown": fig_breakdown, "cu": fig_cu_scaling, "roofline": fig_roofline}
+def fig_maxwidth(summ=None):
+    """Largest-width verification on one card: T_e2e (left) and infidelity against a complex128 Aer reference
+    (right) for every family at n = 24..30 (results/raw/phase5/sv_maxwidth_sv_e16w_m4.json)."""
+    import json
+    p = f"{WS}/results/raw/phase5/sv_maxwidth_sv_e16w_m4.json"
+    if not os.path.exists(p):
+        return
+    rs = [r for r in json.load(open(p))["records"] if not r["warmup"] and "one_minus_f" in r]
+    fig, axs = plt.subplots(1, 2, figsize=(7.0, 2.7))
+    marks = {"ghz": ("o", "-"), "qft": ("s", "--"), "rqc": ("^", "-."), "vqe": ("D", ":")}
+    cols = {"ghz": "#2a78d6", "qft": "#eb6834", "rqc": "#1baf7a", "vqe": "#4a3aa7"}
+    floor = 1e-34
+    for fam in ("ghz", "qft", "rqc", "vqe"):
+        d = sorted([r for r in rs if r["family"] == fam], key=lambda r: r["n"])
+        if not d:
+            continue
+        ns = [r["n"] for r in d]
+        m, ls = marks[fam]
+        axs[0].plot(ns, [r["T_e2e"] for r in d], marker=m, linestyle=ls, color=cols[fam], label=FAM_TITLE[fam].split(" (")[0])
+        axs[1].plot(ns, [max(r["one_minus_f"], floor) for r in d], marker=m, linestyle=ls, color=cols[fam],
+                    label=FAM_TITLE[fam].split(" (")[0])
+    axs[0].set_yscale("log"); axs[0].set_ylabel("$T_\\mathrm{e2e}$ [s]"); axs[0].set_xlabel("qubits n")
+    axs[0].set_title("time, one card", loc="left")
+    axs[1].set_yscale("log"); axs[1].set_ylabel("$1-F$ vs complex128 reference"); axs[1].set_xlabel("qubits n")
+    axs[1].set_title("accuracy, one card", loc="left")
+    for ax in axs:
+        ax.xaxis.set_major_locator(matplotlib.ticker.MaxNLocator(integer=True))
+    axs[1].legend(loc="center right", fontsize=7)
+    fig.tight_layout(); save(fig, "fig_maxwidth")
+
+
+
+FIGS = {"maxwidth": fig_maxwidth, "xplat": fig_xplat, "jitter": fig_jitter, "builds": fig_builds, "breakdown": fig_breakdown, "cu": fig_cu_scaling, "roofline": fig_roofline}
 
 if __name__ == "__main__":
     df = load_runs()

@@ -22,7 +22,7 @@ PLATFORM = {
 }
 LABEL = {"fpga_sv": "FPGA, new kernel (measured)", "fpga_v07": "FPGA, v07 baseline (measured)",
          "cpu": "CPU, Qiskit Aer 128 threads (measured)", "cpu_alt": "CPU, second simulator (measured)",
-         "gpu": "GPU, RTX A4000 (measured)"}
+         "gpu": "GPU, A100 (measured)"}
 
 
 def apply():

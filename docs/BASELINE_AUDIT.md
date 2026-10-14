@@ -25,7 +25,7 @@ Reference: Qiskit `Statevector.evolve`, little-endian, angles cast to float32 as
   each bank BO (the v07 host sizes BOs exactly); (iii) at n = 30, indices up to 2^31 overflow `int`.
 
 ## C. v07 timing baseline (card 41:00.1; raw `results/raw/phase1/v07_baseline_*.json`, summary `results/processed/v07_baseline.csv`, script `analysis/v07_baseline_summary.py`)
-- Grid: GHZ/QFT/RQC(d=10)/VQE(L=2), n = 4..24, 3 reps (median), plus GHZ 26 and 28 (1 rep). All fidelities vs Aer double >= 1-2e-13.
+- Grid: GHZ/QFT/RQC(d=10)/VQE(L=2), n = 4..24, 3 reps (median), plus GHZ 26 and 28 (1 rep). All fidelities vs Aer double >= 1 - 2e-13.
 - **The kernel dominates**: T_kernel is >= 72.7% of T_e2e at n = 16 and 85-99.8% for n >= 20 (correction 2026-10-06: an
   earlier version of this note said 90-99.8% for n >= 16). H2D/D2H/compile/post are minor (GHZ-28: kernel 122.5 s, D2H 6.6 s, H2D 2.4 s, e2e 136.1 s).
 - **Effective HBM throughput is about 2.0 GB/s, flat from n = 12 to 28** (bytes moved / T_kernel), i.e. about 0.4% of the 460 GB/s
