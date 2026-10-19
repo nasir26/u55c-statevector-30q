@@ -1,0 +1,546 @@
+<ENTRY>
+{
+ "thisFile": "<WS>/builds/portlimit_check/sv.xclbin.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Oct  7 10:03:59 2026",
+ "timestampMillis": "1791347639965",
+ "buildStep": {
+  "cmdId": "af67b9b4-923e-4c4c-bf81-181e2ee2e4b4",
+  "name": "v++",
+  "logFile": "<WS>/builds/portlimit_check/_x/link/link.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -l -t hw --platform xilinx_u55c_gen3x16_xdma_3_202210_1 --config link.cfg --kernel_frequency 300 -j 16 --temp_dir <WS>/builds/portlimit_check/_x --report_dir <WS>/builds/portlimit_check/reports --log_dir <WS>/builds/portlimit_check/logs -o <WS>/builds/portlimit_check/sv.xclbin <WS>/builds/sv_xo/sv_engine.xo <WS>/builds/sv_xo/sv_swap.xo ",
+  "args": [
+   "-l",
+   "-t",
+   "hw",
+   "--platform",
+   "xilinx_u55c_gen3x16_xdma_3_202210_1",
+   "--config",
+   "link.cfg",
+   "--kernel_frequency",
+   "300",
+   "-j",
+   "16",
+   "--temp_dir",
+   "<WS>/builds/portlimit_check/_x",
+   "--report_dir",
+   "<WS>/builds/portlimit_check/reports",
+   "--log_dir",
+   "<WS>/builds/portlimit_check/logs",
+   "-o",
+   "<WS>/builds/portlimit_check/sv.xclbin",
+   "<WS>/builds/sv_xo/sv_engine.xo",
+   "<WS>/builds/sv_xo/sv_swap.xo"
+  ],
+  "iniFiles": [
+   {
+    "path": "<WS>/builds/portlimit_check/link.cfg",
+    "content": "[connectivity]\nnk=sv_engine:32\nsp=sv_engine_1.st:HBM[0]\nslr=sv_engine_1:SLR0\nsp=sv_engine_2.st:HBM[1]\nslr=sv_engine_2:SLR0\nsp=sv_engine_3.st:HBM[2]\nslr=sv_engine_3:SLR0\nsp=sv_engine_4.st:HBM[3]\nslr=sv_engine_4:SLR0\nsp=sv_engine_5.st:HBM[4]\nslr=sv_engine_5:SLR0\nsp=sv_engine_6.st:HBM[5]\nslr=sv_engine_6:SLR0\nsp=sv_engine_7.st:HBM[6]\nslr=sv_engine_7:SLR0\nsp=sv_engine_8.st:HBM[7]\nslr=sv_engine_8:SLR0\nsp=sv_engine_9.st:HBM[8]\nslr=sv_engine_9:SLR0\nsp=sv_engine_10.st:HBM[9]\nslr=sv_engine_10:SLR0\nsp=sv_engine_11.st:HBM[10]\nslr=sv_engine_11:SLR0\nsp=sv_engine_12.st:HBM[11]\nslr=sv_engine_12:SLR1\nsp=sv_engine_13.st:HBM[12]\nslr=sv_engine_13:SLR1\nsp=sv_engine_14.st:HBM[13]\nslr=sv_engine_14:SLR1\nsp=sv_engine_15.st:HBM[14]\nslr=sv_engine_15:SLR1\nsp=sv_engine_16.st:HBM[15]\nslr=sv_engine_16:SLR1\nsp=sv_engine_17.st:HBM[16]\nslr=sv_engine_17:SLR1\nsp=sv_engine_18.st:HBM[17]\nslr=sv_engine_18:SLR1\nsp=sv_engine_19.st:HBM[18]\nslr=sv_engine_19:SLR1\nsp=sv_engine_20.st:HBM[19]\nslr=sv_engine_20:SLR1\nsp=sv_engine_21.st:HBM[20]\nslr=sv_engine_21:SLR1\nsp=sv_engine_22.st:HBM[21]\nslr=sv_engine_22:SLR1\nsp=sv_engine_23.st:HBM[22]\nslr=sv_engine_23:SLR2\nsp=sv_engine_24.st:HBM[23]\nslr=sv_engine_24:SLR2\nsp=sv_engine_25.st:HBM[24]\nslr=sv_engine_25:SLR2\nsp=sv_engine_26.st:HBM[25]\nslr=sv_engine_26:SLR2\nsp=sv_engine_27.st:HBM[26]\nslr=sv_engine_27:SLR2\nsp=sv_engine_28.st:HBM[27]\nslr=sv_engine_28:SLR2\nsp=sv_engine_29.st:HBM[28]\nslr=sv_engine_29:SLR2\nsp=sv_engine_30.st:HBM[29]\nslr=sv_engine_30:SLR2\nsp=sv_engine_31.st:HBM[30]\nslr=sv_engine_31:SLR2\nsp=sv_engine_32.st:HBM[31]\nslr=sv_engine_32:SLR2\nnk=sv_swap:1\nsp=sv_swap_1.a:HBM[0:31]\nsp=sv_swap_1.b:HBM[0:31]\nslr=sv_swap_1:SLR0\n"
+   }
+  ],
+  "cwd": "<WS>/builds/portlimit_check"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct  7 10:03:59 2026",
+ "timestampMillis": "1791347639966",
+ "status": {
+  "cmdId": "af67b9b4-923e-4c4c-bf81-181e2ee2e4b4",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Wed Oct  7 10:04:03 2026",
+ "timestampMillis": "1791347643804",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u55c_gen3x16_xdma_3_202210_1.xpfm",
+  "hardwareDsa": "",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u55c_gen3x16_xdma_3_202210_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_HW",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "sv",
+    "file": "<WS>/builds/portlimit_check/sv.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "sv_engine",
+     "file": "<WS>/builds/sv_xo/sv_engine.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "<WS>/builds/portlimit_check/_x/link/int/xo/sv_engine/sv_engine/cpu_sources/sv_engine.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "sv_engine_1",
+     "sv_engine_2",
+     "sv_engine_3",
+     "sv_engine_4",
+     "sv_engine_5",
+     "sv_engine_6",
+     "sv_engine_7",
+     "sv_engine_8",
+     "sv_engine_9",
+     "sv_engine_10",
+     "sv_engine_11",
+     "sv_engine_12",
+     "sv_engine_13",
+     "sv_engine_14",
+     "sv_engine_15",
+     "sv_engine_16",
+     "sv_engine_17",
+     "sv_engine_18",
+     "sv_engine_19",
+     "sv_engine_20",
+     "sv_engine_21",
+     "sv_engine_22",
+     "sv_engine_23",
+     "sv_engine_24",
+     "sv_engine_25",
+     "sv_engine_26",
+     "sv_engine_27",
+     "sv_engine_28",
+     "sv_engine_29",
+     "sv_engine_30",
+     "sv_engine_31",
+     "sv_engine_32"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   },
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "sv_swap",
+     "file": "<WS>/builds/sv_xo/sv_swap.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "<WS>/builds/portlimit_check/_x/link/int/xo/sv_swap/sv_swap/cpu_sources/sv_swap.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "sv_swap_1"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2023.2. SW Build 4026344 on 2023-10-11-15:42:10"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Oct  7 10:04:04 2026",
+ "timestampMillis": "1791347644198",
+ "buildStep": {
+  "cmdId": "b925e975-9923-4eaf-a2ac-f1bd4189401a",
+  "name": "system_link",
+  "logFile": "",
+  "commandLine": "system_link --xo <WS>/builds/sv_xo/sv_engine.xo --xo <WS>/builds/sv_xo/sv_swap.xo --config <WS>/builds/portlimit_check/_x/link/int/syslinkConfig.ini --xpfm /opt/xilinx/platforms/xilinx_u55c_gen3x16_xdma_3_202210_1/xilinx_u55c_gen3x16_xdma_3_202210_1.xpfm --target hw --output_dir <WS>/builds/portlimit_check/_x/link/int --temp_dir <WS>/builds/portlimit_check/_x/link/sys_link",
+  "args": [
+   "--xo",
+   "<WS>/builds/sv_xo/sv_engine.xo",
+   "--xo",
+   "<WS>/builds/sv_xo/sv_swap.xo",
+   "--config",
+   "<WS>/builds/portlimit_check/_x/link/int/syslinkConfig.ini",
+   "--xpfm",
+   "/opt/xilinx/platforms/xilinx_u55c_gen3x16_xdma_3_202210_1/xilinx_u55c_gen3x16_xdma_3_202210_1.xpfm",
+   "--target",
+   "hw",
+   "--output_dir",
+   "<WS>/builds/portlimit_check/_x/link/int",
+   "--temp_dir",
+   "<WS>/builds/portlimit_check/_x/link/sys_link"
+  ],
+  "iniFiles": [
+   {
+    "path": "<WS>/builds/portlimit_check/_x/link/int/syslinkConfig.ini",
+    "content": "nk=sv_engine:32\nnk=sv_swap:1\nsp=sv_engine_1.st:HBM[0]\nsp=sv_engine_2.st:HBM[1]\nsp=sv_engine_3.st:HBM[2]\nsp=sv_engine_4.st:HBM[3]\nsp=sv_engine_5.st:HBM[4]\nsp=sv_engine_6.st:HBM[5]\nsp=sv_engine_7.st:HBM[6]\nsp=sv_engine_8.st:HBM[7]\nsp=sv_engine_9.st:HBM[8]\nsp=sv_engine_10.st:HBM[9]\nsp=sv_engine_11.st:HBM[10]\nsp=sv_engine_12.st:HBM[11]\nsp=sv_engine_13.st:HBM[12]\nsp=sv_engine_14.st:HBM[13]\nsp=sv_engine_15.st:HBM[14]\nsp=sv_engine_16.st:HBM[15]\nsp=sv_engine_17.st:HBM[16]\nsp=sv_engine_18.st:HBM[17]\nsp=sv_engine_19.st:HBM[18]\nsp=sv_engine_20.st:HBM[19]\nsp=sv_engine_21.st:HBM[20]\nsp=sv_engine_22.st:HBM[21]\nsp=sv_engine_23.st:HBM[22]\nsp=sv_engine_24.st:HBM[23]\nsp=sv_engine_25.st:HBM[24]\nsp=sv_engine_26.st:HBM[25]\nsp=sv_engine_27.st:HBM[26]\nsp=sv_engine_28.st:HBM[27]\nsp=sv_engine_29.st:HBM[28]\nsp=sv_engine_30.st:HBM[29]\nsp=sv_engine_31.st:HBM[30]\nsp=sv_engine_32.st:HBM[31]\nsp=sv_swap_1.a:HBM[0:31]\nsp=sv_swap_1.b:HBM[0:31]\nslr=sv_engine_1:SLR0\nslr=sv_engine_2:SLR0\nslr=sv_engine_3:SLR0\nslr=sv_engine_4:SLR0\nslr=sv_engine_5:SLR0\nslr=sv_engine_6:SLR0\nslr=sv_engine_7:SLR0\nslr=sv_engine_8:SLR0\nslr=sv_engine_9:SLR0\nslr=sv_engine_10:SLR0\nslr=sv_engine_11:SLR0\nslr=sv_engine_12:SLR1\nslr=sv_engine_13:SLR1\nslr=sv_engine_14:SLR1\nslr=sv_engine_15:SLR1\nslr=sv_engine_16:SLR1\nslr=sv_engine_17:SLR1\nslr=sv_engine_18:SLR1\nslr=sv_engine_19:SLR1\nslr=sv_engine_20:SLR1\nslr=sv_engine_21:SLR1\nslr=sv_engine_22:SLR1\nslr=sv_engine_23:SLR2\nslr=sv_engine_24:SLR2\nslr=sv_engine_25:SLR2\nslr=sv_engine_26:SLR2\nslr=sv_engine_27:SLR2\nslr=sv_engine_28:SLR2\nslr=sv_engine_29:SLR2\nslr=sv_engine_30:SLR2\nslr=sv_engine_31:SLR2\nslr=sv_engine_32:SLR2\nslr=sv_swap_1:SLR0\n\n"
+   }
+  ],
+  "cwd": "<WS>/builds/portlimit_check"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct  7 10:04:04 2026",
+ "timestampMillis": "1791347644198",
+ "status": {
+  "cmdId": "b925e975-9923-4eaf-a2ac-f1bd4189401a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct  7 10:04:38 2026",
+ "timestampMillis": "1791347678211",
+ "status": {
+  "cmdId": "b925e975-9923-4eaf-a2ac-f1bd4189401a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Oct  7 10:04:38 2026",
+ "timestampMillis": "1791347678215",
+ "buildStep": {
+  "cmdId": "2847b94f-4c58-479a-be73-857f472ee432",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -sdsl <WS>/builds/portlimit_check/_x/link/int/sdsl.dat -rtd <WS>/builds/portlimit_check/_x/link/int/cf2sw.rtd -nofilter <WS>/builds/portlimit_check/_x/link/int/cf2sw_full.rtd -xclbin <WS>/builds/portlimit_check/_x/link/int/xclbin_orig.xml -o <WS>/builds/portlimit_check/_x/link/int/xclbin_orig.1.xml",
+  "args": [
+   "-sdsl",
+   "<WS>/builds/portlimit_check/_x/link/int/sdsl.dat",
+   "-rtd",
+   "<WS>/builds/portlimit_check/_x/link/int/cf2sw.rtd",
+   "-nofilter",
+   "<WS>/builds/portlimit_check/_x/link/int/cf2sw_full.rtd",
+   "-xclbin",
+   "<WS>/builds/portlimit_check/_x/link/int/xclbin_orig.xml",
+   "-o",
+   "<WS>/builds/portlimit_check/_x/link/int/xclbin_orig.1.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "<WS>/builds/portlimit_check"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct  7 10:04:38 2026",
+ "timestampMillis": "1791347678215",
+ "status": {
+  "cmdId": "2847b94f-4c58-479a-be73-857f472ee432",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct  7 10:04:59 2026",
+ "timestampMillis": "1791347699102",
+ "status": {
+  "cmdId": "2847b94f-4c58-479a-be73-857f472ee432",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Oct  7 10:04:59 2026",
+ "timestampMillis": "1791347699105",
+ "buildStep": {
+  "cmdId": "bf84ff87-4f38-466c-9b63-aed6f9681259",
+  "name": "rtd2_system_diagram",
+  "logFile": "",
+  "commandLine": "rtd2SystemDiagram",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "<WS>/builds/portlimit_check"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct  7 10:04:59 2026",
+ "timestampMillis": "1791347699106",
+ "status": {
+  "cmdId": "bf84ff87-4f38-466c-9b63-aed6f9681259",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct  7 10:04:59 2026",
+ "timestampMillis": "1791347699380",
+ "report": {
+  "path": "<WS>/builds/portlimit_check/_x/link/int/systemDiagramModel.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct  7 10:04:59 2026",
+ "timestampMillis": "1791347699380",
+ "status": {
+  "cmdId": "bf84ff87-4f38-466c-9b63-aed6f9681259",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Oct  7 10:04:59 2026",
+ "timestampMillis": "1791347699382",
+ "buildStep": {
+  "cmdId": "f5dfc8fe-dffc-4d9c-adf4-8bc1e3703b12",
+  "name": "vpl",
+  "logFile": "",
+  "commandLine": "vpl -t hw -f xilinx_u55c_gen3x16_xdma_3_202210_1 --kernel_frequency 300 --remote_ip_cache <WS>/builds/portlimit_check/.ipcache --output_dir <WS>/builds/portlimit_check/_x/link/int --log_dir <WS>/builds/portlimit_check/logs/link --report_dir <WS>/builds/portlimit_check/reports/link --config <WS>/builds/portlimit_check/_x/link/int/vplConfig.ini -k <WS>/builds/portlimit_check/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir <WS>/builds/portlimit_check/_x/link --no-info --iprepo <WS>/builds/portlimit_check/_x/link/int/xo/ip_repo/xilinx_com_hls_sv_swap_1_0 --iprepo <WS>/builds/portlimit_check/_x/link/int/xo/ip_repo/xilinx_com_hls_sv_engine_1_0 --messageDb <WS>/builds/portlimit_check/_x/link/run_link/vpl.pb <WS>/builds/portlimit_check/_x/link/int/dr.bd.tcl",
+  "args": [
+   "-t",
+   "hw",
+   "-f",
+   "xilinx_u55c_gen3x16_xdma_3_202210_1",
+   "--kernel_frequency",
+   "300",
+   "--remote_ip_cache",
+   "<WS>/builds/portlimit_check/.ipcache",
+   "--output_dir",
+   "<WS>/builds/portlimit_check/_x/link/int",
+   "--log_dir",
+   "<WS>/builds/portlimit_check/logs/link",
+   "--report_dir",
+   "<WS>/builds/portlimit_check/reports/link",
+   "--config",
+   "<WS>/builds/portlimit_check/_x/link/int/vplConfig.ini",
+   "-k",
+   "<WS>/builds/portlimit_check/_x/link/int/kernel_info.dat",
+   "--webtalk_flag",
+   "Vitis",
+   "--temp_dir",
+   "<WS>/builds/portlimit_check/_x/link",
+   "--no-info",
+   "--iprepo",
+   "<WS>/builds/portlimit_check/_x/link/int/xo/ip_repo/xilinx_com_hls_sv_swap_1_0",
+   "--iprepo",
+   "<WS>/builds/portlimit_check/_x/link/int/xo/ip_repo/xilinx_com_hls_sv_engine_1_0",
+   "--messageDb",
+   "<WS>/builds/portlimit_check/_x/link/run_link/vpl.pb",
+   "<WS>/builds/portlimit_check/_x/link/int/dr.bd.tcl"
+  ],
+  "iniFiles": [
+   {
+    "path": "<WS>/builds/portlimit_check/_x/link/int/vplConfig.ini",
+    "content": "[advanced]\nmisc=report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\nmisc=report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\nparam=compiler.enablePerformanceTrace=1\nparam=compiler.vppCurrentWorkingDir=<WS>/builds/portlimit_check\nmisc=BinaryName=sv\n\n[connectivity]\nnk=sv_engine:32:sv_engine_1,sv_engine_2,sv_engine_3,sv_engine_4,sv_engine_5,sv_engine_6,sv_engine_7,sv_engine_8,sv_engine_9,sv_engine_10,sv_engine_11,sv_engine_12,sv_engine_13,sv_engine_14,sv_engine_15,sv_engine_16,sv_engine_17,sv_engine_18,sv_engine_19,sv_engine_20,sv_engine_21,sv_engine_22,sv_engine_23,sv_engine_24,sv_engine_25,sv_engine_26,sv_engine_27,sv_engine_28,sv_engine_29,sv_engine_30,sv_engine_31,sv_engine_32\nnk=sv_swap:1:sv_swap_1\n\n[vivado]\nprop=run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\nsynth.jobs=16\n\n"
+   }
+  ],
+  "cwd": "<WS>/builds/portlimit_check"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct  7 10:04:59 2026",
+ "timestampMillis": "1791347699383",
+ "status": {
+  "cmdId": "f5dfc8fe-dffc-4d9c-adf4-8bc1e3703b12",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Oct  7 10:05:01 2026",
+ "timestampMillis": "1791347701050",
+ "buildStep": {
+  "cmdId": "6f95cefd-507b-4ed8-aed3-6dc08a157253",
+  "name": "vpl",
+  "logFile": "<WS>/builds/portlimit_check/_x/link/link.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/vpl -t hw -f xilinx_u55c_gen3x16_xdma_3_202210_1 --kernel_frequency 300 --remote_ip_cache <WS>/builds/portlimit_check/.ipcache --output_dir <WS>/builds/portlimit_check/_x/link/int --log_dir <WS>/builds/portlimit_check/logs/link --report_dir <WS>/builds/portlimit_check/reports/link --config <WS>/builds/portlimit_check/_x/link/int/vplConfig.ini -k <WS>/builds/portlimit_check/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir <WS>/builds/portlimit_check/_x/link --no-info --iprepo <WS>/builds/portlimit_check/_x/link/int/xo/ip_repo/xilinx_com_hls_sv_swap_1_0 --iprepo <WS>/builds/portlimit_check/_x/link/int/xo/ip_repo/xilinx_com_hls_sv_engine_1_0 --messageDb <WS>/builds/portlimit_check/_x/link/run_link/vpl.pb <WS>/builds/portlimit_check/_x/link/int/dr.bd.tcl ",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "<WS>/builds/portlimit_check/_x/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct  7 10:05:01 2026",
+ "timestampMillis": "1791347701050",
+ "status": {
+  "cmdId": "6f95cefd-507b-4ed8-aed3-6dc08a157253",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_VivadoProject",
+ "dateTimestamp": "Wed Oct  7 10:05:05 2026",
+ "timestampMillis": "1791347705383",
+ "vivadoProject": {
+  "openDir": "<WS>/builds/portlimit_check/_x/link/vivado/vpl",
+  "openScript": "openprj.tcl",
+  "relativeProject": "prj/prj.xpr"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Oct  7 10:05:05 2026",
+ "timestampMillis": "1791347705384",
+ "buildStep": {
+  "cmdId": "a4c029b8-f9d1-4fef-bdee-49befab8d5f5",
+  "name": "vivado",
+  "logFile": "<WS>/builds/portlimit_check/_x/link/vivado/vpl/vivado.log",
+  "commandLine": "vivado -log vivado.log -applog -m64 -messageDb vivado.pb -mode batch -source vpl.tcl -notrace",
+  "args": [
+   "-log",
+   "vivado.log",
+   "-applog",
+   " -m64",
+   "-messageDb",
+   "vivado.pb",
+   "-mode",
+   "batch",
+   "-source",
+   "vpl.tcl",
+   "-notrace"
+  ],
+  "iniFiles": [],
+  "cwd": "<WS>/builds/portlimit_check/_x/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct  7 10:05:05 2026",
+ "timestampMillis": "1791347705385",
+ "status": {
+  "cmdId": "a4c029b8-f9d1-4fef-bdee-49befab8d5f5",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct  7 10:06:16 2026",
+ "timestampMillis": "1791347776725",
+ "status": {
+  "cmdId": "a4c029b8-f9d1-4fef-bdee-49befab8d5f5",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct  7 10:06:16 2026",
+ "timestampMillis": "1791347776778",
+ "status": {
+  "cmdId": "6f95cefd-507b-4ed8-aed3-6dc08a157253",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct  7 10:06:16 2026",
+ "timestampMillis": "1791347776801",
+ "status": {
+  "cmdId": "f5dfc8fe-dffc-4d9c-adf4-8bc1e3703b12",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct  7 10:06:16 2026",
+ "timestampMillis": "1791347776804",
+ "report": {
+  "path": "<WS>/builds/portlimit_check/logs/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct  7 10:06:16 2026",
+ "timestampMillis": "1791347776805",
+ "status": {
+  "cmdId": "af67b9b4-923e-4c4c-bf81-181e2ee2e4b4",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct  7 10:06:16 2026",
+ "timestampMillis": "1791347776901",
+ "report": {
+  "path": "<WS>/builds/portlimit_check/reports/link/v++_link_sv_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct  7 10:06:16 2026",
+ "timestampMillis": "1791347776901",
+ "report": {
+  "path": "<WS>/builds/portlimit_check/_x/v++_link_sv_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,7 +1,7 @@
 #!/bin/bash
 # usage: run_remote.sh <tag> <node> <gres> <time> -- <gpu_bench.py args...>
 # Ships code via stdin, runs in node-local /tmp (removed on exit), collects stdout into results/raw/gpu/<tag>.log
-source <WS>/env.sh
+source "${WS:-$PWD}/env.sh"
 TAG=$1; NODE=$2; GRES=$3; TLIM=$4; shift 5
 OUT=$WS/results/raw/gpu; mkdir -p $OUT
 ARGS="$*"

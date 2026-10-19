@@ -1,6 +1,6 @@
 #!/bin/bash
 # Full GPU campaign on gpu-node (A100-80GB). One job per backend config (Slurm serialises them on the single GPU).
-R=<WS>/bench/gpu/run_remote.sh
+R=$WS/bench/gpu/run_remote.sh
 N=gpu-node; G=gpu:a100:1
 NS=4,6,8,10,12,14,16,18,20,22,24,26,28,29,30,31,32,33
 $R a100_aer_single_cusv  $N $G 06:00:00 -- --backend aer_gpu --precision single --custatevec 1 --ns $NS --reps 5

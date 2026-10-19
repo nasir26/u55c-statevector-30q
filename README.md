@@ -115,6 +115,8 @@ FLAG=sv_e16w_m4 bench/fpga/campaign.sh <BDF> main|ablate|energy|builds|jitter|su
 bench/cpu/campaign.sh; bench/cpu/campaign_extra.sh      # CPU baselines, host otherwise idle
 bench/gpu/run_local_gpu.sh <tag>                        # GPU baselines on a local GPU
 bench/gpu/campaign_a100.sh                              # GPU baselines on the A100 node
+bench/gpu/campaign_a100_r2.sh; bench/gpu/campaign_a100_r3.sh   # A100 reruns of cancelled and repeated configurations
+PARK=<bitstream> BDF=<BDF> bench/fpga/run_maxwidth.sh   # n = 24 to 30 on one card, checked against CPU references
 envs/cpu/bin/python analysis/make_tables.py && envs/cpu/bin/python analysis/make_figures.py
 ```
 
