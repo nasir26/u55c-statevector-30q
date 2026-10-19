@@ -28,9 +28,12 @@ unit per HBM pseudo-channel, with a device-side exchange kernel (`sv_swap`) for 
 | `paper/revised/` | manuscript sources (`main.tex`, `sections/`, `refs.tex`), built from `paper/generated/` and the generated figures |
 | `paper/manuscript/` | the submitted manuscript (single LaTeX source with figures, and the compiled PDF) |
 | `docs/` | architecture, code map, baseline audit, provenance |
+| `setup/` | recorded Python environments (`env_fpga.yml`, `env_cpu.yml`) and `setup_envs.sh` |
+| `scripts/` | `fetch_bitstreams.sh` (release download and SHA256 check), environment capture, run summary |
+| `logs/` | build logs read by the table generator |
 
-Bitstreams (`sv.xclbin`, about 65 to 80 MB each) are not stored in this repository. Rebuild them with the commands
-below (section "Rebuilding the bitstreams"); `builds/<name>/sv.xclbin.sha256` holds the hash of the bitstream used for
+Bitstreams (`sv.xclbin`, about 65 to 80 MB each) are not stored in git; they are attached to the release
+`bitstreams-v1` (section "Bitstreams"), or can be rebuilt (section "Rebuilding the bitstreams"); `builds/<name>/sv.xclbin.sha256` holds the hash of the bitstream used for
 the published measurements, and `builds/<name>/sv.xclbin.info` its metadata. Of the Vivado reports, the utilisation
 reports are kept in full and the timing report as a summary extract (`timing_summary_extract.txt`).
 
