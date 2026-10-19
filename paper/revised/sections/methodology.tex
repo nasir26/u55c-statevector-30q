@@ -1,0 +1,46 @@
+%==========================================================================
+\section{Experimental Methodology}\label{sec:methodology}
+
+\subsection{Timing definitions}\label{subsec:timing}
+
+Table~\ref{tab:timing} defines the timing fields used for every platform, table and figure in this paper. Per-circuit times exclude $T_\mathrm{setup}$. Each caption states which field it reports.
+
+\begin{table}
+\centering
+\caption{Timing definitions (all platforms).}\label{tab:timing}
+\small
+\begin{tabular}{p{1.5cm}p{8.3cm}p{1.8cm}}
+\toprule
+Field & Definition & Scope \\
+\midrule
+\tabinput{../generated/tab_timing_defs.tex}
+\bottomrule
+\end{tabular}
+\end{table}
+
+For the FPGA, $T_\mathrm{kernel}$ is the host-measured interval from starting all engine CUs of a segment to the completion of the last one, summed over segments; remaps are reported separately as $T_\mathrm{exch}$. For Qiskit Aer (CPU and GPU) the backend returns the statevector in host memory, so the measured run interval includes the state transfer and is reported as $T_\mathrm{kernel}$ with $T_\mathrm{d2h}=0$; we state this wherever Aer GPU numbers appear. The same boundary therefore applies to Aer on the CPU and on the GPU.
+
+\subsection{Platforms and software}\label{subsec:platforms}
+
+Table~\ref{tab:hwconfig} lists the platforms; versions were captured by script at measurement time. The CPU host is a dual-socket AMD EPYC 7742 server (2$\times$64 cores, 503~GiB). GPU measurements were made on an NVIDIA A100 SXM4 (80~GiB) in a node of a Slurm cluster, with the scripts and circuits used here; the RTX A4000 workstation of the submitted manuscript was not available for remeasurement, and no GPU number of the submitted manuscript is reused. Qiskit Aer (single and double precision, with and without cuStateVec) was run for all four families and CUDA-Q (single and double precision, \texttt{nvidia} target) for GHZ and QFT; the CUDA-Q jobs for RQC and VQE were cancelled by the cluster before they started and could not be repeated, and the widest widths that completed are given in Section~\ref{subsec:res-xplat}. The GPU timing fields do not involve the host processor except $T_\mathrm{compile}$, which is reported separately. No number from the submitted manuscript is reused.
+
+\begin{table}
+\centering
+\caption{Hardware and software configuration (captured by \texttt{scripts/capture\_env.sh}).}\label{tab:hwconfig}
+\small
+\input{../generated/tab_hwconfig.tex}
+\end{table}
+
+\subsection{Benchmark circuits and protocol}\label{subsec:protocol}
+
+We use the same four circuit families as the submitted manuscript, now generated with fixed seeds and exported as OpenQASM~\cite{cross2017openqasm}: GHZ (Hadamard plus a CX chain over all qubits), QFT with final swaps, random brick-wall circuits (RQC; random $R_x$, $R_y$, $R_z$, $T$ or $H$ on every qubit per layer followed by CZ on alternating pairs, depths 8, 10, 16 and 20) and a hardware-efficient VQE ansatz ($R_y R_z$ layers with a CX ladder, two layers), plus Grover search for $n\leq 12$~\cite{grover1996fast,peruzzo2014variational,boixo2018characterizing}. All platforms run identical circuit instances. Each point is the median of 10 repetitions ($n\leq 24$) or 3 repetitions ($n\geq 26$) after one warm-up run, on every platform; the inter-quartile range is reported where it is visible. The single-threaded NumPy simulator of the submitted manuscript, kept only as a legacy reference, was timed twice per point because of its run time. Every timed FPGA run returns the final state to host memory and samples 1{,}024 shots; CPU and GPU runs return the final statevector in host memory and do not sample. CPU runs were made with no other jobs on the host. FPGA runs on two cards were made concurrently, each in its own host process pinned to 16 cores of the NUMA node that hosts the card and limited to 8 math-library threads, with the host otherwise idle.
+
+\subsection{Correctness}\label{subsec:correctness-method}
+
+Correctness is checked independently of the benchmarks by a functional suite in which every gate test starts from a generic entangled state (a random $U_3$ layer, a ring of CZ gates and a second $U_3$ layer), so that no test can pass on the norm alone. The suite covers every single-qubit gate on every position, 21 two-qubit gates on every ordered pair, three- and four-qubit gates, the circuit families for $n=2$ to 20, and analytic checks of GHZ and QFT$|0\rangle$ states up to $n=30$. A case passes when $1-F\leq 10^{-5}$ with $F=|\langle\psi_\mathrm{ref}|\psi\rangle|^2/\langle\psi|\psi\rangle$ against a complex128 Qiskit reference. Inner products are accumulated in double precision. Beyond the suite, the full final state of every family at $n=24$ to 30 is compared with a complex128 Qiskit Aer statevector (gate fusion off) computed on the host after the card runs; the infidelity is computed without cancellation as $1-F=d^2-d^4/4$, where $d$ is the $\ell_2$ distance between the normalised states after optimal global-phase alignment.
+
+\subsection{Energy}\label{subsec:energy-method}
+
+Card power is read from the Alveo XMC sensors through sysfs (sum of the 12~V PCIe, 12~V auxiliary and 3.3~V PCIe rails, identical to the value reported by \texttt{xbutil}). The sensors refresh about once per second (\NumXmcPeriod~s measured), so energy is not integrated over single short runs: each circuit is repeated for at least 30~s and the time-weighted mean board power over the loop is multiplied by the per-run time. GPU power is read with \texttt{nvidia-smi} every 100~ms. We report two boundaries consistently for all platforms: \emph{device only} (card or GPU board power) and \emph{device plus host CPU package}. The CPU package energy counters (RAPL) are readable only with root privileges on the host used here, so the second boundary could not be measured and is not reported; PCIe switch, fans, cooling and power-supply losses are excluded on every platform. The analytical Alveo power model used in the submitted manuscript is compared against these measurements in Section~\ref{subsec:res-energy}.
+
+During the 30-qubit runs a card reached the conservative abort limit we set (90\,$^\circ$C FPGA / 85\,$^\circ$C HBM) and the run was stopped automatically. Heavy runs were subsequently paced so that each repetition starts below a per-card temperature threshold; the waiting time is recorded with every result and excluded from all reported times.

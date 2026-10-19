@@ -10,7 +10,7 @@ import style  # noqa: E402
 
 style.apply()
 WS = os.environ.get("WS", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-OUT = f"{WS}/paper/revised/figures"
+OUT = os.environ.get("FIG_OUT", f"{WS}/paper/revised/figures")
 BLUE, ORANGE, AQUA, INK2 = "#2a78d6", "#eb6834", "#1baf7a", style.INK2
 FILL = {"host": "#e9f1fb", "eng": "#e7f3ee", "hbm": "#f3f2ef", "swap": "#fdeee6"}
 
@@ -65,5 +65,5 @@ arrow(12, 18, 12, 13.6, color=AQUA, both=True); arrow(46, 18, 46, 13.6, color=AQ
 arrow(84, 18, 84, 13.6, color=ORANGE, both=True)
 ax.text(15.5, 15.6, "one AXI port", fontsize=6.2, color=INK2)
 ax.text(85.5, 15.7, "all channels\n(HBM switch)", fontsize=6.0, color=INK2, va="center", ha="left")
-fig.savefig(f"{OUT}/fig_architecture.pdf"); fig.savefig(f"{OUT}/fig_architecture.png", dpi=200)
+fig.savefig(f"{OUT}/fig_architecture.pdf", metadata={"CreationDate": None}); fig.savefig(f"{OUT}/fig_architecture.png", dpi=200, metadata={"Software": None})
 print("wrote fig_architecture")

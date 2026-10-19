@@ -1,0 +1,80 @@
+\documentclass[pdflatex,sn-mathphys-num]{sn-jnl}
+
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{amsthm}
+\usepackage{mathalpha}
+\usepackage[title]{appendix}
+\usepackage{xcolor}
+\usepackage{textcomp}
+\usepackage{manyfoot}
+\usepackage{booktabs}
+\usepackage{textgreek}
+\usepackage[utf8]{inputenc}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+\usepackage{array}
+\usepackage{url}
+\usepackage{hyperref}
+
+\DeclareUnicodeCharacter{2032}{\ensuremath{\prime}}
+\providecommand{\doi}[1]{\href{https://doi.org/#1}{doi:#1}}
+% marks text that still waits for data; the build check refuses a manuscript containing it
+\newcommand{\PENDING}[1]{\textcolor{red}{\textbf{[PENDING: #1]}}}
+\graphicspath{{figures/}}
+
+% every number quoted in the text is generated from raw results by analysis/make_tables.py
+\input{../generated/macros.tex}
+\makeatletter\newcommand{\tabinput}[1]{\@@input #1 }\makeatother % hook-free input inside tabular
+
+\theoremstyle{thmstyleone}
+\newtheorem{theorem}{Theorem}
+\theoremstyle{thmstylethree}
+\newtheorem{definition}{Definition}
+
+\raggedbottom
+
+\begin{document}
+
+\title[FPGA Based Quantum Circuit Simulator]{FPGA Based Quantum Circuit Simulator: Processing 30 Qubit Systems}
+
+\author*[1]{\fnm{Abhishek} \sur{Tiwari}}\email{abhishek@cdac.in}
+\author*[1]{\fnm{Nasir} \sur{Ali}}\email{nasirali2607@gmail.com}
+\author[1]{\fnm{Nadeem} \sur{Khan}}\email{khannadeem73637@gmail.com}
+\author[1]{\fnm{Imam} \sur{Mazhar}}\email{imammazhar@cdac.in}
+\author[1]{\fnm{Karan} \sur{Islur}}\email{karanislur2003@gmail.com}
+\author[1]{\fnm{Himanshu} \sur{Gupta}}\email{himanshugupta@cdac.in}
+\author[2]{\fnm{Sachin} \sur{Kumar}}\email{skumar@cic.du.ac.in}
+\author[2]{\fnm{Pankaj} \sur{Tyagi}}\email{pankajtyagi@cic.du.ac.in}
+\author[3]{\fnm{Rahul} \sur{Kumar Neiwal}}\email{rahul.neiwal@meity.gov.in}
+
+\affil*[1]{\orgdiv{Embedded Systems Division}, \orgname{Centre for Development of Advanced Computing}, \orgaddress{\city{Noida}, \postcode{201307}, \country{India}}}
+\affil[2]{\orgdiv{Cluster Innovation Centre}, \orgname{University of Delhi}, \orgaddress{\city{New Delhi}, \postcode{110007}, \country{India}}}
+\affil[3]{\orgdiv{Electronics Division}, \orgname{Ministry of Electronics and Information Technology}, \orgaddress{\city{New Delhi}, \postcode{110003}, \country{India}}}
+
+\abstract{\input{sections/abstract}}
+
+\keywords{FPGA, quantum circuit simulation, statevector, high bandwidth memory, HBM2, Alveo U55C, design-space exploration, Qiskit}
+
+\maketitle
+
+\input{sections/introduction}
+\input{sections/related}
+\input{sections/baseline}
+\input{sections/architecture}
+\input{sections/methodology}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/limitations}
+\input{sections/conclusions}
+
+\backmatter
+
+\input{sections/declarations}
+
+\input{refs}
+
+\end{document}

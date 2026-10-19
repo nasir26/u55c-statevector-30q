@@ -1,0 +1,40 @@
+Option Map File Used: '/tools/Xilinx/Vitis/2023.2/data/vitis/vpp/optMap.xml'
+
+****** v++ v2023.2 (64-bit)
+  **** SW Build 4026344 on 2023-10-11-15:42:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+INFO: [v++ 60-1306] Additional information associated with this v++ compile can be found at:
+	Reports: <WS>/builds/sv_xo/reports_swap/sv_swap
+	Log files: <WS>/builds/sv_xo/logs_swap/sv_swap
+Running Dispatch Server on port: 40917
+INFO: [v++ 60-1548] Creating build summary session with primary output <WS>/builds/sv_xo/sv_swap.xo.compile_summary, at Tue Oct  6 10:03:12 2026
+INFO: [v++ 60-1315] Creating rulecheck session with output '<WS>/builds/sv_xo/reports_swap/sv_swap/v++_compile_sv_swap_guidance.html', at Tue Oct  6 10:03:12 2026
+INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u55c_gen3x16_xdma_3_202210_1/xilinx_u55c_gen3x16_xdma_3_202210_1.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u55c_gen3x16_xdma_3_202210_1/hw/hw.xsa'
+INFO: [v++ 74-78] Compiler Version string: 2023.2
+INFO: [v++ 60-585] Compiling for hardware target
+INFO: [v++ 60-423]   Target device: xilinx_u55c_gen3x16_xdma_3_202210_1
+INFO: [v++ 60-242] Creating kernel: 'sv_swap'
+INFO: [v++ 60-1616] Creating a HLS clock using hls.clock option: 300 MHz
+
+===>The following messages were generated while  performing high-level synthesis for kernel: sv_swap Log file: <WS>/builds/sv_xo/_xs/sv_swap/sv_swap/vitis_hls.log :
+INFO: [v++ 204-61] Pipelining loop 'RA'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'RA'
+INFO: [v++ 204-61] Pipelining loop 'RB'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'RB'
+INFO: [v++ 204-61] Pipelining loop 'WA'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'WA'
+INFO: [v++ 204-61] Pipelining loop 'WB'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'WB'
+INFO: [v++ 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [v++ 200-789] **** Estimated Fmax: 379.51 MHz
+INFO: [v++ 60-594] Finished kernel compilation
+INFO: [v++ 60-244] Generating system estimate report...
+INFO: [v++ 60-1092] Generated system estimate report: <WS>/builds/sv_xo/reports_swap/sv_swap/system_estimate_sv_swap.xtxt
+INFO: [v++ 60-586] Created <WS>/builds/sv_xo/sv_swap.xo
+INFO: [v++ 60-2343] Use the vitis_analyzer tool to visualize and navigate the relevant reports. Run the following command. 
+    vitis_analyzer <WS>/builds/sv_xo/sv_swap.xo.compile_summary 
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 41s
+INFO: [v++ 60-1653] Closing dispatch client.

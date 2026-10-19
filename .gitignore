@@ -8,3 +8,10 @@ tmp/
 *.xsa
 _x/
 .ipcache/
+paper/revised/figures/
+paper/revised/*.aux
+paper/revised/*.log
+paper/revised/*.out
+paper/revised/*.fls
+paper/revised/*.fdb_latexmk
+paper/revised/main.pdf

@@ -1,0 +1,227 @@
+Option Map File Used: '/tools/Xilinx/Vitis/2023.2/data/vitis/vpp/optMap.xml'
+
+****** v++ v2023.2 (64-bit)
+  **** SW Build 4026344 on 2023-10-11-15:42:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+INFO: [v++ 60-1306] Additional information associated with this v++ compile can be found at:
+	Reports: <WS>/builds/hbm_stream/reports/hbm_stream
+	Log files: <WS>/builds/hbm_stream/logs/hbm_stream
+Running Dispatch Server on port: 37319
+INFO: [v++ 60-1548] Creating build summary session with primary output <WS>/builds/hbm_stream/hbm_stream.xo.compile_summary, at Mon Oct  5 16:03:14 2026
+INFO: [v++ 60-1315] Creating rulecheck session with output '<WS>/builds/hbm_stream/reports/hbm_stream/v++_compile_hbm_stream_guidance.html', at Mon Oct  5 16:03:14 2026
+INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u55c_gen3x16_xdma_3_202210_1/xilinx_u55c_gen3x16_xdma_3_202210_1.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u55c_gen3x16_xdma_3_202210_1/hw/hw.xsa'
+INFO: [v++ 74-78] Compiler Version string: 2023.2
+INFO: [v++ 60-585] Compiling for hardware target
+INFO: [v++ 60-423]   Target device: xilinx_u55c_gen3x16_xdma_3_202210_1
+INFO: [v++ 60-242] Creating kernel: 'hbm_stream'
+INFO: [v++ 60-1616] Creating a HLS clock using hls.clock option: 300 MHz
+
+===>The following messages were generated while  performing high-level synthesis for kernel: hbm_stream Log file: <WS>/builds/hbm_stream/_x/hbm_stream/hbm_stream/vitis_hls.log :
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_20_1_VITIS_LOOP_21_2'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 75, loop 'VITIS_LOOP_20_1_VITIS_LOOP_21_2'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_28_1_VITIS_LOOP_29_2'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 72, loop 'VITIS_LOOP_28_1_VITIS_LOOP_29_2'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 204-61] Pipelining loop 'WR_REP_WR_BLK_WR_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 74, loop 'WR_REP_WR_BLK_WR_WORD'
+INFO: [v++ 204-61] Pipelining loop 'RD_REP_RD_BLK_RD_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'RD_REP_RD_BLK_RD_WORD'
+INFO: [v++ 204-61] Pipelining loop 'CP_REP_CP_BLK_CP_WORD'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 145, loop 'CP_REP_CP_BLK_CP_WORD'
+INFO: [v++ 200-789] **** Estimated Fmax: 255.49 MHz
+INFO: [v++ 60-594] Finished kernel compilation
+INFO: [v++ 60-244] Generating system estimate report...
+INFO: [v++ 60-1092] Generated system estimate report: <WS>/builds/hbm_stream/reports/hbm_stream/system_estimate_hbm_stream.xtxt
+INFO: [v++ 60-586] Created <WS>/builds/hbm_stream/hbm_stream.xo
+INFO: [v++ 60-2343] Use the vitis_analyzer tool to visualize and navigate the relevant reports. Run the following command. 
+    vitis_analyzer <WS>/builds/hbm_stream/hbm_stream.xo.compile_summary 
+INFO: [v++ 60-791] Total elapsed time: 0h 13m 1s
+INFO: [v++ 60-1653] Closing dispatch client.

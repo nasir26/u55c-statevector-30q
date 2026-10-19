@@ -1,0 +1,39 @@
+%==========================================================================
+\section{Platform and Baseline}\label{sec:baseline}
+
+\subsection{Hardware platform}\label{subsec:platform}
+
+All FPGA measurements use Xilinx Alveo U55C cards~\cite{xilinx2023alveo} (Table~\ref{tab:hwconfig}). The U55C carries 16~GB of HBM2 organised as 32 pseudo-channels (PCs) of 512~MB, with a nominal aggregate bandwidth of about 460~GB/s, and connects to the host over PCIe Gen3$\times$16. The card is passively cooled. Kernels are built with Vitis 2023.2~\cite{vitis2023hls} for the \texttt{xilinx\_u55c\_gen3x16\_xdma\_3\_202210\_1} platform and run under XRT 2.16~\cite{xrt2023}.
+
+\subsection{The baseline kernel (v07)}\label{subsec:v07}
+
+The baseline in this paper is the kernel and host backend that preceded this work (called v07 below; sources and bitstream are part of the artifact). It stores the statevector in complex128 across eight bank arguments, interleaving amplitudes with $\text{bank}(i) = i \bmod 8$, each bank argument mapped to three PCs. It implements \NumVsevenOpcodes{} opcodes (single-qubit Clifford and rotation gates, U2, U3, CX and CZ); every other gate is lowered on the host to this set (Table~\ref{tab:gates}). Gate parameters are passed as 32-bit floats and up to 512 gates are executed per kernel launch.
+
+We audited v07 on the hardware before redesigning it (Table~\ref{tab:v07}). Three findings shape the rest of the paper.
+
+\textbf{The kernel, not the host, sets the run time.} With the timing split of Section~\ref{subsec:timing}, kernel execution accounts for at least \NumVsevenKernelFracMin\,\% of $T_\mathrm{e2e}$ at $n=16$ and at least \NumVsevenKernelFracMinTwenty\,\% for $n\geq 20$. Host-to-device and device-to-host transfers are minor (GHZ-28: $T_\mathrm{kernel}=\NumVsevenGhzTwentyEightKernel$~s of $T_\mathrm{e2e}=\NumVsevenGhzTwentyEightEtoE$~s).
+
+\textbf{The kernel moves data at about 2~GB/s.} Dividing the bytes each gate must read and write by the measured kernel time gives \NumVsevenBwMin to \NumVsevenBwMax~GB/s for $n\geq 12$, independent of $n$. This is \NumVsevenBwFracPct\,\% of the nominal HBM bandwidth and corresponds to about \NumVsevenCyclesPerPair{} kernel cycles per amplitude pair, although the HLS schedule reports an initiation interval of one. The cause is memory-level parallelism: each iteration issues single-beat 64-bit accesses (real and imaginary parts separately) through a runtime eight-way bank multiplexer, so the AXI ports never form bursts. Section~\ref{subsec:res-ceilings} shows that the same ports deliver about \NumHbmSixteenPerCURead~GB/s per PC when they stream bursts.
+
+\textbf{Correctness defects.} The CX loop iterates $2^{n-1}$ times while inserting two zero bits into the index, so half of its iterations address amplitudes beyond the statevector. On hardware, every CX case wrote outside the state buffers (detected with guard regions) although the in-range result was correct; the loop also does twice the necessary work and its 32-bit index would overflow at $n=30$. All host lowerings were exact (process fidelity 1 against the Qiskit unitary for every lowered gate and both qubit orders), so the ECR and $R_{zz}$ failures reported in the submitted manuscript came from native opcodes of an earlier kernel that is not part of this comparison.
+
+The submitted manuscript's 30-qubit timings (22{,}686~s for GHZ-30 on the FPGA and 15{,}445~s for single-thread NumPy) and its test-suite averages for Grover and VQE could not be reproduced with any available code and are not used in this revision; all numbers below are re-measured.
+
+\begin{table}
+\centering
+\caption{Audit of the v07 baseline (card measurements; timing fields as defined in Table~\ref{tab:timing}).}\label{tab:v07}
+\small
+\begin{tabular}{lp{7.6cm}}
+\toprule
+Property & Measured \\
+\midrule
+Effective HBM throughput & \NumVsevenBwMin to \NumVsevenBwMax~GB/s ($n\geq 12$), $<1\,\%$ of nominal \\
+$T_\mathrm{kernel}/T_\mathrm{e2e}$ & $\geq\NumVsevenKernelFracMin\,\%$ ($n=16$), $\geq\NumVsevenKernelFracMinTwenty\,\%$ ($n\geq 20$) \\
+GHZ-28 & $T_\mathrm{kernel}=\NumVsevenGhzTwentyEightKernel$~s, $T_\mathrm{e2e}=\NumVsevenGhzTwentyEightEtoE$~s; $n>28$ not supported (6~GB of bank buffers) \\
+CX & out-of-bounds HBM accesses on every case; $2\times$ the required iterations \\
+Host lowerings & exact for all lowered gates \\
+Functional suite (this work) & \NumSuitePassVseven/\NumSuiteTotalVseven{} cases at $1-F\leq\NumSuiteThrVseven$; all failures are unsupported gates \\
+Board power while running & \NumVsevenPowerMin to \NumVsevenPowerMax~W (idle with bitstream: \NumVsevenPowerIdle~W) \\
+\bottomrule
+\end{tabular}
+\end{table}

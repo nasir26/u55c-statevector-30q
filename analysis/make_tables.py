@@ -157,7 +157,7 @@ def builds():
     rows = []
     for b in ("sv_e8", "sv_e16", "sv_e16w", "sv_e16w512", "sv_e16w_m4"):
         B = f"{WS}/builds/{b}"
-        if not os.path.exists(f"{B}/sv.xclbin"):
+        if not os.path.exists(f"{B}/sv.xclbin.sha256"):   # build record; the bitstream is in the release
             continue
         cfg = open(f"{B}/link.cfg").read()
         ne = int(re.search(r"nk=sv_engine:(\d+)", cfg).group(1))

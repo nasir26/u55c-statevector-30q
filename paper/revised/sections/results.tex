@@ -1,0 +1,205 @@
+%==========================================================================
+\section{Results}\label{sec:results}
+
+\subsection{Memory-system ceilings}\label{subsec:res-ceilings}
+
+Table~\ref{tab:hbm} reports the streaming microbenchmark. One AXI port sustains \NumHbmSixteenPerCURead~GB/s when reading, \NumHbmSixteenPerCUWrite~GB/s when writing and \NumHbmSixteenPerCUCopy~GB/s for concurrent reading and writing of one pseudo-channel, for 256- and 512-bit ports alike; the vendor's validation kernel reaches \NumHbmVendorOneBank~GB/s on one bank. Bandwidth scales linearly with the number of active channels, whether the active channels are adjacent or spread over both HBM stacks, up to \NumHbmSixteenCopy~GB/s on 16 channels and \NumHbmThirtytwoCopy~GB/s on all 32 channels in copy mode (\NumHbmThirtytwoRead~GB/s read-only, limited there by the 256-bit ports of that build). The practical ceiling of the card is therefore \NumHbmCeilingPct\,\% of the nominal 460~GB/s, and one channel, not the switch or the controller, is the unit of bandwidth. PCIe moves \NumPcieHtoD~GB/s to the card and \NumPcieDtoH~GB/s back.
+
+Figure~\ref{fig:roofline} places the revised kernel on a roofline built from these measurements. Each MUX2 pair update costs 28 floating-point operations and 32~bytes per pass, so the arithmetic intensity of a pass grows with the number of gates it applies. The engines' compute peak (16 engines, four pair updates per cycle at \NumFlagClockMHz~MHz) is \NumFlagComputeRoof~GFLOP/s. GHZ, whose passes contain few gates, stays below the 16-channel bandwidth roof; QFT, RQC and VQE, whose passes contain many gates, run close to the compute peak.
+
+\begin{table}
+\centering
+\caption{Measured HBM bandwidth on the U55C (streaming microbenchmark, one AXI port per CU, 128~MiB per CU per repetition, median of 5). ``Per CU'' is one active CU; the last column uses all CUs of the build.}\label{tab:hbm}
+\small
+\begin{tabular}{llrrr}
+\toprule
+Build & Mode & 1 CU (GB/s) & CUs & All CUs (GB/s) \\
+\midrule
+\tabinput{../generated/tab_hbm.tex}
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{fig_roofline}
+\caption{Roofline of the revised kernel (build sv\_e16w\_m4, $n=26$ to 30, $T_\mathrm{kernel}$). Roofs are measured (bandwidth) or derived from the build (compute: 16 engines $\times$ 4 pair updates per cycle $\times$ 28~flop). Points: one per circuit and size; arithmetic intensity is 28/32 times the mean number of gates per pass.}\label{fig:roofline}
+\end{figure}
+
+\subsection{Correctness}\label{subsec:res-correct}
+
+\begin{table}
+\centering
+\caption{Gate support in four categories (R1.1): (a) native in the kernel, (b) native and verified by the functional suite, (c) supported through host lowering, (d) not supported or failing.}\label{tab:gates}
+\small
+\begin{tabular}{p{2.6cm}p{4.4cm}p{4.4cm}}
+\toprule
+Category & Baseline (v07) & Revised kernel \\
+\midrule
+\tabinput{../generated/tab_gate_support.tex}
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}
+\centering
+\caption{Functional suite: cases passing $1-F\leq 10^{-5}$ (revised kernel) and $1-F\leq 10^{-10}$ (complex128 baseline) against a complex128 Qiskit reference; every gate test starts from a generic entangled state.}\label{tab:suite}
+\small
+\begin{tabular}{lrr}
+\toprule
+Section & Baseline (v07) & Revised \\
+\midrule
+\tabinput{../generated/tab_suite.tex}
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:gates} replaces the gate table of the submitted manuscript. The baseline kernel implemented \NumVsevenOpcodes{} opcodes and relied on host lowering for every other gate; \NumVsevenUnsupportedTypes{} gate types of the suite were not supported. The revised kernel has one native primitive, and every gate type of the suite is executed through it. On the functional suite (Table~\ref{tab:suite}) the revised simulator passes all \NumSuiteTotal{} cases on every build tested, including GHZ and QFT checks at 24 to 30 qubits; the largest infidelity among the gate tests is $\NumSuiteWorstInfNew$, at the single-precision level. The baseline passes \NumSuitePassVseven{} of \NumSuiteTotalVseven{} cases at the tighter $10^{-10}$ threshold its complex128 arithmetic allows; all of its failures are unsupported gates.
+
+\textbf{Largest width on one card.} One card holds at most 30 qubits in complex64. The state of $2^{30}$ amplitudes occupies \NumMaxwStateGiB~GiB, stored as 32 single-channel slices of 256~MiB, each followed by the instruction region of its engine in the same buffer; a 31-qubit state (16~GiB) would fill every pseudo-channel completely and leave no room for the instructions. To verify the simulator at this limit, every circuit family was run at $n=24$ to 30 on one card and its full final state compared with a complex128 Qiskit Aer reference computed on the host (Table~\ref{tab:maxwidth}, Fig.~\ref{fig:maxwidth}). At $n=\NumMaxwN$ all \NumMaxwFamilies{} families agree with the reference to $1-F\leq\NumMaxwWorstInfThirty$; over all widths the largest infidelity is $\NumMaxwWorstInf$ and the largest amplitude error $\NumMaxwWorstAbs$, the level expected from single-precision arithmetic.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{fig_maxwidth}
+\caption{Largest widths on one card (build sv\_e16w\_m4, one run per point after a warm-up run): end-to-end time (left) and infidelity of the full final state against a complex128 Qiskit Aer reference (right). GHZ is exact to double-precision rounding at every width.}\label{fig:maxwidth}
+\end{figure}
+
+\begin{table}
+\centering
+\caption{Verification at the largest widths on one card (build sv\_e16w\_m4): number of slices $P$, passes and remaps of the compiled circuit, $T_\mathrm{e2e}$ of the verified run, and infidelity and largest amplitude error after global-phase alignment against a complex128 Qiskit Aer statevector (gate fusion off). RQC has depth 10.}\label{tab:maxwidth}
+\small
+\begin{tabular}{lrrrrrrr}
+\toprule
+Circuit & $n$ & $P$ & passes & remaps & $T_\mathrm{e2e}$ (s) & $1-F$ & max $|\Delta a|$ \\
+\midrule
+\tabinput{../generated/tab_maxwidth.tex}
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Design-space study}\label{subsec:res-ablation}
+
+\begin{table}
+\centering
+\caption{Ablations at $n=26$ (build \NumAblSource): $T_\mathrm{kernel}$ / $T_\mathrm{exch}$ in seconds and the number of passes in parentheses, median of 3.}\label{tab:ablation}
+\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{p{3.6cm}llll}
+\toprule
+Configuration & GHZ & QFT & RQC & VQE \\
+\midrule
+\tabinput{../generated/tab_ablation.tex}
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Engines and channels.} Kernel time falls in proportion to the number of active engines (Fig.~\ref{fig:cu}): from one to eight engines it drops by \NumCuScaleOneToEight$\times$ on average over the four families, close to the ideal factor of eight, because every engine streams its own channel and the engines never share data within a pass. Doubling the engines from 8 to 16 lowers it by another \NumBuildEightToSixteen$\times$ at 28 qubits (geometric mean, Fig.~\ref{fig:builds}). Giving each engine a second channel does not change the kernel time (ratio \NumBuildSixteenToWide) but doubles the capacity, from \NumBuildSixteenMaxN{} to \NumBuildWideMaxN{} qubits, because an engine streams one channel at a time.
+
+\textbf{Port width.} A 512-bit port does not raise the bandwidth of an engine while it streams one channel (Table~\ref{tab:hbm}); the 512-bit build used more logic and closed timing at a lower clock (Table~\ref{tab:builds}), so the main build keeps 256-bit ports.
+
+\textbf{Passes, tiles and fusion.} Table~\ref{tab:ablation} isolates the host-side and tile-level optimisations at $n=26$. Applying all gates that fit a tile in one pass instead of one gate per pass reduces the kernel time by \NumAblTilingSpeedup$\times$ (geometric mean over the families) and the number of passes by up to an order of magnitude; fusing consecutive single-qubit gates adds \NumAblFusionSpeedup$\times$. Larger tiles reduce the number of passes because more qubits fit the window. Allowing four instead of two high qubits per tile roughly halves the passes of QFT, RQC and VQE (builds sv\_e16w and sv\_e16w\_m4 in Fig.~\ref{fig:builds}).
+
+\textbf{Exchange and layout.} Executing remaps on the card instead of through host memory lowers the exchange time by \NumAblSwapSpeedup$\times$. The initial placement of qubits matters little because remapping adapts it; a modulo-style placement, which starts with the lowest logical qubits on the bank positions, even reduces the number of remaps for QFT and RQC.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{fig_builds}
+\caption{Kernel time of the five builds of Table~\ref{tab:builds} on the same circuits ($T_\mathrm{kernel}$, median of 3, $n=20$ to 30 as far as each build's capacity allows).}\label{fig:builds}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.48\textwidth]{fig_cu_scaling}
+\caption{Kernel time versus the number of active engine CUs (build sv\_e8, $n=24$, median of 3); dotted lines show ideal $1/P$ scaling.}\label{fig:cu}
+\end{figure}
+
+\subsection{Scaling to 30 qubits on one card}\label{subsec:res-scaling}
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{fig_breakdown}
+\caption{Median time per circuit on one card (build sv\_e16w\_m4), split into the fields of Table~\ref{tab:timing}. At $n=30$ the state occupies 32 single-channel slices processed by 16 engines.}\label{fig:breakdown}
+\end{figure}
+
+Figure~\ref{fig:breakdown} shows the full time breakdown from 24 to 30 qubits on one card. GHZ-30 completes in \NumFlagGhzThirtyEtoE~s end to end (kernel \NumFlagGhzThirtyKernel~s), VQE-30 in \NumFlagVqeThirtyEtoE~s, RQC-30 in \NumFlagRqcThirtyEtoE~s and QFT-30 in \NumFlagQftThirtyEtoE~s. The kernel dominates for QFT and RQC; exchange accounts for \NumFlagQftThirtyExch~s of QFT-30 and \NumFlagGhzThirtyExch~s of GHZ-30 and is the largest remaining overhead; at 30 qubits the device-to-host transfer of the final state also becomes visible. Compared with the baseline on identical circuits, $T_\mathrm{e2e}$ at $n=24$ is \NumSpeedupVsevenGhzTwentyFour$\times$ lower for GHZ, \NumSpeedupVsevenVqeTwentyFour$\times$ for VQE, \NumSpeedupVsevenRqcTwentyFour$\times$ for RQC and \NumSpeedupVsevenQftTwentyFour$\times$ for QFT, and \NumSpeedupVsevenGhzTwentyEight$\times$ for GHZ-28. The effective HBM sweep rate at $n=30$, counting every pass as a full read and write of the state, is \NumFlagGhzThirtySweepBw~GB/s for GHZ and \NumFlagRqcThirtySweepBw to \NumFlagQftThirtySweepBw~GB/s for the circuits whose passes are compute-bound.
+
+\subsection{Cross-platform comparison}\label{subsec:res-xplat}
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{fig_xplat}
+\caption{Median $T_\mathrm{e2e}$ per circuit on every platform (bands: inter-quartile range). FPGA: build sv\_e16w\_m4 on one U55C. CPU: dual EPYC 7742, 128 threads. Qiskit Aer and the GPU include the return of the state to host memory in their run time (Section~\ref{subsec:timing}).}\label{fig:xplat}
+\end{figure}
+
+\begin{table}
+\centering
+\caption{Median time per circuit in seconds at $n=24$, 28 and 30. FPGA: $T_\mathrm{kernel}$ and $T_\mathrm{e2e}$ of build sv\_e16w\_m4; CPU (128 threads) and GPU: $T_\mathrm{e2e}$. The ratio column divides the fastest of the six CPU configurations measured (Aer fp32 and fp64 with and without fusion, qsim, Qulacs) by the FPGA $T_\mathrm{e2e}$; values above 1 mean that the FPGA is faster. GPU: Qiskit Aer with cuStateVec and CUDA-Q on an NVIDIA A100 in a different host, $T_\mathrm{e2e}$ (Section~\ref{subsec:platforms}); CUDA-Q was measured for GHZ and QFT only.}\label{tab:xplat}
+\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrrrrrrrrr}
+\toprule
+ & & \multicolumn{2}{c}{FPGA} & \multicolumn{4}{c}{CPU, 128 threads} & best CPU & \multicolumn{3}{c}{GPU, A100} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-8}\cmidrule(lr){10-12}
+ & & & & \multicolumn{2}{c}{Aer} & qsim & Qulacs & / FPGA & \multicolumn{2}{c}{Aer} & CUDA-Q \\
+Circuit & $n$ & kernel & e2e & fp32 & fp64 & fp32 & fp64 & e2e & fp32 & fp64 & fp32 \\
+\midrule
+\tabinput{../generated/tab_xplat.tex}
+\bottomrule
+\end{tabular}
+\end{table}
+
+Figure~\ref{fig:xplat} and Table~\ref{tab:xplat} compare the revised simulator with three CPU simulators on a dual-socket server whose memory sustains \NumCpuTriad~GB/s in the STREAM triad, and with a GPU. The comparison is end to end: the FPGA time includes compilation of the circuit on the host, the transfer of the instructions, all passes and remaps, the return of the final state to host memory and the sampling of 1{,}024 shots; the CPU time includes the simulator's own transpilation and leaves the final state in host memory without sampling. At 30 qubits the state return and sampling add about \NumFlagDtwohGhzThirty~s and \NumFlagPostGhzThirty~s to the FPGA time of GHZ, so the comparison is conservative for the FPGA.
+
+For small and medium circuits the FPGA is slower than the fastest CPU simulator. A circuit of four qubits takes \NumXplatFpgaSmallMs~ms on the card (median over the families), almost all of it fixed host-side and launch overhead, against \NumXplatCpuSmallUs~$\mu$s for the fastest CPU simulator; at 24 qubits the best CPU configuration needs \NumXplatRatioTwentyFourMin to \NumXplatRatioTwentyFourMax{} of the FPGA time. From \NumXplatGhzCrossN{} qubits upwards GHZ, whose passes carry few gates and are bound by HBM bandwidth, runs faster on the FPGA than on any CPU configuration, by a factor of \NumXplatRatioGhzThirty{} at 30 qubits. For QFT, RQC and VQE the 128-core server remains faster at every size: the best CPU configuration needs \NumXplatRatioQftThirty, \NumXplatRatioRqcThirty{} and \NumXplatRatioVqeThirty{} of the FPGA time at 30 qubits. These circuits have many gates per pass and are bound by the arithmetic of the 16 engines (Fig.~\ref{fig:roofline}). The CPU result depends strongly on the simulator and its settings: no single CPU configuration is fastest at every size, and at 30 qubits the fastest is \NumXplatBestCpuGhzThirty{} for GHZ, \NumXplatBestCpuQftThirty{} for QFT, \NumXplatBestCpuRqcThirty{} for RQC and \NumXplatBestCpuVqeThirty{} for VQE. Against Aer in single precision with fusion, the configuration closest to the FPGA's arithmetic, the time ratio at 30 qubits is \NumXplatAerRatioGhzThirty{} for GHZ, \NumXplatAerRatioQftThirty{} for QFT, \NumXplatAerRatioRqcThirty{} for RQC and \NumXplatAerRatioVqeThirty{} for VQE.
+
+The GPU reference is an NVIDIA A100 (80~GiB HBM2e) of a cluster node, a different host from the FPGA and CPU
+measurements (Section~\ref{subsec:platforms}), running Qiskit Aer with cuStateVec on all four families and CUDA-Q on GHZ and QFT, with the same circuits and
+seeds. The A100 holds up to \NumGpuMaxN~qubits with Aer and \NumGpuCudaqSingleMaxN~qubits with CUDA-Q in single precision,
+beyond the 30 qubits of one U55C. At 30 qubits the Aer times are almost the same for every family
+(\NumXplatGpuTGhzThirty~s for GHZ, \NumXplatGpuTQftThirty~s for QFT): Aer reports \NumGpuAerTimeThirtyMin~to
+\NumGpuAerTimeThirtyMax~s of simulation, and the rest is the return of the 8~GiB state to host memory, which the FPGA time
+also contains (\NumFlagDtwohGhzThirty~s for GHZ). Against the fastest GPU configuration of each family at 30 qubits, the GPU
+is faster than the card by a factor of \NumXplatBestGpuRatioQftThirty~for QFT, \NumXplatBestGpuRatioRqcThirty~for RQC and
+\NumXplatBestGpuRatioVqeThirty~for VQE. For GHZ, whose passes are bound by HBM bandwidth, the two are about equal: the
+fastest GPU configuration (\NumXplatBestGpuNameGhzThirty) needs \NumXplatBestGpuTGhzThirty~s against \NumFlagGhzThirtyEtoE~s on
+the card, a time ratio of \NumXplatBestGpuRatioGhzThirty. Without cuStateVec Aer is slower by a factor of
+\NumGpuCusvGainGhzThirty~(GHZ) and \NumGpuCusvGainQftThirty~(QFT). In double precision Aer needs \NumGpuAerDoubleTGhzThirty~s
+for GHZ and \NumGpuAerDoubleTQftThirty~s for QFT at 30 qubits, close to its single-precision times because the state return
+dominates; its 32-qubit double-precision runs returned no state. The GPU used Qiskit Aer 0.15.1 and CUDA-Q 0.12.0, the CPU
+Aer 0.17.2 (Table~\ref{tab:hwconfig}).
+
+\subsection{Energy}\label{subsec:res-energy}
+
+\begin{table}
+\centering
+\caption{Measured card power and energy per circuit at the device boundary (sustained loops of at least \NumEnergyLoopS~s, revised kernel sv\_e16w\_m4; the baseline where it ran). $E = \bar P\,t$; EDP $= E\,t$.}\label{tab:energy}
+\small
+\begin{tabular}{lrrrrrrr}
+\toprule
+ & & \multicolumn{4}{c}{Revised kernel} & \multicolumn{2}{c}{Baseline (v07)} \\
+\cmidrule(lr){3-6}\cmidrule(lr){7-8}
+Circuit & $n$ & $t$ (s) & $\bar P$ (W) & $E$ (J) & EDP (J\,s) & $E$ (J) & ratio \\
+\midrule
+\tabinput{../generated/tab_energy.tex}
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:energy} reports the measured board power and energy. The card draws \NumFlagPowerMin to \NumFlagPowerMax~W while the revised kernel runs, against \NumVsevenPowerMin to \NumVsevenPowerMax~W for the baseline, whose engines are mostly waiting for memory. Because the run time falls by far more than the power rises, the energy per circuit is \NumEnergyVsevenRatioMin to \NumEnergyVsevenRatioMax{} times lower than with the baseline. At 30 qubits a GHZ circuit costs \NumFlagEnergyGhzThirty~J and a QFT \NumFlagEnergyQftThirty~J at the device boundary.
+
+The analytical power model of the submitted manuscript predicts \NumModelPowerW~W for the baseline. Against the measured runs the model overestimates power by \NumModelPowerErrMin to \NumModelPowerErrMax\,\% and energy by \NumModelEnergyErrMin to \NumModelEnergyErrMax\,\%; the energy error is larger because the model's cycle estimate also exceeds the measured kernel time. We therefore no longer use the model and report only measured values.
+
+The CPU server's package power could not be read (Section~\ref{subsec:energy-method}), so no CPU energy is reported. The A100 draws \NumGpuPowerMin~to \NumGpuPowerMax~W of board power during the 30 qubit runs,
+from at least \NumGpuPowerReadingsMin~readings per run; its energy per circuit at 30 qubits is \NumGpuEnergyGhzThirty~J for
+GHZ and \NumGpuEnergyQftThirty~J for QFT, against \NumFlagEnergyGhzThirty~J and \NumFlagEnergyQftThirty~J for the FPGA.
+The GPU values are integrated over single runs rather than sustained loops, which the 100~ms sampling of the GPU sensor
+allows at this length.
+
+\subsection{Latency distribution}\label{subsec:res-jitter}
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{fig_jitter}
+\caption{Distribution of the time per run over 2{,}000 runs of GHZ-16 and RQC-16 (after 20 warm-up runs), end to end (top) and kernel or simulator run only (bottom).}\label{fig:jitter}
+\end{figure}
+
+For small circuits run many times, as in variational loops, the spread of the run time matters as much as its median. Over 2{,}000 runs at 12 and 16 qubits (Fig.~\ref{fig:jitter}) the kernel time of the revised simulator varies little: its 99th percentile exceeds the median by \NumJitterKSvSpreadMin to \NumJitterKSvSpreadMax\,\%, similar to the baseline kernel (\NumJitterKVsevenSpreadMin to \NumJitterKVsevenSpreadMax\,\%) and tighter than the simulator run of Qiskit Aer on 8 CPU threads (\NumJitterKAerSpreadMin to \NumJitterKAerSpreadMax\,\%) and Qulacs (\NumJitterKQulacsSpreadMin to \NumJitterKQulacsSpreadMax\,\%). End to end the picture reverses: the FPGA path varies by \NumJitterSvSpreadMin to \NumJitterSvSpreadMax\,\% over all sizes, against \NumJitterAerSpreadMin to \NumJitterAerSpreadMax\,\% for Aer, because its time is dominated by host-side compilation, buffer synchronisation and kernel launches. The hardware is deterministic, but an application sees that only if its host path is equally predictable. No latency
+distribution was measured on the GPU.

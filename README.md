@@ -25,7 +25,8 @@ unit per HBM pseudo-channel, with a device-side exchange kernel (`sv_swap`) for 
 | `results/processed/` | tables derived from the raw data |
 | `analysis/` | `load.py` (all runs in one table), `make_tables.py`, `make_figures.py` |
 | `paper/generated/` | LaTeX macros and tables generated from the raw data |
-| `paper/manuscript/` | the manuscript (single LaTeX source with figures, and the compiled PDF) |
+| `paper/revised/` | manuscript sources (`main.tex`, `sections/`, `refs.tex`), built from `paper/generated/` and the generated figures |
+| `paper/manuscript/` | the submitted manuscript (single LaTeX source with figures, and the compiled PDF) |
 | `docs/` | architecture, code map, baseline audit, provenance |
 
 Bitstreams (`sv.xclbin`, about 65 to 80 MB each) are not stored in this repository. Rebuild them with the commands
@@ -64,7 +65,14 @@ python tests/test_runtime_mock.py        # host runtime on a mocked XRT, one, tw
 ```
 
 On the measurement host, all scripts expect to be run from the repository root after `source env.sh`, which keeps environments and caches
-inside the repository (`envs/`, `cache/`, `tmp/`).
+inside the repository (`envs/`, `cache/`, `tmp/`). The two environments are recorded package by package in
+`setup/env_fpga.yml` (Python 3.8, Qiskit, pyxrt via XRT) and `setup/env_cpu.yml` (Python 3.11, analysis, CPU
+baselines Qiskit Aer, qsim and Qulacs); `setup/setup_envs.sh` creates them with micromamba.
+
+```
+bash setup/setup_envs.sh            # envs/fpga and envs/cpu from the recorded specifications
+scripts/fetch_bitstreams.sh         # bitstreams of the release, placed and checked (see below)
+```
 
 ```
 source env.sh
@@ -75,7 +83,22 @@ envs/fpga/bin/python tests/run_suite_sv.py <BDF> builds/sv_e16w_m4/sv.xclbin 16 
 
 `<BDF>` is the card's PCIe address as shown by `xbutil examine`.
 
+## Bitstreams
+
+Every bitstream used for a measurement is attached to the release
+[bitstreams-v1](https://github.com/nasir26/u55c-statevector-30q/releases/tag/bitstreams-v1): the five statevector
+builds (`sv_e16w_m4` is the flagship), the two HBM bandwidth builds (`hbm1_*`), the v07 baseline kernel
+(`opt_kernel/`), and the superseded `sv_e8_v1_flatbug` behind the superseded records. They are not in git because of
+their size. `scripts/fetch_bitstreams.sh` puts each at the path the scripts use and checks it against
+`bitstreams.sha256`; the same hashes were recorded at measurement time (`builds/*/sv.xclbin.sha256`,
+`results/raw/env/xclbin_sha256.txt`). They need the platform `xilinx_u55c_gen3x16_xdma_3_202210_1` and XRT on the host.
+The HBM stream microbenchmark builds (`hbm_stream*`) were not kept; `builds/hbm_stream/build.sh` rebuilds them.
+
 ## Rebuilding the bitstreams
+
+A rebuild with the commands below gives a functionally equal design, not a bit identical file (placement and
+routing depend on the tool run).
+
 
 ```
 v++ -c -t hw --platform xilinx_u55c_gen3x16_xdma_3_202210_1 -k sv_engine --hls.clock 300000000:sv_engine -o sv_engine.xo kernels/sv/sv_engine.cpp
@@ -118,7 +141,13 @@ bench/gpu/campaign_a100.sh                              # GPU baselines on the A
 bench/gpu/campaign_a100_r2.sh; bench/gpu/campaign_a100_r3.sh   # A100 reruns of cancelled and repeated configurations
 PARK=<bitstream> BDF=<BDF> bench/fpga/run_maxwidth.sh   # n = 24 to 30 on one card, checked against CPU references
 envs/cpu/bin/python analysis/make_tables.py && envs/cpu/bin/python analysis/make_figures.py
+envs/cpu/bin/python analysis/fig_architecture.py
+cd paper/revised && latexmk -pdf main.tex                # the manuscript from the generated numbers and figures
 ```
+
+From a fresh clone, without any card, the last three steps regenerate every table, macro and figure from
+`results/raw/` and rebuild the manuscript: the tables come out identical to the committed ones, and the text of the
+rebuilt PDF is identical to the submitted `paper/manuscript/manuscript.pdf` (the flattened source sent to the journal).
 
 FPGA runs pace themselves thermally: each repetition starts below 80 C, and a run aborts at 90 C (FPGA) or 85 C (HBM).
 The analysis scripts read only `results/raw/`.

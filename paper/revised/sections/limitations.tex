@@ -1,0 +1,14 @@
+%==========================================================================
+\section{Limitations}\label{sec:limitations}
+
+\textbf{Engine compute and channel concurrency.} Each engine performs four amplitude-pair updates per cycle. A pass with one gate is limited by the bandwidth of the engine's pseudo-channel, a pass with several gates by engine arithmetic; doubling the arithmetic per engine would exceed the DSP budget at 16 engines (Table~\ref{tab:builds}). With 16 engines at most 16 channels stream at the same time, so the simulator is bounded by about half of the measured 32-channel ceiling; engines that stream two channels concurrently, or 32 engines with a smaller datapath, are the next step.
+
+\textbf{Exchange.} Gates on bank qubits require remaps that move half of every slice. They run on the card, but at a lower rate than the engines, and the greedy remap policy is not optimal; for QFT and deep random circuits exchange is a visible share of $T_\mathrm{e2e}$ (Fig.~\ref{fig:breakdown}).
+
+\textbf{Precision.} The engine computes in complex64 with single-precision gate matrices. All functional tests pass at $1-F\leq 10^{-5}$, but long sequences of decomposed gates accumulate a measurable norm drift (observed when wide multi-controlled gates are decomposed on the host, which the compiler therefore avoids); a complex128 engine would halve the amplitudes per HBM word.
+
+\textbf{Capacity.} One card holds at most 30 qubits in complex64: a 31-qubit state (16~GiB) would fill all 32 pseudo-channels and leave no room for the instruction regions that share the buffers. Keeping the instructions in on-chip memory would allow a 31-qubit complex64 state that fills all of HBM; we did not build this variant. Wider states require several cards.
+
+\textbf{Platform constraints.} The HBM subsystem accepts \NumHbmPortConnections{} AXI connections and a 32-port single kernel could not be routed, which fixed the compute-unit structure. Device-to-device copies are not available on the shell used, so all exchanges within a card run through the swap compute units. This paper is limited to one card; distributing the statevector over several cards is the subject of separate work~\cite{ali2026multifpga}. The cards are passively cooled; long 30-qubit runs approach the thermal limits and were paced.
+
+\textbf{Measurement scope.} The CPU package energy could not be measured (root-only counters), so energy is compared at the device boundary only. The GPU was measured on a different host from the FPGA and CPU runs, with a different Qiskit Aer version, and only one GPU model was measured; its widest runs ended at the memory available to the job, and some GPU jobs were cancelled by the cluster, so CUDA-Q covers GHZ and QFT only. CPU simulators other than Qiskit Aer, qsim and Qulacs (for example QuEST and Intel-QS) were not measured.

@@ -1,0 +1,523 @@
+Option Map File Used: '/tools/Xilinx/Vitis/2023.2/data/vitis/vpp/optMap.xml'
+
+****** v++ v2023.2 (64-bit)
+  **** SW Build 4026344 on 2023-10-11-15:42:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+INFO: [v++ 60-1306] Additional information associated with this v++ compile can be found at:
+	Reports: <WS>/builds/hbm1_c32w256/reports/hbm1
+	Log files: <WS>/builds/hbm1_c32w256/logs/hbm1
+Running Dispatch Server on port: 40213
+INFO: [v++ 60-1548] Creating build summary session with primary output <WS>/builds/hbm1_c32w256/hbm1.xo.compile_summary, at Tue Oct  6 16:09:35 2026
+INFO: [v++ 60-1315] Creating rulecheck session with output '<WS>/builds/hbm1_c32w256/reports/hbm1/v++_compile_hbm1_guidance.html', at Tue Oct  6 16:09:35 2026
+INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u55c_gen3x16_xdma_3_202210_1/xilinx_u55c_gen3x16_xdma_3_202210_1.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u55c_gen3x16_xdma_3_202210_1/hw/hw.xsa'
+INFO: [v++ 74-78] Compiler Version string: 2023.2
+INFO: [v++ 60-585] Compiling for hardware target
+INFO: [v++ 60-423]   Target device: xilinx_u55c_gen3x16_xdma_3_202210_1
+INFO: [v++ 60-242] Creating kernel: 'hbm1'
+INFO: [v++ 60-1616] Creating a HLS clock using hls.clock option: 300 MHz
+
+===>The following messages were generated while  performing high-level synthesis for kernel: hbm1 Log file: <WS>/builds/hbm1_c32w256/_xc/hbm1/hbm1/vitis_hls.log :
+INFO: [v++ 204-61] Pipelining loop 'RD_VITIS_LOOP_46_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 75, loop 'RD_VITIS_LOOP_46_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_16_1_VITIS_LOOP_17_2'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 75, loop 'VITIS_LOOP_16_1_VITIS_LOOP_17_2'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_24_1_VITIS_LOOP_25_2'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 72, loop 'VITIS_LOOP_24_1_VITIS_LOOP_25_2'
+INFO: [v++ 204-61] Pipelining loop 'WR_VITIS_LOOP_54_2'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 72, loop 'WR_VITIS_LOOP_54_2'
+INFO: [v++ 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [v++ 200-789] **** Estimated Fmax: 411.00 MHz
+INFO: [v++ 60-594] Finished kernel compilation
+INFO: [v++ 60-244] Generating system estimate report...
+INFO: [v++ 60-1092] Generated system estimate report: <WS>/builds/hbm1_c32w256/reports/hbm1/system_estimate_hbm1.xtxt
+INFO: [v++ 60-586] Created <WS>/builds/hbm1_c32w256/hbm1.xo
+INFO: [v++ 60-2343] Use the vitis_analyzer tool to visualize and navigate the relevant reports. Run the following command. 
+    vitis_analyzer <WS>/builds/hbm1_c32w256/hbm1.xo.compile_summary 
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 44s
+INFO: [v++ 60-1653] Closing dispatch client.
+WARNING: [v++ 60-1600] The option 'jobs' was used directly on the command line, where its usage is deprecated. To ensure input line works for supported operating systems or shells, v++ supports specification for some options in a configuration file. As an alternative, please use options 'hls.jobs', 'vivado.synth.jobs' in a configuration file. 
+Option Map File Used: '/tools/Xilinx/Vitis/2023.2/data/vitis/vpp/optMap.xml'
+
+****** v++ v2023.2 (64-bit)
+  **** SW Build 4026344 on 2023-10-11-15:42:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+INFO: [v++ 60-1306] Additional information associated with this v++ link can be found at:
+	Reports: <WS>/builds/hbm1_c32w256/reports/link
+	Log files: <WS>/builds/hbm1_c32w256/logs/link
+Running Dispatch Server on port: 40969
+INFO: [v++ 60-1548] Creating build summary session with primary output <WS>/builds/hbm1_c32w256/hbm1.xclbin.link_summary, at Tue Oct  6 16:10:21 2026
+INFO: [v++ 60-1315] Creating rulecheck session with output '<WS>/builds/hbm1_c32w256/reports/link/v++_link_hbm1_guidance.html', at Tue Oct  6 16:10:21 2026
+INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u55c_gen3x16_xdma_3_202210_1/xilinx_u55c_gen3x16_xdma_3_202210_1.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u55c_gen3x16_xdma_3_202210_1/hw/hw.xsa'
+INFO: [v++ 74-78] Compiler Version string: 2023.2
+INFO: [v++ 60-629] Linking for hardware target
+INFO: [v++ 60-423]   Target device: xilinx_u55c_gen3x16_xdma_3_202210_1
+WARNING: [v++ 60-889] User-specified kernel frequency for ID 0 is the same as the default frequency 300 MHz, so it will be ignored
+INFO: [v++ 60-1332] Run 'run_link' status: Not started
+INFO: [v++ 60-1443] [16:10:25] Run run_link: Step system_link: Started
+INFO: [v++ 60-1453] Command Line: system_link --xo <WS>/builds/hbm1_c32w256/hbm1.xo --config <WS>/builds/hbm1_c32w256/_x/link/int/syslinkConfig.ini --xpfm /opt/xilinx/platforms/xilinx_u55c_gen3x16_xdma_3_202210_1/xilinx_u55c_gen3x16_xdma_3_202210_1.xpfm --target hw --output_dir <WS>/builds/hbm1_c32w256/_x/link/int --temp_dir <WS>/builds/hbm1_c32w256/_x/link/sys_link
+INFO: [v++ 60-1454] Run Directory: <WS>/builds/hbm1_c32w256/_x/link/run_link
+INFO: [SYSTEM_LINK 82-70] Extracting xo v3 file <WS>/builds/hbm1_c32w256/hbm1.xo
+INFO: [SYSTEM_LINK 82-53] Creating IP database <WS>/builds/hbm1_c32w256/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-38] [16:10:27] build_xd_ip_db started: /tools/Xilinx/Vitis/2023.2/bin/build_xd_ip_db -ip_search 0  -sds-pf <WS>/builds/hbm1_c32w256/_x/link/sys_link/hw.hpfm -clkid 0 -ip <WS>/builds/hbm1_c32w256/_x/link/sys_link/iprepo/xilinx_com_hls_hbm1_1_0,hbm1 -o <WS>/builds/hbm1_c32w256/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-37] [16:10:31] build_xd_ip_db finished successfully
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 458.445 ; gain = 0.000 ; free physical = 250079 ; free virtual = 785768
+INFO: [SYSTEM_LINK 82-51] Create system connectivity graph
+INFO: [SYSTEM_LINK 82-102] Applying explicit connections to the system connectivity graph: <WS>/builds/hbm1_c32w256/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [SYSTEM_LINK 82-38] [16:10:31] cfgen started: /tools/Xilinx/Vitis/2023.2/bin/cfgen  -nk hbm1:32 -slr hbm1_1:SLR0 -slr hbm1_2:SLR0 -slr hbm1_3:SLR0 -slr hbm1_4:SLR0 -slr hbm1_5:SLR0 -slr hbm1_6:SLR0 -slr hbm1_7:SLR0 -slr hbm1_8:SLR0 -slr hbm1_9:SLR0 -slr hbm1_10:SLR0 -slr hbm1_11:SLR0 -slr hbm1_12:SLR1 -slr hbm1_13:SLR1 -slr hbm1_14:SLR1 -slr hbm1_15:SLR1 -slr hbm1_16:SLR1 -slr hbm1_17:SLR1 -slr hbm1_18:SLR1 -slr hbm1_19:SLR1 -slr hbm1_20:SLR1 -slr hbm1_21:SLR1 -slr hbm1_22:SLR1 -slr hbm1_23:SLR2 -slr hbm1_24:SLR2 -slr hbm1_25:SLR2 -slr hbm1_26:SLR2 -slr hbm1_27:SLR2 -slr hbm1_28:SLR2 -slr hbm1_29:SLR2 -slr hbm1_30:SLR2 -slr hbm1_31:SLR2 -slr hbm1_32:SLR2 -sp hbm1_1.p:HBM[0] -sp hbm1_2.p:HBM[1] -sp hbm1_3.p:HBM[2] -sp hbm1_4.p:HBM[3] -sp hbm1_5.p:HBM[4] -sp hbm1_6.p:HBM[5] -sp hbm1_7.p:HBM[6] -sp hbm1_8.p:HBM[7] -sp hbm1_9.p:HBM[8] -sp hbm1_10.p:HBM[9] -sp hbm1_11.p:HBM[10] -sp hbm1_12.p:HBM[11] -sp hbm1_13.p:HBM[12] -sp hbm1_14.p:HBM[13] -sp hbm1_15.p:HBM[14] -sp hbm1_16.p:HBM[15] -sp hbm1_17.p:HBM[16] -sp hbm1_18.p:HBM[17] -sp hbm1_19.p:HBM[18] -sp hbm1_20.p:HBM[19] -sp hbm1_21.p:HBM[20] -sp hbm1_22.p:HBM[21] -sp hbm1_23.p:HBM[22] -sp hbm1_24.p:HBM[23] -sp hbm1_25.p:HBM[24] -sp hbm1_26.p:HBM[25] -sp hbm1_27.p:HBM[26] -sp hbm1_28.p:HBM[27] -sp hbm1_29.p:HBM[28] -sp hbm1_30.p:HBM[29] -sp hbm1_31.p:HBM[30] -sp hbm1_32.p:HBM[31] -dpa_mem_offload false -dmclkid 0 -r <WS>/builds/hbm1_c32w256/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o <WS>/builds/hbm1_c32w256/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [CFGEN 83-0] Kernel Specs: 
+INFO: [CFGEN 83-0]   kernel: hbm1, num: 32  {hbm1_1 hbm1_2 hbm1_3 hbm1_4 hbm1_5 hbm1_6 hbm1_7 hbm1_8 hbm1_9 hbm1_10 hbm1_11 hbm1_12 hbm1_13 hbm1_14 hbm1_15 hbm1_16 hbm1_17 hbm1_18 hbm1_19 hbm1_20 hbm1_21 hbm1_22 hbm1_23 hbm1_24 hbm1_25 hbm1_26 hbm1_27 hbm1_28 hbm1_29 hbm1_30 hbm1_31 hbm1_32}
+INFO: [CFGEN 83-0] Port Specs: 
+INFO: [CFGEN 83-0]   kernel: hbm1_1, k_port: p, sptag: HBM[0]
+INFO: [CFGEN 83-0]   kernel: hbm1_2, k_port: p, sptag: HBM[1]
+INFO: [CFGEN 83-0]   kernel: hbm1_3, k_port: p, sptag: HBM[2]
+INFO: [CFGEN 83-0]   kernel: hbm1_4, k_port: p, sptag: HBM[3]
+INFO: [CFGEN 83-0]   kernel: hbm1_5, k_port: p, sptag: HBM[4]
+INFO: [CFGEN 83-0]   kernel: hbm1_6, k_port: p, sptag: HBM[5]
+INFO: [CFGEN 83-0]   kernel: hbm1_7, k_port: p, sptag: HBM[6]
+INFO: [CFGEN 83-0]   kernel: hbm1_8, k_port: p, sptag: HBM[7]
+INFO: [CFGEN 83-0]   kernel: hbm1_9, k_port: p, sptag: HBM[8]
+INFO: [CFGEN 83-0]   kernel: hbm1_10, k_port: p, sptag: HBM[9]
+INFO: [CFGEN 83-0]   kernel: hbm1_11, k_port: p, sptag: HBM[10]
+INFO: [CFGEN 83-0]   kernel: hbm1_12, k_port: p, sptag: HBM[11]
+INFO: [CFGEN 83-0]   kernel: hbm1_13, k_port: p, sptag: HBM[12]
+INFO: [CFGEN 83-0]   kernel: hbm1_14, k_port: p, sptag: HBM[13]
+INFO: [CFGEN 83-0]   kernel: hbm1_15, k_port: p, sptag: HBM[14]
+INFO: [CFGEN 83-0]   kernel: hbm1_16, k_port: p, sptag: HBM[15]
+INFO: [CFGEN 83-0]   kernel: hbm1_17, k_port: p, sptag: HBM[16]
+INFO: [CFGEN 83-0]   kernel: hbm1_18, k_port: p, sptag: HBM[17]
+INFO: [CFGEN 83-0]   kernel: hbm1_19, k_port: p, sptag: HBM[18]
+INFO: [CFGEN 83-0]   kernel: hbm1_20, k_port: p, sptag: HBM[19]
+INFO: [CFGEN 83-0]   kernel: hbm1_21, k_port: p, sptag: HBM[20]
+INFO: [CFGEN 83-0]   kernel: hbm1_22, k_port: p, sptag: HBM[21]
+INFO: [CFGEN 83-0]   kernel: hbm1_23, k_port: p, sptag: HBM[22]
+INFO: [CFGEN 83-0]   kernel: hbm1_24, k_port: p, sptag: HBM[23]
+INFO: [CFGEN 83-0]   kernel: hbm1_25, k_port: p, sptag: HBM[24]
+INFO: [CFGEN 83-0]   kernel: hbm1_26, k_port: p, sptag: HBM[25]
+INFO: [CFGEN 83-0]   kernel: hbm1_27, k_port: p, sptag: HBM[26]
+INFO: [CFGEN 83-0]   kernel: hbm1_28, k_port: p, sptag: HBM[27]
+INFO: [CFGEN 83-0]   kernel: hbm1_29, k_port: p, sptag: HBM[28]
+INFO: [CFGEN 83-0]   kernel: hbm1_30, k_port: p, sptag: HBM[29]
+INFO: [CFGEN 83-0]   kernel: hbm1_31, k_port: p, sptag: HBM[30]
+INFO: [CFGEN 83-0]   kernel: hbm1_32, k_port: p, sptag: HBM[31]
+INFO: [CFGEN 83-0] SLR Specs: 
+INFO: [CFGEN 83-0]   instance: hbm1_1, SLR: SLR0
+INFO: [CFGEN 83-0]   instance: hbm1_10, SLR: SLR0
+INFO: [CFGEN 83-0]   instance: hbm1_11, SLR: SLR0
+INFO: [CFGEN 83-0]   instance: hbm1_12, SLR: SLR1
+INFO: [CFGEN 83-0]   instance: hbm1_13, SLR: SLR1
+INFO: [CFGEN 83-0]   instance: hbm1_14, SLR: SLR1
+INFO: [CFGEN 83-0]   instance: hbm1_15, SLR: SLR1
+INFO: [CFGEN 83-0]   instance: hbm1_16, SLR: SLR1
+INFO: [CFGEN 83-0]   instance: hbm1_17, SLR: SLR1
+INFO: [CFGEN 83-0]   instance: hbm1_18, SLR: SLR1
+INFO: [CFGEN 83-0]   instance: hbm1_19, SLR: SLR1
+INFO: [CFGEN 83-0]   instance: hbm1_2, SLR: SLR0
+INFO: [CFGEN 83-0]   instance: hbm1_20, SLR: SLR1
+INFO: [CFGEN 83-0]   instance: hbm1_21, SLR: SLR1
+INFO: [CFGEN 83-0]   instance: hbm1_22, SLR: SLR1
+INFO: [CFGEN 83-0]   instance: hbm1_23, SLR: SLR2
+INFO: [CFGEN 83-0]   instance: hbm1_24, SLR: SLR2
+INFO: [CFGEN 83-0]   instance: hbm1_25, SLR: SLR2
+INFO: [CFGEN 83-0]   instance: hbm1_26, SLR: SLR2
+INFO: [CFGEN 83-0]   instance: hbm1_27, SLR: SLR2
+INFO: [CFGEN 83-0]   instance: hbm1_28, SLR: SLR2
+INFO: [CFGEN 83-0]   instance: hbm1_29, SLR: SLR2
+INFO: [CFGEN 83-0]   instance: hbm1_3, SLR: SLR0
+INFO: [CFGEN 83-0]   instance: hbm1_30, SLR: SLR2
+INFO: [CFGEN 83-0]   instance: hbm1_31, SLR: SLR2
+INFO: [CFGEN 83-0]   instance: hbm1_32, SLR: SLR2
+INFO: [CFGEN 83-0]   instance: hbm1_4, SLR: SLR0
+INFO: [CFGEN 83-0]   instance: hbm1_5, SLR: SLR0
+INFO: [CFGEN 83-0]   instance: hbm1_6, SLR: SLR0
+INFO: [CFGEN 83-0]   instance: hbm1_7, SLR: SLR0
+INFO: [CFGEN 83-0]   instance: hbm1_8, SLR: SLR0
+INFO: [CFGEN 83-0]   instance: hbm1_9, SLR: SLR0
+INFO: [SYSTEM_LINK 82-37] [16:10:41] cfgen finished successfully
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 458.445 ; gain = 0.000 ; free physical = 232576 ; free virtual = 768326
+INFO: [SYSTEM_LINK 82-52] Create top-level block diagram
+INFO: [SYSTEM_LINK 82-38] [16:10:41] cf2bd started: /tools/Xilinx/Vitis/2023.2/bin/cf2bd  --linux --trace_buffer 1024 --input_file <WS>/builds/hbm1_c32w256/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml --ip_db <WS>/builds/hbm1_c32w256/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml --cf_name dr --working_dir <WS>/builds/hbm1_c32w256/_x/link/sys_link/_sysl/.xsd --temp_dir <WS>/builds/hbm1_c32w256/_x/link/sys_link --output_dir <WS>/builds/hbm1_c32w256/_x/link/int --target_bd ulp.bd
+INFO: [CF2BD 82-31] Launching cf2xd: cf2xd -linux -trace-buffer 1024 -i <WS>/builds/hbm1_c32w256/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml -r <WS>/builds/hbm1_c32w256/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o dr.xml
+INFO: [CF2BD 82-28] cf2xd finished successfully
+INFO: [CF2BD 82-31] Launching cf_xsd: cf_xsd -disable-address-gen -bd ulp.bd -dn dr -dp <WS>/builds/hbm1_c32w256/_x/link/sys_link/_sysl/.xsd
+INFO: [CF2BD 82-28] cf_xsd finished successfully
+INFO: [SYSTEM_LINK 82-37] [16:11:02] cf2bd finished successfully
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 458.445 ; gain = 0.000 ; free physical = 233567 ; free virtual = 770132
+INFO: [v++ 60-1441] [16:11:02] Run run_link: Step system_link: Completed
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 490.477 ; gain = 0.000 ; free physical = 233849 ; free virtual = 770405
+INFO: [v++ 60-1443] [16:11:02] Run run_link: Step cf2sw: Started
+INFO: [v++ 60-1453] Command Line: cf2sw -sdsl <WS>/builds/hbm1_c32w256/_x/link/int/sdsl.dat -rtd <WS>/builds/hbm1_c32w256/_x/link/int/cf2sw.rtd -nofilter <WS>/builds/hbm1_c32w256/_x/link/int/cf2sw_full.rtd -xclbin <WS>/builds/hbm1_c32w256/_x/link/int/xclbin_orig.xml -o <WS>/builds/hbm1_c32w256/_x/link/int/xclbin_orig.1.xml
+INFO: [v++ 60-1454] Run Directory: <WS>/builds/hbm1_c32w256/_x/link/run_link
+INFO: [v++ 60-1441] [16:11:27] Run run_link: Step cf2sw: Completed
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 490.477 ; gain = 0.000 ; free physical = 296032 ; free virtual = 833013
+INFO: [v++ 60-1443] [16:11:27] Run run_link: Step rtd2_system_diagram: Started
+INFO: [v++ 60-1453] Command Line: rtd2SystemDiagram
+INFO: [v++ 60-1454] Run Directory: <WS>/builds/hbm1_c32w256/_x/link/run_link
+INFO: [v++ 60-1441] [16:11:28] Run run_link: Step rtd2_system_diagram: Completed
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.28 . Memory (MB): peak = 490.477 ; gain = 0.000 ; free physical = 297168 ; free virtual = 834154
+INFO: [v++ 60-1443] [16:11:28] Run run_link: Step vpl: Started
+INFO: [v++ 60-1453] Command Line: vpl -t hw -f xilinx_u55c_gen3x16_xdma_3_202210_1 --kernel_frequency 300 --remote_ip_cache <WS>/builds/hbm1_c32w256/.ipcache --output_dir <WS>/builds/hbm1_c32w256/_x/link/int --log_dir <WS>/builds/hbm1_c32w256/logs/link --report_dir <WS>/builds/hbm1_c32w256/reports/link --config <WS>/builds/hbm1_c32w256/_x/link/int/vplConfig.ini -k <WS>/builds/hbm1_c32w256/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir <WS>/builds/hbm1_c32w256/_x/link --no-info --iprepo <WS>/builds/hbm1_c32w256/_x/link/int/xo/ip_repo/xilinx_com_hls_hbm1_1_0 --messageDb <WS>/builds/hbm1_c32w256/_x/link/run_link/vpl.pb <WS>/builds/hbm1_c32w256/_x/link/int/dr.bd.tcl
+INFO: [v++ 60-1454] Run Directory: <WS>/builds/hbm1_c32w256/_x/link/run_link
+
+****** vpl v2023.2 (64-bit)
+  **** SW Build 4026344 on 2023-10-11-15:42:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+INFO: [VPL 60-839] Read in kernel information from file '<WS>/builds/hbm1_c32w256/_x/link/int/kernel_info.dat'.
+INFO: [VPL 74-78] Compiler Version string: 2023.2
+INFO: [VPL 60-423]   Target device: xilinx_u55c_gen3x16_xdma_3_202210_1
+WARNING: [VPL 60-889] User-specified kernel frequency for ID 0 is the same as the default frequency 300 MHz, so it will be ignored
+INFO: [VPL 60-1032] Extracting hardware platform to <WS>/builds/hbm1_c32w256/_x/link/vivado/vpl/.local/hw_platform
+[16:11:41] Run vpl: Step create_project: Started
+Creating Vivado project.
+[16:11:50] Run vpl: Step create_project: Completed
+[16:11:50] Run vpl: Step create_bd: Started
+[16:12:54] Run vpl: Step create_bd: Completed
+[16:12:54] Run vpl: Step update_bd: Started
+[16:12:55] Run vpl: Step update_bd: Completed
+[16:12:55] Run vpl: Step generate_target: Started
+[16:14:11] Run vpl: Step generate_target: RUNNING...
+[16:15:26] Run vpl: Step generate_target: RUNNING...
+[16:16:41] Run vpl: Step generate_target: RUNNING...
+[16:17:56] Run vpl: Step generate_target: RUNNING...
+[16:19:06] Run vpl: Step generate_target: Completed
+[16:19:06] Run vpl: Step config_hw_runs: Started
+[16:20:22] Run vpl: Step config_hw_runs: RUNNING...
+[16:21:38] Run vpl: Step config_hw_runs: RUNNING...
+[16:22:53] Run vpl: Step config_hw_runs: RUNNING...
+[16:24:09] Run vpl: Step config_hw_runs: RUNNING...
+[16:25:24] Run vpl: Step config_hw_runs: RUNNING...
+[16:26:40] Run vpl: Step config_hw_runs: RUNNING...
+[16:27:55] Run vpl: Step config_hw_runs: RUNNING...
+[16:28:08] Run vpl: Step config_hw_runs: Completed
+[16:28:08] Run vpl: Step synth: Started
+[16:29:10] Block-level synthesis in progress, 0 of 325 jobs complete, 12 jobs running.
+[16:29:40] Block-level synthesis in progress, 2 of 325 jobs complete, 10 jobs running.
+[16:30:10] Block-level synthesis in progress, 13 of 325 jobs complete, 9 jobs running.
+[16:30:41] Block-level synthesis in progress, 26 of 325 jobs complete, 6 jobs running.
+[16:31:11] Block-level synthesis in progress, 38 of 325 jobs complete, 10 jobs running.
+[16:31:41] Block-level synthesis in progress, 56 of 325 jobs complete, 10 jobs running.
+[16:32:12] Block-level synthesis in progress, 70 of 325 jobs complete, 12 jobs running.
+[16:32:42] Block-level synthesis in progress, 81 of 325 jobs complete, 7 jobs running.
+[16:33:12] Block-level synthesis in progress, 101 of 325 jobs complete, 5 jobs running.
+[16:33:43] Block-level synthesis in progress, 119 of 325 jobs complete, 7 jobs running.
+[16:34:13] Block-level synthesis in progress, 119 of 325 jobs complete, 12 jobs running.
+[16:34:43] Block-level synthesis in progress, 131 of 325 jobs complete, 7 jobs running.
+[16:35:14] Block-level synthesis in progress, 135 of 325 jobs complete, 12 jobs running.
+[16:35:44] Block-level synthesis in progress, 143 of 325 jobs complete, 8 jobs running.
+[16:36:14] Block-level synthesis in progress, 150 of 325 jobs complete, 9 jobs running.
+[16:36:45] Block-level synthesis in progress, 159 of 325 jobs complete, 8 jobs running.
+[16:37:15] Block-level synthesis in progress, 174 of 325 jobs complete, 10 jobs running.
+[16:37:46] Block-level synthesis in progress, 183 of 325 jobs complete, 12 jobs running.
+[16:38:16] Block-level synthesis in progress, 187 of 325 jobs complete, 11 jobs running.
+[16:38:47] Block-level synthesis in progress, 191 of 325 jobs complete, 12 jobs running.
+[16:39:17] Block-level synthesis in progress, 202 of 325 jobs complete, 7 jobs running.
+[16:39:48] Block-level synthesis in progress, 219 of 325 jobs complete, 5 jobs running.
+[16:40:18] Block-level synthesis in progress, 221 of 325 jobs complete, 12 jobs running.
+[16:40:49] Block-level synthesis in progress, 223 of 325 jobs complete, 10 jobs running.
+[16:41:19] Block-level synthesis in progress, 234 of 325 jobs complete, 11 jobs running.
+[16:41:50] Block-level synthesis in progress, 237 of 325 jobs complete, 11 jobs running.
+[16:42:20] Block-level synthesis in progress, 240 of 325 jobs complete, 10 jobs running.
+[16:42:51] Block-level synthesis in progress, 252 of 325 jobs complete, 7 jobs running.
+[16:43:22] Block-level synthesis in progress, 268 of 325 jobs complete, 8 jobs running.
+[16:43:52] Block-level synthesis in progress, 274 of 325 jobs complete, 10 jobs running.
+[16:44:23] Block-level synthesis in progress, 278 of 325 jobs complete, 11 jobs running.
+[16:44:54] Block-level synthesis in progress, 289 of 325 jobs complete, 10 jobs running.
+[16:45:24] Block-level synthesis in progress, 305 of 325 jobs complete, 12 jobs running.
+[16:45:55] Block-level synthesis in progress, 317 of 325 jobs complete, 5 jobs running.
+[16:46:26] Block-level synthesis in progress, 319 of 325 jobs complete, 4 jobs running.
+[16:46:56] Block-level synthesis in progress, 322 of 325 jobs complete, 2 jobs running.
+[16:47:27] Block-level synthesis in progress, 322 of 325 jobs complete, 2 jobs running.
+[16:47:58] Block-level synthesis in progress, 324 of 325 jobs complete, 1 job running.
+[16:48:28] Block-level synthesis in progress, 324 of 325 jobs complete, 1 job running.
+[16:48:59] Top-level synthesis in progress.
+[16:49:30] Top-level synthesis in progress.
+[16:50:00] Top-level synthesis in progress.
+[16:50:31] Top-level synthesis in progress.
+[16:51:05] Run vpl: Step synth: Completed
+[16:51:05] Run vpl: Step impl: Started
+[17:15:42] Finished 2nd of 6 tasks (FPGA linking synthesized kernels to platform). Elapsed time: 01h 04m 13s 
+
+[17:15:42] Starting logic optimization..
+[17:16:13] Phase 1 Initialization
+[17:16:13] Phase 1.1 Core Generation And Design Setup
+[17:17:15] Phase 1.2 Setup Constraints And Sort Netlist
+[17:17:15] Phase 2 Timer Update And Timing Data Collection
+[17:17:15] Phase 2.1 Timer Update
+[17:17:46] Phase 2.2 Timing Data Collection
+[17:18:17] Phase 3 Retarget
+[17:18:48] Phase 4 Constant propagation
+[17:19:18] Phase 5 Sweep
+[17:22:54] Phase 6 BUFG optimization
+[17:23:25] Phase 7 Shift Register Optimization
+[17:23:25] Phase 8 Post Processing Netlist
+[17:23:56] Phase 9 Finalization
+[17:23:56] Phase 9.1 Finalizing Design Cores and Updating Shapes
+[17:24:27] Phase 9.2 Verifying Netlist Connectivity
+[17:25:59] Finished 3rd of 6 tasks (FPGA logic optimization). Elapsed time: 00h 10m 17s 
+
+[17:25:59] Starting logic placement..
+[17:26:30] Phase 1 Placer Initialization
+[17:26:30] Phase 1.1 Placer Initialization Netlist Sorting
+[17:30:06] Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+[17:32:10] Phase 1.3 Build Placer Netlist Model
+[17:37:18] Phase 1.4 Constrain Clocks/Macros
+[17:37:49] Phase 2 Global Placement
+[17:38:20] Phase 2.1 Floorplanning
+[17:39:53] Phase 2.1.1 Partition Driven Placement
+[17:39:53] Phase 2.1.1.1 PBP: Partition Driven Placement
+[17:42:27] Phase 2.1.1.2 PBP: Clock Region Placement
+[17:44:00] Phase 2.1.1.3 PBP: Compute Congestion
+[17:44:32] Phase 2.1.1.4 PBP: UpdateTiming
+[17:45:03] Phase 2.1.1.5 PBP: Add part constraints
+[17:45:34] Phase 2.2 Physical Synthesis After Floorplan
+[17:46:36] Phase 2.3 Update Timing before SLR Path Opt
+[17:46:36] Phase 2.4 Post-Processing in Floorplanning
+[17:46:36] Phase 2.5 Global Placement Core
+[18:21:19] Phase 2.5.1 UpdateTiming Before Physical Synthesis
+[18:21:50] Phase 2.5.2 Physical Synthesis In Placer
+[18:28:04] Phase 3 Detail Placement
+[18:28:04] Phase 3.1 Commit Multi Column Macros
+[18:28:35] Phase 3.2 Commit Most Macros & LUTRAMs
+[18:32:44] Phase 3.3 Small Shape DP
+[18:32:44] Phase 3.3.1 Small Shape Clustering
+[18:33:15] Phase 3.3.2 Slice Area Swap
+[18:33:46] Phase 3.3.2.1 Slice Area Swap Initial
+[18:37:24] Phase 3.4 Place Remaining
+[18:37:55] Phase 3.5 Re-assign LUT pins
+[18:38:26] Phase 3.6 Pipeline Register Optimization
+[18:38:57] Phase 3.7 Fast Optimization
+[18:41:33] Phase 4 Post Placement Optimization and Clean-Up
+[18:41:33] Phase 4.1 Post Commit Optimization
+[18:45:10] Phase 4.1.1 Post Placement Optimization
+[18:45:42] Phase 4.1.1.1 BUFG Insertion
+[18:45:42] Phase 1 Physical Synthesis Initialization
+[18:47:15] Phase 4.1.1.2 BUFG Replication
+[18:47:15] Phase 4.1.1.3 Post Placement Timing Optimization
+[18:53:59] Phase 4.1.1.4 Replication
+[18:57:06] Phase 4.2 Post Placement Cleanup
+[18:57:06] Phase 4.3 Placer Reporting
+[18:57:06] Phase 4.3.1 Print Estimated Congestion
+[18:57:37] Phase 4.4 Final Placement Cleanup
+[19:06:27] Finished 4th of 6 tasks (FPGA logic placement). Elapsed time: 01h 40m 27s 
+
+[19:06:27] Starting logic routing..
+[19:08:00] Phase 1 Build RT Design
+[19:12:09] Phase 2 Router Initialization
+[19:12:09] Phase 2.1 Fix Topology Constraints
+[19:12:09] Phase 2.2 Pre Route Cleanup
+[19:12:40] Phase 2.3 Global Clock Net Routing
+[19:13:11] Phase 2.4 Update Timing
+[19:18:54] Phase 2.5 Update Timing for Bus Skew
+[19:18:54] Phase 2.5.1 Update Timing
+[19:20:59] Phase 3 Initial Routing
+[19:20:59] Phase 3.1 Global Routing
+[19:20:59] Phase 3.1.1 SLL Assignment
+[19:22:32] Phase 3.2 Initial Net Routing
+[19:24:37] Phase 4 Rip-up And Reroute
+[19:24:37] Phase 4.1 Global Iteration 0
+[19:49:31] Phase 4.2 Global Iteration 1
+[19:53:40] Phase 4.3 Global Iteration 2
+[19:56:47] Phase 4.4 Global Iteration 3
+[19:59:23] Phase 4.5 Global Iteration 4
+[20:03:32] Phase 4.6 Global Iteration 5
+[20:07:10] Phase 4.7 Global Iteration 6
+[20:10:17] Phase 4.8 Global Iteration 7
+[20:15:29] Phase 5 Delay and Skew Optimization
+[20:15:29] Phase 5.1 Delay CleanUp
+[20:15:29] Phase 5.1.1 Update Timing
+[20:17:03] Phase 5.1.2 Update Timing
+[20:18:36] Phase 5.1.3 Update Timing
+[20:20:10] Phase 5.2 Clock Skew Optimization
+[20:20:10] Phase 6 Post Hold Fix
+[20:20:10] Phase 6.1 Hold Fix Iter
+[20:20:10] Phase 6.1.1 Update Timing
+[20:21:43] Phase 7 Leaf Clock Prog Delay Opt
+[20:23:48] Phase 7.1 Optimize Skews
+[20:23:48] Phase 7.1.1 Leaf ClockOpt Init
+[20:26:23] Phase 7.2 Post SkewOpt Delay Cleanup
+[20:26:23] Phase 7.2.1 Delay CleanUp
+[20:26:23] Phase 7.2.1.1 Update Timing
+[20:27:57] Phase 7.2.1.2 Update Timing
+[20:29:31] Phase 7.2.1.3 Update Timing
+[20:31:04] Phase 7.3 Post SkewOpt Hold Fix
+[20:31:04] Phase 7.3.1 Hold Fix Iter
+[20:31:04] Phase 7.3.1.1 Update Timing
+[20:35:13] Phase 8 Route finalize
+[20:35:13] Phase 9 Verifying routed nets
+[20:35:13] Phase 10 Depositing Routes
+[20:36:16] Phase 11 Resolve XTalk
+[20:36:47] Phase 12 Post Router Timing
+[20:39:23] Phase 13 Physical Synthesis in Router
+[20:39:23] Phase 13.1 Physical Synthesis Initialization
+[20:40:57] Phase 13.2 Critical Path Optimization
+[20:42:30] Finished 5th of 6 tasks (FPGA routing). Elapsed time: 01h 36m 03s 
+
+[20:42:30] Starting bitstream generation..
+[20:42:30] Phase 14 Post-Route Event Processing
+[21:08:27] Creating bitmap...
+[21:15:44] Writing bitstream ./level0_i_ulp_my_rm_partial.bit...
+[21:16:15] Finished 6th of 6 tasks (FPGA bitstream generation). Elapsed time: 00h 33m 44s 
+Check VPL, containing 12 checks, has run: 0 errors, 22 warning violations, 1 advisory violation
+WARNING: [ACCELERATOR-SLR-01] The compute unit hbm1_15 is located in SLR1 while its port hbm1_15/m_axi_gp is connected to a memory in SLR0.
+WARNING: [ACCELERATOR-SLR-01] The compute unit hbm1_16 is located in SLR1 while its port hbm1_16/m_axi_gp is connected to a memory in SLR0.
+WARNING: [ACCELERATOR-SLR-01] The compute unit hbm1_17 is located in SLR1 while its port hbm1_17/m_axi_gp is connected to a memory in SLR0.
+WARNING: [ACCELERATOR-SLR-01] The compute unit hbm1_18 is located in SLR1 while its port hbm1_18/m_axi_gp is connected to a memory in SLR0.
+WARNING: [ACCELERATOR-SLR-01] The compute unit hbm1_19 is located in SLR1 while its port hbm1_19/m_axi_gp is connected to a memory in SLR0.
+WARNING: [ACCELERATOR-SLR-01] The compute unit hbm1_20 is located in SLR1 while its port hbm1_20/m_axi_gp is connected to a memory in SLR0.
+WARNING: [ACCELERATOR-SLR-01] The compute unit hbm1_21 is located in SLR1 while its port hbm1_21/m_axi_gp is connected to a memory in SLR0.
+WARNING: [ACCELERATOR-SLR-01] The compute unit hbm1_22 is located in SLR1 while its port hbm1_22/m_axi_gp is connected to a memory in SLR0.
+WARNING: [ACCELERATOR-SLR-01] The compute unit hbm1_23 is located in SLR2 while its port hbm1_23/m_axi_gp is connected to a memory in SLR0.
+WARNING: [ACCELERATOR-SLR-01] The compute unit hbm1_24 is located in SLR2 while its port hbm1_24/m_axi_gp is connected to a memory in SLR0.
+WARNING: [ACCELERATOR-SLR-01] The compute unit hbm1_25 is located in SLR2 while its port hbm1_25/m_axi_gp is connected to a memory in SLR0.
+WARNING: [ACCELERATOR-SLR-01] The compute unit hbm1_26 is located in SLR2 while its port hbm1_26/m_axi_gp is connected to a memory in SLR0.
+WARNING: [ACCELERATOR-SLR-01] The compute unit hbm1_27 is located in SLR2 while its port hbm1_27/m_axi_gp is connected to a memory in SLR0.
+WARNING: [ACCELERATOR-SLR-01] The compute unit hbm1_28 is located in SLR2 while its port hbm1_28/m_axi_gp is connected to a memory in SLR0.
+WARNING: [ACCELERATOR-SLR-01] The compute unit hbm1_29 is located in SLR2 while its port hbm1_29/m_axi_gp is connected to a memory in SLR0.
+WARNING: [ACCELERATOR-SLR-01] The compute unit hbm1_30 is located in SLR2 while its port hbm1_30/m_axi_gp is connected to a memory in SLR0.
+WARNING: [ACCELERATOR-SLR-01] The compute unit hbm1_31 is located in SLR2 while its port hbm1_31/m_axi_gp is connected to a memory in SLR0.
+WARNING: [ACCELERATOR-SLR-01] The compute unit hbm1_32 is located in SLR2 while its port hbm1_32/m_axi_gp is connected to a memory in SLR0.
+WARNING: [AUTO-FREQ-SCALING-04] One or more timing paths failed timing requirements. The kernel clock ulp_ucs/aclk_kernel_00 has an original frequency equal to 300.000000 MHz. The frequency has been automatically changed to 295.4 MHz to enable proper functionality. The clock Id is 0.
+ADVISORY: [AUTO-FREQ-SCALING-08] For clock hbm_aclk, the auto scaled frequency 451.8 MHz exceeds the original specified frequency. The compiler will select the original specified frequency of 450.0 MHz.
+WARNING: [ACCELERATOR-SLR-01] The compute unit hbm1_12 is located in SLR1 while its port hbm1_12/m_axi_gp is connected to a memory in SLR0.
+WARNING: [ACCELERATOR-SLR-01] The compute unit hbm1_13 is located in SLR1 while its port hbm1_13/m_axi_gp is connected to a memory in SLR0.
+WARNING: [ACCELERATOR-SLR-01] The compute unit hbm1_14 is located in SLR1 while its port hbm1_14/m_axi_gp is connected to a memory in SLR0.
+[21:21:04] Run vpl: Step impl: Completed
+[21:21:06] Run vpl: FINISHED. Run Status: impl Complete!
+INFO: [v++ 60-1441] [21:21:07] Run run_link: Step vpl: Completed
+Time (s): cpu = 00:07:56 ; elapsed = 05:09:39 . Memory (MB): peak = 490.477 ; gain = 0.000 ; free physical = 322874 ; free virtual = 874464
+INFO: [v++ 60-1443] [21:21:07] Run run_link: Step rtdgen: Started
+INFO: [v++ 60-1453] Command Line: rtdgen
+INFO: [v++ 60-1454] Run Directory: <WS>/builds/hbm1_c32w256/_x/link/run_link
+INFO: [v++ 60-991] clock name 'ulp_ucs/aclk_kernel_01' (clock ID '1') is being mapped to clock name 'KERNEL_CLK' in the xclbin
+INFO: [v++ 60-991] clock name 'ulp_ucs/aclk_kernel_00' (clock ID '0') is being mapped to clock name 'DATA_CLK' in the xclbin
+INFO: [v++ 60-991] clock name 'hbm_aclk' (clock ID '') is being mapped to clock name 'hbm_aclk' in the xclbin
+INFO: [v++ 60-1230] The compiler selected the following frequencies for the runtime controllable kernel clock(s) and scalable system clock(s): System (SYSTEM) clock: hbm_aclk = 450, Kernel (KERNEL) clock: ulp_ucs/aclk_kernel_01 = 500, Kernel (DATA) clock: ulp_ucs/aclk_kernel_00 = 295
+INFO: [v++ 60-1453] Command Line: cf2sw -a <WS>/builds/hbm1_c32w256/_x/link/int/address_map.xml -sdsl <WS>/builds/hbm1_c32w256/_x/link/int/sdsl.dat -xclbin <WS>/builds/hbm1_c32w256/_x/link/int/xclbin_orig.xml -rtd <WS>/builds/hbm1_c32w256/_x/link/int/hbm1.rtd -o <WS>/builds/hbm1_c32w256/_x/link/int/hbm1.xml
+INFO: [v++ 60-1652] Cf2sw returned exit code: 0
+INFO: [v++ 60-1441] [21:21:27] Run run_link: Step rtdgen: Completed
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 490.477 ; gain = 0.000 ; free physical = 327222 ; free virtual = 878814
+INFO: [v++ 60-1443] [21:21:27] Run run_link: Step xclbinutil: Started
+INFO: [v++ 60-1453] Command Line: xclbinutil --add-section BITSTREAM:RAW:<WS>/builds/hbm1_c32w256/_x/link/int/partial.bit --force --target hw --key-value SYS:dfx_enable:true --add-section :JSON:<WS>/builds/hbm1_c32w256/_x/link/int/hbm1.rtd --append-section :JSON:<WS>/builds/hbm1_c32w256/_x/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:<WS>/builds/hbm1_c32w256/_x/link/int/hbm1_xml.rtd --add-section BUILD_METADATA:JSON:<WS>/builds/hbm1_c32w256/_x/link/int/hbm1_build.rtd --add-section EMBEDDED_METADATA:RAW:<WS>/builds/hbm1_c32w256/_x/link/int/hbm1.xml --add-section SYSTEM_METADATA:RAW:<WS>/builds/hbm1_c32w256/_x/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:xilinx_u55c_gen3x16_xdma_3_202210_1 --output <WS>/builds/hbm1_c32w256/hbm1.xclbin
+INFO: [v++ 60-1454] Run Directory: <WS>/builds/hbm1_c32w256/_x/link/run_link
+XRT Build Version: 2.16.204 (2023.2)
+       Build Date: 2023-10-11 23:46:00
+          Hash ID: fa4c0045003fed0acea4593788dce5ef6d0b66ee
+Creating a default 'in-memory' xclbin image.
+
+Section: 'BITSTREAM'(0) was successfully added.
+Size   : 69360290 bytes
+Format : RAW
+File   : '<WS>/builds/hbm1_c32w256/_x/link/int/partial.bit'
+
+Section: 'MEM_TOPOLOGY'(6) was successfully added.
+Format : JSON
+File   : 'mem_topology'
+
+Section: 'IP_LAYOUT'(8) was successfully added.
+Format : JSON
+File   : 'ip_layout'
+
+Section: 'CONNECTIVITY'(7) was successfully added.
+Format : JSON
+File   : 'connectivity'
+
+Section: 'CLOCK_FREQ_TOPOLOGY'(11) was successfully added.
+Size   : 410 bytes
+Format : JSON
+File   : '<WS>/builds/hbm1_c32w256/_x/link/int/hbm1_xml.rtd'
+
+Section: 'BUILD_METADATA'(14) was successfully added.
+Size   : 5145 bytes
+Format : JSON
+File   : '<WS>/builds/hbm1_c32w256/_x/link/int/hbm1_build.rtd'
+
+Section: 'EMBEDDED_METADATA'(2) was successfully added.
+Size   : 20407 bytes
+Format : RAW
+File   : '<WS>/builds/hbm1_c32w256/_x/link/int/hbm1.xml'
+
+Section: 'SYSTEM_METADATA'(22) was successfully added.
+Size   : 259659 bytes
+Format : RAW
+File   : '<WS>/builds/hbm1_c32w256/_x/link/int/systemDiagramModelSlrBaseAddress.json'
+
+Section: 'PARTITION_METADATA'(20) was successfully appended to.
+Format : JSON
+File   : 'partition_metadata'
+
+Section: 'IP_LAYOUT'(8) was successfully appended to.
+Format : JSON
+File   : 'ip_layout'
+Successfully wrote (69689459 bytes) to the output file: <WS>/builds/hbm1_c32w256/hbm1.xclbin
+Leaving xclbinutil.
+INFO: [v++ 60-1441] [21:21:28] Run run_link: Step xclbinutil: Completed
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.29 . Memory (MB): peak = 490.477 ; gain = 0.000 ; free physical = 327152 ; free virtual = 878810
+INFO: [v++ 60-1443] [21:21:28] Run run_link: Step xclbinutilinfo: Started
+INFO: [v++ 60-1453] Command Line: xclbinutil --quiet --force --info <WS>/builds/hbm1_c32w256/hbm1.xclbin.info --input <WS>/builds/hbm1_c32w256/hbm1.xclbin
+INFO: [v++ 60-1454] Run Directory: <WS>/builds/hbm1_c32w256/_x/link/run_link
+INFO: [v++ 60-1441] [21:21:28] Run run_link: Step xclbinutilinfo: Completed
+Time (s): cpu = 00:00:00.58 ; elapsed = 00:00:00.73 . Memory (MB): peak = 490.477 ; gain = 0.000 ; free physical = 327155 ; free virtual = 878814
+INFO: [v++ 60-1443] [21:21:28] Run run_link: Step generate_sc_driver: Started
+INFO: [v++ 60-1453] Command Line: 
+INFO: [v++ 60-1454] Run Directory: <WS>/builds/hbm1_c32w256/_x/link/run_link
+INFO: [v++ 60-1441] [21:21:28] Run run_link: Step generate_sc_driver: Completed
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 490.477 ; gain = 0.000 ; free physical = 327155 ; free virtual = 878814
+INFO: [v++ 60-2331] SLR0 was specfied for compute unit hbm1_1, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR0 was specfied for compute unit hbm1_10, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR0 was specfied for compute unit hbm1_11, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR1 was specfied for compute unit hbm1_12, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR1 was specfied for compute unit hbm1_13, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR1 was specfied for compute unit hbm1_14, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR1 was specfied for compute unit hbm1_15, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR1 was specfied for compute unit hbm1_16, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR1 was specfied for compute unit hbm1_17, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR1 was specfied for compute unit hbm1_18, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR1 was specfied for compute unit hbm1_19, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR0 was specfied for compute unit hbm1_2, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR1 was specfied for compute unit hbm1_20, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR1 was specfied for compute unit hbm1_21, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR1 was specfied for compute unit hbm1_22, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR2 was specfied for compute unit hbm1_23, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR2 was specfied for compute unit hbm1_24, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR2 was specfied for compute unit hbm1_25, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR2 was specfied for compute unit hbm1_26, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR2 was specfied for compute unit hbm1_27, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR2 was specfied for compute unit hbm1_28, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR2 was specfied for compute unit hbm1_29, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR0 was specfied for compute unit hbm1_3, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR2 was specfied for compute unit hbm1_30, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR2 was specfied for compute unit hbm1_31, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR2 was specfied for compute unit hbm1_32, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR0 was specfied for compute unit hbm1_4, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR0 was specfied for compute unit hbm1_5, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR0 was specfied for compute unit hbm1_6, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR0 was specfied for compute unit hbm1_7, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR0 was specfied for compute unit hbm1_8, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR0 was specfied for compute unit hbm1_9, and verified as such in implementation.
+Check POST-VPL, containing 1 checks, has run: 0 errors
+INFO: [v++ 60-244] Generating system estimate report...
+INFO: [v++ 60-1092] Generated system estimate report: <WS>/builds/hbm1_c32w256/reports/link/system_estimate_hbm1.xtxt
+INFO: [v++ 60-586] Created <WS>/builds/hbm1_c32w256/hbm1.ltx
+INFO: [v++ 60-586] Created <WS>/builds/hbm1_c32w256/hbm1.xclbin
+INFO: [v++ 60-1307] Run completed. Additional information can be found in:
+	Guidance: <WS>/builds/hbm1_c32w256/reports/link/v++_link_hbm1_guidance.html
+	Timing Report: <WS>/builds/hbm1_c32w256/reports/link/imp/impl_1_hw_bb_locked_timing_summary_routed.rpt
+	Vivado Log: <WS>/builds/hbm1_c32w256/logs/link/vivado.log
+	Steps Log File: <WS>/builds/hbm1_c32w256/logs/link/link.steps.log
+
+INFO: [v++ 60-2343] Use the vitis_analyzer tool to visualize and navigate the relevant reports. Run the following command. 
+    vitis_analyzer <WS>/builds/hbm1_c32w256/hbm1.xclbin.link_summary 
+INFO: [v++ 60-791] Total elapsed time: 5h 11m 12s
+INFO: [v++ 60-1653] Closing dispatch client.
+BUILD_OK
+
+real	312m0.849s
+user	10m2.348s
+sys	2m14.390s

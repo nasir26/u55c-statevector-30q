@@ -1,6 +1,6 @@
 """Generate every figure of the revised manuscript from results/raw (via analysis/load.py).
 
-Outputs vector PDF + PNG into paper/revised/figures/. Each figure function documents which timing field
+Outputs vector PDF + PNG into paper/revised/figures/ (or FIG_OUT). Each figure function documents which timing field
 (revision Sec. 6) it plots. Run: envs/fpga/bin/python analysis/make_figures.py [names...]
 """
 import os, sys
@@ -14,14 +14,14 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import style  # noqa: E402
 from load import load_runs, summarise, WS  # noqa: E402
 
-OUT = f"{WS}/paper/revised/figures"
+OUT = os.environ.get("FIG_OUT", f"{WS}/paper/revised/figures")
 os.makedirs(OUT, exist_ok=True)
 style.apply()
 FAM_TITLE = {"ghz": "GHZ", "qft": "QFT", "rqc": "RQC (depth 10)", "vqe": "VQE ansatz (2 layers)"}
 
 
 def save(fig, name):
-    fig.savefig(f"{OUT}/{name}.pdf"); fig.savefig(f"{OUT}/{name}.png", dpi=200); plt.close(fig)
+    fig.savefig(f"{OUT}/{name}.pdf", metadata={"CreationDate": None}); fig.savefig(f"{OUT}/{name}.png", dpi=200, metadata={"Software": None}); plt.close(fig)
     print("wrote", name)
 
 

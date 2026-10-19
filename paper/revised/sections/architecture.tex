@@ -1,0 +1,47 @@
+%==========================================================================
+\section{Architecture of the Revised Simulator}\label{sec:architecture}
+
+The audit points to memory-level parallelism, not HBM bandwidth or bank conflicts, as the limit of the baseline. The revised design therefore streams long bursts per pseudo-channel, moves all irregular indexing on chip, and reduces the number of passes over HBM by applying several gates per pass. Figure~\ref{fig:arch} summarises the data path.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{fig_architecture}
+\caption{Revised simulator. The host compiler maps gates to MUX2 records, groups them into passes and encodes them; each engine compute unit (CU) owns the statevector slices of one or two HBM pseudo-channels and runs every pass as a reader, compute and writer dataflow pipeline over tiles; swap CUs exchange half-slices between pseudo-channels when a bank qubit must become local.}\label{fig:arch}
+\end{figure}
+
+\subsection{One datapath primitive for every gate}\label{subsec:mux2}
+
+Every operation executed on the card is a \emph{multiplexed $2\times2$ update}, $\mathrm{MUX2}(t, C, M_0, M_1)$: for every amplitude pair $(a_{i}, a_{i\oplus 2^t})$ whose index has bit $t$ cleared, the engine applies $M_1$ if all qubits in the control set $C$ are 1 in $i$, and $M_0$ otherwise. The host maps gates to MUX2 records exactly:
+\begin{itemize}
+\item a single-qubit gate $U$ is $\mathrm{MUX2}(t,\emptyset,U,U)$; consecutive single-qubit gates on one qubit are multiplied into one record;
+\item a controlled single-qubit gate (CX, CY, CH, CR$_{x,y,z}$, CSX, CS, CU, \ldots) is $\mathrm{MUX2}(t,\{c\},I,U)$, and multi-controlled gates (CCX, CCZ, MCX, MCPhase) use a larger control set;
+\item a two-qubit diagonal gate (CZ, CP, R$_{zz}$) with diagonal $(d_0,d_1,d_2,d_3)$ is $\mathrm{MUX2}(b,\{a\},\mathrm{diag}(d_0,d_2),\mathrm{diag}(d_1,d_3))$;
+\item any other two-qubit unitary (ECR, iSWAP, R$_{xx}$, R$_{yy}$, R$_{zx}$, XX$+$YY, DCX, \ldots) is written exactly as three MUX2 records using the cosine-sine decomposition $U=(L_0\oplus L_1)\,\mathrm{CS}\,(R_0\oplus R_1)$, where each block-diagonal factor is a MUX2 on one qubit controlled by the other;
+\item SWAP is absorbed into the logical-to-physical qubit map and moves no data.
+\end{itemize}
+Only gates of three or more qubits that are not multi-controlled single-qubit gates (for example CSWAP), and multi-controlled gates wider than the tile window, are decomposed by Qiskit on the host. The engine therefore has a single arithmetic datapath: four amplitude pairs per cycle, each a $2\times2$ complex matrix-vector product in single precision (complex64), with per-pair selection between $M_0$ and $M_1$.
+
+\subsection{Passes, tiles and on-chip banking}\label{subsec:tiles}
+
+With $P$ active pseudo-channels the top $b=\log_2 P$ physical qubits select the PC (\emph{bank qubits}) and the remaining $L=n-b$ qubits index a contiguous slice inside it (\emph{local qubits}). A \emph{pass} streams the slice once: the reader gathers a tile of $2^{k}$ amplitudes ($k=12$), the compute stage applies an ordered list of up to 64 MUX2 records to the tile, and the writer stores it back. A tile consists of the $k-m$ lowest local qubits plus up to $m$ further \emph{high} local qubits $h_0,\ldots,h_{m-1}$; it is gathered as $2^m$ contiguous sub-blocks, each a long burst. Any gate whose qubits lie in this window is applied in the same pass, so a pass replaces several HBM sweeps. The build used for the main results supports $m\leq 4$ (\texttt{MAXH}$=4$); the earlier builds support $m\leq 2$.
+
+Inside the engine a tile word $w$ (four amplitudes, 256~bits) is stored in bank $\mathrm{parity}(w)$ at address $\lfloor w/2\rfloor$. Two words whose indices differ in exactly one bit are always in different banks, so every pair update reads one word from each bank and writes one word to each bank per cycle. This gives an initiation interval of one for every target qubit without the runtime bank multiplexing that limited the baseline.
+
+\subsection{Compute units, exchange and capacity}\label{subsec:cus}
+
+Each engine is a separate compute unit with one AXI port to its own PC (or pair of PCs); the instructions of a pass are stored behind the state slice in the same buffer, because the HBM subsystem offers \NumHbmPortConnections{} port connections in total. A single kernel with 32 HBM ports could not be implemented: our first attempts at a 32-port microbenchmark exceeded the block RAM of the HBM-adjacent super logic region (\NumHbmFirstBramPct\,\%) and then failed routing (congestion level \NumHbmCongestion). Compute units are therefore spread over the three super logic regions.
+
+When a gate acts on a bank qubit, the host remaps that qubit with a local one. The remap is executed on the card by \emph{swap} CUs whose two ports reach all 32 PCs through the HBM switch; it exchanges contiguous half-slices (or larger chunks) between the two PCs of each pair. Device-to-device buffer copies through XRT are not available on this shell (the M2M test reports ``not available'' and copies fall back to the host), and PCIe moves only \NumPcieHtoD~GB/s (host to card) and \NumPcieDtoH~GB/s (card to host), so a host-mediated remap of a 30-qubit state would cost seconds.
+
+A slice must fit in one 512~MB PC together with its instructions for the swap CUs to address it. The main build therefore gives each engine two PCs and treats the statevector as up to 32 \emph{virtual slices} of one PC each, processed by 16 engines; this holds a 30-qubit complex64 state (8~GB) on one card while keeping all exchanges on the card. The host chooses the number of slices from the measured trade-off between kernel parallelism and remap cost (Section~\ref{subsec:res-ablation}).
+
+\subsection{Host compiler and runtime}\label{subsec:host}
+
+The host compiler (Python) converts a Qiskit circuit into MUX2 records, fuses consecutive single-qubit gates, and schedules passes greedily: a gate joins the open pass if the union of qubits still fits the tile window with at most $m$ high qubits, otherwise the pass is closed. A bank qubit, or a gate that needs more than $m$ high qubits, triggers a remap that prefers to swap bank qubits with high local qubits so that exchanged chunks stay large. The runtime launches all engine CUs for each segment of passes, executes remaps between segments, zeroes the state on the card instead of uploading it, and samples measurement outcomes directly from the per-slice buffers. A numpy model of the exact instruction stream is used to validate the compiler and the HLS C model before every build.
+
+\begin{table}
+\centering
+\caption{Implemented builds (post-route). All engines are the same HLS source; builds differ in the number of engine CUs, PCs per engine, AXI width and the maximum number of high qubits per pass.}\label{tab:builds}
+\footnotesize\setlength{\tabcolsep}{3pt}
+\input{../generated/tab_builds.tex}
+\end{table}

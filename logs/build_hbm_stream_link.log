@@ -1,0 +1,329 @@
+WARNING: [v++ 60-1600] The option 'jobs' was used directly on the command line, where its usage is deprecated. To ensure input line works for supported operating systems or shells, v++ supports specification for some options in a configuration file. As an alternative, please use options 'hls.jobs', 'vivado.synth.jobs' in a configuration file. 
+Option Map File Used: '/tools/Xilinx/Vitis/2023.2/data/vitis/vpp/optMap.xml'
+
+****** v++ v2023.2 (64-bit)
+  **** SW Build 4026344 on 2023-10-11-15:42:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+INFO: [v++ 60-1306] Additional information associated with this v++ link can be found at:
+	Reports: <WS>/builds/hbm_stream/reports/link
+	Log files: <WS>/builds/hbm_stream/logs/link
+Running Dispatch Server on port: 35059
+INFO: [v++ 60-1548] Creating build summary session with primary output <WS>/builds/hbm_stream/hbm_stream.xclbin.link_summary, at Mon Oct  5 16:16:37 2026
+INFO: [v++ 60-1315] Creating rulecheck session with output '<WS>/builds/hbm_stream/reports/link/v++_link_hbm_stream_guidance.html', at Mon Oct  5 16:16:37 2026
+INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u55c_gen3x16_xdma_3_202210_1/xilinx_u55c_gen3x16_xdma_3_202210_1.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u55c_gen3x16_xdma_3_202210_1/hw/hw.xsa'
+INFO: [v++ 74-78] Compiler Version string: 2023.2
+INFO: [v++ 60-629] Linking for hardware target
+INFO: [v++ 60-423]   Target device: xilinx_u55c_gen3x16_xdma_3_202210_1
+WARNING: [v++ 60-889] User-specified kernel frequency for ID 0 is the same as the default frequency 300 MHz, so it will be ignored
+INFO: [v++ 60-1332] Run 'run_link' status: Not started
+INFO: [v++ 60-1443] [16:16:46] Run run_link: Step system_link: Started
+INFO: [v++ 60-1453] Command Line: system_link --xo <WS>/builds/hbm_stream/hbm_stream.xo --config <WS>/builds/hbm_stream/_x/link/int/syslinkConfig.ini --xpfm /opt/xilinx/platforms/xilinx_u55c_gen3x16_xdma_3_202210_1/xilinx_u55c_gen3x16_xdma_3_202210_1.xpfm --target hw --output_dir <WS>/builds/hbm_stream/_x/link/int --temp_dir <WS>/builds/hbm_stream/_x/link/sys_link
+INFO: [v++ 60-1454] Run Directory: <WS>/builds/hbm_stream/_x/link/run_link
+INFO: [SYSTEM_LINK 82-70] Extracting xo v3 file <WS>/builds/hbm_stream/hbm_stream.xo
+INFO: [SYSTEM_LINK 82-53] Creating IP database <WS>/builds/hbm_stream/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-38] [16:16:49] build_xd_ip_db started: /tools/Xilinx/Vitis/2023.2/bin/build_xd_ip_db -ip_search 0  -sds-pf <WS>/builds/hbm_stream/_x/link/sys_link/hw.hpfm -clkid 0 -ip <WS>/builds/hbm_stream/_x/link/sys_link/iprepo/xilinx_com_hls_hbm_stream_1_0,hbm_stream -o <WS>/builds/hbm_stream/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-37] [16:16:54] build_xd_ip_db finished successfully
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 458.445 ; gain = 0.000 ; free physical = 474205 ; free virtual = 992809
+INFO: [SYSTEM_LINK 82-51] Create system connectivity graph
+INFO: [SYSTEM_LINK 82-102] Applying explicit connections to the system connectivity graph: <WS>/builds/hbm_stream/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [SYSTEM_LINK 82-38] [16:16:54] cfgen started: /tools/Xilinx/Vitis/2023.2/bin/cfgen  -sp hbm_stream_1.p0:HBM[0] -sp hbm_stream_1.p1:HBM[1] -sp hbm_stream_1.p2:HBM[2] -sp hbm_stream_1.p3:HBM[3] -sp hbm_stream_1.p4:HBM[4] -sp hbm_stream_1.p5:HBM[5] -sp hbm_stream_1.p6:HBM[6] -sp hbm_stream_1.p7:HBM[7] -sp hbm_stream_1.p8:HBM[8] -sp hbm_stream_1.p9:HBM[9] -sp hbm_stream_1.p10:HBM[10] -sp hbm_stream_1.p11:HBM[11] -sp hbm_stream_1.p12:HBM[12] -sp hbm_stream_1.p13:HBM[13] -sp hbm_stream_1.p14:HBM[14] -sp hbm_stream_1.p15:HBM[15] -sp hbm_stream_1.p16:HBM[16] -sp hbm_stream_1.p17:HBM[17] -sp hbm_stream_1.p18:HBM[18] -sp hbm_stream_1.p19:HBM[19] -sp hbm_stream_1.p20:HBM[20] -sp hbm_stream_1.p21:HBM[21] -sp hbm_stream_1.p22:HBM[22] -sp hbm_stream_1.p23:HBM[23] -sp hbm_stream_1.p24:HBM[24] -sp hbm_stream_1.p25:HBM[25] -sp hbm_stream_1.p26:HBM[26] -sp hbm_stream_1.p27:HBM[27] -sp hbm_stream_1.p28:HBM[28] -sp hbm_stream_1.p29:HBM[29] -sp hbm_stream_1.p30:HBM[30] -sp hbm_stream_1.p31:HBM[31] -dpa_mem_offload false -dmclkid 0 -r <WS>/builds/hbm_stream/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o <WS>/builds/hbm_stream/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [CFGEN 83-0] Kernel Specs: 
+INFO: [CFGEN 83-0]   kernel: hbm_stream, num: 1  {hbm_stream_1}
+INFO: [CFGEN 83-0] Port Specs: 
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p0, sptag: HBM[0]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p1, sptag: HBM[1]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p2, sptag: HBM[2]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p3, sptag: HBM[3]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p4, sptag: HBM[4]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p5, sptag: HBM[5]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p6, sptag: HBM[6]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p7, sptag: HBM[7]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p8, sptag: HBM[8]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p9, sptag: HBM[9]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p10, sptag: HBM[10]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p11, sptag: HBM[11]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p12, sptag: HBM[12]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p13, sptag: HBM[13]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p14, sptag: HBM[14]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p15, sptag: HBM[15]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p16, sptag: HBM[16]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p17, sptag: HBM[17]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p18, sptag: HBM[18]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p19, sptag: HBM[19]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p20, sptag: HBM[20]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p21, sptag: HBM[21]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p22, sptag: HBM[22]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p23, sptag: HBM[23]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p24, sptag: HBM[24]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p25, sptag: HBM[25]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p26, sptag: HBM[26]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p27, sptag: HBM[27]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p28, sptag: HBM[28]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p29, sptag: HBM[29]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p30, sptag: HBM[30]
+INFO: [CFGEN 83-0]   kernel: hbm_stream_1, k_port: p31, sptag: HBM[31]
+INFO: [SYSTEM_LINK 82-37] [16:17:04] cfgen finished successfully
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 458.445 ; gain = 0.000 ; free physical = 474202 ; free virtual = 992806
+INFO: [SYSTEM_LINK 82-52] Create top-level block diagram
+INFO: [SYSTEM_LINK 82-38] [16:17:04] cf2bd started: /tools/Xilinx/Vitis/2023.2/bin/cf2bd  --linux --trace_buffer 1024 --input_file <WS>/builds/hbm_stream/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml --ip_db <WS>/builds/hbm_stream/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml --cf_name dr --working_dir <WS>/builds/hbm_stream/_x/link/sys_link/_sysl/.xsd --temp_dir <WS>/builds/hbm_stream/_x/link/sys_link --output_dir <WS>/builds/hbm_stream/_x/link/int --target_bd ulp.bd
+INFO: [CF2BD 82-31] Launching cf2xd: cf2xd -linux -trace-buffer 1024 -i <WS>/builds/hbm_stream/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml -r <WS>/builds/hbm_stream/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o dr.xml
+INFO: [CF2BD 82-28] cf2xd finished successfully
+INFO: [CF2BD 82-31] Launching cf_xsd: cf_xsd -disable-address-gen -bd ulp.bd -dn dr -dp <WS>/builds/hbm_stream/_x/link/sys_link/_sysl/.xsd
+INFO: [CF2BD 82-28] cf_xsd finished successfully
+INFO: [SYSTEM_LINK 82-37] [16:17:10] cf2bd finished successfully
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 458.445 ; gain = 0.000 ; free physical = 474182 ; free virtual = 992792
+INFO: [v++ 60-1441] [16:17:10] Run run_link: Step system_link: Completed
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 498.188 ; gain = 0.000 ; free physical = 474465 ; free virtual = 992901
+INFO: [v++ 60-1443] [16:17:10] Run run_link: Step cf2sw: Started
+INFO: [v++ 60-1453] Command Line: cf2sw -sdsl <WS>/builds/hbm_stream/_x/link/int/sdsl.dat -rtd <WS>/builds/hbm_stream/_x/link/int/cf2sw.rtd -nofilter <WS>/builds/hbm_stream/_x/link/int/cf2sw_full.rtd -xclbin <WS>/builds/hbm_stream/_x/link/int/xclbin_orig.xml -o <WS>/builds/hbm_stream/_x/link/int/xclbin_orig.1.xml
+INFO: [v++ 60-1454] Run Directory: <WS>/builds/hbm_stream/_x/link/run_link
+INFO: [v++ 60-1441] [16:17:18] Run run_link: Step cf2sw: Completed
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 498.188 ; gain = 0.000 ; free physical = 474484 ; free virtual = 992921
+INFO: [v++ 60-1443] [16:17:18] Run run_link: Step rtd2_system_diagram: Started
+INFO: [v++ 60-1453] Command Line: rtd2SystemDiagram
+INFO: [v++ 60-1454] Run Directory: <WS>/builds/hbm_stream/_x/link/run_link
+INFO: [v++ 60-1441] [16:17:18] Run run_link: Step rtd2_system_diagram: Completed
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.48 . Memory (MB): peak = 498.188 ; gain = 0.000 ; free physical = 474452 ; free virtual = 992889
+INFO: [v++ 60-1443] [16:17:18] Run run_link: Step vpl: Started
+INFO: [v++ 60-1453] Command Line: vpl -t hw -f xilinx_u55c_gen3x16_xdma_3_202210_1 --kernel_frequency 300 --remote_ip_cache <WS>/builds/hbm_stream/.ipcache --output_dir <WS>/builds/hbm_stream/_x/link/int --log_dir <WS>/builds/hbm_stream/logs/link --report_dir <WS>/builds/hbm_stream/reports/link --config <WS>/builds/hbm_stream/_x/link/int/vplConfig.ini -k <WS>/builds/hbm_stream/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir <WS>/builds/hbm_stream/_x/link --no-info --iprepo <WS>/builds/hbm_stream/_x/link/int/xo/ip_repo/xilinx_com_hls_hbm_stream_1_0 --messageDb <WS>/builds/hbm_stream/_x/link/run_link/vpl.pb <WS>/builds/hbm_stream/_x/link/int/dr.bd.tcl
+INFO: [v++ 60-1454] Run Directory: <WS>/builds/hbm_stream/_x/link/run_link
+
+****** vpl v2023.2 (64-bit)
+  **** SW Build 4026344 on 2023-10-11-15:42:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+INFO: [VPL 60-839] Read in kernel information from file '<WS>/builds/hbm_stream/_x/link/int/kernel_info.dat'.
+INFO: [VPL 74-78] Compiler Version string: 2023.2
+INFO: [VPL 60-423]   Target device: xilinx_u55c_gen3x16_xdma_3_202210_1
+WARNING: [VPL 60-889] User-specified kernel frequency for ID 0 is the same as the default frequency 300 MHz, so it will be ignored
+INFO: [VPL 60-1032] Extracting hardware platform to <WS>/builds/hbm_stream/_x/link/vivado/vpl/.local/hw_platform
+[16:17:30] Run vpl: Step create_project: Started
+Creating Vivado project.
+[16:17:38] Run vpl: Step create_project: Completed
+[16:17:38] Run vpl: Step create_bd: Started
+[16:18:32] Run vpl: Step create_bd: Completed
+[16:18:32] Run vpl: Step update_bd: Started
+[16:18:32] Run vpl: Step update_bd: Completed
+[16:18:32] Run vpl: Step generate_target: Started
+[16:19:47] Run vpl: Step generate_target: RUNNING...
+[16:21:03] Run vpl: Step generate_target: RUNNING...
+[16:22:18] Run vpl: Step generate_target: RUNNING...
+[16:23:30] Run vpl: Step generate_target: Completed
+[16:23:30] Run vpl: Step config_hw_runs: Started
+[16:24:45] Run vpl: Step config_hw_runs: RUNNING...
+[16:26:01] Run vpl: Step config_hw_runs: RUNNING...
+[16:27:16] Run vpl: Step config_hw_runs: RUNNING...
+[16:27:26] Run vpl: Step config_hw_runs: Completed
+[16:27:26] Run vpl: Step synth: Started
+[16:27:56] Block-level synthesis in progress, 0 of 227 jobs complete, 16 jobs running.
+[16:28:27] Block-level synthesis in progress, 0 of 227 jobs complete, 16 jobs running.
+[16:28:57] Block-level synthesis in progress, 14 of 227 jobs complete, 13 jobs running.
+[16:29:27] Block-level synthesis in progress, 18 of 227 jobs complete, 16 jobs running.
+[16:29:58] Block-level synthesis in progress, 22 of 227 jobs complete, 16 jobs running.
+[16:30:28] Block-level synthesis in progress, 27 of 227 jobs complete, 12 jobs running.
+[16:30:58] Block-level synthesis in progress, 40 of 227 jobs complete, 10 jobs running.
+[16:31:29] Block-level synthesis in progress, 48 of 227 jobs complete, 13 jobs running.
+[16:31:59] Block-level synthesis in progress, 55 of 227 jobs complete, 15 jobs running.
+[16:32:29] Block-level synthesis in progress, 60 of 227 jobs complete, 12 jobs running.
+[16:33:00] Block-level synthesis in progress, 64 of 227 jobs complete, 14 jobs running.
+[16:33:30] Block-level synthesis in progress, 70 of 227 jobs complete, 12 jobs running.
+[16:34:01] Block-level synthesis in progress, 80 of 227 jobs complete, 16 jobs running.
+[16:34:31] Block-level synthesis in progress, 93 of 227 jobs complete, 14 jobs running.
+[16:35:01] Block-level synthesis in progress, 99 of 227 jobs complete, 15 jobs running.
+[16:35:32] Block-level synthesis in progress, 105 of 227 jobs complete, 14 jobs running.
+[16:36:02] Block-level synthesis in progress, 122 of 227 jobs complete, 12 jobs running.
+[16:36:33] Block-level synthesis in progress, 145 of 227 jobs complete, 12 jobs running.
+[16:37:04] Block-level synthesis in progress, 158 of 227 jobs complete, 16 jobs running.
+[16:37:34] Block-level synthesis in progress, 166 of 227 jobs complete, 14 jobs running.
+[16:38:05] Block-level synthesis in progress, 187 of 227 jobs complete, 11 jobs running.
+[16:38:35] Block-level synthesis in progress, 204 of 227 jobs complete, 16 jobs running.
+[16:39:06] Block-level synthesis in progress, 208 of 227 jobs complete, 15 jobs running.
+[16:39:36] Block-level synthesis in progress, 223 of 227 jobs complete, 4 jobs running.
+[16:40:07] Block-level synthesis in progress, 225 of 227 jobs complete, 2 jobs running.
+[16:40:38] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:41:08] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:41:39] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:42:09] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:42:40] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:43:11] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:43:41] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:44:12] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:44:42] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:45:13] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:45:43] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:46:14] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:46:45] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:47:15] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:47:46] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:48:16] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:48:47] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:49:18] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:49:48] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:50:19] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:50:49] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:51:20] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:51:51] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:52:21] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:52:52] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:53:22] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:53:53] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:54:24] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:54:54] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:55:25] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:55:55] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:56:26] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:56:57] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:57:27] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:57:58] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:58:28] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:58:59] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[16:59:30] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:00:00] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:00:31] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:01:01] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:01:32] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:02:03] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:02:33] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:03:04] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:03:34] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:04:05] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:04:36] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:05:06] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:05:37] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:06:08] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:06:38] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:07:09] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:07:40] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:08:10] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:08:41] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:09:12] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:09:42] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:10:13] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:10:44] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:11:14] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:11:45] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:12:16] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:12:46] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:13:17] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:13:48] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:14:18] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:14:49] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:15:20] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:15:50] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:16:21] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:16:52] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:17:22] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:17:53] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:18:24] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:18:54] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:19:25] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:19:56] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:20:26] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:20:57] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:21:28] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:21:58] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:22:29] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:23:00] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:23:30] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:24:01] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:24:32] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:25:02] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:25:33] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:26:04] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:26:34] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:27:05] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:27:35] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:28:06] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:28:37] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:29:07] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:29:38] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:30:09] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:30:39] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:31:10] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:31:41] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:32:11] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:32:42] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:33:13] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:33:43] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:34:14] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:34:45] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:35:16] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:35:46] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:36:17] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:36:48] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:37:18] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:37:49] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:38:20] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:38:50] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:39:21] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:39:52] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:40:22] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:40:53] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:41:24] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:41:54] Block-level synthesis in progress, 226 of 227 jobs complete, 1 job running.
+[17:42:25] Top-level synthesis in progress.
+[17:42:56] Top-level synthesis in progress.
+[17:43:26] Top-level synthesis in progress.
+[17:43:57] Top-level synthesis in progress.
+[17:44:12] Run vpl: Step synth: Completed
+[17:44:12] Run vpl: Step impl: Started
+[18:09:19] Finished 2nd of 6 tasks (FPGA linking synthesized kernels to platform). Elapsed time: 01h 51m 58s 
+
+[18:09:19] Starting logic optimization..
+[18:09:49] Phase 1 Initialization
+[18:09:49] Phase 1.1 Core Generation And Design Setup
+[18:10:51] Phase 1.2 Setup Constraints And Sort Netlist
+[18:11:22] Phase 2 Timer Update And Timing Data Collection
+[18:11:22] Phase 2.1 Timer Update
+[18:11:52] Phase 2.2 Timing Data Collection
+[18:11:52] Phase 3 Retarget
+[18:12:54] Phase 4 Constant propagation
+[18:13:25] Phase 5 Sweep
+[18:17:00] Phase 6 BUFG optimization
+[18:17:31] Phase 7 Shift Register Optimization
+[18:18:02] Phase 8 Post Processing Netlist
+[18:18:32] Phase 9 Finalization
+[18:18:32] Phase 9.1 Finalizing Design Cores and Updating Shapes
+[18:19:03] Phase 9.2 Verifying Netlist Connectivity
+[18:20:35] Finished 3rd of 6 tasks (FPGA logic optimization). Elapsed time: 00h 11m 16s 
+
+[18:20:35] Starting logic placement..
+[18:21:37] Phase 1 Placer Initialization
+[18:21:37] Phase 1.1 Placer Initialization Netlist Sorting
+[18:24:41] Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+[18:27:46] Phase 1.3 Build Placer Netlist Model
+[18:34:26] Phase 1.4 Constrain Clocks/Macros
+[18:34:57] Phase 2 Global Placement
+[18:34:57] Phase 2.1 Floorplanning
+[18:40:50] Run vpl: Step impl: Failed
+[18:40:51] Run vpl: FINISHED. Run Status: impl ERROR
+
+===>The following messages were generated while processing <WS>/builds/hbm_stream/_x/link/vivado/vpl/prj/prj.runs/impl_1 :
+ERROR: [VPL 30-99] Placer failed with error: 'Design cannot be split into multiple SLRs due to overutilization: 121.5% BRAM utilization in SLR0, 24131 SLLs required between SLR0 and SLR1 of 23040 SLLs available.
+
+Resolution: Review and adjust physical constraints including use of Pblocks, PROHIBIT, USER_SLR_ASSIGNMENT, and USER_CROSSING_SLR that may affect the ability to partition the design into SLRs.'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+ERROR: [VPL 17-69] Command failed: Placer could not place all instances
+
+===>The following messages were generated while  creating FPGA bitstream. Log file: <WS>/builds/hbm_stream/_x/link/vivado/vpl/runme.log :
+ERROR: [VPL 12-13638] Failed runs(s) : 'impl_1'
+ERROR: [VPL 60-773] In '<WS>/builds/hbm_stream/_x/link/vivado/vpl/vivado.log', caught Tcl error:  ERROR: [Common 17-39] 'wait_on_runs' failed due to earlier errors.
+WARNING: [VPL 60-732] Link warning: No monitor points found for BD automation.
+WARNING: [VPL 60-732] Link warning: The available BRAMs may not be sufficient to accommodate the kernels
+ERROR: [VPL 60-704] Integration error, Failed to complete hardware generation. The run name is 'impl_1'. An error stack with function names and arguments may be available in the 'vivado.log'.
+ERROR: [VPL 60-1328] Vpl run 'vpl' failed
+ERROR: [VPL 60-806] Failed to finish platform linker
+INFO: [v++ 60-1442] [18:40:52] Run run_link: Step vpl: Failed
+Time (s): cpu = 00:02:19 ; elapsed = 02:23:34 . Memory (MB): peak = 498.188 ; gain = 0.000 ; free physical = 468449 ; free virtual = 989928
+ERROR: [v++ 60-661] v++ link run 'run_link' failed
+ERROR: [v++ 60-626] Kernel link failed to complete
+ERROR: [v++ 60-703] Failed to finish linking
+INFO: [v++ 60-1653] Closing dispatch client.
+
+real	144m29.727s
+user	2m57.968s
+sys	0m51.100s

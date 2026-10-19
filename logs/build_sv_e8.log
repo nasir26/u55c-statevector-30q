@@ -1,0 +1,389 @@
+WARNING: [v++ 60-1600] The option 'jobs' was used directly on the command line, where its usage is deprecated. To ensure input line works for supported operating systems or shells, v++ supports specification for some options in a configuration file. As an alternative, please use options 'hls.jobs', 'vivado.synth.jobs' in a configuration file. 
+Option Map File Used: '/tools/Xilinx/Vitis/2023.2/data/vitis/vpp/optMap.xml'
+
+****** v++ v2023.2 (64-bit)
+  **** SW Build 4026344 on 2023-10-11-15:42:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+INFO: [v++ 60-1306] Additional information associated with this v++ link can be found at:
+	Reports: <WS>/builds/sv_e8/reports/link
+	Log files: <WS>/builds/sv_e8/logs/link
+Running Dispatch Server on port: 45401
+INFO: [v++ 60-1548] Creating build summary session with primary output <WS>/builds/sv_e8/sv.xclbin.link_summary, at Tue Oct  6 15:56:43 2026
+INFO: [v++ 60-1315] Creating rulecheck session with output '<WS>/builds/sv_e8/reports/link/v++_link_sv_guidance.html', at Tue Oct  6 15:56:43 2026
+INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u55c_gen3x16_xdma_3_202210_1/xilinx_u55c_gen3x16_xdma_3_202210_1.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u55c_gen3x16_xdma_3_202210_1/hw/hw.xsa'
+INFO: [v++ 74-78] Compiler Version string: 2023.2
+INFO: [v++ 60-629] Linking for hardware target
+INFO: [v++ 60-423]   Target device: xilinx_u55c_gen3x16_xdma_3_202210_1
+WARNING: [v++ 60-889] User-specified kernel frequency for ID 0 is the same as the default frequency 300 MHz, so it will be ignored
+INFO: [v++ 60-1332] Run 'run_link' status: Not started
+INFO: [v++ 60-1443] [15:56:47] Run run_link: Step system_link: Started
+INFO: [v++ 60-1453] Command Line: system_link --xo <WS>/builds/sv_xo/sv_engine.xo --xo <WS>/builds/sv_xo/sv_swap.xo --config <WS>/builds/sv_e8/_x/link/int/syslinkConfig.ini --xpfm /opt/xilinx/platforms/xilinx_u55c_gen3x16_xdma_3_202210_1/xilinx_u55c_gen3x16_xdma_3_202210_1.xpfm --target hw --output_dir <WS>/builds/sv_e8/_x/link/int --temp_dir <WS>/builds/sv_e8/_x/link/sys_link
+INFO: [v++ 60-1454] Run Directory: <WS>/builds/sv_e8/_x/link/run_link
+INFO: [SYSTEM_LINK 82-70] Extracting xo v3 file <WS>/builds/sv_xo/sv_engine.xo
+INFO: [SYSTEM_LINK 82-70] Extracting xo v3 file <WS>/builds/sv_xo/sv_swap.xo
+INFO: [SYSTEM_LINK 82-53] Creating IP database <WS>/builds/sv_e8/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-38] [15:56:49] build_xd_ip_db started: /tools/Xilinx/Vitis/2023.2/bin/build_xd_ip_db -ip_search 0  -sds-pf <WS>/builds/sv_e8/_x/link/sys_link/hw.hpfm -clkid 0 -ip <WS>/builds/sv_e8/_x/link/sys_link/iprepo/xilinx_com_hls_sv_engine_1_0,sv_engine -ip <WS>/builds/sv_e8/_x/link/sys_link/iprepo/xilinx_com_hls_sv_swap_1_0,sv_swap -o <WS>/builds/sv_e8/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-37] [15:56:53] build_xd_ip_db finished successfully
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 458.445 ; gain = 0.000 ; free physical = 388317 ; free virtual = 921785
+INFO: [SYSTEM_LINK 82-51] Create system connectivity graph
+INFO: [SYSTEM_LINK 82-102] Applying explicit connections to the system connectivity graph: <WS>/builds/sv_e8/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [SYSTEM_LINK 82-38] [15:56:53] cfgen started: /tools/Xilinx/Vitis/2023.2/bin/cfgen  -nk sv_engine:8 -nk sv_swap:4 -slr sv_engine_1:SLR0 -slr sv_engine_2:SLR0 -slr sv_engine_3:SLR0 -slr sv_engine_4:SLR1 -slr sv_engine_5:SLR1 -slr sv_engine_6:SLR1 -slr sv_engine_7:SLR2 -slr sv_engine_8:SLR2 -slr sv_swap_1:SLR0 -slr sv_swap_2:SLR0 -slr sv_swap_3:SLR0 -slr sv_swap_4:SLR0 -sp sv_engine_1.st:HBM[0] -sp sv_engine_2.st:HBM[4] -sp sv_engine_3.st:HBM[8] -sp sv_engine_4.st:HBM[12] -sp sv_engine_5.st:HBM[16] -sp sv_engine_6.st:HBM[20] -sp sv_engine_7.st:HBM[24] -sp sv_engine_8.st:HBM[28] -sp sv_swap_1.a:HBM[0:31] -sp sv_swap_1.b:HBM[0:31] -sp sv_swap_2.a:HBM[0:31] -sp sv_swap_2.b:HBM[0:31] -sp sv_swap_3.a:HBM[0:31] -sp sv_swap_3.b:HBM[0:31] -sp sv_swap_4.a:HBM[0:31] -sp sv_swap_4.b:HBM[0:31] -dpa_mem_offload false -dmclkid 0 -r <WS>/builds/sv_e8/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o <WS>/builds/sv_e8/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [CFGEN 83-0] Kernel Specs: 
+INFO: [CFGEN 83-0]   kernel: sv_engine, num: 8  {sv_engine_1 sv_engine_2 sv_engine_3 sv_engine_4 sv_engine_5 sv_engine_6 sv_engine_7 sv_engine_8}
+INFO: [CFGEN 83-0]   kernel: sv_swap, num: 4  {sv_swap_1 sv_swap_2 sv_swap_3 sv_swap_4}
+INFO: [CFGEN 83-0] Port Specs: 
+INFO: [CFGEN 83-0]   kernel: sv_engine_1, k_port: st, sptag: HBM[0]
+INFO: [CFGEN 83-0]   kernel: sv_engine_2, k_port: st, sptag: HBM[4]
+INFO: [CFGEN 83-0]   kernel: sv_engine_3, k_port: st, sptag: HBM[8]
+INFO: [CFGEN 83-0]   kernel: sv_engine_4, k_port: st, sptag: HBM[12]
+INFO: [CFGEN 83-0]   kernel: sv_engine_5, k_port: st, sptag: HBM[16]
+INFO: [CFGEN 83-0]   kernel: sv_engine_6, k_port: st, sptag: HBM[20]
+INFO: [CFGEN 83-0]   kernel: sv_engine_7, k_port: st, sptag: HBM[24]
+INFO: [CFGEN 83-0]   kernel: sv_engine_8, k_port: st, sptag: HBM[28]
+INFO: [CFGEN 83-0]   kernel: sv_swap_1, k_port: a, sptag: HBM[0:31]
+INFO: [CFGEN 83-0]   kernel: sv_swap_1, k_port: b, sptag: HBM[0:31]
+INFO: [CFGEN 83-0]   kernel: sv_swap_2, k_port: a, sptag: HBM[0:31]
+INFO: [CFGEN 83-0]   kernel: sv_swap_2, k_port: b, sptag: HBM[0:31]
+INFO: [CFGEN 83-0]   kernel: sv_swap_3, k_port: a, sptag: HBM[0:31]
+INFO: [CFGEN 83-0]   kernel: sv_swap_3, k_port: b, sptag: HBM[0:31]
+INFO: [CFGEN 83-0]   kernel: sv_swap_4, k_port: a, sptag: HBM[0:31]
+INFO: [CFGEN 83-0]   kernel: sv_swap_4, k_port: b, sptag: HBM[0:31]
+INFO: [CFGEN 83-0] SLR Specs: 
+INFO: [CFGEN 83-0]   instance: sv_engine_1, SLR: SLR0
+INFO: [CFGEN 83-0]   instance: sv_engine_2, SLR: SLR0
+INFO: [CFGEN 83-0]   instance: sv_engine_3, SLR: SLR0
+INFO: [CFGEN 83-0]   instance: sv_engine_4, SLR: SLR1
+INFO: [CFGEN 83-0]   instance: sv_engine_5, SLR: SLR1
+INFO: [CFGEN 83-0]   instance: sv_engine_6, SLR: SLR1
+INFO: [CFGEN 83-0]   instance: sv_engine_7, SLR: SLR2
+INFO: [CFGEN 83-0]   instance: sv_engine_8, SLR: SLR2
+INFO: [CFGEN 83-0]   instance: sv_swap_1, SLR: SLR0
+INFO: [CFGEN 83-0]   instance: sv_swap_2, SLR: SLR0
+INFO: [CFGEN 83-0]   instance: sv_swap_3, SLR: SLR0
+INFO: [CFGEN 83-0]   instance: sv_swap_4, SLR: SLR0
+INFO: [SYSTEM_LINK 82-37] [15:57:03] cfgen finished successfully
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 458.445 ; gain = 0.000 ; free physical = 386062 ; free virtual = 919534
+INFO: [SYSTEM_LINK 82-52] Create top-level block diagram
+INFO: [SYSTEM_LINK 82-38] [15:57:03] cf2bd started: /tools/Xilinx/Vitis/2023.2/bin/cf2bd  --linux --trace_buffer 1024 --input_file <WS>/builds/sv_e8/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml --ip_db <WS>/builds/sv_e8/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml --cf_name dr --working_dir <WS>/builds/sv_e8/_x/link/sys_link/_sysl/.xsd --temp_dir <WS>/builds/sv_e8/_x/link/sys_link --output_dir <WS>/builds/sv_e8/_x/link/int --target_bd ulp.bd
+INFO: [CF2BD 82-31] Launching cf2xd: cf2xd -linux -trace-buffer 1024 -i <WS>/builds/sv_e8/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml -r <WS>/builds/sv_e8/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o dr.xml
+INFO: [CF2BD 82-28] cf2xd finished successfully
+INFO: [CF2BD 82-31] Launching cf_xsd: cf_xsd -disable-address-gen -bd ulp.bd -dn dr -dp <WS>/builds/sv_e8/_x/link/sys_link/_sysl/.xsd
+INFO: [CF2BD 82-28] cf_xsd finished successfully
+INFO: [SYSTEM_LINK 82-37] [15:57:13] cf2bd finished successfully
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 458.445 ; gain = 0.000 ; free physical = 386021 ; free virtual = 919498
+INFO: [v++ 60-1441] [15:57:13] Run run_link: Step system_link: Completed
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 489.473 ; gain = 0.000 ; free physical = 386017 ; free virtual = 919473
+INFO: [v++ 60-1443] [15:57:13] Run run_link: Step cf2sw: Started
+INFO: [v++ 60-1453] Command Line: cf2sw -sdsl <WS>/builds/sv_e8/_x/link/int/sdsl.dat -rtd <WS>/builds/sv_e8/_x/link/int/cf2sw.rtd -nofilter <WS>/builds/sv_e8/_x/link/int/cf2sw_full.rtd -xclbin <WS>/builds/sv_e8/_x/link/int/xclbin_orig.xml -o <WS>/builds/sv_e8/_x/link/int/xclbin_orig.1.xml
+INFO: [v++ 60-1454] Run Directory: <WS>/builds/sv_e8/_x/link/run_link
+INFO: [v++ 60-1441] [15:57:24] Run run_link: Step cf2sw: Completed
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 489.473 ; gain = 0.000 ; free physical = 378119 ; free virtual = 911548
+INFO: [v++ 60-1443] [15:57:24] Run run_link: Step rtd2_system_diagram: Started
+INFO: [v++ 60-1453] Command Line: rtd2SystemDiagram
+INFO: [v++ 60-1454] Run Directory: <WS>/builds/sv_e8/_x/link/run_link
+INFO: [v++ 60-1441] [15:57:24] Run run_link: Step rtd2_system_diagram: Completed
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.28 . Memory (MB): peak = 489.473 ; gain = 0.000 ; free physical = 387099 ; free virtual = 920528
+INFO: [v++ 60-1443] [15:57:24] Run run_link: Step vpl: Started
+INFO: [v++ 60-1453] Command Line: vpl -t hw -f xilinx_u55c_gen3x16_xdma_3_202210_1 --kernel_frequency 300 --remote_ip_cache <WS>/builds/sv_e8/.ipcache --output_dir <WS>/builds/sv_e8/_x/link/int --log_dir <WS>/builds/sv_e8/logs/link --report_dir <WS>/builds/sv_e8/reports/link --config <WS>/builds/sv_e8/_x/link/int/vplConfig.ini -k <WS>/builds/sv_e8/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir <WS>/builds/sv_e8/_x/link --no-info --iprepo <WS>/builds/sv_e8/_x/link/int/xo/ip_repo/xilinx_com_hls_sv_swap_1_0 --iprepo <WS>/builds/sv_e8/_x/link/int/xo/ip_repo/xilinx_com_hls_sv_engine_1_0 --messageDb <WS>/builds/sv_e8/_x/link/run_link/vpl.pb <WS>/builds/sv_e8/_x/link/int/dr.bd.tcl
+INFO: [v++ 60-1454] Run Directory: <WS>/builds/sv_e8/_x/link/run_link
+
+****** vpl v2023.2 (64-bit)
+  **** SW Build 4026344 on 2023-10-11-15:42:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+INFO: [VPL 60-839] Read in kernel information from file '<WS>/builds/sv_e8/_x/link/int/kernel_info.dat'.
+INFO: [VPL 74-78] Compiler Version string: 2023.2
+INFO: [VPL 60-423]   Target device: xilinx_u55c_gen3x16_xdma_3_202210_1
+WARNING: [VPL 60-889] User-specified kernel frequency for ID 0 is the same as the default frequency 300 MHz, so it will be ignored
+INFO: [VPL 60-1032] Extracting hardware platform to <WS>/builds/sv_e8/_x/link/vivado/vpl/.local/hw_platform
+[15:57:37] Run vpl: Step create_project: Started
+Creating Vivado project.
+[15:57:45] Run vpl: Step create_project: Completed
+[15:57:45] Run vpl: Step create_bd: Started
+[15:58:23] Run vpl: Step create_bd: Completed
+[15:58:23] Run vpl: Step update_bd: Started
+[15:58:24] Run vpl: Step update_bd: Completed
+[15:58:24] Run vpl: Step generate_target: Started
+[15:59:40] Run vpl: Step generate_target: RUNNING...
+[16:00:55] Run vpl: Step generate_target: RUNNING...
+[16:01:32] Run vpl: Step generate_target: Completed
+[16:01:32] Run vpl: Step config_hw_runs: Started
+[16:02:47] Run vpl: Step config_hw_runs: RUNNING...
+[16:04:03] Run vpl: Step config_hw_runs: RUNNING...
+[16:04:31] Run vpl: Step config_hw_runs: Completed
+[16:04:31] Run vpl: Step synth: Started
+[16:05:01] Block-level synthesis in progress, 0 of 218 jobs complete, 16 jobs running.
+[16:05:31] Block-level synthesis in progress, 0 of 218 jobs complete, 16 jobs running.
+[16:06:02] Block-level synthesis in progress, 12 of 218 jobs complete, 9 jobs running.
+[16:06:32] Block-level synthesis in progress, 13 of 218 jobs complete, 16 jobs running.
+[16:07:02] Block-level synthesis in progress, 18 of 218 jobs complete, 14 jobs running.
+[16:07:33] Block-level synthesis in progress, 23 of 218 jobs complete, 16 jobs running.
+[16:08:03] Block-level synthesis in progress, 36 of 218 jobs complete, 15 jobs running.
+[16:08:33] Block-level synthesis in progress, 50 of 218 jobs complete, 16 jobs running.
+[16:09:03] Block-level synthesis in progress, 64 of 218 jobs complete, 14 jobs running.
+[16:09:34] Block-level synthesis in progress, 65 of 218 jobs complete, 16 jobs running.
+[16:10:04] Block-level synthesis in progress, 77 of 218 jobs complete, 11 jobs running.
+[16:10:35] Block-level synthesis in progress, 83 of 218 jobs complete, 15 jobs running.
+[16:11:05] Block-level synthesis in progress, 91 of 218 jobs complete, 12 jobs running.
+[16:11:35] Block-level synthesis in progress, 110 of 218 jobs complete, 15 jobs running.
+[16:12:06] Block-level synthesis in progress, 114 of 218 jobs complete, 15 jobs running.
+[16:12:36] Block-level synthesis in progress, 131 of 218 jobs complete, 13 jobs running.
+[16:13:07] Block-level synthesis in progress, 153 of 218 jobs complete, 11 jobs running.
+[16:13:37] Block-level synthesis in progress, 169 of 218 jobs complete, 13 jobs running.
+[16:14:08] Block-level synthesis in progress, 177 of 218 jobs complete, 14 jobs running.
+[16:14:38] Block-level synthesis in progress, 181 of 218 jobs complete, 15 jobs running.
+[16:15:09] Block-level synthesis in progress, 186 of 218 jobs complete, 12 jobs running.
+[16:15:39] Block-level synthesis in progress, 202 of 218 jobs complete, 12 jobs running.
+[16:16:10] Block-level synthesis in progress, 212 of 218 jobs complete, 4 jobs running.
+[16:16:41] Block-level synthesis in progress, 216 of 218 jobs complete, 1 job running.
+[16:17:11] Block-level synthesis in progress, 216 of 218 jobs complete, 2 jobs running.
+[16:17:42] Block-level synthesis in progress, 216 of 218 jobs complete, 2 jobs running.
+[16:18:12] Top-level synthesis in progress.
+[16:18:43] Top-level synthesis in progress.
+[16:19:13] Top-level synthesis in progress.
+[16:19:41] Run vpl: Step synth: Completed
+[16:19:41] Run vpl: Step impl: Started
+[16:45:14] Finished 2nd of 6 tasks (FPGA linking synthesized kernels to platform). Elapsed time: 00h 47m 48s 
+
+[16:45:14] Starting logic optimization..
+[16:45:45] Phase 1 Initialization
+[16:45:45] Phase 1.1 Core Generation And Design Setup
+[16:46:46] Phase 1.2 Setup Constraints And Sort Netlist
+[16:47:17] Phase 2 Timer Update And Timing Data Collection
+[16:47:17] Phase 2.1 Timer Update
+[16:47:48] Phase 2.2 Timing Data Collection
+[16:47:48] Phase 3 Retarget
+[16:48:50] Phase 4 Constant propagation
+[16:49:20] Phase 5 Sweep
+[16:51:54] Phase 6 BUFG optimization
+[16:52:25] Phase 7 Shift Register Optimization
+[16:52:56] Phase 8 Post Processing Netlist
+[16:53:27] Phase 9 Finalization
+[16:53:27] Phase 9.1 Finalizing Design Cores and Updating Shapes
+[16:53:58] Phase 9.2 Verifying Netlist Connectivity
+[16:55:30] Finished 3rd of 6 tasks (FPGA logic optimization). Elapsed time: 00h 10m 15s 
+
+[16:55:30] Starting logic placement..
+[16:56:01] Phase 1 Placer Initialization
+[16:56:01] Phase 1.1 Placer Initialization Netlist Sorting
+[16:59:36] Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+[17:02:10] Phase 1.3 Build Placer Netlist Model
+[17:07:49] Phase 1.4 Constrain Clocks/Macros
+[17:08:20] Phase 2 Global Placement
+[17:08:20] Phase 2.1 Floorplanning
+[17:09:52] Phase 2.1.1 Partition Driven Placement
+[17:09:52] Phase 2.1.1.1 PBP: Partition Driven Placement
+[17:12:57] Phase 2.1.1.2 PBP: Clock Region Placement
+[17:13:59] Phase 2.1.1.3 PBP: Compute Congestion
+[17:14:30] Phase 2.1.1.4 PBP: UpdateTiming
+[17:15:01] Phase 2.1.1.5 PBP: Add part constraints
+[17:15:32] Phase 2.2 Physical Synthesis After Floorplan
+[17:16:34] Phase 2.3 Update Timing before SLR Path Opt
+[17:17:05] Phase 2.4 Post-Processing in Floorplanning
+[17:17:05] Phase 2.5 Global Placement Core
+[17:34:08] Phase 2.5.1 UpdateTiming Before Physical Synthesis
+[17:34:39] Phase 2.5.2 Physical Synthesis In Placer
+[17:42:24] Phase 3 Detail Placement
+[17:42:24] Phase 3.1 Commit Multi Column Macros
+[17:42:55] Phase 3.2 Commit Most Macros & LUTRAMs
+[17:46:32] Phase 3.3 Small Shape DP
+[17:46:32] Phase 3.3.1 Small Shape Clustering
+[17:47:03] Phase 3.3.2 Slice Area Swap
+[17:47:03] Phase 3.3.2.1 Slice Area Swap Initial
+[17:50:09] Phase 3.4 Place Remaining
+[17:50:40] Phase 3.5 Re-assign LUT pins
+[17:51:42] Phase 3.6 Pipeline Register Optimization
+[17:51:42] Phase 3.7 Fast Optimization
+[17:53:46] Phase 4 Post Placement Optimization and Clean-Up
+[17:54:17] Phase 4.1 Post Commit Optimization
+[17:58:25] Phase 4.1.1 Post Placement Optimization
+[17:58:25] Phase 4.1.1.1 BUFG Insertion
+[17:58:25] Phase 1 Physical Synthesis Initialization
+[17:59:58] Phase 4.1.1.2 BUFG Replication
+[18:00:29] Phase 4.1.1.3 Post Placement Timing Optimization
+[18:09:16] Phase 4.1.1.4 Replication
+[18:12:22] Phase 4.2 Post Placement Cleanup
+[18:12:22] Phase 4.3 Placer Reporting
+[18:12:22] Phase 4.3.1 Print Estimated Congestion
+[18:12:53] Phase 4.4 Final Placement Cleanup
+[18:21:09] Finished 4th of 6 tasks (FPGA logic placement). Elapsed time: 01h 25m 39s 
+
+[18:21:09] Starting logic routing..
+[18:23:14] Phase 1 Build RT Design
+[18:27:22] Phase 2 Router Initialization
+[18:27:22] Phase 2.1 Fix Topology Constraints
+[18:27:53] Phase 2.2 Pre Route Cleanup
+[18:27:53] Phase 2.3 Global Clock Net Routing
+[18:28:55] Phase 2.4 Update Timing
+[18:34:36] Phase 2.5 Update Timing for Bus Skew
+[18:34:36] Phase 2.5.1 Update Timing
+[18:36:40] Phase 3 Initial Routing
+[18:36:40] Phase 3.1 Global Routing
+[18:36:40] Phase 3.1.1 SLL Assignment
+[18:37:11] Phase 3.2 Initial Net Routing
+[18:38:44] Phase 4 Rip-up And Reroute
+[18:38:44] Phase 4.1 Global Iteration 0
+[18:58:54] Phase 4.2 Global Iteration 1
+[19:03:34] Phase 4.3 Global Iteration 2
+[19:06:40] Phase 4.4 Global Iteration 3
+[19:07:42] Phase 5 Delay and Skew Optimization
+[19:07:42] Phase 5.1 Delay CleanUp
+[19:07:42] Phase 5.1.1 Update Timing
+[19:09:15] Phase 5.1.2 Update Timing
+[19:10:48] Phase 5.1.3 Update Timing
+[19:12:21] Phase 5.2 Clock Skew Optimization
+[19:12:21] Phase 6 Post Hold Fix
+[19:12:21] Phase 6.1 Hold Fix Iter
+[19:12:21] Phase 6.1.1 Update Timing
+[19:13:54] Phase 6.2 Non Free Resource Hold Fix Iter
+[19:13:54] Phase 7 Leaf Clock Prog Delay Opt
+[19:15:27] Phase 7.1 Optimize Skews
+[19:15:27] Phase 7.1.1 Leaf ClockOpt Init
+[19:18:02] Phase 7.2 Post SkewOpt Delay Cleanup
+[19:18:02] Phase 7.2.1 Delay CleanUp
+[19:18:02] Phase 7.2.1.1 Update Timing
+[19:19:36] Phase 7.2.1.2 Update Timing
+[19:21:09] Phase 7.2.1.3 Update Timing
+[19:22:42] Phase 7.3 Post SkewOpt Hold Fix
+[19:22:42] Phase 7.3.1 Hold Fix Iter
+[19:22:42] Phase 7.3.1.1 Update Timing
+[19:27:21] Phase 8 Route finalize
+[19:27:21] Phase 9 Verifying routed nets
+[19:27:21] Phase 10 Depositing Routes
+[19:28:23] Phase 11 Resolve XTalk
+[19:28:54] Phase 12 Post Router Timing
+[19:31:29] Phase 13 Physical Synthesis in Router
+[19:31:29] Phase 13.1 Physical Synthesis Initialization
+[19:33:33] Phase 13.2 Critical Path Optimization
+[19:35:38] Finished 5th of 6 tasks (FPGA routing). Elapsed time: 01h 14m 28s 
+
+[19:35:38] Starting bitstream generation..
+[19:35:38] Phase 14 Post-Route Event Processing
+[20:02:00] Creating bitmap...
+[20:08:44] Writing bitstream ./level0_i_ulp_my_rm_partial.bit...
+[20:08:44] Finished 6th of 6 tasks (FPGA bitstream generation). Elapsed time: 00h 33m 06s 
+Check VPL, containing 12 checks, has run: 0 errors, 6 warning violations, 1 advisory violation
+WARNING: [ACCELERATOR-SLR-01] The compute unit sv_engine_8 is located in SLR2 while its port sv_engine_8/m_axi_gst is connected to a memory in SLR0.
+ADVISORY: [AUTO-FREQ-SCALING-08] For clock clk_kernel_00_unbuffered_net, the auto scaled frequency 302.6 MHz exceeds the original specified frequency. The compiler will select the original specified frequency of 300.0 MHz.
+WARNING: [AUTO-FREQ-SCALING-07] One or more timing paths failed timing requirements. The system clock hbm_aclk has an original frequency equal to 450 MHz. The frequency has been automatically changed to 445.8 MHz to enable proper functionality.
+WARNING: [ACCELERATOR-SLR-01] The compute unit sv_engine_4 is located in SLR1 while its port sv_engine_4/m_axi_gst is connected to a memory in SLR0.
+WARNING: [ACCELERATOR-SLR-01] The compute unit sv_engine_5 is located in SLR1 while its port sv_engine_5/m_axi_gst is connected to a memory in SLR0.
+WARNING: [ACCELERATOR-SLR-01] The compute unit sv_engine_6 is located in SLR1 while its port sv_engine_6/m_axi_gst is connected to a memory in SLR0.
+WARNING: [ACCELERATOR-SLR-01] The compute unit sv_engine_7 is located in SLR2 while its port sv_engine_7/m_axi_gst is connected to a memory in SLR0.
+[20:11:30] Run vpl: Step impl: Completed
+[20:11:31] Run vpl: FINISHED. Run Status: impl Complete!
+INFO: [v++ 60-1441] [20:11:32] Run run_link: Step vpl: Completed
+Time (s): cpu = 00:06:21 ; elapsed = 04:14:08 . Memory (MB): peak = 489.473 ; gain = 0.000 ; free physical = 297245 ; free virtual = 850577
+INFO: [v++ 60-1443] [20:11:32] Run run_link: Step rtdgen: Started
+INFO: [v++ 60-1453] Command Line: rtdgen
+INFO: [v++ 60-1454] Run Directory: <WS>/builds/sv_e8/_x/link/run_link
+INFO: [v++ 60-991] clock name 'ulp_ucs/aclk_kernel_01' (clock ID '1') is being mapped to clock name 'KERNEL_CLK' in the xclbin
+INFO: [v++ 60-991] clock name 'ulp_ucs/aclk_kernel_00' (clock ID '0') is being mapped to clock name 'DATA_CLK' in the xclbin
+INFO: [v++ 60-991] clock name 'hbm_aclk' (clock ID '') is being mapped to clock name 'hbm_aclk' in the xclbin
+INFO: [v++ 60-1230] The compiler selected the following frequencies for the runtime controllable kernel clock(s) and scalable system clock(s): System (SYSTEM) clock: hbm_aclk = 445, Kernel (KERNEL) clock: ulp_ucs/aclk_kernel_01 = 500, Kernel (DATA) clock: ulp_ucs/aclk_kernel_00 = 300
+INFO: [v++ 60-1453] Command Line: cf2sw -a <WS>/builds/sv_e8/_x/link/int/address_map.xml -sdsl <WS>/builds/sv_e8/_x/link/int/sdsl.dat -xclbin <WS>/builds/sv_e8/_x/link/int/xclbin_orig.xml -rtd <WS>/builds/sv_e8/_x/link/int/sv.rtd -o <WS>/builds/sv_e8/_x/link/int/sv.xml
+INFO: [v++ 60-1652] Cf2sw returned exit code: 0
+INFO: [v++ 60-1441] [20:11:42] Run run_link: Step rtdgen: Completed
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 489.473 ; gain = 0.000 ; free physical = 300718 ; free virtual = 854051
+INFO: [v++ 60-1443] [20:11:42] Run run_link: Step xclbinutil: Started
+INFO: [v++ 60-1453] Command Line: xclbinutil --add-section BITSTREAM:RAW:<WS>/builds/sv_e8/_x/link/int/partial.bit --force --target hw --key-value SYS:dfx_enable:true --add-section :JSON:<WS>/builds/sv_e8/_x/link/int/sv.rtd --append-section :JSON:<WS>/builds/sv_e8/_x/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:<WS>/builds/sv_e8/_x/link/int/sv_xml.rtd --add-section BUILD_METADATA:JSON:<WS>/builds/sv_e8/_x/link/int/sv_build.rtd --add-section EMBEDDED_METADATA:RAW:<WS>/builds/sv_e8/_x/link/int/sv.xml --add-section SYSTEM_METADATA:RAW:<WS>/builds/sv_e8/_x/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:xilinx_u55c_gen3x16_xdma_3_202210_1 --output <WS>/builds/sv_e8/sv.xclbin
+INFO: [v++ 60-1454] Run Directory: <WS>/builds/sv_e8/_x/link/run_link
+XRT Build Version: 2.16.204 (2023.2)
+       Build Date: 2023-10-11 23:46:00
+          Hash ID: fa4c0045003fed0acea4593788dce5ef6d0b66ee
+Creating a default 'in-memory' xclbin image.
+
+Section: 'BITSTREAM'(0) was successfully added.
+Size   : 65220578 bytes
+Format : RAW
+File   : '<WS>/builds/sv_e8/_x/link/int/partial.bit'
+
+Section: 'MEM_TOPOLOGY'(6) was successfully added.
+Format : JSON
+File   : 'mem_topology'
+
+Section: 'IP_LAYOUT'(8) was successfully added.
+Format : JSON
+File   : 'ip_layout'
+
+Section: 'CONNECTIVITY'(7) was successfully added.
+Format : JSON
+File   : 'connectivity'
+
+Section: 'CLOCK_FREQ_TOPOLOGY'(11) was successfully added.
+Size   : 410 bytes
+Format : JSON
+File   : '<WS>/builds/sv_e8/_x/link/int/sv_xml.rtd'
+
+Section: 'BUILD_METADATA'(14) was successfully added.
+Size   : 4694 bytes
+Format : JSON
+File   : '<WS>/builds/sv_e8/_x/link/int/sv_build.rtd'
+
+Section: 'EMBEDDED_METADATA'(2) was successfully added.
+Size   : 27180 bytes
+Format : RAW
+File   : '<WS>/builds/sv_e8/_x/link/int/sv.xml'
+
+Section: 'SYSTEM_METADATA'(22) was successfully added.
+Size   : 223180 bytes
+Format : RAW
+File   : '<WS>/builds/sv_e8/_x/link/int/systemDiagramModelSlrBaseAddress.json'
+
+Section: 'PARTITION_METADATA'(20) was successfully appended to.
+Format : JSON
+File   : 'partition_metadata'
+
+Section: 'IP_LAYOUT'(8) was successfully appended to.
+Format : JSON
+File   : 'ip_layout'
+Successfully wrote (65548927 bytes) to the output file: <WS>/builds/sv_e8/sv.xclbin
+Leaving xclbinutil.
+INFO: [v++ 60-1441] [20:11:43] Run run_link: Step xclbinutil: Completed
+Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.29 . Memory (MB): peak = 489.473 ; gain = 0.000 ; free physical = 300654 ; free virtual = 854049
+INFO: [v++ 60-1443] [20:11:43] Run run_link: Step xclbinutilinfo: Started
+INFO: [v++ 60-1453] Command Line: xclbinutil --quiet --force --info <WS>/builds/sv_e8/sv.xclbin.info --input <WS>/builds/sv_e8/sv.xclbin
+INFO: [v++ 60-1454] Run Directory: <WS>/builds/sv_e8/_x/link/run_link
+INFO: [v++ 60-1441] [20:11:43] Run run_link: Step xclbinutilinfo: Completed
+Time (s): cpu = 00:00:00.57 ; elapsed = 00:00:00.72 . Memory (MB): peak = 489.473 ; gain = 0.000 ; free physical = 300638 ; free virtual = 854033
+INFO: [v++ 60-1443] [20:11:43] Run run_link: Step generate_sc_driver: Started
+INFO: [v++ 60-1453] Command Line: 
+INFO: [v++ 60-1454] Run Directory: <WS>/builds/sv_e8/_x/link/run_link
+INFO: [v++ 60-1441] [20:11:43] Run run_link: Step generate_sc_driver: Completed
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 489.473 ; gain = 0.000 ; free physical = 300638 ; free virtual = 854033
+INFO: [v++ 60-2331] SLR0 was specfied for compute unit sv_engine_1, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR0 was specfied for compute unit sv_engine_2, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR0 was specfied for compute unit sv_engine_3, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR1 was specfied for compute unit sv_engine_4, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR1 was specfied for compute unit sv_engine_5, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR1 was specfied for compute unit sv_engine_6, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR2 was specfied for compute unit sv_engine_7, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR2 was specfied for compute unit sv_engine_8, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR0 was specfied for compute unit sv_swap_1, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR0 was specfied for compute unit sv_swap_2, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR0 was specfied for compute unit sv_swap_3, and verified as such in implementation.
+INFO: [v++ 60-2331] SLR0 was specfied for compute unit sv_swap_4, and verified as such in implementation.
+Check POST-VPL, containing 1 checks, has run: 0 errors
+INFO: [v++ 60-244] Generating system estimate report...
+INFO: [v++ 60-1092] Generated system estimate report: <WS>/builds/sv_e8/reports/link/system_estimate_sv.xtxt
+INFO: [v++ 60-586] Created <WS>/builds/sv_e8/sv.ltx
+INFO: [v++ 60-586] Created <WS>/builds/sv_e8/sv.xclbin
+INFO: [v++ 60-1307] Run completed. Additional information can be found in:
+	Guidance: <WS>/builds/sv_e8/reports/link/v++_link_sv_guidance.html
+	Timing Report: <WS>/builds/sv_e8/reports/link/imp/impl_1_hw_bb_locked_timing_summary_routed.rpt
+	Vivado Log: <WS>/builds/sv_e8/logs/link/vivado.log
+	Steps Log File: <WS>/builds/sv_e8/logs/link/link.steps.log
+
+INFO: [v++ 60-2343] Use the vitis_analyzer tool to visualize and navigate the relevant reports. Run the following command. 
+    vitis_analyzer <WS>/builds/sv_e8/sv.xclbin.link_summary 
+INFO: [v++ 60-791] Total elapsed time: 4h 15m 4s
+INFO: [v++ 60-1653] Closing dispatch client.
+BUILD_OK
+
+real	255m6.898s
+user	7m15.630s
+sys	1m17.472s
